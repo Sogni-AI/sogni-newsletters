@@ -1,0 +1,1192 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html data-editor-version="2" class="sg-campaigns" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+      <!--[if !mso]><!-->
+      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+      <!--<![endif]-->
+      <!--[if (gte mso 9)|(IE)]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG/>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+      <![endif]-->
+      <!--[if (gte mso 9)|(IE)]>
+  <style type="text/css">
+    body {width: 600px;margin: 0 auto;}
+    table {border-collapse: collapse;}
+    table, td {mso-table-lspace: 0pt;mso-table-rspace: 0pt;}
+    img {-ms-interpolation-mode: bicubic;}
+  </style>
+<![endif]-->
+      <style type="text/css">
+    body, p, div {
+      font-family: inherit;
+      font-size: 16px;
+    }
+    body {
+      color: #ffffff;
+    }
+    body a {
+      color: #99FF01;
+      text-decoration: none;
+    }
+    p { margin: 0; padding: 0; }
+    table.wrapper {
+      width:100% !important;
+      table-layout: fixed;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-size-adjust: 100%;
+      -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+    img.max-width {
+      max-width: 100% !important;
+    }
+    .column.of-2 {
+      width: 50%;
+    }
+    .column.of-3 {
+      width: 33.333%;
+    }
+    .column.of-4 {
+      width: 25%;
+    }
+    ul ul ul ul  {
+      list-style-type: disc !important;
+    }
+    ol ol {
+      list-style-type: lower-roman !important;
+    }
+    ol ol ol {
+      list-style-type: lower-latin !important;
+    }
+    ol ol ol ol {
+      list-style-type: decimal !important;
+    }
+    @media screen and (max-width:480px) {
+      .preheader .rightColumnContent,
+      .footer .rightColumnContent {
+        text-align: left !important;
+      }
+      .preheader .rightColumnContent div,
+      .preheader .rightColumnContent span,
+      .footer .rightColumnContent div,
+      .footer .rightColumnContent span {
+        text-align: left !important;
+      }
+      .preheader .rightColumnContent,
+      .preheader .leftColumnContent {
+        font-size: 80% !important;
+        padding: 5px 0;
+      }
+      table.wrapper-mobile {
+        width: 100% !important;
+        table-layout: fixed;
+      }
+      img.max-width {
+        height: auto !important;
+        max-width: 100% !important;
+      }
+      a.bulletproof-button {
+        display: block !important;
+        width: auto !important;
+        font-size: 80%;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+      .columns {
+        width: 100% !important;
+      }
+      .column {
+        display: block !important;
+        width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+      .social-icon-column {
+        display: inline-block !important;
+      }
+    }
+  </style>
+      <!--user entered Head Start--><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"><style>
+        /* General Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background-color: #1D1D1D;
+            font-family: 'Inter', sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+            background-color: #000000;
+        }
+
+        td {
+            padding: 0;
+        }
+
+        img {
+            display: block;
+            border: none;
+            width: 100%;
+            height: auto;
+        }
+
+        /* Main Title Section */
+        .main-title-container {
+            padding: 20px;
+            color: #a6a6a6;
+            text-align: left;
+        }
+
+        .main-title {
+            font-size: 48px;
+            font-weight: bold;
+            color: #a6a6a6;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 24px;
+            color: #a6a6a6;
+            margin: 5px 0 0 0;
+            line-height: 1.5;
+        }
+
+        /* Section Titles */
+        .section-title-container {
+            padding: 20px 0 16px 0px;
+            color: #ffffff;
+        }
+
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 1.1;
+            margin: 0;
+        }
+
+        .section-title-small {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        /* Text Module */
+        .text-module {
+            font-size: 16px;
+            color: #a6a6a6;
+            padding: 10px 20px;
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        .text-module p {
+            margin-bottom: 20px;
+        }
+
+        /* Icon Text Button */
+        .icon-text-button {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #000000;
+            border-radius: 8px;
+            gap: 16px;
+        }
+
+        .module-icon {
+            width: 128px;
+            height: 128px;
+            border-radius: 8px;
+        }
+
+        .module-button {
+            font-size: 12px;
+            color: #ffffff;
+            background-color: #000000;
+            padding: 10px 16px;
+            border-radius: 4px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .module-title {
+            font-size: 16px;
+            color: #ffffff;
+            margin: 0;
+            line-height: 1.5;
+        }
+        .image-button {
+        display: inline-block; 
+        text-decoration: none; 
+        background-color: #000000; 
+        border-radius: 4px; 
+        padding: 10px 16px; 
+        font-family: 'Inter', sans-serif; 
+        font-size: 14px; 
+        color: #ffffff; 
+        text-align: center; 
+        transition: background-color 0.3s ease; 
+        }
+
+       .image-button img {
+       width: 24px; /* Sets the icon/image size */
+       height: auto; /* Maintains the aspect ratio */
+       margin-left: 8px; /* Adds spacing between text and image */
+       vertical-align: middle; /* Aligns the image with the text */
+       }
+
+
+        /* Social Media Section */
+        .social-media-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .social-media-icons img {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 36px;
+            }
+
+            .icon-text-button {
+                flex-direction: column;
+            }
+
+            .module-icon {
+                width: 100px;
+                height: 100px;
+            }
+
+            .module-button {
+                max-width: 240px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .main-title {
+                font-size: 32px;
+            }
+
+            .module-icon {
+                width: 80px;
+                height: 80px;
+            }
+
+            .module-button {
+                max-width: 200px;
+                padding: 8px 12px;
+            }
+
+            .social-media-icons img {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    </style><!--End Head user entered-->
+    </head>
+    <body>
+      <center class="wrapper" data-link-color="#99FF01" data-body-style="font-size:16px; font-family:inherit; color:#ffffff; background-color:#1d1D1D;">
+        <div class="webkit">
+          <table cellpadding="0" cellspacing="0" border="0" width="100%" class="wrapper" bgcolor="#1d1D1D">
+            <tr>
+              <td valign="top" bgcolor="#1d1D1D" width="100%">
+                <table width="100%" role="content-container" class="outer" align="center" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td width="100%">
+                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                          <td>
+                            <!--[if mso]>
+    <center>
+    <table><tr><td width="600">
+  <![endif]-->
+                                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%; max-width:600px;" align="center">
+                                      <tr>
+                                        <td role="modules-container" style="padding:0px 0px 0px 0px; color:#ffffff; text-align:left;" bgcolor="#000000" width="100%" align="left"><table class="module preheader preheader-hide" role="module" data-type="preheader" border="0" cellpadding="0" cellspacing="0" width="100%" style="display: none !important; mso-hide: all; visibility: hidden; opacity: 0; color: transparent; height: 0; width: 0;">
+    <tr>
+      <td role="module-content">
+        <p>1,000,000 images generated: Sogni Supernet showcases speed, efficiency, and innovation during the Testnet phase.</p>
+      </td>
+    </tr>
+  </table><table class="module" role="module" data-type="spacer" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="bdzDb4B4pnnez4W7L1KpxJ">
+      <tbody><tr>
+        <td style="padding:0px 0px 15px 0px;" role="module-content" bgcolor="#000000">
+        </td>
+      </tr>
+    </tbody></table><table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="97b59c4c-5fc4-484d-a56d-c085abe351c6">
+    <tbody>
+      <tr>
+        <td height="100%" valign="top" role="module-content"><div style="display: flex; align-items: center; justify-content: space-between; padding: 10px 20px 20px;">
+    <!-- Imagen y texto "/Sync" juntos -->
+    <div style="display: flex; align-items: center; gap: 5px;">
+        <img src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/d2884f6c-4924-48ca-a7e6-a0c6bba72f16/1657x636.png" alt="Newsletter Image" class="responsive-image" style="height: calc(16px * 1.2); width: auto;">
+        <span style="font-family: 'Inter', sans-serif; font-size: 16px; color: #a6a6a6;">/Sync</span>
+    </div>
+
+    <!-- Texto alineado a la derecha -->
+    <div style="font-family: 'Inter', sans-serif; text-align: right; padding-left: 10px; white-space: nowrap;">
+        <span style="font-size: 16px; color: #a6a6a6;">Jan '25 | Volume 01</span>
+    </div>
+</div>
+
+<style>
+    /* Estilos generales */
+    .responsive-image {
+        height: calc(24px * 1.2); /* La imagen es 20% más grande que el texto */
+        width: auto; /* Mantiene la proporción de la imagen */
+    }
+
+    /* Ajustes para pantallas medianas */
+    @media (max-width: 768px) {
+        .responsive-image {
+            height: calc(14px * 1.2); /* Imagen ajustada al tamaño relativo del texto */
+        }
+
+        span {
+            font-size: 14px; /* Tamaño reducido del texto en tablets */
+        }
+    }
+
+    /* Ajustes para pantallas pequeñas */
+    @media (max-width: 480px) {
+        .responsive-image {
+            height: calc(12px * 1.2); /* Imagen ajustada al tamaño relativo del texto */
+        }
+
+        span {
+            font-size: 12px; /* Texto más pequeño para móviles */
+        }
+    }
+</style></td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="97b59c4c-5fc4-484d-a56d-c085abe351c6.1">
+    <tbody>
+      <tr>
+        <td height="100%" valign="top" role="module-content"><div class="main-title-container" style="padding-left: 20px;">
+    <h1 class="main-title">1,000,000 Images</h1>
+    <p class="subtitle">Created with Sogni Supernet Processing ✨</p>
+</div></td>
+      </tr>
+    </tbody>
+  </table><table class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="a5845e9a-1769-4612-91c3-2fbd5d0be957">
+    <tbody>
+      <tr>
+        <td style="font-size:6px; line-height:10px; padding:12px 0px 20px 0px;" valign="top" align="center">
+          <img class="max-width" border="0" style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px; max-width:100% !important; width:100%; height:auto !important;" width="600" alt="" data-proportionally-constrained="true" data-responsive="true" src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/3538f280-56a2-41c7-836c-94fb509a6581/1024x768.png">
+        </td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="d6c8aadf-1b3c-4796-820a-8bfb855afebc" data-mc-module-version="2019-10-22">
+    <tbody>
+      <tr>
+        <td style="padding:18px 20px 18px 20px; line-height:23px; text-align:inherit;" height="100%" valign="top" bgcolor="" role="module-content"><div><div style="font-family: inherit; text-align: inherit"><span style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt; font-family: Arial, sans-serif; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; color: #a6a6a6; font-size: 16px">Welcome to to the first Sogni /Sync our weekly newsletter on the latest and greatest with Sogni AI.</span></div>
+<div style="font-family: inherit; text-align: inherit"><br></div>
+<div style="font-family: inherit; text-align: inherit"><span style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt; font-family: Arial, sans-serif; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; color: #a6a6a6; font-size: 16px">We’re thrilled to announce that </span><span style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt; font-family: Arial, sans-serif; background-color: transparent; font-weight: 700; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; color: #a6a6a6; font-size: 16px"><strong>Sogni Supernet</strong></span><span style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt; font-family: Arial, sans-serif; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; color: #a6a6a6; font-size: 16px"> has reached an incredible milestone: </span><span style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt; font-family: Arial, sans-serif; background-color: transparent; font-weight: 700; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; color: #a6a6a6; font-size: 16px"><strong>1,000,000 images generated</strong></span><span style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt; font-family: Arial, sans-serif; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; color: #a6a6a6; font-size: 16px"> during the Testnet phase of our launch. This achievement highlights the unparalleled speed, efficiency, and accessibility of Sogni’s Decentralized Physical Infrastructure Network (DePIN) for unleashing human creativity.&nbsp;</span></div>
+<div style="font-family: inherit; text-align: inherit"><br></div>
+<div style="font-family: inherit; text-align: inherit"><span style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt; font-family: Arial, sans-serif; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; color: #a6a6a6; font-size: 16px">Artists and innovators from around the world have embraced the </span><span style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt; font-family: Arial, sans-serif; background-color: transparent; font-weight: 700; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; color: #a6a6a6; font-size: 16px">Supernet processing option </span><span style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt; font-family: Arial, sans-serif; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; color: #a6a6a6; font-size: 16px">to enjoy the fastest and most parallel rendering on the market. With our Testnet evolving rapidly, the community continues to grow, and we’re excited to tell you about even more powerful tools to fuel your creative journey below.</span></div>
+<div style="font-family: inherit; text-align: inherit"><br></div>
+<div style="font-family: inherit; text-align: inherit"><span style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt; font-family: Arial, sans-serif; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; color: #a6a6a6; font-size: 16px">Thank you for being part of this milestone—we couldn’t have done it without you!</span></div><div></div></div></td>
+      </tr>
+    </tbody>
+  </table><table border="0" cellpadding="0" cellspacing="0" class="module" data-role="module-button" data-type="button" role="module" style="table-layout:fixed;" width="100%" data-muid="e33428a0-467a-4ec4-a8a3-f7173a8072af.2.1">
+      <tbody>
+        <tr>
+          <td align="left" bgcolor="" class="outer-td" style="padding:10px 20px 30px 20px;">
+            <table border="0" cellpadding="0" cellspacing="0" class="wrapper-mobile" style="text-align:center;">
+              <tbody>
+                <tr>
+                <td align="center" bgcolor="#000000" class="inner-td" style="border-radius:6px; font-size:16px; text-align:left; background-color:inherit;">
+                  <a href="https://www.sogni.ai/supernet" style="background-color:#000000; border:1px solid #99FF01; border-color:#99FF01; border-radius:9px; border-width:1px; color:#ffffff; display:inline-block; font-size:14px; font-weight:300; letter-spacing:0px; line-height:normal; padding:12px 12px 12px 12px; text-align:center; text-decoration:none; border-style:solid; font-family:arial,helvetica,sans-serif;" target="_blank">Learn more about Supernet</a>
+                </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table><table class="module" role="module" data-type="divider" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="0cb32794-5360-4317-943a-59a86dde4560.2.2">
+    <tbody>
+      <tr>
+        <td style="padding:20px 0px 10px 0px;" role="module-content" height="100%" valign="top" bgcolor="">
+          <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" height="1px" style="line-height:1px; font-size:1px;">
+            <tbody>
+              <tr>
+                <td style="padding:0px 0px 1px 0px;" bgcolor="#525155"></td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="bA2FfEE6abadx6yKoMr3F9.2.2.4.1.1.1.1.2">
+    <tbody>
+      <tr>
+        <td height="100%" valign="top" role="module-content"><div class="section-name" style="padding-left: 20px;">
+    NEW RELEASE
+</div></td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="bA2FfEE6abadx6yKoMr3F9.2.2.4.2.1.1.2">
+    <tbody>
+      <tr>
+        <td height="100%" valign="top" role="module-content"><div class="section-title-container" style="padding-left: 20px;">
+    <h2 class="section-title">Sogni Web (beta) is Here!</h2>
+    <p class="section-title-small">~WEB-DAPP.Beta ‹Testnet: LIVE›</p>
+</div></td>
+      </tr>
+    </tbody>
+  </table><table class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="325a5849-9963-4226-937e-4ecae72574c5">
+    <tbody>
+      <tr>
+        <td style="font-size:6px; line-height:10px; padding:20px 0px 0px 20px;" valign="top" align="center">
+          <img class="max-width" border="0" style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px; max-width:100% !important; width:100%; height:auto !important;" width="600" alt="" data-proportionally-constrained="true" data-responsive="true" src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/8415a00c-3194-4bec-9213-da3047a3e647/1688x1019.jpg">
+        </td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="582413a6-fba9-4043-b7a7-d39b89d843df" data-mc-module-version="2019-10-22">
+    <tbody>
+      <tr>
+        <td style="padding:18px 20px 18px 20px; line-height:23px; text-align:inherit;" height="100%" valign="top" bgcolor="" role="module-content"><div><div style="font-family: inherit; text-align: inherit"><span style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt; font-family: Arial, sans-serif; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; color: #a6a6a6; font-size: 16px">Say hello to </span><span style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt; font-family: Arial, sans-serif; background-color: transparent; font-weight: 700; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; color: #a6a6a6; font-size: 16px"><strong>Sogni Web (Beta)</strong></span><span style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt; font-family: Arial, sans-serif; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; color: #a6a6a6; font-size: 16px">—a powerful browser-based, cross-platform tool for seamless creativity. Designed to work effortlessly on Android, Windows, macOS, and iOS, Sogni Web makes it easy to create wherever inspiration strikes, no downloads required.</span></div>
+<div style="font-family: inherit; text-align: inherit"><span style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt; font-family: Arial, sans-serif; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; color: #a6a6a6; font-size: 16px">Experience an advanced suite of tools built to enhance your creative process. With unmatched performance, cutting-edge features, and a commitment to privacy, </span><span style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt; font-family: Arial, sans-serif; background-color: transparent; font-weight: 700; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; color: #a6a6a6; font-size: 16px"><strong>Sogni Web</strong></span><span style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt; font-family: Arial, sans-serif; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; color: #a6a6a6; font-size: 16px"> empowers you to make every creation uniquely yours.</span></div><div></div></div></td>
+      </tr>
+    </tbody>
+  </table><table border="0" cellpadding="0" cellspacing="0" class="module" data-role="module-button" data-type="button" role="module" style="table-layout:fixed;" width="100%" data-muid="e33428a0-467a-4ec4-a8a3-f7173a8072af.2">
+      <tbody>
+        <tr>
+          <td align="left" bgcolor="" class="outer-td" style="padding:10px 20px 30px 20px;">
+            <table border="0" cellpadding="0" cellspacing="0" class="wrapper-mobile" style="text-align:center;">
+              <tbody>
+                <tr>
+                <td align="center" bgcolor="#000000" class="inner-td" style="border-radius:6px; font-size:16px; text-align:left; background-color:inherit;">
+                  <a href="https://app.sogni.ai/creator" style="background-color:#000000; border:1px solid #99FF01; border-color:#99FF01; border-radius:9px; border-width:1px; color:#ffffff; display:inline-block; font-size:14px; font-weight:300; letter-spacing:0px; line-height:normal; padding:12px 12px 12px 12px; text-align:center; text-decoration:none; border-style:solid; font-family:arial,helvetica,sans-serif;" target="_blank">Get Creative</a>
+                </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table><table class="module" role="module" data-type="divider" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="0cb32794-5360-4317-943a-59a86dde4560.2">
+    <tbody>
+      <tr>
+        <td style="padding:20px 0px 10px 0px;" role="module-content" height="100%" valign="top" bgcolor="">
+          <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" height="1px" style="line-height:1px; font-size:1px;">
+            <tbody>
+              <tr>
+                <td style="padding:0px 0px 1px 0px;" bgcolor="#525155"></td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="bA2FfEE6abadx6yKoMr3F9.2.2.4.1.1.1.1.1.2">
+    <tbody>
+      <tr>
+        <td height="100%" valign="top" role="module-content"><div class="section-name" style="padding-left: 20px;">
+    FEATURE SPOTLIGHT
+</div></td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="bA2FfEE6abadx6yKoMr3F9.2.2.4.2.1.1.1">
+    <tbody>
+      <tr>
+        <td height="100%" valign="top" role="module-content"><div class="section-title-container" style="padding-left: 20px;">
+    <h2 class="section-title">Sketch a Masterpiece</h2>
+    <p class="section-title-small">From Simple Sketches to Stunning Creations</p>
+</div></td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="0b6bb8db-44c7-44f7-912a-0b2c314534f2" data-mc-module-version="2019-10-22">
+    <tbody>
+      <tr>
+        <td style="padding:18px 20px 18px 20px; line-height:23px; text-align:inherit;" height="100%" valign="top" bgcolor="" role="module-content"><div><div style="font-family: inherit; text-align: inherit"><span style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt; font-family: Arial, sans-serif; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; color: #a6a6a6; font-size: 16px">Take your creativity to the next level with the new Sketch feature on Sogni Pocket for iPhone and iPad. Whether you're sketching out rough ideas or detailed concepts, this feature lets you provide precise guidance to the model, ensuring your vision comes to life exactly as you imagine.</span></div>
+<div style="font-family: inherit; text-align: inherit"><br></div>
+<div style="font-family: inherit; text-align: inherit"><span style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt; font-family: Arial, sans-serif; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; color: #a6a6a6; font-size: 16px">By combining your sketches with the power of an additional ControlNet model, you gain enhanced control over your creations, transforming simple lines into stunning, finalized art. It’s creativity, reimagined—giving you the tools to craft masterpieces on the go.</span></div><div></div></div></td>
+      </tr>
+    </tbody>
+  </table><table class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="a19673c9-e006-4599-b947-7606181cd5f1">
+    <tbody>
+      <tr>
+        <td style="font-size:6px; line-height:10px; padding:20px 0px 20px 0px;" valign="top" align="center">
+          <img class="max-width" border="0" style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px; max-width:100% !important; width:100%; height:auto !important;" width="600" alt="" data-proportionally-constrained="true" data-responsive="true" src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/8b9908ca-205a-47b6-87e0-a4f63fe6a6e1/1200x675.png">
+        </td>
+      </tr>
+    </tbody>
+  </table><table class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="1328fbe0-5f83-40c4-85a5-c64ea760521b.1">
+    <tbody>
+      <tr>
+        <td style="font-size:6px; line-height:10px; padding:10px 20px 40px 20px;" valign="top" align="left">
+          
+        <a href="https://apps.apple.com/us/app/sogni-ai-art-generator/id6450021857"><img class="max-width" border="0" style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px; max-width:25% !important; width:25%; height:auto !important;" width="150" alt="" data-proportionally-constrained="false" data-responsive="true" src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/383ecf92-cc78-4ef4-bf0e-1b5382f7c6bd/2560x759.png"></a></td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="bA2FfEE6abadx6yKoMr3F9.2.2.4.2.1.1.1.1">
+    <tbody>
+      <tr>
+        <td height="100%" valign="top" role="module-content"><div class="section-title-container" style="padding-left: 20px;">
+    <h2 class="section-title">One-click enhanced Imaging 🪄</h2>
+</div></td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="815be953-3154-495f-9d66-857289d0c765" data-mc-module-version="2019-10-22">
+    <tbody>
+      <tr>
+        <td style="padding:18px 20px 18px 20px; line-height:23px; text-align:inherit;" height="100%" valign="top" bgcolor="" role="module-content"><div><div style="font-family: inherit; text-align: inherit"><span style="font-family: Arial, sans-serif; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; color: #a6a6a6; font-size: 16px">Give your creations a flawless finish with just one click. Perfect faces, refine styles, and boost overall quality—especially when working with older or simpler models. Turn great images into extraordinary masterpieces effortlessly.</span></div><div></div></div></td>
+      </tr>
+    </tbody>
+  </table><table class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="6916dcc5-c2cc-4215-88a1-620aea19668b">
+    <tbody>
+      <tr>
+        <td style="font-size:6px; line-height:10px; padding:20px 0px 20px 0px;" valign="top" align="center">
+          <img class="max-width" border="0" style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px; max-width:100% !important; width:100%; height:auto !important;" width="600" alt="" data-proportionally-constrained="true" data-responsive="true" src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/c29fadbe-15be-40fa-9567-86735dce8480/1200x675.png">
+        </td>
+      </tr>
+    </tbody>
+  </table><table class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="1328fbe0-5f83-40c4-85a5-c64ea760521b.2">
+    <tbody>
+      <tr>
+        <td style="font-size:6px; line-height:10px; padding:10px 20px 40px 20px;" valign="top" align="left">
+          
+        <a href="https://apps.apple.com/us/app/sogni-ai-art-generator/id6450021857"><img class="max-width" border="0" style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px; max-width:25% !important; width:25%; height:auto !important;" width="150" alt="" data-proportionally-constrained="true" data-responsive="true" src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/383ecf92-cc78-4ef4-bf0e-1b5382f7c6bd/2560x759.png"></a></td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="divider" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="0cb32794-5360-4317-943a-59a86dde4560.1">
+    <tbody>
+      <tr>
+        <td style="padding:25px 0px 25px 0px;" role="module-content" height="100%" valign="top" bgcolor="">
+          <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" height="1px" style="line-height:1px; font-size:1px;">
+            <tbody>
+              <tr>
+                <td style="padding:0px 0px 1px 0px;" bgcolor="#525155"></td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="bA2FfEE6abadx6yKoMr3F9.2.2.4.2.1.1.1.1.1">
+    <tbody>
+      <tr>
+        <td height="100%" valign="top" role="module-content"><div class="section-title-container" style="padding-left: 20px;">
+    <h2 class="section-title">Take Control of Your Creative Journey</h2>
+</div></td>
+      </tr>
+    </tbody>
+  </table><table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" role="module" data-type="columns" style="padding:0px 0px 0px 0px;" bgcolor="#000000" data-distribution="1,2">
+    <tbody>
+      <tr role="module-content">
+        <td height="100%" valign="top"><table width="186" style="width:186px; border-spacing:0; border-collapse:collapse; margin:0px 20px 0px 0px;" cellpadding="0" cellspacing="0" align="left" border="0" bgcolor="" class="column column-0">
+      <tbody>
+        <tr>
+          <td style="padding:0px;margin:0px;border-spacing:0;"><table class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="d2b3989b-bf20-48e4-8722-e79499bc4827">
+    <tbody>
+      <tr>
+        <td style="font-size:6px; line-height:10px; padding:0px 0px 0px 0px;" valign="top" align="center">
+          <img class="max-width" border="0" style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px; max-width:80% !important; width:80%; height:auto !important;" width="149" alt="" data-proportionally-constrained="true" data-responsive="true" src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/aa163d9c-c944-4cb0-a02f-8386dd0c7eef/1024x1024.png">
+        </td>
+      </tr>
+    </tbody>
+  </table></td>
+        </tr>
+      </tbody>
+    </table><table width="373" style="width:373px; border-spacing:0; border-collapse:collapse; margin:0px 0px 0px 20px;" cellpadding="0" cellspacing="0" align="left" border="0" bgcolor="" class="column column-1">
+      <tbody>
+        <tr>
+          <td style="padding:0px;margin:0px;border-spacing:0;"><table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="73788420-4293-4e02-aa5f-aa2089008e58">
+    <tbody>
+      <tr>
+        <td height="100%" valign="top" role="module-content"><div class="module-text">
+    <h3 class="module-title" style="text-align: center;">
+        Sogni <strong>Studio Pro</strong> (macOS)
+    </h3>
+</div>
+
+<a href="https://www.sogni.ai/download" style="background-color: #000000; border: none; padding: 10px 20px; border-radius: 8px; display: flex; justify-content: center; align-items: center; font-family: 'Inter', sans-serif; font-size: 14px; color: #FFFFFF; text-decoration: none; cursor: pointer;">
+    Direct Download
+</a>
+
+</td>
+      </tr>
+    </tbody>
+  </table></td>
+        </tr>
+      </tbody>
+    </table></td>
+      </tr>
+    </tbody>
+  </table><table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" role="module" data-type="columns" style="padding:0px 0px 0px 0px;" bgcolor="#000000" data-distribution="1,2">
+    <tbody>
+      <tr role="module-content">
+        <td height="100%" valign="top"><table width="186" style="width:186px; border-spacing:0; border-collapse:collapse; margin:0px 20px 0px 0px;" cellpadding="0" cellspacing="0" align="left" border="0" bgcolor="" class="column column-0">
+      <tbody>
+        <tr>
+          <td style="padding:0px;margin:0px;border-spacing:0;"><table class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="d2b3989b-bf20-48e4-8722-e79499bc4827.2">
+    <tbody>
+      <tr>
+        <td style="font-size:6px; line-height:10px; padding:0px 0px 0px 0px;" valign="top" align="center">
+          <img class="max-width" border="0" style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px; max-width:80% !important; width:80%; height:auto !important;" width="149" alt="" data-proportionally-constrained="true" data-responsive="true" src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/aa163d9c-c944-4cb0-a02f-8386dd0c7eef/1024x1024.png">
+        </td>
+      </tr>
+    </tbody>
+  </table></td>
+        </tr>
+      </tbody>
+    </table><table width="373" style="width:373px; border-spacing:0; border-collapse:collapse; margin:0px 0px 0px 20px;" cellpadding="0" cellspacing="0" align="left" border="0" bgcolor="" class="column column-1">
+      <tbody>
+        <tr>
+          <td style="padding:0px;margin:0px;border-spacing:0;"><table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="9418c56d-0a91-496f-a988-52616e7ea517">
+    <tbody>
+      <tr>
+        <td height="100%" valign="top" role="module-content"><div class="module-text">
+    <!-- Module Title -->
+    <h3 class="module-title" style="text-align: center;">
+        Sogni <strong>Studio</strong> (macOS)
+    </h3>
+</div>
+
+<!-- Button Link -->
+<a href="https://apps.apple.com/us/app/sogni-ai-art-generator/id6450021857" style="text-decoration: none; display: block; text-align: center; margin: 20px auto;">
+    <button style="background-color: #000000; border: none; padding: 10px 20px; border-radius: 8px; display: flex; justify-content: center; align-items: center; max-width: 300px; margin: 0 auto; cursor: pointer;">
+        <img src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/383ecf92-cc78-4ef4-bf0e-1b5382f7c6bd/2560x759.png" style="width: 100%; max-width: 150px; height: auto; display: block;" alt="Download on App Store" class="button-image">
+    </button>
+</a>
+
+</td>
+      </tr>
+    </tbody>
+  </table></td>
+        </tr>
+      </tbody>
+    </table></td>
+      </tr>
+    </tbody>
+  </table><table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" role="module" data-type="columns" style="padding:0px 0px 0px 0px;" bgcolor="#000000" data-distribution="1,2">
+    <tbody>
+      <tr role="module-content">
+        <td height="100%" valign="top"><table width="186" style="width:186px; border-spacing:0; border-collapse:collapse; margin:0px 20px 0px 0px;" cellpadding="0" cellspacing="0" align="left" border="0" bgcolor="" class="column column-0">
+      <tbody>
+        <tr>
+          <td style="padding:0px;margin:0px;border-spacing:0;"><table class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="d2b3989b-bf20-48e4-8722-e79499bc4827.1">
+    <tbody>
+      <tr>
+        <td style="font-size:6px; line-height:10px; padding:0px 0px 0px 0px;" valign="top" align="center">
+          <img class="max-width" border="0" style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px; max-width:80% !important; width:80%; height:auto !important;" width="149" alt="" data-proportionally-constrained="true" data-responsive="true" src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/aa163d9c-c944-4cb0-a02f-8386dd0c7eef/1024x1024.png">
+        </td>
+      </tr>
+    </tbody>
+  </table></td>
+        </tr>
+      </tbody>
+    </table><table width="373" style="width:373px; border-spacing:0; border-collapse:collapse; margin:0px 0px 0px 20px;" cellpadding="0" cellspacing="0" align="left" border="0" bgcolor="" class="column column-1">
+      <tbody>
+        <tr>
+          <td style="padding:0px;margin:0px;border-spacing:0;"><table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="2b181285-3f7f-449f-a87c-947b2ca68e97">
+    <tbody>
+      <tr>
+        <td height="100%" valign="top" role="module-content"><div class="module-text">
+    <!-- Module Title -->
+    <h3 class="module-title" style="text-align: center;">
+        Sogni <span style="color: #F0008F;"><strong>Pocket</strong></span> (iOS)
+    </h3>
+</div>
+
+<!-- Button Link -->
+<a href="https://apps.apple.com/us/app/sogni-ai-art-generator/id6450021857" style="text-decoration: none;">
+    <button style="background-color: #000000; border: none; padding: 10px; border-radius: 8px; display: flex; justify-content: center; align-items: center; width: 100%; max-width: 300px; margin: 20px auto; cursor: pointer;">
+        <img src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/383ecf92-cc78-4ef4-bf0e-1b5382f7c6bd/2560x759.png" style="width: 100%; max-width: 150px; height: auto; display: block;" alt="Download on App Store" class="button-image">
+    </button>
+</a>
+</td>
+      </tr>
+    </tbody>
+  </table></td>
+        </tr>
+      </tbody>
+    </table></td>
+      </tr>
+    </tbody>
+  </table><table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" role="module" data-type="columns" style="padding:0px 0px 0px 0px;" bgcolor="#000000" data-distribution="1,2">
+    <tbody>
+      <tr role="module-content">
+        <td height="100%" valign="top"><table width="186" style="width:186px; border-spacing:0; border-collapse:collapse; margin:0px 20px 0px 0px;" cellpadding="0" cellspacing="0" align="left" border="0" bgcolor="" class="column column-0">
+      <tbody>
+        <tr>
+          <td style="padding:0px;margin:0px;border-spacing:0;"><table class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="d2b3989b-bf20-48e4-8722-e79499bc4827.1.1">
+    <tbody>
+      <tr>
+        <td style="font-size:6px; line-height:10px; padding:0px 0px 0px 0px;" valign="top" align="center">
+          <img class="max-width" border="0" style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px; max-width:80% !important; width:80%; height:auto !important;" width="149" alt="" data-proportionally-constrained="true" data-responsive="true" src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/aa163d9c-c944-4cb0-a02f-8386dd0c7eef/1024x1024.png">
+        </td>
+      </tr>
+    </tbody>
+  </table></td>
+        </tr>
+      </tbody>
+    </table><table width="373" style="width:373px; border-spacing:0; border-collapse:collapse; margin:0px 0px 0px 20px;" cellpadding="0" cellspacing="0" align="left" border="0" bgcolor="" class="column column-1">
+      <tbody>
+        <tr>
+          <td style="padding:0px;margin:0px;border-spacing:0;"><table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="4f3a8c76-cc70-436b-93a5-804969e98c6c">
+    <tbody>
+      <tr>
+        <td height="100%" valign="top" role="module-content">    <div class="module-text">
+    <h3 class="module-title" style="text-align: center;">Sogni<span style="color: #3D31FA;"> <strong> Web</strong></span> (Browser)</h3>
+     </div>
+   <a href="https://www.sogni.ai/download" style="background-color: #000000; border: none; padding: 10px 20px; border-radius: 8px; display: flex; justify-content: center; align-items: center; font-family: 'Inter', sans-serif; font-size: 14px; color: #FFFFFF; text-decoration: none; cursor: pointer;">
+    Launch Now
+</a>
+
+
+</td>
+      </tr>
+    </tbody>
+  </table></td>
+        </tr>
+      </tbody>
+    </table></td>
+      </tr>
+    </tbody>
+  </table><table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" role="module" data-type="columns" style="padding:10px 0px 10px 0px;" bgcolor="#000000" data-distribution="1,2">
+    <tbody>
+      <tr role="module-content">
+        <td height="100%" valign="top"><table width="186" style="width:186px; border-spacing:0; border-collapse:collapse; margin:0px 20px 0px 0px;" cellpadding="0" cellspacing="0" align="left" border="0" bgcolor="" class="column column-0">
+      <tbody>
+        <tr>
+          <td style="padding:0px;margin:0px;border-spacing:0;"><table class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="d2b3989b-bf20-48e4-8722-e79499bc4827.1.1.1">
+    <tbody>
+      <tr>
+        <td style="font-size:6px; line-height:10px; padding:12px 0px 12px 0px;" valign="top" align="center"><img class="max-width" border="0" style="display:block; color:#000000; border-radius:12px; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px; max-width:64% !important; width:64%; height:auto !important;" width="119" alt="" data-proportionally-constrained="true" data-responsive="true" src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/3e187d8b-d26f-4c19-a1ed-cd225d2e2307/320x320.jpeg"></td>
+      </tr>
+    </tbody>
+  </table></td>
+        </tr>
+      </tbody>
+    </table><table width="373" style="width:373px; border-spacing:0; border-collapse:collapse; margin:0px 0px 0px 20px;" cellpadding="0" cellspacing="0" align="left" border="0" bgcolor="" class="column column-1">
+      <tbody>
+        <tr>
+          <td style="padding:0px;margin:0px;border-spacing:0;"><table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="44cf9a68-368b-44bc-ad02-9ac03b7782ff">
+    <tbody>
+      <tr>
+        <td height="100%" valign="top" role="module-content"><div class="module-text" style="text-align: center; padding: 20px;">
+    <!-- Discord Button -->
+    <a href="https://discord.gg/2JjzA2zrrc" class="module-button-icon" style="display: inline-flex; align-items: center; justify-content: center; padding: 10px 20px; background-color: #000000; text-decoration: none; gap: 8px; border-radius: 8px; margin: 10px auto; font-family: 'Inter', sans-serif; font-size: 14px; color: #ffffff; cursor: pointer; max-width: 250px; width: 100%;">
+        <!-- Button Text -->
+        <span style="margin-right: 4px;">Launch Now</span>
+        <!-- Button Icon -->
+        <img src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/dde8c72d-0180-48ce-a884-0b5059c0bd6a/100x100.png" alt="Discord Icon" style="width: 20px; height: 20px; object-fit: contain;">
+    </a>
+
+    <!-- Telegram Button -->
+    <a href="https://t.me/SogniAIbot" class="module-button-icon" style="display: inline-flex; align-items: center; justify-content: center; padding: 10px 20px; background-color: #000000; text-decoration: none; gap: 8px; border-radius: 8px; margin: 10px auto; font-family: 'Inter', sans-serif; font-size: 14px; color: #ffffff; cursor: pointer; max-width: 250px; width: 100%;">
+        <!-- Button Text -->
+        <span style="margin-right: 4px;">Launch Now</span>
+        <!-- Button Icon -->
+        <img src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/f72a9b29-0ca6-4c8f-a043-28a16a5460e2/100x100.png" alt="Telegram Icon" style="width: 20px; height: 20px; object-fit: contain;">
+    </a>
+</div>
+</td>
+      </tr>
+    </tbody>
+  </table></td>
+        </tr>
+      </tbody>
+    </table></td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="divider" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="0cb32794-5360-4317-943a-59a86dde4560.2.1.1">
+    <tbody>
+      <tr>
+        <td style="padding:20px 0px 10px 0px;" role="module-content" height="100%" valign="top" bgcolor="">
+          <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" height="1px" style="line-height:1px; font-size:1px;">
+            <tbody>
+              <tr>
+                <td style="padding:0px 0px 1px 0px;" bgcolor="#525155"></td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="bA2FfEE6abadx6yKoMr3F9.2.2.4.1.1.1.1.1">
+    <tbody>
+      <tr>
+        <td height="100%" valign="top" role="module-content"><div class="section-name" style="padding-left: 20px;">
+    CONTESTS
+</div></td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="bA2FfEE6abadx6yKoMr3F9.2.2.4.2.1.1.1.2">
+    <tbody>
+      <tr>
+        <td height="100%" valign="top" role="module-content"><div class="section-title-container" style="padding-left: 20px;">
+    <h2 class="section-title">Ready to Win?</h2>
+    <p class="section-title-small">Join our Discord and participate in weekly design contests to sharpen your skills and earn exciting prizes!
+</p>
+</div></td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="b838c233-906f-4e5e-9b54-fb1201143668" data-mc-module-version="2019-10-22">
+    <tbody>
+      <tr>
+        <td style="padding:18px 20px 18px 20px; line-height:23px; text-align:inherit;" height="100%" valign="top" bgcolor="" role="module-content"><div><div style="font-family: inherit; text-align: inherit"><span style="font-family: Arial, sans-serif; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; color: #a6a6a6; font-size: 16px">Congratulations to the winners of last week’s contest, for their stunning take on the theme </span><span style="font-family: Arial, sans-serif; background-color: transparent; font-weight: 700; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; color: #a6a6a6; font-size: 16px">“</span><span style="font-family: Arial, sans-serif; background-color: transparent; font-weight: 700; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; color: #a6a6a6; font-size: 16px"><strong>A Canvas of Dreams-</strong></span><span style="font-family: Arial, sans-serif; background-color: transparent; font-weight: 700; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; color: #a6a6a6; font-size: 16px">💭”</span><span style="font-family: Arial, sans-serif; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; color: #a6a6a6; font-size: 16px">. Check out their incredible creations:</span></div><div></div></div></td>
+      </tr>
+    </tbody>
+  </table><table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" role="module" data-type="columns" style="padding:0px 0px 0px 0px;" bgcolor="#000000" data-distribution="1">
+    <tbody>
+      <tr role="module-content">
+        <td height="100%" valign="top"><table width="580" style="width:580px; border-spacing:0; border-collapse:collapse; margin:0px 10px 0px 10px;" cellpadding="0" cellspacing="0" align="left" border="0" bgcolor="" class="column column-0">
+      <tbody>
+        <tr>
+          <td style="padding:0px;margin:0px;border-spacing:0;"><table class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="uuHtheUgTpDa5XXu2RWfAX">
+    <tbody>
+      <tr>
+        <td style="font-size:6px; line-height:10px; padding:40px 40px 0px 40px;" valign="top" align="center"><img class="max-width" border="0" style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px; border-radius:12px; max-width:100% !important; width:100%; height:auto !important;" width="580" alt="" data-proportionally-constrained="true" data-responsive="true" src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/b1f470a2-dceb-4621-88e4-70ddf2460871/1024x1024.jpeg"></td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="68be84f0-840a-49eb-bc40-bc26dbe4a085" data-mc-module-version="2019-10-22">
+    <tbody>
+      <tr>
+        <td style="padding:10px 40px 18px 0px; line-height:20px; text-align:inherit;" height="100%" valign="top" bgcolor="" role="module-content"><div><div style="font-family: inherit; text-align: right"><span style="font-size: 14px; color: #a6a6a6; font-family: arial, helvetica, sans-serif">Winner: </span><span style="font-size: 14px; color: #a6a6a6; font-family: arial, helvetica, sans-serif"><strong>@Glad2B</strong></span></div><div></div></div></td>
+      </tr>
+    </tbody>
+  </table></td>
+        </tr>
+      </tbody>
+    </table></td>
+      </tr>
+    </tbody>
+  </table><table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" role="module" data-type="columns" style="padding:0px 0px 0px 0px;" bgcolor="#000000" data-distribution="1">
+    <tbody>
+      <tr role="module-content">
+        <td height="100%" valign="top"><table width="580" style="width:580px; border-spacing:0; border-collapse:collapse; margin:0px 10px 0px 10px;" cellpadding="0" cellspacing="0" align="left" border="0" bgcolor="" class="column column-0">
+      <tbody>
+        <tr>
+          <td style="padding:0px;margin:0px;border-spacing:0;"><table class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="uuHtheUgTpDa5XXu2RWfAX.1">
+    <tbody>
+      <tr>
+        <td style="font-size:6px; line-height:10px; padding:30px 40px 0px 40px;" valign="top" align="center"><img class="max-width" border="0" style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px; max-width:100% !important; width:100%; border-radius:12px; height:auto !important;" width="580" alt="" data-proportionally-constrained="true" data-responsive="true" src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/44419385-cc85-41d9-825d-a390896c9f75/1024x1024.jpeg"></td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="ac47de3d-dac1-44b1-9388-f95a77f4a2d4" data-mc-module-version="2019-10-22">
+    <tbody>
+      <tr>
+        <td style="padding:18px 40px 18px 0px; line-height:22px; text-align:inherit;" height="100%" valign="top" bgcolor="" role="module-content"><div><div style="font-family: inherit; text-align: right"><span style="font-size: 14px; font-family: arial, helvetica, sans-serif; color: #a6a6a6">Winner: </span><span style="font-size: 14px; font-family: arial, helvetica, sans-serif; color: #a6a6a6"><strong>@maclej.x.maka</strong></span></div><div></div></div></td>
+      </tr>
+    </tbody>
+  </table></td>
+        </tr>
+      </tbody>
+    </table></td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="1bdaeee9-dbfa-40ab-9da4-3de60f07dbd8" data-mc-module-version="2019-10-22">
+    <tbody>
+      <tr>
+        <td style="padding:18px 20px 18px 20px; line-height:23px; text-align:inherit;" height="100%" valign="top" bgcolor="" role="module-content"><div><div style="font-family: inherit; text-align: inherit"><span style="font-family: Arial, sans-serif; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; color: #a6a6a6; font-size: 16px">Think you’ve got what it takes to claim the next title? Join our Discord and showcase your skills in our monthly themed contests. Exciting prizes are up for grabs, and your masterpiece could be the next winner!</span></div><div></div></div></td>
+      </tr>
+    </tbody>
+  </table><table border="0" cellpadding="0" cellspacing="0" class="module" data-role="module-button" data-type="button" role="module" style="table-layout:fixed;" width="100%" data-muid="e33428a0-467a-4ec4-a8a3-f7173a8072af.1">
+      <tbody>
+        <tr>
+          <td align="left" bgcolor="" class="outer-td" style="padding:10px 20px 30px 20px;">
+            <table border="0" cellpadding="0" cellspacing="0" class="wrapper-mobile" style="text-align:center;">
+              <tbody>
+                <tr>
+                <td align="center" bgcolor="#000000" class="inner-td" style="border-radius:6px; font-size:16px; text-align:left; background-color:inherit;"><a href="https://discord.sogni.ai" style="background-color:#000000; border:1px solid #99FF01; border-color:#99FF01; border-radius:9px; border-width:1px; color:#ffffff; display:inline-block; font-size:14px; font-weight:300; letter-spacing:0px; line-height:normal; padding:12px 12px 12px 12px; text-align:center; text-decoration:none; border-style:solid; font-family:arial,helvetica,sans-serif;" target="_blank">Join The Contest on Discord</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table><table class="module" role="module" data-type="divider" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="0cb32794-5360-4317-943a-59a86dde4560.2.1.2">
+    <tbody>
+      <tr>
+        <td style="padding:20px 0px 10px 0px;" role="module-content" height="100%" valign="top" bgcolor="">
+          <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" height="1px" style="line-height:1px; font-size:1px;">
+            <tbody>
+              <tr>
+                <td style="padding:0px 0px 1px 0px;" bgcolor="#525155"></td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="bA2FfEE6abadx6yKoMr3F9.2.2.4.1.1.1.1.1.1">
+    <tbody>
+      <tr>
+        <td height="100%" valign="top" role="module-content"><div class="section-name" style="padding-left: 20px;">
+    TESTNET
+</div></td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="bA2FfEE6abadx6yKoMr3F9.2.2.4.2.1.1.1.2.1">
+    <tbody>
+      <tr>
+        <td height="100%" valign="top" role="module-content"><div class="section-title-container" style="padding-left: 20px;">
+    <h2 class="section-title">Climb The Leaderboard</h2>
+    <p class="section-title-small">Your Creativity, Your Power, Your Airdrop Rewards</p>
+</div></td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="48d944d9-2a56-414b-b585-e9e27b14b7ea" data-mc-module-version="2019-10-22">
+    <tbody>
+      <tr>
+        <td style="padding:18px 20px 18px 20px; line-height:23px; text-align:inherit;" height="100%" valign="top" bgcolor="" role="module-content"><div><div style="font-family: inherit; text-align: inherit"><span style="font-family: Arial, sans-serif; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; color: #a6a6a6; font-size: 16px">We’re gearing up to celebrate the Mainnet Token Launch with an exciting 20,000,000 SOGNI Token Airdrop! During this Testnet phase, the more you create, share, and contribute, the higher you’ll climb the leaderboards—and the greater your rewards!</span></div><div></div></div></td>
+      </tr>
+    </tbody>
+  </table><table border="0" cellpadding="0" cellspacing="0" class="module" data-role="module-button" data-type="button" role="module" style="table-layout:fixed;" width="100%" data-muid="e33428a0-467a-4ec4-a8a3-f7173a8072af.1.1.1">
+      <tbody>
+        <tr>
+          <td align="left" bgcolor="" class="outer-td" style="padding:10px 20px 30px 20px;">
+            <table border="0" cellpadding="0" cellspacing="0" class="wrapper-mobile" style="text-align:center;">
+              <tbody>
+                <tr>
+                <td align="center" bgcolor="#000000" class="inner-td" style="border-radius:6px; font-size:16px; text-align:left; background-color:inherit;">
+                  <a href="https://sogni.ai/leaderboard" style="background-color:#000000; border:1px solid #99FF01; border-color:#99FF01; border-radius:9px; border-width:1px; color:#ffffff; display:inline-block; font-size:14px; font-weight:300; letter-spacing:0px; line-height:normal; padding:12px 12px 12px 12px; text-align:center; text-decoration:none; border-style:solid; font-family:arial,helvetica,sans-serif;" target="_blank">View Leaderboards</a>
+                </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table><table class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="829b5c8f-42f0-4219-a6f6-5bc7eedc4f7a">
+    <tbody>
+      <tr>
+        <td style="font-size:6px; line-height:10px; padding:24px 0px 24px 0px;" valign="top" align="center">
+          
+        <a href="https://www.youtube.com/@SogniAI?sub_confirmation=1"><img class="max-width" border="0" style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px; max-width:100% !important; width:100%; height:auto !important;" width="600" alt="" data-proportionally-constrained="true" data-responsive="true" src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/30b28fb5-43cc-4ca9-b45b-b94c024f645d/1200x675.png"></a></td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="92729990-6098-45a6-b79c-6801d9848962" data-mc-module-version="2019-10-22">
+    <tbody>
+      <tr>
+        <td style="padding:18px 20px 18px 20px; line-height:23px; text-align:inherit;" height="100%" valign="top" bgcolor="" role="module-content"><div><div style="font-family: inherit; text-align: inherit"><span style="font-family: Arial, sans-serif; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; color: #a6a6a6; font-size: 16px">Have you checked out our YouTube channel? It has new in-depth features&nbsp; walkthrough and tutorial videos being released every Friday. Subscribe and hit the bell to not miss it!</span></div><div></div></div></td>
+      </tr>
+    </tbody>
+  </table><table border="0" cellpadding="0" cellspacing="0" class="module" data-role="module-button" data-type="button" role="module" style="table-layout:fixed;" width="100%" data-muid="e33428a0-467a-4ec4-a8a3-f7173a8072af.1.1.1.1">
+      <tbody>
+        <tr>
+          <td align="left" bgcolor="" class="outer-td" style="padding:10px 20px 30px 20px;">
+            <table border="0" cellpadding="0" cellspacing="0" class="wrapper-mobile" style="text-align:center;">
+              <tbody>
+                <tr>
+                <td align="center" bgcolor="#000000" class="inner-td" style="border-radius:6px; font-size:16px; text-align:left; background-color:inherit;">
+                  <a href="https://www.youtube.com/@SogniAI?sub_confirmation=1" style="background-color:#000000; border:1px solid #99FF01; border-color:#99FF01; border-radius:9px; border-width:1px; color:#ffffff; display:inline-block; font-size:14px; font-weight:300; letter-spacing:0px; line-height:normal; padding:12px 12px 12px 12px; text-align:center; text-decoration:none; border-style:solid; font-family:arial,helvetica,sans-serif;" target="_blank">Subscribe to Youtube Channel</a>
+                </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table><table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="bA2FfEE6abadx6yKoMr3F9.2.2.4.2.1.1.1.2.1.1">
+    <tbody>
+      <tr>
+        <td height="100%" valign="top" role="module-content"><div class="section-title-container" style="padding-left: 20px;">
+    <h2 class="section-title">Sogni SDK released!</h2>
+</div></td>
+      </tr>
+    </tbody>
+  </table><table class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="31c22b60-d78c-4e7e-b75c-b7d220c23703">
+    <tbody>
+      <tr>
+        <td style="font-size:6px; line-height:10px; padding:24px 0px 24px 0px;" valign="top" align="center">
+          
+        <a href="https://www.sogni.ai/sdk"><img class="max-width" border="0" style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px; max-width:100% !important; width:100%; height:auto !important;" width="600" alt="" data-proportionally-constrained="true" data-responsive="true" src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/6f3128c2-e145-4fcc-9c70-1cf91b142d53/1200x627.jpg"></a></td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="6c146080-9fcb-4985-b3a6-9f14c5bc860f" data-mc-module-version="2019-10-22">
+    <tbody>
+      <tr>
+        <td style="padding:18px 20px 18px 20px; line-height:22px; text-align:inherit;" height="100%" valign="top" bgcolor="" role="module-content"><div><div style="font-family: inherit; text-align: inherit"><span style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt; font-family: Arial, sans-serif; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; font-size: 16px; color: #a6a6a6">Are you a developer looking to integrate generative AI directly into your app or business? The Sogni Supernet SDK makes it easy to tap into our decentralized, high-speed AI rendering infrastructure. Explore comprehensive documentation, code examples, and best practices at </span><a href="https://www.sogni.ai/sdk"><span style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt; font-family: Arial, sans-serif; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; font-size: 16px; color: #a6a6a6">https://www.sogni.ai/sdk</span></a></div>
+<div style="font-family: inherit; text-align: inherit"><span style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt; font-family: Arial, sans-serif; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; font-size: 16px; color: #a6a6a6">&nbsp;</span></div>
+<div style="font-family: inherit; text-align: inherit"><span style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt; font-family: Arial, sans-serif; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; font-size: 16px; color: #a6a6a6">Build powerful, AI-enabled features without worrying about complex server setups—start innovating with the Sogni Supernet today! Email us at </span><a href="mailto:dreams@sogni.ai" title="&lt;span style=&quot;font-size: 11pt; font-family: Arial, sans-serif; color: rgb(17, 85, 204); background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;dreams@sogni.ai&lt;/span&gt;"><span style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt; text-decoration-line: underline; font-family: Arial, sans-serif; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-skip-ink: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; font-size: 16px; color: #a6a6a6">dreams@sogni.ai</span></a><span style="line-height: 1.38; margin-top: 12pt; margin-bottom: 12pt; font-family: Arial, sans-serif; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; font-size: 16px; color: #a6a6a6"> or pop into our Telegram or Discord community if you need a hand.</span><span style="font-size: 16px; color: #a6a6a6"><br>
+<br>
+</span></div><div></div></div></td>
+      </tr>
+    </tbody>
+  </table><table border="0" cellpadding="0" cellspacing="0" class="module" data-role="module-button" data-type="button" role="module" style="table-layout:fixed;" width="100%" data-muid="e33428a0-467a-4ec4-a8a3-f7173a8072af.1.1.1.1.2">
+      <tbody>
+        <tr>
+          <td align="left" bgcolor="" class="outer-td" style="padding:10px 20px 30px 20px;">
+            <table border="0" cellpadding="0" cellspacing="0" class="wrapper-mobile" style="text-align:center;">
+              <tbody>
+                <tr>
+                <td align="center" bgcolor="#000000" class="inner-td" style="border-radius:6px; font-size:16px; text-align:left; background-color:inherit;">
+                  <a href="https://www.sogni.ai/sdk" style="background-color:#000000; border:1px solid #99FF01; border-color:#99FF01; border-radius:9px; border-width:1px; color:#ffffff; display:inline-block; font-size:14px; font-weight:300; letter-spacing:0px; line-height:normal; padding:12px 12px 12px 12px; text-align:center; text-decoration:none; border-style:solid; font-family:arial,helvetica,sans-serif;" target="_blank">Learn More</a>
+                </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table><table class="module" role="module" data-type="divider" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="0cb32794-5360-4317-943a-59a86dde4560.2.1">
+    <tbody>
+      <tr>
+        <td style="padding:20px 0px 10px 0px;" role="module-content" height="100%" valign="top" bgcolor="">
+          <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" height="1px" style="line-height:1px; font-size:1px;">
+            <tbody>
+              <tr>
+                <td style="padding:0px 0px 1px 0px;" bgcolor="#525155"></td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="bA2FfEE6abadx6yKoMr3F9.2.2.4.1.1.1.1.1.1.1">
+    <tbody>
+      <tr>
+        <td height="100%" valign="top" role="module-content"><div class="section-name" style="padding-left: 20px;">
+    COMMUNITY
+</div></td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="bA2FfEE6abadx6yKoMr3F9.2.2.4.2.1.1.1.2.2">
+    <tbody>
+      <tr>
+        <td height="100%" valign="top" role="module-content"><div class="section-title-container" style="padding-left: 20px;">
+    <h2 class="section-title"> Join the new Sogni Telegram Channel
+    </h2>
+    <p class="section-title-small">Join the Conversation, Spark Your Imagination</p>
+</div></td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="032baffe-3d7d-4d55-be04-76a4e4f7aa26" data-mc-module-version="2019-10-22">
+    <tbody>
+      <tr>
+        <td style="padding:18px 20px 18px 20px; line-height:23px; text-align:inherit;" height="100%" valign="top" bgcolor="" role="module-content"><div><div style="font-family: inherit; text-align: inherit"><span style="font-family: Arial, sans-serif; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; font-size: 16px; color: #a6a6a6">Come hang out with us on Telegram! Share your art, swap tips and suggestions, discuss AI and creativity, and use our Sogni Sticker Bot to design your own sticker packs for all your chats. Plus, enjoy </span><span style="font-family: Arial, sans-serif; background-color: transparent; font-weight: 700; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; font-size: 16px; color: #a6a6a6">exclusive perks</span><span style="font-family: Arial, sans-serif; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-alternates: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; text-decoration-line: none; vertical-align: baseline; white-space-collapse: preserve; text-wrap-mode: wrap; font-size: 16px; color: #a6a6a6"> and connect with a vibrant community of creators.</span></div><div></div></div></td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="e33428a0-467a-4ec4-a8a3-f7173a8072af.1.1.1.1.1">
+    <tbody>
+      <tr>
+        <td height="100%" valign="top" role="module-content"><div class="cta-container" style="text-align: left; padding: 20px 20px 20px;">
+    <a href="https://t.me/sogniai" style="background-color:#000000; border:1px solid #99FF01; border-radius:9px; color:#ffffff; display:inline-flex; align-items:center; font-size:14px; font-weight:300; letter-spacing:0px; line-height:normal; padding:12px 16px; text-align:left; text-decoration:none; border-style:solid; font-family:arial,helvetica,sans-serif;" target="_blank">
+        Join the Conversation
+        <!-- Icono de Telegram -->
+        <img src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/f72a9b29-0ca6-4c8f-a043-28a16a5460e2/100x100.png" alt="Telegram Icon" style="width: 20px; height: 20px; margin-left: 8px; object-fit: contain;">
+    </a>
+</div></td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="divider" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="0cb32794-5360-4317-943a-59a86dde4560">
+    <tbody>
+      <tr>
+        <td style="padding:72px 0px 10px 0px;" role="module-content" height="100%" valign="top" bgcolor="">
+          <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" height="1px" style="line-height:1px; font-size:1px;">
+            <tbody>
+              <tr>
+                <td style="padding:0px 0px 1px 0px;" bgcolor="#525155"></td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="17f1ea4b-17bd-4374-b015-ec876cc042d9">
+    <tbody>
+      <tr>
+        <td height="100%" valign="top" role="module-content">
+<div class="social-media-icons" style="display: flex; justify-content: center; align-items: center; gap: 15px; padding: 10px 0 20px;"> 
+    <a href="https://discord.com/invite/2JjzA2zrrc" target="_blank" style="margin: 0 10px;">
+        <img src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/dde8c72d-0180-48ce-a884-0b5059c0bd6a/100x100.png" alt="Social Media Icon 7" width="32" height="32">
+    </a>
+    <a href="https://t.me/sogniai" target="_blank" style="margin: 0 10px;">
+        <img src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/f72a9b29-0ca6-4c8f-a043-28a16a5460e2/100x100.png" alt="Social Media Icon 2" width="32" height="32">
+    </a>
+    <a href="https://www.youtube.com/@SogniAI?sub_confirmation=1" target="_blank" style="margin: 0 10px;">
+        <img src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/c4bdbd34-9ee0-4cf4-807e-9294065e2803/100x100.png" alt="Social Media Icon 3" width="32" height="32">
+    </a>
+     <a href="https://www.instagram.com/sogni.ai/" target="_blank" style="margin: 0 10px;">
+        <img src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/316caddd-dba0-4f91-a92b-98a0e9c4bdfb/100x100.png" alt="Social Media Icon 6" width="32" height="32">
+    </a>
+    <a href="https://x.com/getsogni" target="_blank" style="margin: 0 10px;">
+        <img src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/efa17c04-3d0a-42c3-ad83-2fe8d5fead0b/100x100.png" alt="Social Media Icon 1" width="32" height="32">
+    </a>
+    <a href="https://www.linkedin.com/company/sogni-ai/" target="_blank" style="margin: 0 10px;">
+        <img src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/62cb84ce-25f7-4755-a1a2-c11449fc61b7/100x100.png" alt="Social Media Icon 5" width="32" height="32">
+    </a>
+    <a href="https://medium.com/sogni" target="_blank" style="margin: 0 10px;">
+        <img src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/2c83cc3a-c96c-4c88-ac02-8e8b7abbe081/100x100.png" alt="Social Media Icon 4" width="32" height="32">
+    </a>
+</div>
+  
+
+
+</td>
+      </tr>
+    </tbody>
+  </table><div data-role="module-unsubscribe" class="module unsubscribe-css__unsubscribe___2CDlR" role="module" data-type="unsubscribe" style="color:#ffffff; font-size:12px; line-height:22px; padding:16px 16px 0px 16px; text-align:center;" data-muid="GRteXBNz7UevhwJ6u6GXE"><div class="Unsubscribe--addressLine"></div><p style="font-family:arial,helvetica,sans-serif; font-size:12px; line-height:22px;"><a class="Unsubscribe--unsubscribeLink" href="{{{unsubscribe}}}" style="color:#bebdbd;">Unsubscribe</a></p></div><table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="686b751a-e756-415a-8609-c89a78d191f2">
+    <tbody>
+      <tr>
+        <td height="100%" valign="top" role="module-content"><div class="footer-legal" style="font-family: 'Inter', sans-serif; text-align: center; padding: 10px;">
+    <!-- Dirección -->
+    <span class="footer-address" style="color: #a6a6a6; font-size: 10px;">
+        WE&amp;ROBOT PTE. LTD. #60 PAYA LEBAR ROAD, #07-54 SINGAPORE 409051
+    </span>
+    <br>
+    <!-- Enlace de Privacy Policy -->
+    <a href="https://www.sogni.ai/privacy-policy" class="footer-privacy-link" style="color: #ffffff; font-size: 10px; text-decoration: none;" target="_blank" rel="noopener noreferrer">
+        Privacy Policy & Terms
+    </a>
+</div></td>
+      </tr>
+    </tbody>
+  </table><table class="module" role="module" data-type="spacer" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="f5F8P1n4pQyU8o7DNMMEyW">
+      <tbody><tr>
+        <td style="padding:0px 0px 30px 0px;" role="module-content" bgcolor="">
+        </td>
+      </tr>
+    </tbody></table></td>
+                                      </tr>
+                                    </table>
+                                    <!--[if mso]>
+                                  </td>
+                                </tr>
+                              </table>
+                            </center>
+                            <![endif]-->
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </center>
+    </body>
+  </html>
