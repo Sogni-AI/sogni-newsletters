@@ -7,7 +7,7 @@
  * 2. Extracts image URLs (png, jpg, gif) from <img> tags.
  * 3. Downloads the images to the ./assets/ folder, preserving folder structure (skips existing files).
  * 4. Rewrites image paths in the HTML to point to the ./assets/ folder.
- * 5. Overwrites the original HTML file with updated content.
+ * 5. Creates a backup "<file>.orig.html" and then overwrites the original HTML file with updated content.
  */
 
 const fs = require('fs');
@@ -51,6 +51,12 @@ const downloadFile = (url, dest) => {
 // Main function to process the HTML file
 const processHtmlFile = async (filePath) => {
   try {
+    // 1) Create a backup file first: "original.html" -> "original.orig.html"
+    const backupFilePath = filePath.replace(/(\.\w+)$/, '.orig$1');
+    fs.copyFileSync(filePath, backupFilePath);
+    console.log(`Backup created at: ${backupFilePath}`);
+
+    // 2) Load original HTML
     let htmlContent = fs.readFileSync(filePath, 'utf8');
 
     // Regex to match image URLs
@@ -87,10 +93,10 @@ const processHtmlFile = async (filePath) => {
       htmlContent = htmlContent.replace(imageUrl, `assets${urlPath}`);
     }
 
-    // Wait for all downloads to complete
+    // 3) Wait for all downloads to complete
     await Promise.all(downloads);
 
-    // Save the updated HTML file (destructive change)
+    // 4) Overwrite the original file with updated content
     fs.writeFileSync(filePath, htmlContent, 'utf8');
     console.log(`Updated HTML saved to: ${filePath}`);
   } catch (err) {
