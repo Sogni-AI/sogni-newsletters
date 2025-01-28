@@ -152,6 +152,7 @@ img {
     object-fit: cover;
     display: block;
 }
+
 .overlay {
     position: absolute;
     inset: 0;
@@ -161,11 +162,11 @@ img {
     justify-content: center;
     align-items: center;
     font-family: 'Inter', sans-serif;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.3s ease;
 }
 .square:hover .overlay {
-    opacity: 1;
+    opacity: 0;
 }
 
 /* Button (similar to newsletter style) */
@@ -260,7 +261,7 @@ img {
         grid-template-columns: 1fr;
     }
 }
-.coming-soon{
+.coming-soon {
     background-color: #CCCCC;
 }
 

@@ -23,7 +23,8 @@
     </style>
   <![endif]-->
 
-  <style type="text/css">
+   <style type="text/css">
+     span.device{display: block; font-weight: normal; font-size: 0.9em}
     /* General Reset & Styles */
     body, p, div {
       margin: 0;
@@ -274,7 +275,7 @@
         width: 50% !important;
         display: inline-block !important;
         vertical-align: top;
-      }
+       }
     }
     @media screen and (max-width: 320px) {
       /* If a device is narrower than 321px, then stack them (1 column) */
@@ -284,21 +285,6 @@
       }
     }
 
-    /* HIDE/SHOW for "Sogni Studio (macOS)" line break */
-    .desktop-version {
-      display: inline;
-    }
-    .mobile-version {
-      display: none;
-    }
-    @media screen and (max-width: 480px) {
-      .desktop-version {
-        display: none !important;
-      }
-      .mobile-version {
-        display: inline !important;
-      }
-    }
   </style>
 
   <!-- Import Google Fonts (some clients won't load them, but safe to include) -->
@@ -1140,34 +1126,64 @@
                                 <tbody>
                                   <tr>
                                     <td height="100%" valign="top" role="module-content">
-                                      <div class="section-name" style="padding-left: 20px;">
-                                        TEAM SPOTLIGHT
-                                      </div>
+                                        <div class="section-name" style="padding-left: 20px;">
+                                            TEAM SPOTLIGHT
+                                        </div>
                                     </td>
                                   </tr>
                                 </tbody>
                               </table>
+
                               <!-- Meet Chiara our newest team member -->
-                              <table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0"
-                                     width="100%">
-                                <tbody>
-                                  <tr>
-                                    <td height="100%" valign="top" role="module-content">
-                                      <div class="section-title-container" style="padding-left: 20px;">
-                                        <h2 class="section-title">Meet Chiara our newest team member</h2>
-                                      </div>
-                                    </td>
-                                  </tr>
-                                </tbody>
+                              <table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                  <tbody>
+                                      <tr>
+                                          <td height="100%" valign="top" role="module-content">
+                                              <div class="section-title-container" style="padding-left: 20px;">
+                                                  <h2 class="section-title">Meet Chiara, our newest team member</h2>
+                                              </div>
+                                          </td>
+                                      </tr>
+                                  </tbody>
                               </table>
-                              <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
-                                <div style="width: 66.666%; padding: 20px; flex: 1;font-family: Arial, sans-serif; color:#a6a6a6; font-size:16px;line-height: 1.6">
-                                  <p> Chiara thrives in the rapidly evolving world of Web3, bringing four years of experience crafting dynamic marketing strategies and forging partnerships across finance and tech. With a knack for storytelling and community engagement, she’s here to propel Sogni’s brand forward and spark creativity in every corner of our ecosystem. Find her on our Discord and Telegram and say hello!</p>
-                                </div>
-                                <div style="width: 33.333%; padding: 10px; text-align: left; flex: 1;">
-                                  <img src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/0b6430db-2fab-4d57-bf4f-5a3f478e9715/910x910.png" alt="Chiara's Profile" style="width: 100%; height: auto; max-width: 200; border: px solid #ccc; border-radius: 8px;">
-                                </div>
-                              </div>
+
+                              <!-- Intro paragraph about Chiara (above her image) -->
+                              <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+                                  <tr>
+                                      <td style="padding: 20px; font-family: Arial, sans-serif; color: #a6a6a6; font-size: 16px; line-height: 1.6;">
+                                          <p>
+                                              Chiara’s stepping in to lead our marketing and content efforts, bringing four years of experience in these fields 
+                                              within the Web3 ecosystem. With a knack for storytelling and community engagement, we can’t wait to see the creative 
+                                              spark she’ll bring to Sogni. Be sure to say hi on Discord or Telegram!
+                                          </p>
+                                      </td>
+                                  </tr>
+                              </table>
+
+                              <!-- Two-column table for Chiara's image (left) and her quote (right) -->
+                              <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+                                  <tr>
+                                      <!-- Left column: Chiara's image -->
+                                      <td width="33.333%" valign="top" style="padding: 10px; text-align: left;">
+                                          <img 
+                                              src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/0b6430db-2fab-4d57-bf4f-5a3f478e9715/910x910.png" 
+                                              alt="Chiara's Profile" 
+                                              style="width: 100%; max-width: 200px; height: auto; border-radius: 8px;"
+                                              />
+                                      </td>
+
+                                      <!-- Right column: Chiara's quote -->
+                                      <td width="66.666%" valign="top" style="padding: 20px; font-family: Arial, sans-serif; color: #a6a6a6; font-size: 16px; line-height: 1.6;">
+                                          <p>
+                                              <i>
+                                                  “I’m so excited to be part of Sogni’s journey. I had the chance to use the app back when CTO-ing memecoins, and I 
+                                                  was blown away by the speed and quality of the products. There are so many exciting new things we’re working on, 
+                                                  and I can’t wait for the community to see them. Sogni is going to take over the world—watch it!”
+                                              </i>
+                                          </p>
+                                      </td>
+                                  </tr>
+                              </table>
 
                               <!-- Divider -->
                               <table class="module" role="module" data-type="divider" border="0" cellpadding="0"
@@ -1533,7 +1549,7 @@
                                              src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/aa163d9c-c944-4cb0-a02f-8386dd0c7eef/1024x1024.png"
                                              alt="Sogni Studio Pro" />
                                       </div>
-                                      <h3 class="app-heading" style="text-align:center;">Sogni <strong>Studio Pro</strong> (macOS)</h3>
+                                      <h3 class="app-heading" style="text-align:center;">Sogni <strong>Studio Pro</strong> <span class="device">(macOS)</span></h3>
                                       <div class="app-button-container">
                                         <a href="https://www.sogni.ai/download"
                                            style="display:inline-block; background-color:#000000; border:1px solid #99FF01; border-radius:8px; color:#ffffff; font-size:14px; font-family:'Inter', sans-serif; padding:10px 20px; text-decoration:none; margin-top:10px;">
@@ -1551,12 +1567,7 @@
                                              alt="Sogni Studio" />
                                       </div>
                                       <h3 class="app-heading" style="text-align:center;">
-                                          <span class="desktop-version">
-                                              Sogni <strong>Studio</strong> (macOS)
-                                          </span>
-                                          <span class="mobile-version">
-                                              Sogni <strong>Studio</strong><br>(macOS)
-                                              </span>
+                                          Sogni <strong>Studio</strong><br><span class="device">(macOS)</span>
                                           </h3>
 
                                       <div class="app-button-container">
@@ -1583,7 +1594,7 @@
                                              src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/aa163d9c-c944-4cb0-a02f-8386dd0c7eef/1024x1024.png"
                                              alt="Sogni Pocket iOS" />
                                       </div>
-                                      <h3 class="app-heading" style="text-align:center;">Sogni <span style="color: #F0008F;"><strong>Pocket</strong></span> (iOS)</h3>
+                                      <h3 class="app-heading" style="text-align:center;">Sogni <span style="color: #F0008F;"><strong>Pocket</strong></span> <span class="device">(iOS)</span></h3>
                                       <div class="app-button-container">
                                         <a href="https://apps.apple.com/us/app/sogni-ai-art-generator/id6450021857" target="_blank"
                                            style="display:inline-block; margin-top:10px;">
@@ -1603,7 +1614,7 @@
                                              src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/aa163d9c-c944-4cb0-a02f-8386dd0c7eef/1024x1024.png"
                                              alt="Sogni Web" />
                                       </div>
-                                      <h3 class="app-heading" style="text-align:center;">Sogni <span style="color: #3D31FA;"><strong>Web</strong></span> (Browser)</h3>
+                                      <h3 class="app-heading" style="text-align:center;">Sogni <span style="color: #3D31FA;"><strong>Web</strong></span> <span class="device">(Browser)</span></h3>
                                       <div class="app-button-container" style="padding-bottom: 20px;">
                                         <a href="https://www.sogni.ai/download"
                                            style="display:inline-block; background-color:#000000; border:1px solid #99FF01; border-radius:8px; color:#ffffff; font-size:14px; font-family:'Inter', sans-serif; padding:10px 20px; text-decoration:none; margin-top:10px;">
