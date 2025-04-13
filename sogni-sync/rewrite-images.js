@@ -4,7 +4,7 @@
  *
  * This script:
  * 1. Reads the specified HTML file.
- * 2. Extracts image URLs (png, jpg, gif) from <img> tags.
+ * 2. Extracts image URLs (png, jpg, jpeg, gif) from <img> tags.
  * 3. Downloads the images to the ./assets/ folder, preserving folder structure (skips existing files).
  * 4. Rewrites image paths in the HTML to point to the ./assets/ folder.
  * 5. Creates a backup "<file>.orig.html" and then overwrites the original HTML file with updated content.
@@ -59,8 +59,8 @@ const processHtmlFile = async (filePath) => {
     // 2) Load original HTML
     let htmlContent = fs.readFileSync(filePath, 'utf8');
 
-    // Regex to match image URLs
-    const imageRegex = /<img[^>]+src=["']([^"']+\.(png|jpg|gif))["']/gi;
+    // Regex to match image URLs including png, jpg/jpeg, gif
+    const imageRegex = /<img[^>]+src=["']([^"']+\.(png|jpe?g|gif))["']/gi;
 
     let match;
     const downloads = [];
@@ -68,6 +68,13 @@ const processHtmlFile = async (filePath) => {
     // Process all image URLs
     while ((match = imageRegex.exec(htmlContent)) !== null) {
       const imageUrl = match[1];
+
+      // Skip already relative URLs (i.e. URLs that do not start with http:// or https://)
+      if (!/^https?:\/\//i.test(imageUrl)) {
+        console.log(`Skipping relative URL: ${imageUrl}`);
+        continue;
+      }
+
       const urlPath = new URL(imageUrl).pathname;
       const localPath = path.join(ASSETS_FOLDER, urlPath);
       const dirPath = path.dirname(localPath);
@@ -89,7 +96,7 @@ const processHtmlFile = async (filePath) => {
         );
       }
 
-      // Replace the URL in the HTML
+      // Replace the URL in the HTML to point to the assets folder
       htmlContent = htmlContent.replace(imageUrl, `assets${urlPath}`);
     }
 
