@@ -1,0 +1,1717 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html data-editor-version="2" class="sg-campaigns" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!--[if !mso]><!-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--<![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <!--[if (gte mso 9)|(IE)]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  <![endif]-->
+  <!--[if (gte mso 9)|(IE)]>
+    <style type="text/css">
+      body {width: 600px !important; margin: 0 auto !important;}
+      table {border-collapse: collapse;}
+      table, td {mso-table-lspace: 0pt; mso-table-rspace: 0pt;}
+      img {-ms-interpolation-mode: bicubic;}
+    </style>
+  <![endif]-->
+
+   <style type="text/css">
+     span.device{display: block; font-weight: normal; font-size: 0.9em}
+    /* General Reset & Styles */
+    body, p, div {
+      margin: 0;
+      padding: 0;
+      font-family: inherit;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      -moz-text-size-adjust: 100%;
+    }
+    body {
+      color: #ffffff;
+      background-color: #1D1D1D;
+    }
+    a {
+      color: #99FF01;
+      text-decoration: none;
+    }
+
+    a img{vertical-align: middle;}
+    table.wrapper {
+      width: 100% !important;
+      table-layout: fixed;
+    }
+
+    /* Remove display:block; from global img rules, to prevent issues */
+    img {
+      border: none;
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
+    }
+
+    /* Columns */
+    .column.of-2 {
+      width: 50%;
+    }
+    .column.of-3 {
+      width: 33.333%;
+    }
+    .column.of-4 {
+      width: 25%;
+    }
+
+    /* List Styles Reset */
+    ul ul ul ul  {
+      list-style-type: disc !important;
+    }
+    ol ol {
+      list-style-type: lower-roman !important;
+    }
+    ol ol ol {
+      list-style-type: lower-latin !important;
+    }
+    ol ol ol ol {
+      list-style-type: decimal !important;
+    }
+
+    /* Responsive Media Queries */
+    @media screen and (max-width:480px) {
+      .preheader .rightColumnContent,
+      .footer .rightColumnContent {
+        text-align: left !important;
+      }
+      .preheader .rightColumnContent div,
+      .preheader .rightColumnContent span,
+      .footer .rightColumnContent div,
+      .footer .rightColumnContent span {
+        text-align: left !important;
+      }
+      .preheader .rightColumnContent,
+      .preheader .leftColumnContent {
+        font-size: 80% !important;
+        padding: 5px 0;
+      }
+      table.wrapper-mobile {
+        width: 100% !important;
+        table-layout: fixed;
+      }
+      img.max-width {
+        height: auto !important;
+        max-width: 100% !important;
+      }
+      a.bulletproof-button {
+        display: block !important;
+        width: auto !important;
+        font-size: 80% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+      .columns {
+        width: 100% !important;
+      }
+      .column {
+        display: block !important;
+        width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+      .social-icon-column {
+        display: inline-block !important;
+      }
+    }
+
+    /* Additional Custom Styles */
+    /* Heading & Body */
+    .main-title-container {
+      padding: 20px;
+      color: #a6a6a6;
+      text-align: left;
+    }
+    .main-title {
+      font-size: 48px;
+      font-weight: bold;
+      color: #a6a6a6;
+      margin: 0;
+      line-height: 1.2;
+      font-family: 'Inter', sans-serif;
+    }
+    .subtitle {
+      font-size: 20px;
+      color: #a6a6a6;
+      margin: 5px 0 0 0;
+      line-height: 1.5;
+      font-family: 'Inter', sans-serif;
+    }
+    .section-title-container {
+      padding: 20px 0 16px 0px;
+      color: #ffffff;
+      text-align: left;
+    }
+    .section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 1.1;
+      margin: 0 0 8px 0; /* little margin below heading for breathing room */
+    }
+    .section-name {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      color: #a6a6a6;
+      font-weight: 500;
+      line-height: 1.1;
+      margin: 0 0 8px 0; /* little margin below heading for breathing room */
+    }
+    .section-title-small {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.2;
+      margin: 0 0 12px 0; /* extra space under subheader */
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    .text-module {
+      font-size: 16px;
+      color: #a6a6a6;
+      padding: 10px 20px;
+      line-height: 1.6;
+      text-align: left;
+    }
+    .text-module p {
+      margin-bottom: 20px;
+    }
+
+    /* Keep the button-link class, though we now do more inlined bulletproof styles */
+    .button-link {
+      background-color: #000000;
+      border: 1px solid #99FF01;
+      border-radius: 9px;
+      color: #ffffff;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 0px;
+      line-height: normal;
+      padding: 12px;
+      text-align: center;
+      text-decoration: none;
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Social Media Rework for broader support */
+    .app-icon-wrapper {
+      text-align: center;
+      padding: 0 0 0 0;
+    }
+    .app-icon {
+      width: 128px;
+      margin: 0 auto;
+    }
+    .app-heading {
+      text-align: center;
+      color: #ffffff;
+      margin: 10px 0 10px 0;
+      font-family: Satoshi,sans-serif;
+    }
+    .app-button-container {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .app-download-button {
+      background-color: #000000;
+      border: 1px solid #99FF01;
+      border-radius: 8px;
+      color: #ffffff;
+      display: inline-block;
+      font-size: 14px;
+      font-family: 'Inter', sans-serif;
+      padding: 10px 20px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 480px) {
+      .main-title {
+        font-size: 32px !important;
+      }
+      .app-icon {
+        width: 80px !important;
+      }
+      .social-icon img {
+        width: 16px !important;
+        height: 16px !important;
+      }
+    }
+    @media (max-width: 768px) {
+      div[style*="display: flex;"] {
+        flex-direction: column; /* Coloca texto e imagen en columnas verticales */
+        text-align: center; /* Centra el contenido */
+      }
+
+      div[style*="width: 66.666%;"] {
+        width: 100%; /* Texto ocupa todo el ancho */
+      }
+
+      div[style*="width: 33.333%;"] {
+        width: 100%; /* Imagen ocupa todo el ancho */
+      }
+    }
+
+    /* Wrap that section in .two-col-override so we can override the default .column {width:100%} on mobile. */
+    @media screen and (max-width: 480px) {
+      /* Force 2 columns if the screen is between 321px and 480px wide */
+      .two-col-override .column {
+        width: 50% !important;
+        display: inline-block !important;
+        vertical-align: top;
+       }
+    }
+    @media screen and (max-width: 320px) {
+      /* If a device is narrower than 321px, then stack them (1 column) */
+      .two-col-override .column {
+        width: 100% !important;
+        display: block !important;
+      }
+    }
+
+  </style>
+
+  <!-- Import Google Fonts (some clients won't load them, but safe to include) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body style="margin: 0; padding: 0; background-color:#1D1D1D; width:100% !important;">
+  <center class="wrapper" data-link-color="#99FF01" data-body-style="font-size:16px; font-family:inherit; color:#ffffff; background-color:#1D1D1D;">
+    <div class="webkit">
+      <table cellpadding="0" cellspacing="0" border="0" width="100%" class="wrapper" bgcolor="#1D1D1D" style="table-layout: fixed;">
+        <tr>
+          <td valign="top" bgcolor="#1D1D1D" width="100%">
+            <table width="100%" role="content-container" class="outer" align="center" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="100%">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td>
+                        <!--[if mso]>
+                        <center>
+                        <table><tr><td width="600">
+                        <![endif]-->
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%; max-width:600px;" align="center">
+                          <tr>
+                            <td role="modules-container" style="padding:0px 0px 0px 0px; color:#ffffff; text-align:left;" bgcolor="#000000" width="100%" align="left">
+
+                              <!-- Hidden Preheader -->
+                              <table class="module preheader preheader-hide" role="module" data-type="preheader" border="0" cellpadding="0" cellspacing="0" width="100%"
+                                     style="display:none !important; mso-hide:all; visibility:hidden; opacity:0; color:transparent; height:0; width:0;">
+                                <tr>
+                                  <td role="module-content">
+                                    <p>DeepSeek R1 challenges closed AI models, proving the future is open-source, decentralized, and user-controlled—expanding choices for all</p>
+                                  </td>
+                                </tr>
+                              </table>
+
+                              <!-- Spacer -->
+                              <table class="module" role="module" data-type="spacer" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="padding:0px 0px 15px 0px;" role="module-content" bgcolor="#000000"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <!-- Top bar with /Sync and Volume info -->
+                              <table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td height="100%" valign="top" role="module-content">
+                                      <div style="padding: 10px 20px 20px;">
+
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr>
+                                            <!-- Left side: Image + /Sync text -->
+                                            <td align="left" valign="middle">
+                                              <table border="0" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                  <td align="left" valign="middle" style="padding-right:5px;">
+                                                    <img src="assets/fd6a16d91e2adfdf/d2884f6c-4924-48ca-a7e6-a0c6bba72f16/1657x636.png"
+                                                         alt="Newsletter Image"
+                                                         style="height: calc(16px * 1.2); width: auto;">
+                                                  </td>
+                                                  <td align="left" valign="middle" style="font-family: 'Inter', sans-serif; font-size: 16px; color: #a6a6a6;">
+                                                    /Sync
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                            <!-- Right side: Jan '25 | Volume 02 -->
+                                            <td align="right" valign="middle" style="font-family: 'Inter', sans-serif; font-size:16px; color:#a6a6a6; white-space: nowrap;">
+                                              Feb '25 | Volume 03
+                                            </td>
+                                          </tr>
+                                        </table>
+
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <!-- Main Title -->
+                              <table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td height="100%" valign="top" role="module-content">
+                                      <div class="main-title-container" style="padding-left: 20px;">
+                                        <h1 class="main-title">Supernet goes Autonomous!? </h1>
+                                        <p class="subtitle">More open source goodness for your business and projects</p>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <!-- Big Banner Image -->
+                              <table class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0"
+                                     width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="font-size:6px; line-height:10px; padding:12px 0px 20px 0px;" valign="top" align="center">
+                                      <img class="max-width"
+                                           style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px;
+                                                  max-width:100% !important; width:100%; height:auto !important;"
+                                           width="600" alt=""
+                                           src="assets/fd6a16d91e2adfdf/b008a880-736d-4062-998a-53b048bfaaa8/768x576.png">
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <!-- Intro Text -->
+                              <table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0"
+                                     width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="padding:18px 20px 18px 20px; line-height:23px; text-align:inherit;" height="100%" valign="top" bgcolor=""
+                                        role="module-content">
+                                      <div>
+                                        <div style="font-family: Arial, sans-serif; color: #a6a6a6; font-size: 16px;">
+
+                                            <span>Hello Sogni Creators,<br><br>
+
+                                            The release of <strong>DeepSeek R1</strong>, an open-source AI model matching ChatGPT's performance, signals a critical shift: <strong>AI's future is open and user-controlled.</strong><br><br>
+
+This aligns perfectly with what we're building at Sogni—a <strong>decentralized GPU network</strong> that puts Creative AI in your hands. We don't need $100B corporate GPU networks when we have the power of <a href="https://cointelegraph.com/explained/decentralized-physical-infrastructure-network-depin-explained" src="_blank">DePIN</a>. Just as DeepSeek democratizes large language AI, Sogni democratizes creative computing power through our community powered network. We'll continue to integrate these open-source solutions to enhance your creative workflows—from intelligent prompt enhancement to model personalization and training.<br><br>
+
+Today, we're excited to announce three developments advancing this vision:
+
+                                            <ul>
+                                                <li><a href="#supernet-sdk" style="color: #99FF01; text-decoration: none;">Sogni Supernet SDK launch on Eliza</a></li>
+                                                <li><a href="#client-sdk" style="color: #99FF01; text-decoration: none;">Major SDK updates</a></li>
+                                                <li><a href="#partnerships" style="color: #99FF01; text-decoration: none;">New strategic partnerships</a></li>
+                                            </ul>
+
+Let's dive in!<br><br>
+
+-MAU
+
+                                           </span>
+                                        </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <!-- Divider -->
+                              <table class="module" role="module" data-type="divider" border="0" cellpadding="0" cellspacing="0"
+                                     width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="padding:20px 0px 10px 0px;" role="module-content" height="100%" valign="top" bgcolor="">
+                                      <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" height="1px"
+                                             style="line-height:1px; font-size:1px;">
+                                        <tbody>
+                                          <tr>
+                                            <td style="padding:0px 0px 1px 0px;" bgcolor="#525155"></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <!-- Section: NEW RELEASES -->
+                              <table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0"
+                                     width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td height="100%" valign="top" role="module-content">
+                                      <div class="section-name" style="padding-left: 20px;">
+                                        NEW RELEASES
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0"
+                                     width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td height="100%" valign="top" role="module-content">
+                                      <div id="supernet-sdk" class="section-title-container" style="padding-left: 20px; padding-bottom: 0">
+                                        <h2 class="section-title">Sogni Supernet Now in Eliza</h2>
+                                        <p class="section-title-small">We’re bringing decentralized image generation to AI Agents</p>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                               <table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0"
+                                     width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="padding:9px 20px 18px 20px; line-height:23px; text-align:inherit;"
+                                        height="100%" valign="top" bgcolor="" role="module-content">
+                                      <div>
+                                        <div style="font-family: Arial, sans-serif; color:#a6a6a6; font-size:16px;">
+                                          <span><a href="https://github.com/elizaOS/eliza" target="_blank">[ElizaOS]</a> an exciting open-source project bringing autonomous AI agents to open-source. These agents can interact across platforms like X, Telegram, and Discord with memory, reasoning, and extensibility in your hands. Now, with Sogni Supernet integrated, AI agents can tap into the speed and creativity of 100+ models in our ecosystem.</span><br><br>
+                                          <span>Want to give it a try? <a href="http://t.me/Slothicornbot" target="_blank">[Click here]</a> to speak to our very own Eliza Agent, Simon the Slothicorn, on Telegram. We’re enjoying the new coworker:</span>
+                                        </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!-- Section: IMAGE - NEW RELEASE -->
+                              <table class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0"
+                                     width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="font-size:6px; line-height:10px;" valign="top" align="center">
+                                      <img class="max-width"
+                                           style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px;
+                                                  max-width:100% !important; width:100%; height:auto !important;"
+                                           width="600" alt="Example Eliza conversation with Sogni Plugin"
+                                           src="assets/fd6a16d91e2adfdf/e5c3f5f0-15b4-4590-b25f-23e7fe2d0a48/1144x1212.png"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <p style="font-family:Arial, sans-serif; text-align:center; color:#a6a6a6; font-size:12px; padding: 10px 40px 18px 40px;">Example conversation with <a href="https://t.me/Slothicornbot" target="_blank">@slothicornbot</a> bot on Telegram</p>
+
+                              <table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0"
+                                     width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="padding:0 20px 18px 20px; line-height:23px; text-align:inherit;"
+                                        height="100%" valign="top" bgcolor="" role="module-content">
+                                      <div>
+                                        <div style="font-family: Arial, sans-serif; color:#a6a6a6; font-size:16px;">
+                                          <span>Interested in setting up your own Sogni-powered Eliza? Follow our <a href="https://github.com/Sogni-AI/eliza/tree/feature-add-sogni" target="_blank">[Github link]</a> and pop into our Telegram or Discord if you have questions. </span><br><br>
+                                        </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                               <table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0"
+                                     width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td height="100%" valign="top" role="module-content">
+                                      <div id="client-sdk" class="section-title-container" style="padding-left: 20px; padding-bottom: 0;">
+                                        <h2 class="section-title">Sogni Client SDK gets Size Presets</h2>
+                                        <p class="section-title-small">and custom dimensions!</p>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <!-- Albedobase Image -->
+                              <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" bgcolor="#000000">
+                                <tbody>
+                                  <tr>
+                                    <td width="580" align="left">
+                                      <table class="wrapper" role="module" data-type="image" border="0"
+                                             cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td style="font-size:6px; line-height:10px;"
+                                                valign="top" align="center">
+                                              <img class="max-width"
+                                                   style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif;
+                                                          font-size:16px; border-radius:12px; max-width:100% !important; width:100%; height:auto !important;"
+                                                   width="580" alt=""
+                                                   src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/b5a19446-8c16-4fc4-a454-fdd0a2fd8519/1280x533.jpeg">
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <table class="module" role="module" data-type="text" border="0"
+                                             cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td style="padding:10px 40px 18px 40px; line-height:20px; text-align:right;"
+                                                height="100%" valign="top" bgcolor="">
+                                              <div style="font-family:Arial, sans-serif; text-align:center; color:#a6a6a6; font-size:12px;">
+                                                Anamorphic widescreen from Flux on @sogni-ai/sogni-client:  2.0.1
+                                              </div>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0"
+                                     width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="padding:0 20px 18px 20px; line-height:23px; text-align:inherit;"
+                                        height="100%" valign="top" bgcolor="" role="module-content">
+                                      <div>
+                                        <div style="font-family: Arial, sans-serif; color:#a6a6a6; font-size:16px;">
+                                          <span>Mobile tall portraits for the 'Gram? Cinematic masterpieces in glorious letterbox’d aspect ratios? We've got those covered in <strong>8 new portrait and landscape size presets</strong> along with <strong>custom image dimensions up to 4 megapixels</strong> when using the Sogni API!</span><br><br>
+                                          <span>To install, developers can hit up our Sogni Client SDK <a href="https://www.npmjs.com/package/@sogni-ai/sogni-client" target="_blank"> [NPM Package]</a> and read up on the new <a href="https://github.com/Sogni-AI/sogni-client?tab=readme-ov-file#project-parameters" target="_blank"> [Project Parameters]</a> or <a href="https://github.com/Sogni-AI/sogni-client?tab=readme-ov-file#detecting-available-output-presets" target="_blank"> [available Output Presets]</a> on Github. <strong>Sogni UI Artists</strong> this means you’ll be getting this feature in Sogni Web, Sogni Studio, and Sogni Pocket very soon. Get those mind grapes ready!
+                                            </span>
+                                        </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <!-- Divider -->
+                              <table class="module" role="module" data-type="divider" border="0" cellpadding="0" cellspacing="0"
+                                     width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="padding:25px 0px 25px 0px;" role="module-content" height="100%" valign="top" bgcolor="">
+                                      <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" height="1px"
+                                             style="line-height:1px; font-size:1px;">
+                                        <tbody>
+                                          <tr>
+                                            <td style="padding:0px 0px 1px 0px;" bgcolor="#525155"></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                               <!-- Section: SOGNI STUDIO TIPS & TRICKS -->
+                              <table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0"
+                                     width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td height="100%" valign="top" role="module-content">
+                                      <div class="section-name" style="padding-left: 20px;">
+                                        SOGNI STUDIO TIPS & TRICKS
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0"
+                                     width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td height="100%" valign="top" role="module-content">
+                                      <div class="section-title-container" style="padding-left: 20px;">
+                                        <h2 class="section-title">Never Lose Your Creative Flow</h2>
+                                        <p class="section-title-small">Three seamless ways to save and restore your settings in Sogni</p>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                             <table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%">
+                             <tbody>
+                              <tr>
+                              <td style="padding:0 20px 18px 20px; line-height:23px; text-align:inherit; font-family: Arial, sans-serif; color:#a6a6a6; font-size:16px;" 
+                               height="100%" valign="top" role="module-content">
+                              <div>
+                              <span>At Sogni, we make it easy to save and revisit your creative process so you can refine, remix, and evolve your work effortlessly. Here are <strong>three ways</strong> to save and restore your settings for future sessions:</span><br><br>
+                              <span><strong>1. Save & Share as</strong> .sogni <strong>File</strong><br><br>
+                                  Store your entire project—including prompts, styles, steps, guidance, and even Guide and ControlNet images—as a .sogni file. Open it later to pick up where you left off or share it with other Sogni Studio users.</span>
+                               </div>
+                               </td>
+                               </tr>
+                               </tbody>
+                              </table>
+                                    <!-- Section: IMAGE - Save & Share as -->
+                              <table class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0"
+                                     width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="font-size:6px; line-height:10px; padding:20px 0px 0px 20px;" valign="top" align="center">
+                                      <a href="https://youtu.be/oXzvVahwfBs?si=2UkwyqDvrHt8F3cN" target="_blank" style="text-decoration: none;">
+                                        <img class="max-width"
+                                             style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px;border-radius: 8px;max-width:40% !important; width:40%; height:auto !important;"
+                                             width="600" alt=""
+                                             src="assets/fd6a16d91e2adfdf/ac1f5655-ee87-4347-87eb-38f15441b26f/370x388.png">
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%">
+                             <tbody>
+                              <tr>
+                              <td style="padding:18px 20px; line-height:23px; text-align:inherit; font-family: Arial, sans-serif; color:#a6a6a6; font-size:16px;" 
+                               height="100%" valign="top" role="module-content">
+                              <div>
+                              <span><strong>2. Save to Your Gallery</strong><br><br>
+                                  Love an image? Save it to your gallery, and you can instantly reload all the settings used to create it—or selectively restore only the ones you need.</span>
+                               </div>
+                               </td>
+                               </tr>
+                               </tbody>
+                              </table>
+                              <!-- Section: IMAGE - Save your Gallery -->
+                              <table class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0"
+                                     width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="font-size:6px; line-height:10px; padding:20px 0px 0px 20px;" valign="top" align="center">
+                                      <a href="https://youtu.be/oXzvVahwfBs?si=2UkwyqDvrHt8F3cN" target="_blank" style="text-decoration: none;">
+                                        <img class="max-width"
+                                             style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px;border-radius: 8px;max-width:90% !important; width:90%; height:auto !important;"
+                                             width="600" alt=""
+                                             src="assets/fd6a16d91e2adfdf/e294f336-704b-4bc7-b89b-3e3b953c474a/1121x1057.jpg">
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%">
+                             <tbody>
+                              <tr>
+                              <td style="padding:18px 20px; line-height:23px; text-align:inherit; font-family: Arial, sans-serif; color:#a6a6a6; font-size:16px;" 
+                               height="100%" valign="top" role="module-content">
+                              <div>
+                              <span><strong>3. Save Your Custom Styles</strong><br><br>
+                                  Modify built-in presets or craft your own style from scratch, then save it as a custom preset. Your saved styles stay right in the presets list, ready to apply instantly whenever you need them.</span>
+                               </div>
+                               </td>
+                               </tr>
+                               </tbody>
+                              </table>
+                              <!-- Section: IMAGE - Save Your Custom Styles -->
+                              <table class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0"
+                                     width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="font-size:6px; line-height:10px; padding:20px 0px 0px 20px;" valign="top" align="center">
+                                      <a href="https://youtu.be/oXzvVahwfBs?si=2UkwyqDvrHt8F3cN" target="_blank" style="text-decoration: none;">
+                                        <img class="max-width"
+                                             style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px;border-radius: 8px;max-width:90% !important; width:90%; height:auto !important;"
+                                             width="600" alt=""
+                                             src="assets/fd6a16d91e2adfdf/b15635c4-5fee-4d8c-96c7-80925f198554/1178x458.jpg">
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%">
+                             <tbody>
+                              <tr>
+                              <td style="padding:18px 20px; line-height:23px; text-align:inherit; font-family: Arial, sans-serif; color:#a6a6a6; font-size:16px;" 
+                               height="100%" valign="top" role="module-content">
+                              <div>
+                              <span>With Sogni, your creative process is always in your hands—effortlessly revisit, refine, and evolve your style to create work that’s unmistakably yours.</span>
+                               </div>
+                               </td>
+                               </tr>
+                               </tbody>
+                              </table>
+                               <!--Download Sogni Apps  -->
+                              <table border="0" cellpadding="0" cellspacing="0" class="module" data-role="module-button"
+                                     data-type="button" role="module" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td align="left" bgcolor="" class="outer-td" style="padding:10px 20px 30px 20px;">
+                                      <table border="0" cellpadding="0" cellspacing="0" class="wrapper-mobile" style="text-align:left;">
+                                        <tbody>
+                                          <tr>
+                                            <td align="center" class="inner-td" style="border-radius:6px;">
+                                              <a href="https://www.sogni.ai/download"
+                                                 style="display:inline-block; background-color:#000000; border:1px solid #99FF01; border-radius:9px; color:#ffffff; font-size:14px; font-weight:300; letter-spacing:0px; line-height:normal; padding:12px; text-align:center; text-decoration:none; font-family:'Inter', sans-serif; -webkit-text-size-adjust:none;">
+                                                <strong>Download Sogni Apps</strong>
+                                              </a>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+ 
+                 <!-- Divider -->
+                              <table class="module" role="module" data-type="divider" border="0" cellpadding="0" cellspacing="0"
+                                     width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="padding:25px 0px 25px 0px;" role="module-content" height="100%" valign="top" bgcolor="">
+                                      <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" height="1px"
+                                             style="line-height:1px; font-size:1px;">
+                                        <tbody>
+                                          <tr>
+                                            <td style="padding:0px 0px 1px 0px;" bgcolor="#525155"></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>              
+                              <!-- Section: VIDEOS -->
+                              <table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0"
+                                     width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td height="100%" valign="top" role="module-content">
+                                      <div class="section-name" style="padding-left: 20px;">
+                                        LATEST VIDEO TUTORIAL
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0"
+                                     width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td height="100%" valign="top" role="module-content">
+                                      <div class="section-title-container" style="padding-left: 20px;">
+                                        <h2 class="section-title">Transform Images Instantly with Pix2Pix ControlNet</h2>
+                                        <p class="section-title-small">Effortless AI-powered edits with simple text prompts</p>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0"
+                                     width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="padding:0 20px 18px 20px; line-height:23px; text-align:inherit;"
+                                        height="100%" valign="top" bgcolor="" role="module-content">
+                                      <div>
+                                        <div style="font-family: Arial, sans-serif; color:#a6a6a6; font-size:16px;">
+                                          <span>With <strong>Pix2Pix ControlNet</strong> in Sogni AI, simple text prompts become powerful editing tools. Effortlessly <strong>change colors, add details, and modify images</strong> with precision—no complex editing skills required. From turning a white Mustang into a sleek blue ride to giving a cowboy his signature hat, this feature unlocks new creative possibilities in just a few clicks. Try it now and take your AI editing to the next level!</span>
+                                        </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!-- Section: IMAGE - LEARN FROM JOSH -->
+                              <table class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0"
+                                     width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="font-size:6px; line-height:10px; padding:20px 0px 0px 20px;" valign="top" align="center">
+                                      <a href="https://youtu.be/oXzvVahwfBs?si=2UkwyqDvrHt8F3cN" target="_blank" style="text-decoration: none;">
+                                        <img class="max-width"
+                                             style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px;
+                                                    max-width:100% !important; width:100%; height:auto !important;"
+                                             width="600" alt=""
+                                             src="assets/fd6a16d91e2adfdf/d8a2c0b7-3e81-4def-9c28-41c1301a130f/960x540.png">
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!--Suscribe to YouTube  -->
+                              <table border="0" cellpadding="0" cellspacing="0" class="module" data-role="module-button"
+                                     data-type="button" role="module" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td align="left" bgcolor="" class="outer-td" style="padding:10px 20px 30px 20px;">
+                                      <table border="0" cellpadding="0" cellspacing="0" class="wrapper-mobile" style="text-align:left;">
+                                        <tbody>
+                                          <tr>
+                                            <td align="center" class="inner-td" style="border-radius:6px;">
+                                              <a href="https://www.youtube.com/@SogniAI"
+                                                 style="display:inline-block; background-color:#000000; border:1px solid #99FF01; border-radius:9px; color:#ffffff; font-size:14px; font-weight:300; letter-spacing:0px; line-height:normal; padding:12px; text-align:center; text-decoration:none; font-family:'Inter', sans-serif; -webkit-text-size-adjust:none;">
+                                                <strong>Subscribe to our YouTube channel</strong>
+                                              </a>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table> 
+                             
+                              <!-- Divider -->
+                              <table class="module" role="module" data-type="divider" border="0" cellpadding="0" cellspacing="0"
+                                     width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="padding:20px 0px 10px 0px;" role="module-content" height="100%" valign="top" bgcolor="">
+                                      <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" height="1px"
+                                             style="line-height:1px; font-size:1px;">
+                                        <tbody>
+                                          <tr>
+                                            <td style="padding:0px 0px 1px 0px;" bgcolor="#525155"></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!-- Section: IN THE NEWS -->
+                              <table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0"
+                                     width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td height="100%" valign="top" role="module-content">
+                                      <div class="section-name" style="padding-left: 20px;">
+                                        IN THE NEWS
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0"
+                                     width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td height="100%" valign="top" role="module-content">
+                                      <div id="partnerships" class="section-title-container" style="padding-left: 20px;">
+                                        <h2 class="section-title">Sogni Joins CoinMarketCap Accelerator
+</h2>
+                                        <p class="section-title-small">From the garage to the spotlight</p>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!-- In the news article image -->
+                              <table class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0"
+                                     width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="font-size:6px; line-height:10px; padding:20px 0px 20px 0px;" valign="top" align="center">
+                                      <img class="max-width"
+                                           style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px;
+                                                  max-width:100% !important; width:100%; height:auto !important;"
+                                           width="600" alt=""
+                                           src="assets/fd6a16d91e2adfdf/b56308e0-59f6-4f3b-aa73-cbbc36946601/600x337.png">
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0"
+                                     width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="padding:0 20px 18px 20px; line-height:23px; text-align:inherit;"
+                                        height="100%" valign="top" bgcolor="" role="module-content">
+                                      <div>
+                                        <div style="font-family: Arial, sans-serif; color:#a6a6a6; font-size:16px;">
+                                          <span><a href="https://coinmarketcap.com/events/cmc-labs/" target="_blank">CoinMarketCap Accelerator</a> is designed to empower top Web3 startups with strategic mentorship, exposure to millions of crypto users, and access to industry leaders and protocols. <strong>Admittance to this program is only achieved by the most promising new Web3 startups</strong> and we’re honored to be accepted.<br><br>
+                                             With CoinMarketCap’s massive reach, this partnership will give Sogni unprecedented visibility, from Learn & Earn campaigns to deep-dive features, live events, and more.<br><br> 
+                                            More big things ahead—stay tuned! 🚀
+                                           </span>
+                                        </div>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            
+                              <!-- Divider -->
+                              <table class="module" role="module" data-type="divider" border="0" cellpadding="0"
+                                     cellspacing="0" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="padding:20px 0px 10px 0px;" role="module-content" height="100%"
+                                        valign="top" bgcolor="">
+                                      <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%"
+                                             height="1px" style="line-height:1px; font-size:1px;">
+                                        <tbody>
+                                          <tr>
+                                            <td style="padding:0px 0px 1px 0px;" bgcolor="#525155"></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0"
+                                     width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td height="100%" valign="top" role="module-content">
+                                        <div class="section-name" style="padding-left: 20px;">
+                                            TEAM SPOTLIGHT
+                                        </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <!-- Meet Chiara our newest team member -->
+                              <table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                  <tbody>
+                                      <tr>
+                                          <td height="100%" valign="top" role="module-content">
+                                              <div class="section-title-container" style="padding-left: 20px;">
+                                                  <h2 class="section-title">Meet Camilo, Strategy & Content at Sogni
+</h2>
+                                              </div>
+                                          </td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+
+                              <!-- Intro paragraph about Chiara (above her image) -->
+                              <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+                                  <tr>
+                                      <td style="padding: 20px; font-family: Arial, sans-serif; color: #a6a6a6; font-size: 16px; line-height: 1.6;">
+                                          <p>
+                                              At Sogni, Camilo Aguiar Mendez focuses on strategy, analysis, and content development, helping shape how we grow and engage with our community. With a solid background in digital marketing and  business development, he’s passionate about making AI creativity more accessible and impactful.
+                                          </p>
+                                      </td>
+                                  </tr>
+                              </table>
+
+                              <!-- Two-column table for Chiara's image (left) and her quote (right) -->
+                              <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+                                  <tr>
+                                      <!-- Left column: Camilo's image -->
+                                      <td width="33.333%" valign="top" style="padding: 10px; text-align: left;">
+                                          <img 
+                                              src="assets/fd6a16d91e2adfdf/b43df91a-1ecc-4597-9afd-aa544fd74399/1024x1024.png" 
+                                              alt="Camilo's Profile" 
+                                              style="width: 100%; max-width: 200px; height: auto; border-radius: 8px;"
+                                              />
+                                      </td>
+
+                                      <!-- Right column: Camilo's quote -->
+                                      <td width="66.666%" valign="top" style="padding: 20px; font-family: Arial, sans-serif; color: #a6a6a6; font-size: 16px; line-height: 1.6;">
+                                          <p>
+                                              <i>
+                                                  "Sogni is a space where creativity, technology, and community come together. What excites me most is how user feedback drives our evolution. My role is to listen, analyze, and develop content that helps us fine-tune our approach—so we keep building something truly valuable for everyone."
+                                              </i>
+                                          </p>
+                                      </td>
+                                  </tr>
+                              </table>
+
+                              <!-- Divider -->
+                              <table class="module" role="module" data-type="divider" border="0" cellpadding="0"
+                                     cellspacing="0" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="padding:20px 0px 10px 0px;" role="module-content" height="100%" valign="top" bgcolor="">
+                                      <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%"
+                                             height="1px" style="line-height:1px; font-size:1px;">
+                                        <tbody>
+                                          <tr>
+                                            <td style="padding:0px 0px 1px 0px;" bgcolor="#525155"></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <!-- CONTESTS (READY TO WIN?) -->
+                              <table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0"
+                                     width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td height="100%" valign="top" role="module-content">
+                                      <div class="section-name" style="padding-left: 20px;">
+                                        CONTESTS
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table class="module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0"
+                                     width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td height="100%" valign="top" role="module-content">
+                                      <div class="section-title-container" style="padding-left: 20px;">
+                                        <h2 class="section-title">Zodiac-Royale Winners Revealed!</h2>
+                                        <p class="section-title-small">
+                                          The community has spoken—here are the champions of our most electrifying AI art contest yet!
+                                        </p>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table class="module" role="module" data-type="text" border="0" cellpadding="0"
+                                     cellspacing="0" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="padding:0 20px 0 20px; line-height:23px; text-align:inherit;"
+                                        height="100%" valign="top" bgcolor="" role="module-content">
+                                      <div style="font-family:Arial, sans-serif; color:#a6a6a6; font-size:16px;">
+                                        <span>The Zodiac-Royale contest brought out an incredible wave of creativity, and after an exciting competition, we’re thrilled to announce the winners! From mesmerizing zodiac-inspired designs to boundary-pushing AI artistry, each entry showcased the limitless possibilities of Sogni. A huge congratulations to our winners and a massive thank you to everyone who participated! Stay tuned—more creative challenges are on the way!,<br></br></span>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <!-- Winner 1 -->
+                              <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" bgcolor="#000000">
+                                <tbody>
+                                  <tr>
+                                    <td width="580" style="padding:0px 10px;" align="left">
+                                      <table class="wrapper" role="module" data-type="image" border="0"
+                                             cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td style="font-size:6px; line-height:10px; padding:40px 40px 0px 40px;"
+                                                valign="top" align="center">
+                                              <img class="max-width"
+                                                   style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif;
+                                                          font-size:16px; border-radius:12px; max-width:100% !important; width:100%; height:auto !important;"
+                                                   width="580" alt=""
+                                                   src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/5b932182-d4ef-4f26-9d83-9c926b8fdcd4/1024x1024.jpeg">
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <table class="module" role="module" data-type="text" border="0"
+                                             cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td style="padding:10px 40px 18px 0px; line-height:20px; text-align:right;"
+                                                height="100%" valign="top" bgcolor="">
+                                              <div style="font-family:Arial, sans-serif; text-align:right; color:#a6a6a6; font-size:14px;">
+                                                Winner 1: <strong>@panku1258</strong> <i>(6,888 $tSOGNI)</i>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <!-- Winner 2 -->
+                              <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" bgcolor="#000000">
+                                <tbody>
+                                  <tr>
+                                    <td width="580" style="padding:0px 10px;" align="left">
+                                      <table class="wrapper" role="module" data-type="image" border="0"
+                                             cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td style="font-size:6px; line-height:10px; padding:30px 40px 0px 40px;"
+                                                valign="top" align="center">
+                                              <img class="max-width"
+                                                   style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif;
+                                                          font-size:16px; max-width:100% !important; width:100%; border-radius:12px; height:auto !important;"
+                                                   width="580" alt=""
+                                                   src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/5465f8b1-784e-43c3-935e-02e3ca35100b/1024x1024.jpeg">
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <table class="module" role="module" data-type="text" border="0"
+                                             cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td style="padding:18px 40px 18px 0px; line-height:22px; text-align:right;"
+                                                height="100%" valign="top" bgcolor="">
+                                              <div style="font-family:Arial, sans-serif; text-align:right; color:#a6a6a6; font-size:14px;">
+                                                Winner 2: <strong>@Isha</strong> <i>(2,888 $tSOGNI)</i>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!-- Winner 3 -->
+                              <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" bgcolor="#000000">
+                                <tbody>
+                                  <tr>
+                                    <td width="580" style="padding:0px 10px;" align="left">
+                                      <table class="wrapper" role="module" data-type="image" border="0"
+                                             cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td style="font-size:6px; line-height:10px; padding:30px 40px 0px 40px;"
+                                                valign="top" align="center">
+                                              <img class="max-width"
+                                                   style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif;
+                                                          font-size:16px; max-width:100% !important; width:100%; border-radius:12px; height:auto !important;"
+                                                   width="580" alt=""
+                                                   src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/16fb2814-9d24-43c2-b50b-06a050fe4cd3/1178x588.jpeg">
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <table class="module" role="module" data-type="text" border="0"
+                                             cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td style="padding:18px 40px 18px 0px; line-height:22px; text-align:right;"
+                                                height="100%" valign="top" bgcolor="">
+                                              <div style="font-family:Arial, sans-serif; text-align:right; color:#a6a6a6; font-size:14px;">
+                                                Winner 3: <strong>@dsfgdfds</strong> <i>(2,888 $tSOGNI)</i><br><br>
+                                                      </div>
+                                                      <div style="padding-left: 10px; font-family:Arial, sans-serif; text-align: left; color:#a6a6a6; font-size:14px;">
+                                                          <sapn>Think you have what it takes to win? Join our Discord today to participate in the next weekly contest and climb the leaderboards!</span>
+                                                      </div>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                                
+                              <!-- Join The Contest on Discord Button -->
+                              <table class="module" role="module" data-type="code" border="0" cellpadding="0"
+                                     cellspacing="0" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td height="100%" valign="top" role="module-content">
+                                      <div class="cta-container" style="text-align:left; padding:20px 20px 20px;">
+                                        <a href="https://discord.com/invite/2JjzA2zrrc"
+                                           style="background-color:#000000; border:1px solid #99FF01; border-radius:9px;
+                                                  color:#ffffff; display:inline-flex; align-items:center; font-size:14px;
+                                                  font-weight:300; letter-spacing:0px; line-height:normal; padding:12px 16px;
+                                                  text-align:left; text-decoration:none; font-family:'Inter', sans-serif;"
+                                           target="_blank">
+                                          <strong>Join The Contest on Discord</strong>
+                                        </a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <!-- Divider -->
+                              <table class="module" role="module" data-type="divider" border="0" cellpadding="0"
+                                     cellspacing="0" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="padding:20px 0px 10px 0px;" role="module-content" height="100%"
+                                        valign="top" bgcolor="">
+                                      <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%"
+                                             height="1px" style="line-height:1px; font-size:1px;">
+                                        <tbody>
+                                          <tr>
+                                            <td style="padding:0px 0px 1px 0px;" bgcolor="#525155"></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <!-- TESTNET / Climb the Leaderboard -->
+                              <table class="module" role="module" data-type="code" border="0" cellpadding="0"
+                                     cellspacing="0" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td height="100%" valign="top" role="module-content">
+                                      <div class="section-name" style="padding-left: 20px;">
+                                        TESTNET
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table class="module" role="module" data-type="code" border="0" cellpadding="0"
+                                     cellspacing="0" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td height="100%" valign="top" role="module-content">
+                                      <div class="section-title-container" style="padding-left: 20px;">
+                                        <h2 class="section-title">Leaderboard Updates 🏆</h2>
+                                        <p class="section-title-small">A reward for top 250 Testnet Artists and Workers + Testnet Snapshot Date</p>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table class="module" role="module" data-type="text" border="0" cellpadding="0"
+                                     cellspacing="0" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="padding:0 20px 18px 20px; line-height:23px; text-align:inherit;"
+                                        height="100%" valign="top" bgcolor="" role="module-content">
+                                      <div style="font-family:Arial, sans-serif; color:#a6a6a6; font-size:16px;">
+                                        <span>We’re happy to announce that <strong>March 31 @ UTC Midnight</strong> will be the final snapshot date for Sogni Testnet participant airdrops and leaderboard rewards.<br><br>
+                                        The top 250 artists and Workers will be awarded a Sogni Testnet Warrior badge. This special badge is an NFT that resides in the Base network wallet associated with your account, giving you a priority boost in the Supernet job queue after Mainnet launch, forever. It’s our thanks for your early belief in quality decentralized AI Art for Artists. So hit that button and make sure your username is on the list!
+                                        </span>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!-- Climbing the Leaderboards image -->
+                              <table class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0"
+                                     width="100%">
+                                <tbody>
+                                  <tr><!--
+                                    <td style="font-size:6px; line-height:10px; padding:20px 0px 20px 0px;" valign="top" align="center">
+                                    </td>
+                                    -->
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!-- Button -->
+                              <table class="module" role="module" data-type="code" border="0" cellpadding="0"
+                                     cellspacing="0" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td height="100%" valign="top" role="module-content">
+                                      <div class="cta-container" style="text-align:left; padding:20px 20px 20px;">
+                                        <a href="https://www.sogni.ai/leaderboard"
+                                           style="background-color:#000000; border:1px solid #99FF01; border-radius:9px;
+                                                  color:#ffffff; display:inline-flex; align-items:center; font-size:14px;
+                                                  font-weight:300; letter-spacing:0px; line-height:normal; padding:12px 16px;
+                                                  text-align:left; text-decoration:none; font-family:'Inter', sans-serif;"
+                                           target="_blank">
+                                          <strong>View Leaderboards</strong>
+                                        </a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <!-- Divider -->
+                              <table class="module" role="module" data-type="divider" border="0" cellpadding="0"
+                                     cellspacing="0" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="padding:20px 0px 10px 0px;" role="module-content" height="100%"
+                                        valign="top" bgcolor="">
+                                      <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%"
+                                             height="1px" style="line-height:1px; font-size:1px;">
+                                        <tbody>
+                                          <tr>
+                                            <td style="padding:0px 0px 1px 0px;" bgcolor="#525155"></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <!-- COMMUNITY -->
+                              <table class="module" role="module" data-type="code" border="0" cellpadding="0"
+                                     cellspacing="0" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td height="100%" valign="top" role="module-content">
+                                      <div class="section-name" style="padding-left: 20px;">
+                                        COMMUNITY
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!-- The "Join the new Sogni Telegram Community" section -->
+                              <table class="module" role="module" data-type="code" border="0" cellpadding="0"
+                                     cellspacing="0" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td height="100%" valign="top" role="module-content">
+                                      <div class="section-title-container" style="padding-left: 20px;">
+                                        <h2 class="section-title">Telegram Community Token Faucet</h2>
+                                        <p class="section-title-small">Daily tokens airdrops continue until the allocation runs out</p>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table class="module" role="module" data-type="text" border="0" cellpadding="0"
+                                     cellspacing="0" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="padding:0 20px 18px 20px; line-height:23px; text-align:inherit;"
+                                        height="100%" valign="top" bgcolor="" role="module-content">
+                                      <div style="font-family:Arial, sans-serif; color:#a6a6a6; font-size:16px;">
+                                        <span>Come hang out with us on Telegram and check in with the <strong>Sogni Airdropper bot</strong> to get extra tokens each day to help you climb the leaderboards. The daily faucet has moved to a lottery, you never know how many it will deliver! Enjoy the additional tokens until the allocation is gone!</span>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table class="module" role="module" data-type="code" border="0" cellpadding="0"
+                                     cellspacing="0" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td height="100%" valign="top" role="module-content">
+                                      <div class="cta-container" style="text-align:left; padding:20px 20px 20px;">
+                                        <a href="https://t.me/sogniai"
+                                           style="background-color:#000000; border:1px solid #99FF01; border-radius:9px;
+                                                  color:#ffffff; display:inline-flex; align-items:center; font-size:14px;
+                                                  font-weight:300; letter-spacing:0px; line-height:normal; padding:12px 16px;
+                                                  text-align:left; text-decoration:none; font-family:'Inter', sans-serif;"
+                                           target="_blank">
+                                          <strong>Join the Conversation</strong>
+                                        </a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!-- END of Telegram Community Section -->
+
+                              <!-- Divider -->
+                              <table class="module" role="module" data-type="divider" border="0" cellpadding="0"
+                                     cellspacing="0" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="padding:35px 0px 10px 0px;" role="module-content" height="100%" valign="top" bgcolor="">
+                                      <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" height="1px"
+                                             style="line-height:1px; font-size:1px;">
+                                        <tbody>
+                                          <tr>
+                                            <td style="padding:0px 0px 1px 0px;" bgcolor="#525155"></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <!-- TAKE CONTROL (OVERRIDE FOR 2-up on iPhone) -->
+                              <div class="two-col-override"><!-- wrap "Take Control" section in this class -->
+                                <table class="module" role="module" data-type="code" border="0" cellpadding="0"
+                                       cellspacing="0" width="100%">
+                                  <tbody>
+                                    <tr>
+                                      <td height="100%" valign="top" role="module-content">
+                                        <div class="section-title-container" style="padding-left: 20px;">
+                                          <h2 class="section-title">Take Control of Your Creative Journey</h2>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+
+                                <!-- ROW 1: Sogni Studio Pro (macOS) & Sogni Studio (macOS) -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+                                  <tr>
+                                    <!-- Left column: Sogni Studio Pro -->
+                                    <td class="column" width="50%" style="vertical-align: top; text-align:center; padding:15px;">
+                                      <div class="app-icon-wrapper" style="text-align:center;">
+                                        <img class="app-icon"
+                                             style="display:block; margin:auto; width:128px; max-width:128px; height:auto;"
+                                             src="assets/fd6a16d91e2adfdf/aa163d9c-c944-4cb0-a02f-8386dd0c7eef/1024x1024.png"
+                                             alt="Sogni Studio Pro" />
+                                      </div>
+                                      <h3 class="app-heading" style="text-align:center;">Sogni <strong>Studio Pro</strong> <span class="device">(macOS)</span></h3>
+                                      <div class="app-button-container">
+                                        <a href="https://www.sogni.ai/download"
+                                           style="display:inline-block; background-color:#000000; border:1px solid #99FF01; border-radius:8px; color:#ffffff; font-size:14px; font-family:'Inter', sans-serif; padding:10px 20px; text-decoration:none; margin-top:10px;">
+                                          Direct Download
+                                        </a>
+                                      </div>
+                                    </td>
+
+                                    <!-- Right column: Sogni Studio -->
+                                    <td class="column" width="50%" style="vertical-align: top; text-align:center; padding:15px;">
+                                      <div class="app-icon-wrapper" style="text-align:center;">
+                                        <img class="app-icon"
+                                             style="display:block; margin:auto; width:128px; max-width:128px; height:auto;"
+                                             src="assets/fd6a16d91e2adfdf/aa163d9c-c944-4cb0-a02f-8386dd0c7eef/1024x1024.png"
+                                             alt="Sogni Studio" />
+                                      </div>
+                                      <h3 class="app-heading" style="text-align:center;">
+                                          Sogni <strong>Studio</strong><br><span class="device">(macOS)</span>
+                                          </h3>
+
+                                      <div class="app-button-container">
+                                        <a href="https://apps.apple.com/us/app/sogni-ai-art-generator/id6450021857" target="_blank"
+                                           style="display:inline-block; margin-top:10px;">
+                                          <img
+                                            style="display:inline-block; width:150px; height:auto; border:none;"
+                                            src="assets/fd6a16d91e2adfdf/383ecf92-cc78-4ef4-bf0e-1b5382f7c6bd/2560x759.png"
+                                            alt="Download on App Store" />
+                                        </a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+
+                                <!-- ROW 2: Sogni Pocket (iOS) & Sogni Web (Browser) -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+                                  <tr>
+                                    <!-- Left column: Sogni Pocket (iOS) -->
+                                    <td class="column" width="50%" style="vertical-align: top; text-align:center; padding:15px;">
+                                      <div class="app-icon-wrapper" style="text-align:center;">
+                                        <img class="app-icon"
+                                             style="display:block; margin:auto; width:128px; max-width:128px; height:auto;"
+                                             src="assets/fd6a16d91e2adfdf/aa163d9c-c944-4cb0-a02f-8386dd0c7eef/1024x1024.png"
+                                             alt="Sogni Pocket iOS" />
+                                      </div>
+                                      <h3 class="app-heading" style="text-align:center;">Sogni <span style="color: #F0008F;"><strong>Pocket</strong></span> <span class="device">(iOS)</span></h3>
+                                      <div class="app-button-container">
+                                        <a href="https://apps.apple.com/us/app/sogni-ai-art-generator/id6450021857" target="_blank"
+                                           style="display:inline-block; margin-top:10px;">
+                                          <img
+                                            style="display:inline-block; width:150px; height:auto; border:none;"
+                                            src="assets/fd6a16d91e2adfdf/383ecf92-cc78-4ef4-bf0e-1b5382f7c6bd/2560x759.png"
+                                            alt="Download on App Store" />
+                                        </a>
+                                      </div>
+                                    </td>
+
+                                    <!-- Right column: Sogni Web (Browser) -->
+                                    <td class="column" width="50%" style="vertical-align: top; text-align:center; padding:15px;">
+                                      <div class="app-icon-wrapper" style="text-align:center;">
+                                        <img class="app-icon"
+                                             style="display:block; margin:auto; width:128px; max-width:128px; height:auto;"
+                                             src="assets/fd6a16d91e2adfdf/aa163d9c-c944-4cb0-a02f-8386dd0c7eef/1024x1024.png"
+                                             alt="Sogni Web" />
+                                      </div>
+                                      <h3 class="app-heading" style="text-align:center;">Sogni <span style="color: #3D31FA;"><strong>Web</strong></span> <span class="device">(Browser)</span></h3>
+                                      <div class="app-button-container" style="padding-bottom: 20px;">
+                                        <a href="https://www.sogni.ai/download"
+                                           style="display:inline-block; background-color:#000000; border:1px solid #99FF01; border-radius:8px; color:#ffffff; font-size:14px; font-family:'Inter', sans-serif; padding:10px 20px; text-decoration:none; margin-top:10px;">
+                                          Launch Now
+                                        </a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
+                              <!-- END .two-col-override wrapper -->
+
+                              <!-- Telegram / Discord row -->
+                              <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" bgcolor="#000000">
+                                <tbody>
+                                  <tr>
+                                    <td style="padding:10px 20px; text-align:center;">
+                                      <div class="app-icon-wrapper">
+                                        <img style="display:block; color:#000000; border-radius:12px; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px; margin:auto;width:128px; max-width:128px;"
+                                             class="app-icon"
+                                             src="http://cdn.mcauto-images-production.sendgrid.net/fd6a16d91e2adfdf/3e187d8b-d26f-4c19-a1ed-cd225d2e2307/320x320.jpeg"
+                                             alt="Sogni Sticker bot" />
+                                      </div>
+                                      <h3 class="app-heading" style="text-align:center;">Sogni Telegram &amp; Discord Sticker Bot</h3>
+                                      <div style="text-align: center; padding: 20px 0;">
+                                        <!-- Discord Button -->
+                                        <a href="https://discord.gg/2JjzA2zrrc"
+                                           style="display:inline-block; padding:10px 20px; background-color:#000000;
+                                                  text-decoration:none; border-radius:8px; margin:10px; font-family:'Inter', sans-serif; font-size:14px; color:#ffffff; border:1px solid #99FF01;">
+                                          Launch Now
+                                          <img src="assets/fd6a16d91e2adfdf/dde8c72d-0180-48ce-a884-0b5059c0bd6a/100x100.png"
+                                               alt="Discord Icon"
+                                               style="width:20px; height:20px; margin-left:8px;">
+                                        </a>
+                                        <!-- Telegram Button -->
+                                        <a href="https://t.me/SogniAIbot"
+                                           style="display:inline-block; padding:10px 20px; background-color:#000000;
+                                                  text-decoration:none; border-radius:8px; margin:10px; font-family:'Inter', sans-serif; font-size:14px; color:#ffffff; border:1px solid #99FF01;">
+                                          Launch Now
+                                          <img src="assets/fd6a16d91e2adfdf/f72a9b29-0ca6-4c8f-a043-28a16a5460e2/100x100.png"
+                                               alt="Telegram Icon"
+                                               style="width:20px; height:20px; margin-left:8px;">
+                                        </a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!-- Divider -->
+                              <table class="module" role="module" data-type="divider" border="0" cellpadding="0"
+                                     cellspacing="0" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="padding:35px 0px 10px 0px;" role="module-content" height="100%" valign="top" bgcolor="">
+                                      <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" height="1px"
+                                             style="line-height:1px; font-size:1px;">
+                                        <tbody>
+                                          <tr>
+                                            <td style="padding:0px 0px 1px 0px;" bgcolor="#525155"></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!-- Missed a newsletter? Access all the past ones here! -->
+                              <table class="module" role="module" data-type="code" border="0" cellpadding="0"
+                                     cellspacing="0" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td height="100%" valign="top" role="module-content">
+                                      <div class="cta-container" style="text-align:center; padding:0px 20px 0px;">
+                                        <a href="https://news.sogni.ai/sogni-sync/"
+                                           style="background-color:#000000;
+                                                  color:##99FF01; display:inline-flex; align-items:center; font-size12px;
+                                                  font-weight:300; letter-spacing:0px; line-height:normal; padding:12px 12px;
+                                                  text-align:left; text-decoration:none; font-family:'Inter', sans-serif;"
+                                           target="_blank">
+                                          <strong>Missed a newsletter? Access all the past ones here!</strong>
+                                        </a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!-- Final Divider -->
+                              <table class="module" role="module" data-type="divider" border="0" cellpadding="0"
+                                     cellspacing="0" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="padding:35px 0px 10px 0px;" role="module-content" height="100%" valign="top" bgcolor="">
+                                      <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" height="1px"
+                                             style="line-height:1px; font-size:1px;">
+                                        <tbody>
+                                          <tr>
+                                            <td style="padding:0px 0px 1px 0px;" bgcolor="#525155"></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <!-- Social Media Icons Row -->
+                              <table class="module" role="module" data-type="code" border="0" cellpadding="0"
+                                     cellspacing="0" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td height="100%" valign="top" role="module-content">
+                                      <div class="social-media-container" style="text-align:center; padding:10px 0 20px;">
+                                        <a href="https://discord.com/invite/2JjzA2zrrc" target="_blank" class="social-icon" style="margin: 0 10px; display: inline-block;">
+                                          <img src="assets/fd6a16d91e2adfdf/dde8c72d-0180-48ce-a884-0b5059c0bd6a/100x100.png"
+                                               style="width:24px; height:24px;" alt="Discord Icon">
+                                        </a>
+                                        <a href="https://t.me/sogniai" target="_blank" class="social-icon" style="margin: 0 10px; display: inline-block;">
+                                          <img src="assets/fd6a16d91e2adfdf/f72a9b29-0ca6-4c8f-a043-28a16a5460e2/100x100.png"
+                                               style="width:24px; height:24px;" alt="Telegram Icon">
+                                        </a>
+                                        <a href="https://www.youtube.com/@SogniAI?sub_confirmation=1" target="_blank" class="social-icon" style="margin: 0 10px; display: inline-block;">
+                                          <img src="assets/fd6a16d91e2adfdf/c4bdbd34-9ee0-4cf4-807e-9294065e2803/100x100.png"
+                                               style="width:24px; height:24px;" alt="YouTube Icon">
+                                        </a>
+                                        <a href="https://www.instagram.com/sogni.ai/" target="_blank" class="social-icon" style="margin: 0 10px; display: inline-block;">
+                                          <img src="assets/fd6a16d91e2adfdf/316caddd-dba0-4f91-a92b-98a0e9c4bdfb/100x100.png"
+                                               style="width:24px; height:24px;" alt="Instagram Icon">
+                                        </a>
+                                        <a href="https://x.com/getsogni" target="_blank" class="social-icon" style="margin: 0 10px; display: inline-block;">
+                                          <img src="assets/fd6a16d91e2adfdf/efa17c04-3d0a-42c3-ad83-2fe8d5fead0b/100x100.png"
+                                               style="width:24px; height:24px;" alt="Twitter/X Icon">
+                                        </a>
+                                        <a href="https://www.linkedin.com/company/sogni-ai/" target="_blank" class="social-icon" style="margin: 0 10px; display: inline-block;">
+                                          <img src="assets/fd6a16d91e2adfdf/62cb84ce-25f7-4755-a1a2-c11449fc61b7/100x100.png"
+                                               style="width:24px; height:24px;" alt="LinkedIn Icon">
+                                        </a>
+                                        <a href="https://medium.com/sogni" target="_blank" class="social-icon" style="margin: 0 10px; display: inline-block;">
+                                          <img src="assets/fd6a16d91e2adfdf/2c83cc3a-c96c-4c88-ac02-8e8b7abbe081/100x100.png"
+                                               style="width:24px; height:24px;" alt="Medium Icon">
+                                        </a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <!-- Unsubscribe block / Footer legal -->
+                              <div data-role="module-unsubscribe" class="module unsubscribe-css__unsubscribe___2CDlR" role="module"
+                                   data-type="unsubscribe"
+                                   style="color:#ffffff; font-size:12px; line-height:22px; padding:16px 16px 0px 16px; text-align:center;">
+                                <div class="Unsubscribe--addressLine"></div>
+                                <p style="font-family:arial,helvetica,sans-serif; font-size:12px; line-height:22px;">
+                                  <a class="Unsubscribe--unsubscribeLink" href="{{{unsubscribe}}}" style="color:#bebdbd;">Unsubscribe</a>
+                                </p>
+                              </div>
+                              <table class="module" role="module" data-type="code" border="0" cellpadding="0"
+                                     cellspacing="0" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td height="100%" valign="top" role="module-content">
+                                      <div class="footer-legal" style="font-family: 'Inter', sans-serif; text-align: center; padding: 10px;">
+                                        <span style="color: #a6a6a6; font-size: 10px;">
+                                          WE&amp;ROBOT PTE. LTD. #60 PAYA LEBAR ROAD, #07-54 SINGAPORE 409051
+                                        </span>
+                                        <br>
+                                        <a href="https://www.sogni.ai/privacy-policy"
+                                           style="color: #ffffff; font-size:10px; text-decoration:none;"
+                                           target="_blank" rel="noopener noreferrer">
+                                          Privacy Policy & Terms
+                                        </a>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <!-- Spacer -->
+                              <table class="module" role="module" data-type="spacer" border="0" cellpadding="0"
+                                     cellspacing="0" width="100%">
+                                <tbody>
+                                  <tr>
+                                    <td style="padding:0px 0px 30px 0px;" role="module-content" bgcolor=""></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                            </td>
+                          </tr>
+                        </table>
+                        <!--[if mso]>
+                          </td>
+                        </tr>
+                        </table>
+                        </center>
+                        <![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </center>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
