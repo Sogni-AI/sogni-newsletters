@@ -1,1 +1,1 @@
-rsync -ar --progress . sogni-api:/var/www/news.sogni.ai/sogni-sync/
+rsync -ar --progress --exclude='.git' . sogni-api:/var/www/news.sogni.ai/sogni-sync/
