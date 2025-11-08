@@ -6,117 +6,89 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width" />
-  <meta name="x-apple-disable-message-reformatting" />
   <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no" />
   <meta name="color-scheme" content="light" />
   <meta name="supported-color-schemes" content="light dark" />
-  <title>Sogni /Sync — September ’25 | Volume 15</title>
 
   <!-- ===== Google Fonts (Inter + Space Grotesk) ===== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 
-  <!-- ===== Core styles (merged + cleaned) ===== -->
+  <title>Sogni /Sync — September ’25 | Volume 15</title>
+
   <style type="text/css">
-    span.device { display:block; font-weight:normal; font-size:0.9em; }
-
-    /* Base typography & resets */
-    body, p, div {
-      margin:0; padding:0; font-family:inherit; font-size:16px; line-height:23px;
-      -webkit-font-smoothing:antialiased; -webkit-text-size-adjust:100%;
-      -ms-text-size-adjust:100%; -moz-text-size-adjust:100%;
-    }
-    body { background:#1D1D1D; color:#ffffff; width:100% !important; }
-    p { margin:0 0 20px; }
-    a { color:#99FF01; text-decoration:none; }
-    a img { vertical-align:middle; }
-    img { border:none; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; }
-    table.wrapper { width:100% !important; table-layout:fixed; }
-    .column.of-2{ width:50%; } .column.of-3{ width:33.333%; } .column.of-4{ width:25%; }
-
-    /* Lists – force styles inside email clients */
-    ul ul ul ul{ list-style-type:disc !important; }
-    ol ol{ list-style-type:lower-roman !important; }
-    ol ol ol{ list-style-type:lower-latin !important; }
-    ol ol ol ol{ list-style-type:decimal !important; }
-    center.small{font-size: 14px;}
-
-    /* Headings & text blocks */
-    .main-title-container { padding:20px; color:#a6a6a6; text-align:left; }
-    .main-title { margin:0; font:700 32px/1.2 'Inter',sans-serif; color:#ffffff; }
-    .subtitle { font:500 20px/1.5 'Inter',sans-serif; color:#a6a6a6; margin:5px 0 0; }
-
-    .section-title-container { padding:20px 20px 16px 20px; color:#ffffff; text-align:left; }
-    .section-name { margin:0 0 8px; font:500 16px/1.1 'Inter',sans-serif; color:#a6a6a6; }
-    .section-title { margin:0 0 8px; font:500 32px/1.1 'Space Grotesk',sans-serif; }
-    .section-title-small{ margin:0 0 12px; font:500 16px/1.2 'Space Grotesk',sans-serif; }
-
-    .text-module { padding:18px 20px; font-size:16px; line-height:1.6; color:#a6a6a6; text-align:left; }
-    .text-module p{ margin:0 0 20px; }
-
-    /* Buttons (match old template) */
     .green-button,
     .button-link {
       background:#000;
       border:1px solid #99ff01;
       border-radius:9px;
-      color:#fff !important;
-      font:300 14px/normal 'Inter', sans-serif;
+      color:#fff;
+      font:300 14px/normal 'Inter',sans-serif;
       padding:10px 16px;
       text-decoration:none;
       display:inline-block;
       margin-top:15px;
     }
-    /* Row spacing for multiple adjacent CTAs */
-    .button-row a + a { margin-left:1rem; }
-
     /* Social icons */
-    .social-icon img{ width:24px; height:24px; }
-    .social-icon{ display:inline-block; margin:0 10px; }
+    .social-icon img{width:24px;height:24px;}
+    .social-icon{display:inline-block;margin:0 10px;}
 
-    /* App blocks */
-    .app-icon-wrapper { text-align:center; padding:0; }
-    .app-icon { width:128px; margin:0 auto; display:block; height:auto; }
-    .app-heading { text-align:center; color:#ffffff; margin:10px 0; font-family:Inter, sans-serif; }
-    .app-button-container { text-align:center; margin-bottom:30px; }
-    .app-download-button { background:#000; border:1px solid #99FF01; border-radius:8px; color:#fff !important; display:inline-block; font:14px 'Inter',sans-serif; padding:10px 20px; text-decoration:none; margin-top:10px; }
+    /* Unsubscribe */
+    .unsubscribe-css__unsubscribe___2CDlR a.Unsubscribe--unsubscribeLink{color:#bebdbd!important;text-decoration:none!important;}
 
-    /* Unsubscribe color (keep from old) */
-    .unsubscribe-css__unsubscribe___2CDlR a.Unsubscribe--unsubscribeLink{ color:#bebdbd !important; text-decoration:none !important; }
+    /* Base typography & resets */
+    body,p,div{margin:0;padding:0;font-family:inherit;font-size:16px;line-height:23px;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+    body{background:#1D1D1D;color:#ffffff;width:100%!important;}
+    p{margin-bottom:20px;}
+    a{color:#99FF01;text-decoration:none;}
+    img{border:none;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;}
 
-    /* Responsive */
+    table.wrapper{width:100%!important;table-layout:fixed;}
+    .column.of-2{width:50%;}
+    .column.of-3{width:33.333%;}
+    .column.of-4{width:25%;}
+
+    /* Lists inside email clients often lose styles – force them */
+    ul ul ul ul{list-style-type:disc!important;}
+    ol ol{list-style-type:lower-roman!important;}
+    ol ol ol{list-style-type:lower-latin!important;}
+    ol ol ol ol{list-style-type:decimal!important;}
+
+    /* Headings & text blocks */
+    .main-title-container{padding:0 20px 16px 20px;color:#a6a6a6;text-align:left;}
+    .main-title{margin:0;font:700 32px/1.2 'Inter',sans-serif;color:#ffffff;}
+    .subtitle{font:500 20px/1.5 'Inter',sans-serif;color:#a6a6a6;margin:5px 0 0;}
+
+    .section-title-container{padding:0 20px 16px 20px;color:#ffffff;text-align:left;}
+    .section-name{margin:0 0 25px;font:500 16px/1.1 'Inter',sans-serif;color:#a6a6a6;}
+    .section-title{margin:0 0 8px;font:500 32px/1.1 'Space Grotesk',sans-serif;}
+    .section-title-small{margin:0 0 12px;font:500 16px/1.2 'Space Grotesk',sans-serif;color:#ffffff;}
+
+    .text-module{padding:18px 20px;font-size:16px;line-height:1.6;color:#a6a6a6;}
+    .text-module p{margin:0 0 20px;}
+
+    /* Responsive overrides */
     @media screen and (max-width:480px){
-      .preheader .rightColumnContent,
-      .footer .rightColumnContent{ text-align:left !important; }
-      .preheader .rightColumnContent div,
-      .preheader .rightColumnContent span,
-      .footer .rightColumnContent div,
-      .footer .rightColumnContent span{ text-align:left !important; }
-      .preheader .rightColumnContent, .preheader .leftColumnContent{ font-size:80% !important; padding:5px 0; }
-      table.wrapper-mobile{ width:100% !important; table-layout:fixed; }
-      img.max-width{ max-width:100% !important; height:auto !important; }
-      a.button-link, a.green-button{ display:inline-block !important; width:auto !important; font-size:80% !important; padding-left:16px !important; padding-right:16px !important; }
-      .columns, .column{ width:100% !important; display:block !important; padding-left:0 !important; padding-right:0 !important; margin-left:0 !important; margin-right:0 !important; }
-      .social-icon img{ width:16px !important; height:16px !important; }
-      .main-title{ font-size:32px !important; }
-      .app-icon{ width:80px !important; }
+      table.wrapper-mobile{width:100%!important;table-layout:fixed;}
+      img.max-width{max-width:100%!important;height:auto!important;}
+      a.green-button,a.button-link{display:block!important;width:auto!important;font-size:80%!important;}
+      .columns,.column{width:100%!important;display:block!important;padding:0!important;margin:0!important;}
+      .social-icon img{width:16px!important;height:16px!important;}
+      .main-title{font-size:32px!important;}
     }
-    @media screen and (max-width:480px){ .two-col-override .column{ width:50% !important; display:inline-block !important; vertical-align:top; } }
-    @media screen and (max-width:320px){ .two-col-override .column{ width:100% !important; display:block !important; } }
-
-    /* Minor helper */
-    .divider-hr { line-height:1px; font-size:1px; }
+    /* Two‑column override (keep 2‑up on mid‑range phones) */
+    @media screen and (max-width:480px){.two-col-override .column{width:50%!important;display:inline-block!important;vertical-align:top;}}
+    @media screen and (max-width:320px){.two-col-override .column{width:100%!important;display:block!important;}}
   </style>
 </head>
 
 <body style="margin:0; padding:0; background:#1D1D1D; width:100% !important;">
   <!-- ===== OUTER WRAPPER ===== -->
-  <table align="center" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"
-         style="background:#000000; max-width:600px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Fira Sans','Droid Sans','Helvetica Neue',sans-serif;">
+  <table align="center" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#000000;max-width:600px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Fira Sans','Droid Sans','Helvetica Neue',sans-serif;">
     <tr>
       <td>
-        <center class="wrapper" data-link-color="#99FF01" data-body-style="font-size:16px; font-family:inherit; color:#ffffff; background-color:#1D1D1D;">
+        <center class="wrapper">
           <div class="webkit">
             <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#1D1D1D" style="table-layout:fixed;">
               <tr>
@@ -128,26 +100,24 @@
                   </table>
 
                   <!-- ===== Spacer ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:0 0 15px;"></td></tr></table>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:0 0 15px;"></td></tr></table>
 
                   <!-- ===== Top row: logo + edition label ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr>
                       <td>
                         <div style="padding:10px 20px 20px;">
-                          <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                          <table width="100%" cellpadding="0" cellspacing="0" border="0">
                             <tr>
                               <td align="left" valign="middle">
-                                <table cellpadding="0" cellspacing="0" border="0" role="presentation">
-                                  <tr>
-                                    <td valign="middle" style="padding-right:5px;">
-                                      <img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/d2884f6c-4924-48ca-a7e6-a0c6bba72f16/1657x636.png" alt="Sogni logo" style="height:calc(16px * 1.2); width:auto;">
-                                    </td>
-                                    <td valign="middle" style="font-family:Inter,sans-serif; font-size:16px; color:#a6a6a6;">/Sync</td>
-                                  </tr>
-                                </table>
+                                <table cellpadding="0" cellspacing="0" border="0"><tr>
+                                  <td valign="middle" style="padding-right:5px;">
+                                    <img src="https://news.sogni.ai/sogni-sync/assets/sogni-sync/assets/fd6a16d91e2adfdf/d2884f6c-4924-48ca-a7e6-a0c6bba72f16/1657x636.png" alt="Sogni logo" style="height:calc(16px*1.2);width:auto;">
+                                  </td>
+                                  <td valign="middle" style="font-family:Inter,sans-serif;font-size:16px;color:#a6a6a6;white-space:nowrap;">/Sync</td>
+                                </tr></table>
                               </td>
-                              <td align="right" valign="middle" style="font-family:Inter,sans-serif; font-size:16px; color:#a6a6a6; white-space:nowrap;">
+                              <td align="right" valign="middle" style="font-family:Inter,sans-serif;font-size:16px;color:#a6a6a6;white-space:nowrap;">
                                 September ’25 | Volume 15
                               </td>
                             </tr>
@@ -158,18 +128,16 @@
                   </table>
 
                   <!-- ===== Main title ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
-                    <tr>
-                      <td>
-                        <div class="main-title-container" style="padding-left:20px;">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr><td>
+                      <div class="main-title-container">
                           <h1 class="main-title">Sogni Supernet Powers Up: Kontext, Krea, Chroma, and Super App Hackathons</h1>
-                        </div>
-                      </td>
-                    </tr>
+                      </div>
+                    </td></tr>
                   </table>
 
                   <!-- ===== Hero image ===== -->
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr>
                       <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:12px 0 20px;">
                         <img width="600" class="max-width"
@@ -181,7 +149,7 @@
                   </table>
 
                   <!-- ===== Intro text ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr>
                         <td class="text-module">
 
@@ -220,7 +188,7 @@
                   </table>
 
                   <!-- photobooth themes -->
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr>
                       <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:12px 0 20px;">
                         <img width="600" class="max-width"
@@ -233,7 +201,7 @@
 
 
                   <!-- QUICK JUMP -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr>
                       <td>
                         <div class="section-name" style="padding-left:20px;">QUICK JUMP</div>
@@ -241,7 +209,7 @@
                     </tr>
                   </table>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="this-edition">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="this-edition">
                     <tr>
                       <td>
                         <div class="section-title-container" style="padding-left:20px;">
@@ -250,7 +218,7 @@
                       </td>
                     </tr>
                   </table>
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr>
                       <td class="text-module" style="padding-top:0;">
                         <ul style="margin:0 0 0 20px; padding:0;">
@@ -275,14 +243,14 @@
                   </table>
 
                   <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td class="divider-hr" bgcolor="#525155"></td></tr></table>
+                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tr><td class="divider-hr" bgcolor="#525155"></td></tr></table>
                     </td></tr>
                   </table>
 
                   <!-- ===== New Stars ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="NEW-STARS-HEADING">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="NEW-STARS-HEADING">
                     <tr><td>
                       <div class="section-title-container" style="padding-left:20px;">
                         <h2 class="section-title">Meet Your New Secret Weapons 🤫</h2>
@@ -290,7 +258,7 @@
                     </td></tr>
                   </table>
 
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr>
                       <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:12px 0 20px;">
                         <img width="600" class="max-width"
@@ -301,7 +269,7 @@
                     </tr>
                   </table>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td class="text-module" style="padding-top:0;">
                             <p>Meet the models for every stage of creation:</p>
                             <ul>
@@ -313,39 +281,39 @@
                     </td></tr>
                   </table>
 
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td align="center" style="font-size:6px; line-height:10px; padding:12px 0 20px;">
                       <img class="max-width" width="600" style="display:block; max-width:100% !important; width:100%; height:auto !important;"
                            src="https://news.sogni.ai/sogni-sync/assets/15/kontext-kiki.jpg" alt="Kontext pic" />
                     </td></tr>
                   </table>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                       <tr><td class="text-module" style="padding-top:0;">
                               <center class="small">An example of Flux Kontext in action in Sogni Web utilizing two reference images.</center>
                     </td></tr>
                   </table>
 
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td align="center" style="font-size:6px; line-height:10px; padding:12px 0 20px;">
                       <img class="max-width" width="600" style="display:block; max-width:100% !important; width:100%; height:auto !important;"
                            src="https://news.sogni.ai/sogni-sync/assets/15/krea.jpg?v=1" alt="Krea pic">
                     </td></tr>
                   </table>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                       <tr><td class="text-module" style="padding-top:0;">
                       <center class="small">Flux Krea [dev] leans into an analog-film aesthetic with subtle hue roll-off and believable textures.</center>
                     </td></tr>
                   </table>
 
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td align="center" style="font-size:6px; line-height:10px; padding:12px 0 20px;">
                       <img class="max-width" width="600" style="display:block; max-width:100% !important; width:100%; height:auto !important;" src="https://news.sogni.ai/sogni-sync/assets/15/chroma.jpg?v=1" alt="Chroma pic" />
                     </td></tr>
                   </table>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                       <tr><td class="text-module" style="padding-top:0;">
                               <p><center>Chroma is a compelling model that creates extraordinarily diverse, creative, and uncensored outputs. Chroma v46 [flash] is optimized for 10–12-step renders that make moodboards and storyboard passes near-instant, with a clean handoff to Chroma v48 [detail] for final polish.</center></p>
 
@@ -353,7 +321,7 @@
                       </td></tr>
                   </table>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                       <tr><td class="text-module" style="padding-top:0;">
                               <center class="small">Want even more control? Along with these new models comes new advanced features for power users to eke every angle of new performance out of them: <a href="https://docs.sogni.ai/sogni-studio/advanced/schedulers">new Schedulers and Time Spacing options</a>.</center>
                     </td></tr>
@@ -361,14 +329,14 @@
 
 
                   <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td class="divider-hr" bgcolor="#525155"></td></tr></table>
+                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tr><td class="divider-hr" bgcolor="#525155"></td></tr></table>
                     </td></tr>
                   </table>
 
                   <!-- ===== Supernet models ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="SUPERNET-HEADING">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="SUPERNET-HEADING">
                     <tr><td>
                       <div class="section-title-container" style="padding-left:20px;">
                         <h2 class="section-title">Fresh Styles Have Landed 🛬</h2>
@@ -376,14 +344,14 @@
                     </td></tr>
                   </table>
 
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td align="center" style="font-size:6px; line-height:10px;">
                       <img class="max-width" width="600" style="display:block; max-width:100% !important; width:100%; height:auto !important;"
                            src="https://news.sogni.ai/sogni-sync/assets/15/new_models.jpg" alt="New Models">
                     </td></tr>
                   </table>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td class="text-module">
                       <p>We've loaded up Sogni with <strong>12 fresh models</strong> ready across Relaxed and Fast Supernet, as well as in Sogni Photobooth.</p>
                       <p style="margin-bottom:8px;"><strong>Go Explore: 7 models just landed on Relaxed Supernet:</strong></p>
@@ -408,7 +376,7 @@
                   </table>
 
                   <!-- Try them out now! -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td class="text-module" style="padding-top:0;">
                       <div class="button-row">
                         <a href="https://app.sogni.ai/create" target="_blank" class="green-button">👉 Try them out now!</a>
@@ -417,14 +385,14 @@
                   </table>
 
                   <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td class="divider-hr" bgcolor="#525155"></td></tr></table>
+                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tr><td class="divider-hr" bgcolor="#525155"></td></tr></table>
                     </td></tr>
                   </table>
 
                   <!-- ===== NTU Hackathon ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="NTU-HEADING">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="NTU-HEADING">
                     <tr><td>
                       <div class="section-title-container" style="padding-left:20px;">
                         <h2 class="section-title">Recap: The NTU Hackathon 🎓</h2>
@@ -432,14 +400,14 @@
                     </td></tr>
                   </table>
 
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td align="center" style="font-size:6px; line-height:10px;">
                       <img class="max-width" width="600" style="display:block; max-width:100% !important; width:100%; height:auto !important;"
                            src="https://news.sogni.ai/sogni-sync/assets/15/ntu.jpg" alt="NTU Hackathon">
                     </td></tr>
                   </table>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td class="text-module">
                             <p><a href="https://sdk-docs.sogni.ai/">Sogni SDK</a> took center stage as we sponsored <a href="https://www.ntu.edu.sg/cctf/news-events/news/detail/blockchain-ntu-x-base-hackathon-finals-successfully-conclude--showcasing-student-innovation">NTU's Web3 Hackathon with Base and Virtual Protocol</a> (a top #4 engineering school globally!)</p>
                             <p>Students had one week to build the gen AI app of their dreams for a shot at $4,200 in prizes. Submissions were competitive, from <a href="https://www.youtube.com/watch?v=JVWM6PlRU04">Dungeons & Dragons character profile creator</a> to a <a href="https://www.youtube.com/watch?v=ffiowr_zu98">Localized Fashion Lookbook</a>, the students knocked it out of the park. The top teams were given a token grant to continue their work and potentially be featured in Sogni's <a href="https://www.sogni.ai/super-apps">Super Apps page</a>. Stay tuned!</p>
@@ -447,14 +415,14 @@
                     </td></tr>
                   </table>
 
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td style="font-size:6px; line-height:10px;">
                       <img class="max-width" width="600" style="display:block; max-width:100% !important; width:100%; height:auto !important;"
                            src="https://news.sogni.ai/sogni-sync/assets/15/tattoo.jpg" alt="Sogni Tattoo Flash">
                     </td></tr>
                   </table>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td class="text-module" style="padding-top:0;">
                       <div class="button-row">
                         <a href="https://ink.sogni.ai/" class="green-button">👉 Try the Tattoo Generator</a>
@@ -464,14 +432,14 @@
                   </table>
 
                   <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td class="divider-hr" bgcolor="#525155"></td></tr></table>
+                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tr><td class="divider-hr" bgcolor="#525155"></td></tr></table>
                     </td></tr>
                   </table>
 
                   <!-- ===== Season 3 Airdrop ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="SEASON-3-HEADING">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="SEASON-3-HEADING">
                     <tr><td>
                       <div class="section-title-container" style="padding-left:20px;">
                         <h2 class="section-title">Season 3 Airdrop 🥳</h2>
@@ -479,14 +447,14 @@
                     </td></tr>
                   </table>
 
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td align="center" style="font-size:6px; line-height:10px;">
                       <img class="max-width" width="600" style="display:block; max-width:100% !important; width:100%; height:auto !important;"
                            src="https://news.sogni.ai/sogni-sync/assets/15/season3_airdrop.png" alt="Season 3 Airdrop">
                     </td></tr>
                   </table>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td class="text-module">
                       <p>The race continues: 10,000,000 SOGNI will go to the top 2,500 users across all leaderboards by the end of this season. You can enter the airdrop competition every 6 weeks!</p>
                       <p>🏁 Season 3 runs until Monday, November 3, at UTC Midnight.</p>
@@ -494,14 +462,14 @@
                     </td></tr>
                   </table>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td class="text-module" style="padding-bottom: 0;">
                       <p><strong>📊 Season 1 by the numbers:</strong></p>
                       <p>🎨 13,563 Artists<br>🤑 125 Stakers<br>🛀 184 Relaxed Workers<br>⚡ 428 Fast Workers</p>
                     </td></tr>
                   </table>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td class="text-module" style="padding-top: 0;">
                       <p><strong>📊 Season 2 by the numbers:</strong></p>
                       <p>🎨 2,500 Artists<br>🤑 563 Stakers<br>🛀 197 Relaxed Workers<br>⚡ 381 Fast Workers. <br>Season 2 airdrops wlll be claimable on Oct 6</p>
@@ -510,14 +478,14 @@
                   </table>
 
                   <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
+                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
                     </td></tr>
                   </table>
 
                   <!-- ===== Leaderboards ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="LEADERBOARD-HEADING">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="LEADERBOARD-HEADING">
                     <tr><td>
                       <div class="section-title-container" style="padding-left:20px;">
                           <h2 class="section-title">Leaderboards: How to Rank 🎯</h2>
@@ -526,14 +494,14 @@
                     </td></tr>
                   </table>
 
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td align="center" style="font-size:6px; line-height:10px; padding:12px 0 20px;">
                       <img class="max-width" width="600" style="display:block; max-width:100% !important; width:100%; height:auto !important;"
                            src="https://news.sogni.ai/sogni-sync/assets/15/rank.jpg" alt="Ranking banner">
                     </td></tr>
                   </table>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td class="text-module">
                       <p><strong>🎨 Artists, your creation method matters:</strong></p>
                       <ul style="margin:0 0 20px 20px; padding:0;">
@@ -559,14 +527,14 @@
                   </table>
 
                   <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
+                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
                     </td></tr>
                   </table>
 
                   <!-- ===== Fast Worker Updates ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="FAST-WORKER-HEADING">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="FAST-WORKER-HEADING">
                     <tr>
                       <td>
                         <div class="section-title-container" style="padding-left:20px;">
@@ -576,7 +544,7 @@
                     </tr>
                   </table>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr>
                       <td class="text-module">
                         <h3 class="section-title-small" style="color:#ffffff;">For Stakers: Secure Your Share of the Airdrop</h3>
@@ -596,16 +564,16 @@
                   </table>
 
                   <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
+                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
                     </td></tr>
                   </table>
 
 
 
                   <!-- ===== Aethir x Sogni ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="AETHIR-HEADING">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="AETHIR-HEADING">
                     <tr><td>
                       <div class="section-title-container" style="padding-left:20px;">
                         <h2 class="section-title">Two DePINs, One Vision 🤝</h2>
@@ -613,14 +581,14 @@
                     </td></tr>
                   </table>
 
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td align="center" style="font-size:6px; line-height:10px; padding:12px 0 20px;">
                       <img class="max-width" width="600" style="display:block; max-width:100% !important; width:100%; height:auto !important;"
                            src="https://news.sogni.ai/sogni-sync/assets/15/aethir_ecodrop.jpg" alt="Aethir EcoDrop">
                     </td></tr>
                   </table>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td class="text-module" style="padding-top:0;">
                       <p>We linked up with Aethir because of the same brain, same mission: open, community-first, no walled gardens. To kick it off, we ran a one-time airdrop (now closed) that let Aetherians ape into Sogni via a special NFT; instant perks like priority access, Spark savings, and a future gated Discord channel. If you caught the drop, welcome to the fast lane 🫡</p>
                       <p><a href="https://ecosystem.aethir.com/blog-posts/sogni-aethir-powering-creative-ai-with-decentralized-cloud-computing" class="green-button">Read more on this partnership here.</a></p>
@@ -628,14 +596,14 @@
                   </table>
 
                   <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
+                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
                     </td></tr>
                   </table>
 
                   <!-- ===== GM Vietnam & WebX Japan ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="VIETNAM-HEADING">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="VIETNAM-HEADING">
                     <tr><td>
                       <div class="section-title-container" style="padding-left:20px;">
                         <h2 class="section-title">Good Morning Vietnam &amp; WebX Japan 🇻🇳🇯🇵</h2>
@@ -643,14 +611,14 @@
                     </td></tr>
                   </table>
 
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td align="center" style="font-size:6px; line-height:10px; padding:12px 0 20px;">
                       <img class="max-width" width="600" style="display:block; max-width:100% !important; width:100%; height:auto !important;"
                            src="https://news.sogni.ai/sogni-sync/assets/15/gm_vietnam.jpg" alt="GM Vietnam">
                     </td></tr>
                   </table>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td class="text-module" style="padding-top:0;">
                       <p>After Cannes, we teamed up with Tezos to bring Sogni Photobooth to Hanoi for Good Morning Vietnam, and also to Japan for WebX 2025. Vietnam and Japan really turned up—people transformed themselves and left with their own printed keepsake! Huge thanks to the Tezos team for helping us share our vision all the way to Asia.</p>
                       <div class="button-row">
@@ -661,14 +629,14 @@
                   </table>
 
                   <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
+                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
                     </td></tr>
                   </table>
 
                   <!-- ===== Future Events ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="EVENTS-HEADING">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="EVENTS-HEADING">
                     <tr><td>
                       <div class="section-title-container" style="padding-left:20px;">
                         <h2 class="section-title">Future Events 🗓️</h2>
@@ -676,14 +644,14 @@
                     </td></tr>
                   </table>
 
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td align="center" style="font-size:6px; line-height:10px; padding:12px 0 20px;">
                       <img class="max-width" width="600" style="display:block; max-width:100% !important; width:100%; height:auto !important;"
                            src="https://news.sogni.ai/sogni-sync/assets/15/dramhaus.jpg?v=1" alt="Dreamhaus Token2049">
                     </td></tr>
                   </table>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td class="text-module" style="padding-top:0;">
                      <p>Join us at <a href="https://luma.com/dreamhaus">Dreamhaus</a> as Sogni AI, TZ APAC, Nosana, and OpenGPU close out TOKEN2049 and kick off the Singapore F1 weekend. Expect an evening of food, drinks, and connections — plus a hands-on vibe coding workshop, unfiltered insights from AI founders, and AI-reimagined portraits at the Sogni Photobooth.<p>
                      <p>Capacity is limited, so RSVP now to secure your spot.</p>
@@ -693,14 +661,14 @@
                   </table>
 
                   <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
+                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
                     </td></tr>
                   </table>
 
                   <!-- ===== Premium Spark ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="SPARK-HEADING">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="SPARK-HEADING">
                     <tr><td>
                       <div class="section-title-container" style="padding-left:20px;">
                         <h2 class="section-title">Web2 Convenience, Web3 Power 🌉</h2>
@@ -708,14 +676,14 @@
                     </td></tr>
                   </table>
 
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td align="center" style="font-size:6px; line-height:10px; padding:12px 0 20px;">
                       <img class="max-width" width="600" style="display:block; max-width:100% !important; width:100%; height:auto !important;"
                            src="https://news.sogni.ai/sogni-sync/assets/15/premium_spark.jpg" alt="Premium Spark">
                     </td></tr>
                   </table>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td class="text-module" style="padding-top:0;">
                       <p>Premium Sparks are available for purchase through our native and web apps. These generation credits are used for paying for image generation jobs on the Supernet, just like regular Spark Points or SOGNI tokens—except they also give you perks! Buying Premium Spark allows you to:</p>
                       <ul style="margin:0 0 20px 20px; padding:0;">
@@ -733,14 +701,14 @@
                   </table>
 
                   <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
+                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
                     </td></tr>
                   </table>
 
                   <!-- ===== Extended GPU ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="GPU-HEADING">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="GPU-HEADING">
                     <tr><td>
                       <div class="section-title-container" style="padding-left:20px;">
                         <h2 class="section-title">Welcome, RTX 5090s 👋</h2>
@@ -748,14 +716,14 @@
                     </td></tr>
                   </table>
 
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td align="center" style="font-size:6px; line-height:10px; padding:12px 0 20px;">
                       <img class="max-width" width="600" style="display:block; max-width:100% !important; width:100%; height:auto !important;"
                            src="https://news.sogni.ai/sogni-sync/assets/15/gpu.jpg" alt="GPU">
                     </td></tr>
                   </table>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td class="text-module" style="padding-top:0;">
                       <p>Sogni Fast Worker for both Stable Diffusion and Flux now officially supports Nvidia 5090 and Nvidia Blackwell GPUs! The official supported GPU list has been expanded to 22 GPU types, covering basically any recent Nvidia GPU with at least 16GB VRAM.</p>
                       <p><strong>Highlights:</strong></p>
@@ -768,14 +736,14 @@
                   </table>
 
                   <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
+                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
                     </td></tr>
                   </table>
 
                   <!-- ===== Tutorials ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="TUTORIALS-HEADING">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="TUTORIALS-HEADING">
                     <tr><td>
                       <div class="section-title-container" style="padding-left:20px;">
                         <h2 class="section-title">Your Sogni Skill Up Is Here 🧠</h2>
@@ -783,7 +751,7 @@
                     </td></tr>
                   </table>
 
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr>
                       <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:20px 20px 0;">
                         <a href="https://www.youtube.com/watch?v=OU83E2sMITU" target="_blank">
@@ -796,7 +764,7 @@
                     </tr>
                   </table>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                       <tr><td class="text-module">
                               <p>Flux Kontext is a revolution in creative control, and our latest video is your guide to mastering it. Watch us transform a photo step-by-step, create character interactions, and design a professional poster using simple, conversational commands.</p>
                               <p>Once you've mastered natural language editing, visit our YouTube channel to discover your signature style with our guide to <strong>Flux Krea and Chroma</strong>. Then, make an informed choice for your toolkit by watching our in-depth comparison of <strong>Sogni AI vs. Google's Nano Banana</strong>, where we test both platforms to their limits.</p>
@@ -805,14 +773,14 @@
                   </table>
 
                   <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
+                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
                     </td></tr>
                   </table>
 
                   <!-- ===== Flux Interview ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="FLUX-HEADING">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="FLUX-HEADING">
                     <tr><td>
                       <div class="section-title-container" style="padding-left:20px;">
                         <h2 class="section-title">A Conversation with Mauvis 🎙️</h2>
@@ -820,14 +788,14 @@
                     </td></tr>
                   </table>
 
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td align="center" style="font-size:6px; line-height:10px; padding:12px 0 20px;">
                       <img class="max-width" width="600" style="display:block; max-width:100% !important; width:100%; height:auto !important;"
                            src="https://news.sogni.ai/sogni-sync/assets/15/interview.jpeg" alt="Flux Kontext interview">
                     </td></tr>
                   </table>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td class="text-module" style="padding-top:0;">
                       <p>Ice and Mauvis sit down for an in-depth chat about the newly released Flux Kontext model — exploring its features, creative potential, and how it’s shaping the future of AI art. They also drop some exciting details about Sogni SDK, the NTU Hackathon, and upcoming events!</p>
                       <a href="https://x.com/Sogni_Protocol/status/1961430436577685526" class="green-button">👉 Watch Full Video</a>
@@ -835,14 +803,14 @@
                   </table>
 
                   <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
+                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
                     </td></tr>
                   </table>
 
                   <!-- ===== Community Showcase ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="SHOW-HEADING">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="SHOW-HEADING">
                     <tr><td>
                       <div class="section-title-container" style="padding-left:20px;">
                         <h2 class="section-title">The Community is Cooking 🍳</h2>
@@ -850,21 +818,21 @@
                     </td></tr>
                   </table>
 
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td align="center" style="font-size:6px; line-height:10px; padding:12px 0 20px;">
                       <img class="max-width" width="600" style="display:block; max-width:100% !important; width:100%; height:auto !important;"
                            src="https://news.sogni.ai/sogni-sync/assets/15/artist_spotlight_01.jpg" alt="Artist Spotlight 1">
                     </td></tr>
                   </table>
 
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td align="center" style="font-size:6px; line-height:10px; padding:12px 0 20px;">
                       <img class="max-width" width="600" style="display:block; max-width:100% !important; width:100%; height:auto !important;"
                            src="https://news.sogni.ai/sogni-sync/assets/15/artist_spotlight_02.jpg" alt="Artist Spotlight 2">
                     </td></tr>
                   </table>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td class="text-module" style="padding-top:0;">
                       <p>These are picks from the Creative Army community on X!</p>
                       <a href="https://x.com/i/communities/1896860465222848638" class="green-button">👉 Join our X Community</a>
@@ -872,9 +840,9 @@
                   </table>
 
                   <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
+                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
                     </td></tr>
                   </table>
                   <!-- Past Newsletter Link -->
@@ -892,14 +860,14 @@
                   </table>
 
                   <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td style="padding:35px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
+                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
                     </td></tr>
                   </table>
 
                   <!-- ===== Social Icons ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td align="center" style="padding:10px 0 20px;">
                       <a class="social-icon" href="https://discord.com/invite/2JjzA2zrrc"><img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/dde8c72d-0180-48ce-a884-0b5059c0bd6a/100x100.png" alt="Discord"></a>
                       <a class="social-icon" href="https://t.me/sogniai"><img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/f72a9b29-0ca6-4c8f-a043-28a16a5460e2/100x100.png" alt="Telegram"></a>
@@ -920,7 +888,7 @@
                   </div>
 
                   <!-- ===== Footer Legal ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr><td style="padding:0 16px 16px; text-align:center;">
                       <p style="font:10px/14px 'Inter',sans-serif; color:#a6a6a6;">
                         WE&amp;ROBOT PTE. LTD. · #60 Paya Lebar Road #07-54 · Singapore 409051<br>
@@ -930,7 +898,7 @@
                   </table>
 
                   <!-- ===== Spacer ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:0 0 30px;"></td></tr></table>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:0 0 30px;"></td></tr></table>
 
                 </td>
               </tr>
