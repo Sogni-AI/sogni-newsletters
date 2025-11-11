@@ -1,0 +1,611 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" lang="en">
+<head>
+  <!-- ===== Meta & mobile-first ===== -->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="x-apple-disable-message-reformatting" />
+  <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no" />
+  <meta name="color-scheme" content="light" />
+  <meta name="supported-color-schemes" content="light dark" />
+  <title>Sogni /Sync — November ’25 | Volume 16</title>
+
+  <!-- ===== Google Fonts (Inter + Space Grotesk) ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+  <!-- ===== Core styles (merged + cleaned) ===== -->
+  <style type="text/css">
+    span.device { display:block; font-weight:normal; font-size:0.9em; }
+
+    /* Base typography & resets */
+    body, p, div {
+      margin:0; padding:0; font-family:inherit; font-size:16px; line-height:23px;
+      -webkit-font-smoothing:antialiased; -webkit-text-size-adjust:100%;
+      -ms-text-size-adjust:100%; -moz-text-size-adjust:100%;
+    }
+    body { background:#1D1D1D; color:#ffffff; width:100% !important; }
+    p { margin:0 0 20px; }
+    a { color:#99FF01; text-decoration:none; }
+    a img { vertical-align:middle; }
+    img { border:none; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; }
+    table.wrapper { width:100% !important; table-layout:fixed; }
+    .column.of-2{ width:50%; } .column.of-3{ width:33.333%; } .column.of-4{ width:25%; }
+
+    /* Lists – force styles inside email clients */
+    ul ul ul ul{ list-style-type:disc !important; }
+    ol ol{ list-style-type:lower-roman !important; }
+    ol ol ol{ list-style-type:lower-latin !important; }
+    ol ol ol ol{ list-style-type:decimal !important; }
+    center.small{font-size: 14px;}
+
+    /* Headings & text blocks */
+    .main-title-container { padding:20px; color:#a6a6a6; text-align:left; }
+    .main-title { margin:0; font:700 32px/1.2 'Inter',sans-serif; color:#ffffff; }
+    .subtitle { font:500 20px/1.5 'Inter',sans-serif; color:#a6a6a6; margin:5px 0 0; }
+
+    .section-title-container { padding:20px 20px 16px 20px; color:#ffffff; text-align:left; }
+    .section-name { margin:0 0 8px; font:500 16px/1.1 'Inter',sans-serif; color:#a6a6a6; }
+    .section-title { margin:0 0 8px; font:500 32px/1.1 'Space Grotesk',sans-serif; }
+    .section-title-small{ margin:0 0 12px; font:500 16px/1.2 'Space Grotesk',sans-serif; }
+
+    .text-module { padding:18px 20px; font-size:16px; line-height:1.6; color:#a6a6a6; text-align:left; }
+    .text-module p{ margin:0 0 20px; }
+
+    /* Buttons (match old template) */
+    .green-button,
+    .button-link {
+      background:#000;
+      border:1px solid #99ff01;
+      border-radius:9px;
+      color:#fff !important;
+      font:300 14px/normal 'Inter', sans-serif;
+      padding:10px 16px;
+      text-decoration:none;
+      display:inline-block;
+      margin-top:15px;
+    }
+    .button-row a + a { margin-left:1rem; }
+
+    /* Social icons */
+    .social-icon img{ width:24px; height:24px; }
+    .social-icon{ display:inline-block; margin:0 10px; }
+
+    /* App blocks */
+    .app-icon-wrapper { text-align:center; padding:0; }
+    .app-icon { width:128px; margin:0 auto; display:block; height:auto; }
+    .app-heading { text-align:center; color:#ffffff; margin:10px 0; font-family:Inter, sans-serif; }
+    .app-button-container { text-align:center; margin-bottom:30px; }
+    .app-download-button { background:#000; border:1px solid #99FF01; border-radius:8px; color:#fff !important; display:inline-block; font:14px 'Inter',sans-serif; padding:10px 20px; text-decoration:none; margin-top:10px; }
+
+    /* Unsubscribe color (keep from old) */
+    .unsubscribe-css__unsubscribe___2CDlR a.Unsubscribe--unsubscribeLink{ color:#bebdbd !important; text-decoration:none !important; }
+
+    /* Responsive */
+    @media screen and (max-width:480px){
+      .preheader .rightColumnContent,
+      .footer .rightColumnContent{ text-align:left !important; }
+      .preheader .rightColumnContent div,
+      .preheader .rightColumnContent span,
+      .footer .rightColumnContent div,
+      .footer .rightColumnContent span{ text-align:left !important; }
+      .preheader .rightColumnContent, .preheader .leftColumnContent{ font-size:80% !important; padding:5px 0; }
+      table.wrapper-mobile{ width:100% !important; table-layout:fixed; }
+      img.max-width{ max-width:100% !important; height:auto !important; }
+      a.button-link, a.green-button{ display:inline-block !important; width:auto !important; font-size:80% !important; padding-left:16px !important; padding-right:16px !important; }
+      .columns, .column{ width:100% !important; display:block !important; padding-left:0 !important; padding-right:0 !important; margin-left:0 !important; margin-right:0 !important; }
+      .social-icon img{ width:16px !important; height:16px !important; }
+      .main-title{ font-size:32px !important; }
+      .app-icon{ width:80px !important; }
+
+      /* Two-column layout mobile collapse */
+      .mobile-stack-row{ display:block !important; }
+      .mobile-stack{ display:block !important; width:100% !important; box-sizing:border-box !important; }
+      .mobile-stack-img{ display:block !important; width:100% !important; padding:18px 20px 10px 20px !important; text-align:center !important; }
+      .mobile-stack-img img{ max-width:60% !important; margin:0 auto !important; }
+      .mobile-stack-text{ display:block !important; width:100% !important; padding:0 20px 18px 20px !important; }
+    }
+    @media screen and (max-width:480px){ .two-col-override .column{ width:50% !important; display:inline-block !important; vertical-align:top; } }
+    @media screen and (max-width:320px){ .two-col-override .column{ width:100% !important; display:block !important; } }
+
+    /* Minor helper */
+    .divider-hr { line-height:1px; font-size:1px; }
+  </style>
+</head>
+
+<body style="margin:0; padding:0; background:#1D1D1D; width:100% !important;">
+  <!-- ===== OUTER WRAPPER ===== -->
+  <table align="center" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"
+         style="background:#000000; max-width:600px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Fira Sans','Droid Sans','Helvetica Neue',sans-serif;">
+    <tr>
+      <td>
+        <center class="wrapper" data-link-color="#99FF01" data-body-style="font-size:16px; font-family:inherit; color:#ffffff; background-color:#1D1D1D;">
+          <div class="webkit">
+            <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#1D1D1D" style="table-layout:fixed;">
+              <tr>
+                <td bgcolor="#000000" valign="top">
+
+                  <!-- ===== Hidden pre-header ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="display:none!important;mso-hide:all;visibility:hidden;opacity:0;color:transparent;height:0;width:0;">
+                    <tr><td>New Head of Growth, TOKEN2049 blitz, RIT Creative Collisions, Halloween Photobooth styles, Quick Hits across Sogni, and Season 4 + Creator Showcase are live.</td></tr>
+                  </table>
+
+                  <!-- ===== Spacer ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:0 0 15px;"></td></tr></table>
+
+                  <!-- ===== Top row: logo + edition label ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td>
+                        <div style="padding:10px 20px 20px;">
+                          <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                            <tr>
+                              <td align="left" valign="middle">
+                                <table cellpadding="0" cellspacing="0" border="0" role="presentation">
+                                  <tr>
+                                    <td valign="middle" style="padding-right:5px;">
+                                      <img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/d2884f6c-4924-48ca-a7e6-a0c6bba72f16/1657x636.png" alt="Sogni logo" style="height:calc(16px * 1.2); width:auto;">
+                                    </td>
+                                    <td valign="middle" style="font-family:Inter,sans-serif; font-size:16px; color:#a6a6a6;">/Sync</td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <td align="right" valign="middle" style="font-family:Inter,sans-serif; font-size:16px; color:#a6a6a6; white-space:nowrap;">
+                                November ’25 | Volume 16
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- ===== Main title ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td>
+                        <div class="main-title-container" style="padding-left:20px;">
+                          <h1 class="main-title">Hope You Had a Great October! 🎃</h1>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- ===== Hero image ===== -->
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:12px 0 20px;">
+                        <img width="600" class="max-width"
+                             style="display:block; max-width:100% !important; width:100%; height:auto !important;"
+                             src="https://news.sogni.ai/sogni-sync/assets/16/sogni-nov-banner.jpg"
+                             alt="Photobooth Halloween Styles">
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- ===== Intro text ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td class="text-module">
+                        <p><strong>This year is flying by and last month brought amazing updates and milestones we're proud to share with you.</strong></p>
+                        <p>A new leader joined our team. We took Sogni to one of crypto's biggest stages. We watched the next generation of creators discover what happens when human taste meets AI's fluency.</p>
+                        <p>And your Halloween creations? Absolutely phenomenal. Let's dive in.</p>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- QUICK JUMP -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td>
+                        <div class="section-name" style="padding-left:20px;">QUICK JUMP</div>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="this-edition">
+                    <tr>
+                      <td>
+                        <div class="section-title-container" style="padding-left:20px;">
+                          <h2 class="section-title">In this edition:</h2>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td class="text-module" style="padding-top:0;">
+                        <ul style="margin:0 0 0 20px; padding:0;">
+                          <li><a href="#HEAD-OF-GROWTH">Meet Your New Head of Growth</a></li>
+                          <li><a href="#TOKEN2049">TOKEN2049: “Sogni Was Everywhere”</a></li>
+                          <li><a href="#RIT-CREATIVE-COLLISIONS">Creative Collisions at RIT</a></li>
+                          <li><a href="#PHOTOBOOTH-HALLOWEEN">Photobooth Goes Full Halloween</a></li>
+                          <li><a href="#QUICK-HITS">Quick Hits Across Sogni</a></li>
+                          <li><a href="#NOVEMBER-CREATOR-SHOWCASE">November: Creator Showcase + Season 4</a></li>
+                          <li><a href="#YOUR-NEXT-STEPS">Your Next Steps</a></li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- ===== Divider ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:20px 0 10px;"><table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td class="divider-hr" bgcolor="#525155"></td></tr></table></td></tr></table>
+
+                  <!-- ===== Meet Your New Head of Growth ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="HEAD-OF-GROWTH">
+                    <tr><td>
+                      <div class="section-title-container" style="padding-left:20px;">
+                        <h2 class="section-title">Meet Your New Head of Growth</h2>
+                      </div>
+                    </td></tr>
+                  </table>
+
+                  <!-- two-column: text + headshot -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr class="mobile-stack-row">
+                      <!-- Right: image (first on mobile) -->
+                      <td class="mobile-stack mobile-stack-img" style="width:40%; padding:18px 20px;">
+                        <img width="220" class="max-width" style="display:block; max-width:100% !important; height:auto !important; border-radius:8px;"
+                          src="https://news.sogni.ai/sogni-sync/assets/16/josh_sogni_headshot_medium.jpg"
+                          alt="Josh – Sogni Head of Growth headshot" />
+                        <center class="small" style="margin-top:10px;">My Sogni‑created headshot 💚</center>
+                      </td>
+                      <!-- Left: text -->
+                      <td class="text-module mobile-stack mobile-stack-text" style="width:60%; padding-right:0;">
+                        <p>Hey everyone! Josh here.</p>
+                        <p>You may recognize me from Sogni's YouTube tutorials or my work as a Web3 and AI KOL. I've been using AI tools daily for over three years now, back before ChatGPT even existed.</p>
+                        <p>Why am I here? Because Sogni is <em>f*cking</em> rad. You can see it in the products and feel it in the community. This is a team of creators building for creators who want true ownership, real privacy, and tools that amplify what makes them unique.</p>
+                        <p>My job is simple: amplify what you're already doing. Expect more resources. More ways to showcase your work. More opportunities to turn your creativity into something extraordinary.</p>
+                        <p>This journey is about you. I'm here to help you win. 🤘</p>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- ===== Divider ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:20px 0 10px;"><table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td class="divider-hr" bgcolor="#525155"></td></tr></table></td></tr></table>
+
+                  <!-- ===== TOKEN2049 ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="TOKEN2049">
+                    <tr><td>
+                      <div class="section-title-container" style="padding-left:20px;">
+                        <h2 class="section-title">TOKEN2049: “Sogni Was Everywhere”</h2>
+                      </div>
+                    </td></tr>
+                  </table>
+
+                  <!-- image + copy -->
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:0 0 20px;">
+                        <img width="600" class="max-width"
+                             style="display:block; max-width:100% !important; width:100%; height:auto !important; border-radius:8px;"
+                             src="https://news.sogni.ai/sogni-sync/assets/16/sogni_tzapac_overeasy_kontext.jpg"
+                             alt="Dreamhaus at Overeasy Bar, Singapore">
+                      </td>
+                    </tr>
+                  </table>
+
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td class="text-module" style="padding-top:0;">
+                        <p>If you were in Singapore last month, you probably ran into us. Our team executed 14 activations across five days—sometimes three at once across the city—from morning to night.</p>
+                        <p>Multiple people told us we were “literally everywhere” at every major event. That wasn't an accident. Special shoutout to <a href="https://x.com/natxwang" target="_blank" rel="noopener">Natx</a>, our Ecosystem Growth Lead, who's been doing an amazing job forging partnerships and building our close relationship with the Base community throughout Asia. ❤️</p>
+                        <p>Over 900 people RSVP’d to our flagship <a href="https://luma.com/dreamhaus" target="_blank" rel="noopener">Dreamhaus event at Overeasy Bar</a>. We partnered with our good friends at TzApac to make it happen across the bay from the iconic Marina Bay Sands. Mauvis ran a vibe‑coding session and we had two printers going nonstop because people couldn’t get enough of <a href="https://photobooth.sogni.ai/" target="_blank" rel="noopener">Photobooth</a>. The energy was electric.</p>
+                        <div class="button-row">
+                          <a href="https://photobooth.sogni.ai/" class="green-button" target="_blank" rel="noopener">👉 Try Photobooth</a>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- ===== Partners sub-section ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="PARTNERS">
+                    <tr><td>
+                      <div class="section-title-container" style="padding-left:20px;">
+                        <h3 class="section-title-small" style="color:#ffffff;">Building With the Right Partners</h3>
+                      </div>
+                    </td></tr>
+                  </table>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td class="text-module" style="padding-top:0;">
+                        <p>Heartfelt thanks to Base, TzApac, Etherlink, and Nosana. They don't treat creators as marketing assets—they treat them as the soul of this movement, backing it up with action, resources, and real presence.</p>
+                        <p>These are the partners who understand what we're building: tools that create real value for real people. Stay tuned. The next era of open‑source AI is coming.</p>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- ===== Divider ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:20px 0 10px;"><table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td class="divider-hr" bgcolor="#525155"></td></tr></table></td></tr></table>
+
+                  <!-- ===== RIT Creative Collisions ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="RIT-CREATIVE-COLLISIONS">
+                    <tr><td>
+                      <div class="section-title-container" style="padding-left:20px;">
+                        <h2 class="section-title">Creative Collisions at RIT: The First Generation of Co‑Creation</h2>
+                      </div>
+                    </td></tr>
+                  </table>
+
+                  <!-- two-column with image -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr class="mobile-stack-row">
+                      <td class="mobile-stack mobile-stack-img" style="width:45%; padding:18px 20px;">
+                        <img width="260" class="max-width" style="display:block; max-width:100% !important; height:auto !important; border-radius:8px;"
+                          src="https://news.sogni.ai/sogni-sync/assets/16/mauvis_rit.jpg"
+                          alt="Mauvis at RIT – Creative Collisions" />
+                        <center class="small" style="margin-top:10px;">Selfie w/ Mauvis & the RIT profs</center>
+                      </td>
+                      <td class="text-module mobile-stack mobile-stack-text" style="width:55%; padding-top:0;">
+                        <p>Our benevolent CEO, Mauvis, spent three days at Rochester Institute of Technology for Creative Collisions mid‑month. What he saw was fascinating: a generational shift in how young creators approach AI.</p>
+                        <p>Some students had valid concerns about environmental impact, copyright, and ethics. Others dove in fearlessly. Over those three days, something clicked: students who embraced AI didn't lose their voice—they amplified it. Work that felt alive. Guided by human taste, expressed through machine fluency.</p>
+                        <p>Special thanks to RIT's Program Directors Mike Strobert and Jason Arena, and Associate Professor Adam Smith for creating space for honest dialogue about AI's role in creativity.</p>
+                        <p><strong>The insight:</strong> AI isn't replacing creativity. It's expanding the canvas.</p>
+                        <div class="button-row">
+                          <a href="https://www.linkedin.com/pulse/creative-collisions-reflections-from-rit-shifting-tides-ledford-g1mqc" class="green-button" target="_blank" rel="noopener">👉 Read the full reflection</a>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- optional header image -->
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:0 0 20px;">
+                        <img width="600" class="max-width"
+                             style="display:block; max-width:100% !important; width:100%; height:auto !important; border-radius:8px;"
+                             src="https://news.sogni.ai/sogni-sync/assets/16/creative_collisions_header.jpg"
+                             alt="Creative Collisions header">
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- ===== Divider ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:20px 0 10px;"><table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td class="divider-hr" bgcolor="#525155"></td></tr></table></td></tr></table>
+
+                  <!-- ===== Photobooth Halloween + Updates ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="PHOTOBOOTH-HALLOWEEN">
+                    <tr><td>
+                      <div class="section-title-container" style="padding-left:20px;">
+                        <h2 class="section-title">Photobooth Goes Full Halloween (Plus Updates Across the Suite)</h2>
+                      </div>
+                    </td></tr>
+                  </table>
+
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td class="text-module" style="padding-top:0;">
+                        <p>If there's a holiday perfectly suited for Photobooth, it's Halloween—and we leaned in hard.</p>
+                        <p>In preparation for our Halloween contest, our vibe‑coding maestro and CTO, <a href="https://x.com/fishmongr" target="_blank" rel="noopener">Mark</a>, completely revamped core workflows with tons of UX improvements.</p>
+                        <p>And the costumes? He added over 40 Halloween styles—on top of the 200+ styles already in Photobooth. Here are a few ready to go:</p>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:0 0 20px;">
+                        <img width="600" class="max-width"
+                             style="display:block; max-width:100% !important; width:100%; height:auto !important; border-radius:8px;"
+                             src="https://news.sogni.ai/sogni-sync/assets/16/photobooth_halloween_styles.jpg"
+                             alt="Photobooth Halloween styles">
+                      </td>
+                    </tr>
+                  </table>
+
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:0 0 20px;">
+                        <img width="600" class="max-width"
+                             style="display:block; max-width:100% !important; width:100%; height:auto !important; border-radius:8px;"
+                             src="https://news.sogni.ai/sogni-sync/assets/16/halloween_contest_grid.jpg"
+                             alt="Halloween contest community grid">
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- ===== Divider ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:20px 0 10px;"><table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td class="divider-hr" bgcolor="#525155"></td></tr></table></td></tr></table>
+
+                  <!-- ===== Quick Hits ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="QUICK-HITS">
+                    <tr><td>
+                      <div class="section-title-container" style="padding-left:20px;">
+                        <h2 class="section-title">Quick Hits Across Sogni</h2>
+                      </div>
+                    </td></tr>
+                  </table>
+
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr><td class="text-module" style="padding-top:0;">
+                      <p><strong>Sogni Web:</strong> <a href="https://app.sogni.ai/create" target="_blank" rel="noopener">Paintover</a> now works with Guide Images and Kontext so you can draw over existing images or draw from scratch for even more creative control.</p>
+                    </td></tr>
+                  </table>
+
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:0 0 20px;">
+                        <img width="600" class="max-width"
+                             style="display:block; max-width:100% !important; width:100%; height:auto !important; border-radius:8px;"
+                             src="https://news.sogni.ai/sogni-sync/assets/16/sogni-paintover.gif"
+                             alt="Paintover demo">
+                      </td>
+                    </tr>
+                  </table>
+
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr><td class="text-module" style="padding-top:0;">
+                      <p>We also added ControlNet support for models like Canny, InPaint, and LineArt so you get the control you need.</p>
+                      <p><strong>Sogni Studio &amp; Pocket:</strong> Style quick search makes finding the perfect aesthetic instant. Just start typing and boom—you're there.</p>
+                    </td></tr>
+                  </table>
+
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:0 0 20px;">
+                        <img width="320" class="max-width"
+                             style="display:block; max-width:100% !important; height:auto !important; border-radius:8px;"
+                             src="https://news.sogni.ai/sogni-sync/assets/16/sogni_pocket_style_search.jpg"
+                             alt="Pocket style search">
+                      </td>
+                    </tr>
+                  </table>
+
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr><td class="text-module" style="padding-top:0;">
+                      <p>We added new metadata embedding that automatically saves your generation settings right into exported images. And of course, some nice UI improvements for Mac&nbsp;OS&nbsp;Tahoe and iOS&nbsp;26, among other stability and performance improvements. 💪</p>
+                    </td></tr>
+                  </table>
+
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:0 0 20px;">
+                        <img width="600" class="max-width"
+                             style="display:block; max-width:100% !important; width:100%; height:auto !important; border-radius:8px;"
+                             src="https://news.sogni.ai/sogni-sync/assets/16/sogni_studio_tahoe_screenshot.jpg"
+                             alt="Sogni Studio UI updates">
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- ===== Divider ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:20px 0 10px;"><table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td class="divider-hr" bgcolor="#525155"></td></tr></table></td></tr></table>
+
+                  <!-- ===== November: Creator Showcase + Season 4 ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="NOVEMBER-CREATOR-SHOWCASE">
+                    <tr><td>
+                      <div class="section-title-container" style="padding-left:20px;">
+                        <h2 class="section-title">November Is Here: Creator Showcase + Season 4 Is Live</h2>
+                      </div>
+                    </td></tr>
+                  </table>
+
+                  <!-- Creator Showcase -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr><td class="text-module" style="padding-top:0;">
+                      <h3 class="section-title-small" style="color:#ffffff;">Creator Showcase (Now Live!)</h3>
+                      <p>Four weeks. Four challenges. The fourth week is a special finale. We've already kicked off Week&nbsp;1 with “Logo in Their Fall Era,” reimagining brands through autumn aesthetics. Top 3 winners each week earn Premium Spark and SOGNI tokens. We're also crowning a Creator of the Month.</p>
+                      <p>This is your chance to push your skills, learn new techniques, and show the world what you can orchestrate when human imagination meets AI's power.</p>
+                    </td></tr>
+                  </table>
+
+                  <!-- Season 4 Leaderboards -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr><td class="text-module" style="padding-top:0;">
+                      <h3 class="section-title-small" style="color:#ffffff;">Season 4 Leaderboards (Started Nov 3rd)</h3>
+                      <p>6 weeks. 10M SOGNI. 4 leaderboards. <a href="https://www.sogni.ai/leaderboard#artist" target="_blank" rel="noopener">Season 4</a> is already underway—earn from your contribution and creativity. There are some noteworthy updates; <a href="https://x.com/TshirtCamo/status/1985269902211768363" target="_blank" rel="noopener">check out this recap</a> by Ethan, one of our community members.</p>
+                      <p>Stakers, artists, fast workers, and relaxed workers are all competing for their share right now. Join ’em!</p>
+                      <p>Leaderboard Season 3 airdrops go live at <a href="http://app.sogni.ai" target="_blank" rel="noopener">app.sogni.ai</a> on Monday the 17th—congrats to the winners!</p>
+                      <h3 class="section-title-small" style="color:#ffffff;">Plus, More Coming Soon</h3>
+                      <p>We have a few other major campaigns launching where you'll be able to participate and be rewarded in a big way. Stay tuned. We're keeping this one a little cryptic for now. 😉</p>
+                    </td></tr>
+                  </table>
+
+                  <!-- Small square visual -->
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:0 0 10px;">
+                        <img class="max-width"
+                             style="display:block; max-width:100% !important; height:auto !important; border-radius:8px;"
+                             src="https://news.sogni.ai/sogni-sync/assets/16/season_4_idea_2a_square.png"
+                             alt="Season 4 artwork">
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- ===== Divider ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:20px 0 10px;"><table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td class="divider-hr" bgcolor="#525155"></td></tr></table></td></tr></table>
+
+                  <!-- ===== Your Next Steps ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="YOUR-NEXT-STEPS">
+                    <tr><td>
+                      <div class="section-title-container" style="padding-left:20px;">
+                        <h2 class="section-title">Your Next Steps</h2>
+                      </div>
+                    </td></tr>
+                  </table>
+
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr><td class="text-module" style="padding-top:0; padding-bottom: 0;">
+                      <ul style="margin:0 0 20px 20px; padding:0; color:#ffffff;">
+                        <li style="margin-bottom:12px;"><a href="https://x.com/Sogni_Protocol/status/1985726951558902016" target="_blank" rel="noopener">Join the Creator Showcase →</a> Week 1 is live now</li>
+                        <li style="margin-bottom:12px;"><a href="https://www.sogni.ai/download" target="_blank" rel="noopener">Download Sogni Studio Pro or Pocket →</a> If you haven't yet</li>
+                        <li style="margin-bottom:12px;"><a href="https://photobooth.sogni.ai/" target="_blank" rel="noopener">Try Photobooth →</a> Transform yourself with magic year-round</li>
+                        <li style="margin-bottom:12px;"><a href="https://discord.gg/2JjzA2zrrc" target="_blank" rel="noopener">Check out our Discord Announcements →</a> Always a lot going on there</li>
+                      </ul>
+                    </td></tr>
+                  </table>
+
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr><td class="text-module">
+                      <p>Keep creating. Keep orchestrating. Keep amplifying what makes you human. ✌️</p>
+                      <p>🍁 Happy November 🍁</p>
+                      <p><strong>— Josh, Mauvis, and the entire Sogni team</strong></p>
+                    </td></tr>
+                  </table>
+
+                  <!-- ===== Divider ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:35px 0 10px;"><table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table></td></tr></table>
+
+                  <!-- ===== Past Newsletter Link ===== -->
+                  <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                      <td>
+                        <div style="text-align:center; padding:0 20px 0">
+                          <a style="background-color:#000; color:#99ff01; display:inline-flex; align-items:center; padding:12px; text-decoration:none; font-family:Inter,sans-serif;"
+                             href="https://news.sogni.ai/sogni-sync/">
+                            <strong>Missed a newsletter? Access all the past ones here!</strong>
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- ===== Social Icons ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr><td align="center" style="padding:10px 0 20px;">
+                      <a class="social-icon" href="https://discord.com/invite/2JjzA2zrrc"><img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/dde8c72d-0180-48ce-a884-0b5059c0bd6a/100x100.png" alt="Discord"></a>
+                      <a class="social-icon" href="https://t.me/sogniai"><img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/f72a9b29-0ca6-4c8f-a043-28a16a5460e2/100x100.png" alt="Telegram"></a>
+                      <a class="social-icon" href="https://www.youtube.com/@SogniAI?sub_confirmation=1"><img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/c4bdbd34-9ee0-4cf4-807e-9294065e2803/100x100.png" alt="YouTube"></a>
+                      <a class="social-icon" href="https://www.instagram.com/sogni.ai/"><img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/316caddd-dba0-4f91-a92b-98a0e9c4bdfb/100x100.png" alt="Instagram"></a>
+                      <a class="social-icon" href="https://x.com/sogni_protocol"><img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/efa17c04-3d0a-42c3-ad83-2fe8d5fead0b/100x100.png" alt="X / Twitter"></a>
+                      <a class="social-icon" href="https://www.linkedin.com/company/sogni-ai/"><img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/62cb84ce-25f7-4755-a1a2-c11449fc61b7/100x100.png" alt="LinkedIn"></a>
+                      <a class="social-icon" href="https://medium.com/sogni"><img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/2c83cc3a-c96c-4c88-ac02-8e8b7abbe081/100x100.png" alt="Medium"></a>
+                    </td></tr>
+                  </table>
+
+                  <!-- ===== Unsubscribe ===== -->
+                  <div class="unsubscribe-css__unsubscribe___2CDlR" style="color:#fff; font-size:12px; line-height:22px; padding:16px; text-align:center;">
+                    <div class="Unsubscribe--addressLine"></div>
+                    <p style="font-family:Arial,Helvetica,sans-serif; font-size:12px; line-height:22px;">
+                      <a class="Unsubscribe--unsubscribeLink" href="{{{RESEND_UNSUBSCRIBE_URL}}}">Unsubscribe</a>
+                    </p>
+                  </div>
+
+                  <!-- ===== Footer Legal ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr><td style="padding:0 16px 16px; text-align:center;">
+                      <p style="font:10px/14px 'Inter',sans-serif; color:#a6a6a6;">
+                        WE&amp;ROBOT PTE. LTD. · #60 Paya Lebar Road #07-54 · Singapore 409051<br>
+                        <a href="https://www.sogni.ai/privacy-policy" style="color:#ffffff; font-size:10px;">Privacy Policy &amp; Terms</a>
+                      </p>
+                    </td></tr>
+                  </table>
+
+                  <!-- ===== Spacer ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:0 0 30px;"></td></tr></table>
+
+                </td>
+              </tr>
+            </table>
+          </div>
+        </center>
+      </td>
+    </tr>
+  </table>
+  <!-- ===== END WRAPPER ===== -->
+</body>
+</html>
