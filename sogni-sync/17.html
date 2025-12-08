@@ -1,726 +1,225 @@
-<html dir="ltr" lang="en"><head><script>(function(firebaseConfig, initialAuthToken, appId) {
-        window.__firebase_config = firebaseConfig;
-        window.__initial_auth_token = initialAuthToken;
-        window.__app_id = appId;
-            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjExYjc0YTUyNzgwMDk5ZjEzNDY0MmNlZWM3ZGE4MjNkMTc4MDc2ZjIiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIxNzY0MzYwMzM1NjIxMjUxMzgxNSIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiIxYTY4MGJhZGM2NGQtU29nbmlfU3luY19Wb2xfMTcuaHRtbC0xMzYifSwiZXhwIjoxNzY1MTE3NjY2LCJpYXQiOjE3NjUxMTQwNjYsImFsZyI6IlJTMjU2In0.ZSnmv7qkfSOiqoqMJFk9hOf8SmMb6MriGZB83Mr6k1Zijp4WU1rQb6Eg4wj4KssjduLIdPxA6dtU6UWqSvHldTA4M7x7ymWABcjXnwz92V8GJ0dWi8MS0YJh1kmDuCnvVnVLqulC2SZbPlW-r9JNQ4JtLoGtXk1Ve1KHw5btVIF2GkiUky3HDJ2Eo2o53LZYGjkknkGw_IdQ0MiUX-lzWyZu6zU9Z0ZdcJlQv_DXiDyn7wzgDGQKWElNiuHBtXp-oC1OLbiQy2Z9awufRd3yQY86kCyakniYWZjJCEJf5UMrb8mYEoxn_5uD3igluSRkezV9D5Xyd6YG4I5KJib4nw","1a680badc64d-Sogni_Sync_Vol_17.html-136")</script><script>'use strict';var h=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function l(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var n=l(this);
-function p(a,b){if(b)a:{var d=n;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&h(d,a,{configurable:!0,writable:!0,value:b})}}function r(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function t(a){return r(a())}
-p("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});p("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
-
- MIT License
-
- Copyright (c) 2017-2023 W.Y.
-
- Permission is hereby granted, free of charge, to any person obtaining a copy
- of this software and associated documentation files (the "Software"), to deal
- in the Software without restriction, including without limitation the rights
- to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- copies of the Software, and to permit persons to whom the Software is
- furnished to do so, subject to the following conditions:
-
- The above copyright notice and this permission notice shall be included in
- all copies or substantial portions of the Software.
-
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- SOFTWARE.
-
-*/
-function u(a,b){const d=a.style;b.backgroundColor&&(d.backgroundColor=b.backgroundColor);b.width&&(d.width=`${b.width}px`);b.height&&(d.height=`${b.height}px`);const c=b.style;c!=null&&Object.keys(c).forEach(e=>{d[e]=c[e]})};var v=(()=>{let a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){const b=[];for(let d=0,c=a.length;d<c;d++)b.push(a[d]);return b}let x=null;function y(a={}){return x?x:a.l?x=a.l:x=w(window.getComputedStyle(document.documentElement))}function z(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
-function A(a,b={}){var d;if(!(d=b.width)){d=z(a,"border-left-width");var c=z(a,"border-right-width");d=a.clientWidth+d+c}(b=b.height)||(b=z(a,"border-top-width"),c=z(a,"border-bottom-width"),b=a.clientHeight+b+c);return{width:d,height:b}}function B(a){return new Promise((b,d)=>{const c=new Image;c.onload=()=>{c.decode().then(()=>{requestAnimationFrame(()=>b(c))})};c.onerror=d;c.crossOrigin="anonymous";c.decoding="async";c.src=a})}
-function C(a){return t(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
-function D(a,b,d){return t(function*(){const c=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");c.setAttribute("width",`${b}`);c.setAttribute("height",`${d}`);c.setAttribute("viewBox",`0 0 ${b} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");c.appendChild(e);e.appendChild(a);return C(c)})}
-var E=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||E(a,b)};function F(a,b){return y(b).map(d=>{const c=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${c}${e?" !important":""};`}).join(" ")}
-function G(a,b,d,c){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=v();try{b.className=`${b.className} ${f}`}catch(k){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(c=a.getPropertyValue("content"),c=`${a.cssText} content: '${c.replace(/'|"/g,"")}';`):c=F(a,c);g.call(e,document.createTextNode(`${d}{${c}}`));b.appendChild(e)}};function H(a){return a.search(/^(data:)/)!==-1}function I(a,b,d){return t(function*(){const c=yield fetch(a,b);if(c.status===404)throw Error(`Resource "${c.url}" not found`);const e=yield c.blob();return new Promise((f,g)=>{const k=new FileReader;k.onerror=g;k.onloadend=()=>{try{f(d({o:c,result:k.result}))}catch(m){g(m)}};k.readAsDataURL(e)})})}const J={};function K(a,b,d){let c=a.replace(/\?.*/,"");d&&(c=a);/ttf|otf|eot|woff2?/i.test(c)&&(c=c.replace(/.*\//,""));return b?`[${b}]${c}`:c}
-function L(a,b,d){return t(function*(){const c=K(a,b,d.C);if(J[c]!=null)return J[c];d.u&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());let e;try{const f=yield I(a,d.i,({o:g,result:k})=>{b||(b=g.headers.get("Content-Type")||"");return k.split(/,/)[1]});e=`data:${b};base64,${f}`}catch(f){e=d.B||""}return J[c]=e})};const M={P:"application/font-woff",R:"application/font-woff",N:"application/font-truetype",v:"application/vnd.ms-fontobject",H:"image/png",F:"image/jpeg",D:"image/jpeg",A:"image/gif",M:"image/tiff",L:"image/svg+xml",O:"image/webp"};function N(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function O(a){return t(function*(){const b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):B(b)})}function aa(a,b){return t(function*(){if(a.currentSrc){var d=document.createElement("canvas");const c=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;c==null||c.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return B(d)}d=a.poster;d=yield L(d,M[N(d).toLowerCase()]||"",b);return B(d)})}
-function ba(a,b){return t(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield P(a.contentDocument.body,b,!0)}catch(d){}return a.cloneNode(!1)})}function ca(a,b){return t(function*(){return E(a,HTMLCanvasElement)?O(a):E(a,HTMLVideoElement)?aa(a,b):E(a,HTMLIFrameElement)?ba(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
-function da(a,b,d){return t(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;let c=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)c=w(a.assignedNodes());else{let e;if(E(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))c=w(a.contentDocument.body.childNodes);else{let f;c=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(c.length===0||E(a,HTMLVideoElement))return b;yield c.reduce((e,f)=>e.then(()=>P(f,d)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
-return b})}function ea(a,b,d){const c=b.style;if(c){var e=window.getComputedStyle(a);e.cssText?(c.cssText=e.cssText,c.transformOrigin=e.transformOrigin):y(d).forEach(f=>{let g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);E(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);c.setProperty(f,g,e.getPropertyPriority(f))})}}
-function fa(a,b){E(a,HTMLSelectElement)&&(b=Array.from(b.children).find(d=>a.value===d.getAttribute("value")))&&b.setAttribute("selected","")}
-function ha(a,b){return t(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var c={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){const g=document.querySelector(f);a.querySelector(f)||!g||c[f]||(c[f]=yield P(g,b,!0))}}d=Object.values(c);if(d.length){c=document.createElementNS("http://www.w3.org/1999/xhtml","svg");c.setAttribute("xmlns","http://www.w3.org/1999/xhtml");c.style.position="absolute";c.style.width="0";c.style.height="0";
-c.style.overflow="hidden";c.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");c.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(c)}return a})}
-function P(a,b,d){return t(function*(){return d||!b.filter||b.filter(a)?Promise.resolve(a).then(c=>ca(c,b)).then(c=>da(a,c,b)).then(c=>{E(c,Element)&&(ea(a,c,b),G(a,c,":before",b),G(a,c,":after",b),E(a,HTMLTextAreaElement)&&(c.textContent=a.value),E(a,HTMLInputElement)&&c.setAttribute("value",a.value),fa(a,c));return c}).then(c=>ha(c,b)):null})};const Q=/url\((['"]?)([^'"]+?)\1\)/g,ia=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,ja=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function ka(a){const b=[];a.replace(Q,(d,c,e)=>{b.push(e);return d});return b.filter(d=>!H(d))}
-function la(a,b,d,c){return t(function*(){try{const e=d?(new URL(b,d||void 0)).toString():b;let f;f=yield L(e,M[N(b).toLowerCase()]||"",c);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function ma(a,{I:b}){return b?a.replace(ja,d=>{for(;;){const [c,,e]=ia.exec(d)||[],f=c,g=e;if(!g)return"";if(g===b)return`src: ${f};`}}):a}
-function R(a,b,d){return t(function*(){if(a.search(Q)===-1)return a;const c=ma(a,d);return ka(c).reduce((e,f)=>e.then(g=>la(g,f,b,d)),Promise.resolve(c))})};function S(a,b,d){return t(function*(){var c;const e=(c=b.style)==null?void 0:c.getPropertyValue(a);return e?(c=yield R(e,null,d),b.style.setProperty(a,c,b.style.getPropertyPriority(a)),!0):!1})}function na(a,b){return t(function*(){(yield S("background",a,b))||(yield S("background-image",a,b));(yield S("mask",a,b))||(yield S("-webkit-mask",a,b))||(yield S("mask-image",a,b))||(yield S("-webkit-mask-image",a,b))})}
-function oa(a,b){return t(function*(){const d=E(a,HTMLImageElement);if(d&&!H(a.src)||E(a,SVGImageElement)&&!H(a.href.baseVal)){var c=d?a.src:a.href.baseVal,e=yield L(c,M[N(c).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.m?(...k)=>{try{f(b.m(...k))}catch(m){g(m)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
-function pa(a,b){return t(function*(){const d=w(a.childNodes).map(c=>T(c,b));yield Promise.all(d).then(()=>a)})}function T(a,b){return t(function*(){E(a,Element)&&(yield na(a,b),yield oa(a,b),yield pa(a,b))})};const U={};function V(a){return t(function*(){var b=U[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return U[a]=b})}function W(a,b){return t(function*(){let d=a.cssText;const c=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>t(function*(){let g=f.replace(c,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return I(g,b.i,({result:k})=>{d=d.replace(f,`url(${k})`);return[f,k]})}));return Promise.all(e).then(()=>d)})}
-function X(a){if(a==null)return[];const b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var c=d.exec(a);if(c===null)break;b.push(c[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(c=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=c.exec(a),e===null)break;else d.lastIndex=c.lastIndex;else c.lastIndex=
-d.lastIndex;b.push(e[0])}return b}
-function qa(a,b){return t(function*(){const d=[],c=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let k=g+1;f=V(f.href).then(m=>W(m,b)).then(m=>X(m).forEach(q=>{try{e.insertRule(q,q.startsWith("@import")?k+=1:e.cssRules.length)}catch(Da){}})).catch(()=>{});c.push(f)}})}catch(f){const g=a.find(k=>k.href==null)||document.styleSheets[0];e.href!=null&&c.push(V(e.href).then(k=>W(k,b)).then(k=>X(k).forEach(m=>{g.insertRule(m,g.cssRules.length)})).catch(()=>
-{}))}});return Promise.all(c).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function ra(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(Q)!==-1)}function sa(a,b){return t(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=w(a.ownerDocument.styleSheets);d=yield qa(d,b);return ra(d)})}
-function ta(a){function b(c){(c.style.fontFamily||getComputedStyle(c).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(c.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}const d=new Set;b(a);return d}function ua(a,b){return t(function*(){const d=yield sa(a,b),c=ta(a);return(yield Promise.all(d.filter(e=>c.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>R(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
-function va(a,b){return t(function*(){const d=b.j!=null?b.j:b.K?null:yield ua(a,b);if(d){const c=document.createElement("style");c.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(c,a.firstChild):a.appendChild(c)}})};function wa(a,b={}){return t(function*(){const {width:d,height:c}=A(a,b),e=yield P(a,b,!0);yield va(e,b);yield T(e,b);u(e,b);return yield D(e,d,c)})}
-function xa(a,b={}){return t(function*(){const {width:d,height:c}=A(a,b);var e=yield wa(a,b);e=yield B(e);const f=document.createElement("canvas"),g=f.getContext("2d"),k=b.G||window.devicePixelRatio||1,m=b.h||d,q=b.g||c;f.width=m*k;f.height=q*k;!b.J&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=
-16384));f.style.width=`${m}`;f.style.height=`${q}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function ya(a,b={}){return t(function*(){return(yield xa(a,b)).toDataURL()})};const za=["gemini.google.com","corp.google.com","proxy.googlers.com"];function Y(){return document.body.querySelectorAll('[class*="animate"]').length>0}function Z(a){return t(function*(){try{return yield ya(a,{h:a.offsetWidth,g:a.offsetHeight})}catch(d){var b=a.offsetHeight;const c=document.createElement("canvas");c.width=a.offsetWidth;c.height=b;return c.toDataURL("image/png")}})}
-function Aa(){return t(function*(){const a=document.body.offsetWidth,b=document.body.offsetHeight,d=document.body.cloneNode(!0);d.querySelectorAll('[class*="animate"]').forEach(c=>{c.classList.remove(...Array.from(c.classList).filter(e=>e.startsWith("animate")))});d.style.width=`${a}px`;d.style.height=`${b}px`;return d})}
-function Ba(a){return t(function*(){let b=document.body;if(Y()){var d=yield Aa();b=d;document.body.appendChild(d)}d=yield Z(b);Y()&&document.body.removeChild(b);window.parent.postMessage({type:"SEND_SCREENSHOT",image:d,topOffset:document.documentElement.scrollTop},a.origin)})}function Ca(a){return t(function*(){const b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}
-window.addEventListener("message",a=>t(function*(){if(za.some(d=>a.origin.includes(d))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Ba(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ca(a)))}}));
-</script><script>(function() {
-  // Ensure this script is executed only once
-  if (window.firebaseAuthBridgeScriptLoaded) {
-    return;
-  }
-  window.firebaseAuthBridgeScriptLoaded = true;
-
-  let nextTokenPromiseId = 0;
-
-  // Stores { resolve, reject } for ongoing token requests
-  const pendingTokenPromises = {};
-
-  // Listen for messages from the Host Application
-  window.addEventListener('message', function(event) {
-
-    const messageData = event.data;
-
-  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
-      const { success, token, error, promiseId } = messageData ?? {};
-      if (pendingTokenPromises[promiseId]) {
-        if (success) {
-          pendingTokenPromises[promiseId].resolve(token);
-        } else {
-          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
-        }
-        delete pendingTokenPromises[promiseId];
-      }
-    }
-  });
-
-  // Expose a function for the Generated App to request a new Firebase token
-  window.requestNewFirebaseToken = function() {
-    const currentPromiseId = nextTokenPromiseId++;
-    const promise = new Promise((resolve, reject) => {
-      pendingTokenPromises[currentPromiseId] = { resolve, reject };
-    });
-    if (window.parent && window.parent !== window) {
-      window.parent.postMessage({
-        type: 'REQUEST_NEW_FIREBASE_TOKEN',
-        promiseId: currentPromiseId
-      }, '*');
-    } else {
-      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
-      delete pendingTokenPromises[currentPromiseId];
-    }
-    return promise;
-  };
-})();</script><script>
-let realOriginalGetUserMedia = null;
-if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
-}
-
-(function() {
-  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
-    try {
-      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
-        get: function() {
-          return undefined; // Or throw an error
-        },
-        configurable: false
-      });
-    } catch (error) {
-      console.error("Error defining prototype getter:", error);
-    }
-  }
-})();
-
-(function() {
-  const pendingMediaResolvers = {};
-  let nextMediaPromiseId = 0;
-
-  function requestMediaPermissions(constraints) {
-    const mediaPromiseId = nextMediaPromiseId++;
-    const promise = new Promise((resolve, reject) => {
-      pendingMediaResolvers[mediaPromiseId] = (granted) => {
-        delete pendingMediaResolvers[mediaPromiseId];
-        resolve(granted);
-      };
-    });
-
-    window.parent.postMessage({
-      type: 'requestMediaPermission',
-      constraints: constraints,
-      promiseId: mediaPromiseId,
-    }, '*');
-
-    return promise;
-  }
-
-  let originalGetUserMedia = realOriginalGetUserMedia;
-
-  function interceptGetUserMedia() {
-    if (navigator.mediaDevices) {
-      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
-        value: function(constraints) {
-          return requestMediaPermissions(constraints).then((granted) => {
-            if (granted) {
-              if (originalGetUserMedia) {
-                return originalGetUserMedia(constraints);
-              } else {
-                throw new Error("Original getUserMedia not available.");
-              }
-            } else {
-              throw new DOMException('Permission denied', 'NotAllowedError');
-            }
-          });
-        },
-        writable: false,
-        configurable: false
-      });
-    }
-  }
-
-  interceptGetUserMedia();
-
-  const observer = new MutationObserver(function(mutationsList, observer) {
-    for (const mutation of mutationsList) {
-      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
-        interceptGetUserMedia();
-      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
-        interceptGetUserMedia();
-      } else if (mutation.type === 'childList' && mutation.addedNodes) {
-        mutation.addedNodes.forEach(node => {
-          if (node === navigator.mediaDevices) {
-            interceptGetUserMedia();
-          }
-        });
-      }
-    }
-  });
-
-  function interceptSpeechRecognition() {
-    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
-      return;
-    }
-
-    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-
-    const SpeechRecognitionWrapper = function(...args) {
-      const recognizer = new OriginalSpeechRecognition(...args);
-      const originalStart = recognizer.start.bind(recognizer);
-
-      recognizer.start = function() {
-        requestMediaPermissions({ audio: true }).then(granted => {
-          if (granted) {
-            originalStart();
-          } else {
-            const errorEvent = new SpeechRecognitionErrorEvent('error');
-            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
-            recognizer.dispatchEvent(errorEvent);
-          }
-        });
-      };
-
-      return recognizer;
-    };
-
-    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
-    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
-
-    if (window.SpeechRecognition) {
-      window.SpeechRecognition = SpeechRecognitionWrapper;
-    }
-    if (window.webkitSpeechRecognition) {
-      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
-    }
-  }
-
-  interceptSpeechRecognition();
-
-  window.addEventListener('message', function(event) {
-    if (event.data) {
-      if (event.data.type === 'resolveMediaPermission') {
-        const { promiseId, granted } = event.data;
-        if (pendingMediaResolvers[promiseId]) {
-          pendingMediaResolvers[promiseId](granted);
-        }
-      }
-    }
-  });
-
-})();</script><script>((function(modelInformation) {
-  const originalFetch = window.fetch;
-  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
-  let googleLlmBaseApiUrls = [
-    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
-    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
-    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
-    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
-    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
-    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
-    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
-    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
-    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
-  ];
-  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
-    googleLlmBaseApiUrls.push(
-      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
-      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
-    );
-  });
-  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
-    googleLlmBaseApiUrls.push(
-      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
-      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
-    );
-  });
-
-  const pendingFetchResolvers = {};
-  let nextPromiseId = 0;
-
-  function handleStringInput(input, optionsArgument) {
-    const actualUrl = input;
-    const fetchCallArgs = [actualUrl, optionsArgument];
-    const effectiveOptions = optionsArgument || {};
-    const bodyForApiKeyCheck = effectiveOptions.body;
-    const bodyForPostMessage = effectiveOptions.body;
-    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
-  }
-
-  function handleRequestInput(input, optionsArgument) {
-    const actualUrl = input.url;
-    const fetchCallArgs = [input, optionsArgument];
-    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
-    let bodyForApiKeyCheck;
-    let bodyForPostMessage;
-
-    if (optionsArgument) {
-      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
-      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
-      if ('body' in optionsArgument) {
-        bodyForApiKeyCheck = optionsArgument.body;
-        bodyForPostMessage = optionsArgument.body;
-      } else {
-        bodyForApiKeyCheck = undefined;
-        bodyForPostMessage = input.body;
-      }
-    } else {
-      bodyForApiKeyCheck = undefined;
-      bodyForPostMessage = input.body;
-    }
-    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
-  }
-
-  window.fetch = function(input, optionsArgument) {
-    let actualUrl;
-    let fetchCallArgs;
-    let effectiveOptions = {};
-    let bodyForApiKeyCheck;
-    let bodyForPostMessage;
-
-    if (typeof input === 'string') {
-      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
-    } else if (input instanceof Request) {
-      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
-    } else {
-      return originalFetch.apply(window, [input, optionsArgument]);
-    }
-
-    effectiveOptions.method = effectiveOptions.method || 'GET';
-    if (!effectiveOptions.headers) {
-      effectiveOptions.headers = new Headers();
-    }
-
-
-    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
-      let apiKeyIsNull = true;
-
-      const regex = new RegExp("models/([^:]+)");
-      const modelNameMatch = actualUrl.match(regex);
-      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
-
-
-      try {
-        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
-        const apiKeyParam = urlObject.searchParams.get('key');
-        if (apiKeyParam) {
-          apiKeyIsNull = false;
-        }
-      } catch (e) {
-        // Continue checks even if URL parsing fails
-      }
-
-      if (apiKeyIsNull && effectiveOptions.headers) {
-        const h = new Headers(effectiveOptions.headers);
-        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
-        if (apiKeyHeaderValue) {
-          apiKeyIsNull = false;
-          return originalFetch.apply(window, fetchCallArgs);
-        }
-      }
-
-      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
-        try {
-          const bodyData = JSON.parse(bodyForApiKeyCheck);
-          if (bodyData && bodyData.apiKey) {
-            apiKeyIsNull = false;
-            return originalFetch.apply(window, fetchCallArgs);
-          }
-        } catch (e) {
-          // Ignore JSON parsing errors
-        }
-      }
-
-      if(apiKeyIsNull) {
-        const promiseId = nextPromiseId++;
-        const promise = new Promise((resolve) => {
-          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
-            delete pendingFetchResolvers[promiseId];
-            resolve(resolvedResponse);
-          };
-        });
-
-        let serializedBodyForPostMessage;
-        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
-            serializedBodyForPostMessage = bodyForPostMessage;
-        } else if (bodyForPostMessage instanceof ReadableStream) {
-            serializedBodyForPostMessage = null;
-        } else {
-            try {
-                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
-            } catch (e) {
-                serializedBodyForPostMessage = null;
-            }
-        }
-
-        const messageOptions = {
-            method: effectiveOptions.method,
-            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
-            body: serializedBodyForPostMessage
-        };
-
-        window.parent.postMessage({
-          type: 'requestFetch',
-          url: actualUrl,
-          modelName: modelName,
-          options: messageOptions,
-          promiseId: promiseId,
-        }, '*');
-
-        return promise;
-      }
-      return originalFetch.apply(window, fetchCallArgs);
-    }
-    return originalFetch.apply(window, fetchCallArgs);
-  };
-
-  window.addEventListener('message', function(event) {
-    if (event.data && event.data.type === 'resolveFetch') {
-      const { promiseId, response } = event.data;
-      if (pendingFetchResolvers[promiseId]) {
-        try {
-          const reconstructedResponse = new Response(response.body, {
-            status: response.status,
-            statusText: response.statusText,
-            headers: new Headers(response.headers),
-          });
-          pendingFetchResolvers[promiseId](reconstructedResponse);
-        } catch (error) {
-          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
-        }
-      }
-    }
-  });
-
-}))({"textModelName":"gemini-2.5-flash-preview-09-2025","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-2.5-flash-image-preview","imageTransformModelName":"gemini-2.5-flash-image-preview","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"]})</script><script>(function() {
-  const originalConsoleLog = console.log;
-  const originalConsoleError = console.error;
-
-    /**
-   * Normalizes an error event or a promise rejection reason into a structured error object.
-   * @param {*} errorEventOrReason The error object or reason.
-   * @return {object} Structured error data { message, name, stack }.
-   */
-  function getErrorObject(errorEventOrReason) {
-    if (errorEventOrReason instanceof Error) {
-      return {
-        message: errorEventOrReason.message,
-        name: errorEventOrReason.name,
-        stack: errorEventOrReason.stack,
-      };
-    }
-    // Fallback for non-Error objects.
-    try {
-      return {
-        message: JSON.stringify(errorEventOrReason),
-        name: 'UnknownErrorType',
-        stack: null,
-      };
-    } catch (e) {
-      return {
-        message: String(errorEventOrReason),
-        name: 'UnknownErrorTypeNonStringifiable',
-        stack: null,
-      };
-    }
-  }
-
-  /**
-   * Converts an array of arguments (from log/error) into a single string.
-   * Handles Error objects specially to include their message and stack.
-   * @param {Array<*>} args - Arguments passed to console methods.
-   * @return {string} A string representation of the arguments.
-   */
-  function stringifyArgs(args) {
-    return args
-      .map((arg) => {
-        if (arg instanceof Error) {
-          const {message, stack} = arg;
-          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
-        }
-        if (typeof arg === 'object' && arg !== null) {
-          try {
-            return JSON.stringify(arg);
-          } catch (error) {
-            return '[Circular Object]';
-          }
-        } else {
-          return String(arg);
-        }
-      })
-      .join(' ');
-  }
-
-  console.log = function(...args) {
-    const logString = stringifyArgs(args);
-    window.parent.postMessage({ type: 'log', message: logString }, '*');
-    originalConsoleLog.apply(console, args);
-  };
-
-  console.error = function(...args) {
-    let errorData;
-    if (args.length > 0 && args[0] instanceof Error) {
-      const err = args[0];
-      // If the first arg is an Error, capture its details.
-      errorData = {
-        type: 'error',
-        source: 'CONSOLE_ERROR',
-        ...getErrorObject(err),
-        rawArgsString: stringifyArgs(args.slice(1)),
-        timestamp: new Date().toISOString(),
-      };
-    } else {
-      // If not an Error object, treat all args as a general error message.
-      errorData = {
-        type: 'error',
-        source: 'CONSOLE_ERROR',
-        message: stringifyArgs(args),
-        name: 'ConsoleLoggedError',
-        stack: null,
-        timestamp: new Date().toISOString(),
-      };
-    }
-    window.parent.postMessage(errorData, '*');
-    originalConsoleError.apply(console, args);
-  };
-
-  // Listen for global unhandled synchronous errors.
-  window.addEventListener('error', function(event) {
-    const errorDetails = event.error ? getErrorObject(event.error) : {
-      message: event.message,
-      name: 'GlobalError',
-      stack: null,
-      filename: event.filename,
-      lineno: event.lineno,
-      colno: event.colno,
-    };
-
-    window.parent.postMessage({
-      type: 'error',
-      source: 'global',
-      ...errorDetails,
-      message: errorDetails.message || event.message,
-      timestamp: new Date().toISOString(),
-    }, '*');
-  });
-
-  // Listen for unhandled promise rejections (asynchronous errors).
-  window.addEventListener('unhandledrejection', function(event) {
-    const errorDetails = getErrorObject(event.reason);
-
-    window.parent.postMessage({
-      type: 'error',
-      source: 'unhandledrejection',
-      ...errorDetails,
-      message: errorDetails.message || 'Unhandled Promise Rejection',
-      timestamp: new Date().toISOString(),
-    }, '*');
-  });
-
-})();</script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" lang="en">
+<head>
   <!-- ===== Meta & mobile-first ===== -->
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width">
-  <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
-  <meta name="color-scheme" content="light">
-  <meta name="supported-color-schemes" content="light dark">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="x-apple-disable-message-reformatting" />
+  <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no" />
+  <meta name="color-scheme" content="light" />
+  <meta name="supported-color-schemes" content="light dark" />
+  <title>Sogni /Sync — December '25 | Volume 17</title>
 
   <!-- ===== Google Fonts (Inter + Space Grotesk) ===== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 
-  <title>Sogni /Sync: November ’25 | Volume 17</title>
-
+  <!-- ===== Core styles (merged + cleaned) ===== -->
   <style type="text/css">
+    span.device { display:block; font-weight:normal; font-size:0.9em; }
+
+    /* Base typography & resets */
+    body, p, div {
+      margin:0; padding:0; font-family:inherit; font-size:16px; line-height:23px;
+      -webkit-font-smoothing:antialiased; -webkit-text-size-adjust:100%;
+      -ms-text-size-adjust:100%; -moz-text-size-adjust:100%;
+    }
+    body { background:#1D1D1D; color:#ffffff; width:100% !important; }
+    p { margin:0 0 20px; }
+    a { color:#99FF01; text-decoration:none; }
+    a img { vertical-align:middle; }
+    img { border:none; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; }
+    table.wrapper { width:100% !important; table-layout:fixed; }
+    .column.of-2{ width:50%; } .column.of-3{ width:33.333%; } .column.of-4{ width:25%; }
+
+    /* Lists – force styles inside email clients */
+    ul ul ul ul{ list-style-type:disc !important; }
+    ol ol{ list-style-type:lower-roman !important; }
+    ol ol ol{ list-style-type:lower-latin !important; }
+    ol ol ol ol{ list-style-type:decimal !important; }
+    center.small{font-size: 14px;}
+
+    /* Headings & text blocks */
+    .main-title-container { padding:20px; color:#a6a6a6; text-align:left; }
+    .main-title { margin:0; font:700 32px/1.2 'Inter',sans-serif; color:#ffffff; }
+    .subtitle { font:500 20px/1.5 'Inter',sans-serif; color:#a6a6a6; margin:5px 0 0; }
+
+    .section-title-container { padding:20px 20px 16px 20px; color:#ffffff; text-align:left; }
+    .section-name { margin:0 0 8px; font:500 16px/1.1 'Inter',sans-serif; color:#a6a6a6; }
+    .section-title { margin:0 0 8px; font:500 32px/1.1 'Space Grotesk',sans-serif; }
+    .section-title-small{ margin:0 0 12px; font:500 16px/1.2 'Space Grotesk',sans-serif; }
+
+    .text-module { padding:18px 20px; font-size:16px; line-height:1.6; color:#a6a6a6; text-align:left; }
+    .text-module p{ margin:0 0 20px; }
+
+    /* Buttons (match old template) */
     .green-button,
     .button-link {
       background:#000;
       border:1px solid #99ff01;
       border-radius:9px;
-      color:#fff;
-      font:300 14px/normal 'Inter',sans-serif;
+      color:#fff !important;
+      font:300 14px/normal 'Inter', sans-serif;
       padding:10px 16px;
       text-decoration:none;
       display:inline-block;
       margin-top:15px;
     }
+    .button-row a + a { margin-left:1rem; }
+
     /* Social icons */
-    .social-icon img{width:24px;height:24px;}
-    .social-icon{display:inline-block;margin:0 10px;}
+    .social-icon img{ width:24px; height:24px; }
+    .social-icon{ display:inline-block; margin:0 10px; }
 
-    /* Unsubscribe */
-    .unsubscribe-css__unsubscribe___2CDlR a.Unsubscribe--unsubscribeLink{color:#bebdbd!important;text-decoration:none!important;}
+    /* App blocks */
+    .app-icon-wrapper { text-align:center; padding:0; }
+    .app-icon { width:128px; margin:0 auto; display:block; height:auto; }
+    .app-heading { text-align:center; color:#ffffff; margin:10px 0; font-family:Inter, sans-serif; }
+    .app-button-container { text-align:center; margin-bottom:30px; }
+    .app-download-button { background:#000; border:1px solid #99FF01; border-radius:8px; color:#fff !important; display:inline-block; font:14px 'Inter',sans-serif; padding:10px 20px; text-decoration:none; margin-top:10px; }
 
-    /* Base typography & resets */
-    body,p,div{margin:0;padding:0;font-family:inherit;font-size:16px;line-height:23px;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
-    body{background:#1D1D1D;color:#ffffff;width:100%!important;}
-    p{margin-bottom:20px;}
-    a{color:#99FF01;text-decoration:none;}
-    img{border:none;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;}
+    /* Unsubscribe color (keep from old) */
+    .unsubscribe-css__unsubscribe___2CDlR a.Unsubscribe--unsubscribeLink{ color:#bebdbd !important; text-decoration:none !important; }
 
-    table.wrapper{width:100%!important;table-layout:fixed;}
-    .column.of-2{width:50%;}
-    .column.of-3{width:33.333%;}
-    .column.of-4{width:25%;}
-
-    /* Lists inside email clients often lose styles – force them */
-    ul ul ul ul{list-style-type:disc!important;}
-    ol ol{list-style-type:lower-roman!important;}
-    ol ol ol{list-style-type:lower-latin!important;}
-    ol ol ol ol{list-style-type:decimal!important;}
-
-    /* Headings & text blocks */
-    .main-title-container{padding:0 20px 16px 20px;color:#a6a6a6;text-align:left;}
-    .main-title{margin:0;font:700 32px/1.2 'Inter',sans-serif;color:#ffffff;}
-    .subtitle{font:500 20px/1.5 'Inter',sans-serif;color:#a6a6a6;margin:5px 0 0;}
-
-    .section-title-container{padding:0 20px 16px 20px;color:#ffffff;text-align:left;}
-    .section-name{margin:0 0 25px;font:500 16px/1.1 'Inter',sans-serif;color:#a6a6a6;}
-    .section-title{margin:0 0 8px;font:500 32px/1.1 'Space Grotesk',sans-serif;}
-    .section-title-small{margin:0 0 12px;font:500 16px/1.2 'Space Grotesk',sans-serif;color:#ffffff;}
-
-    .text-module{padding:18px 20px;font-size:16px;line-height:1.6;color:#a6a6a6;}
-    .text-module p{margin:0 0 20px;}
-
-    /* Responsive overrides */
+    /* Responsive */
     @media screen and (max-width:480px){
-      table.wrapper-mobile{width:100%!important;table-layout:fixed;}
-      img.max-width{max-width:100%!important;height:auto!important;}
-      a.green-button,a.button-link{display:block!important;width:auto!important;font-size:80%!important;}
-      .columns,.column{width:100%!important;display:block!important;padding:0!important;margin:0!important;}
-      .social-icon img{width:16px!important;height:16px!important;}
-      .main-title{font-size:32px!important;}
+      .preheader .rightColumnContent,
+      .footer .rightColumnContent{ text-align:left !important; }
+      .preheader .rightColumnContent div,
+      .preheader .rightColumnContent span,
+      .footer .rightColumnContent div,
+      .footer .rightColumnContent span{ text-align:left !important; }
+      .preheader .rightColumnContent, .preheader .leftColumnContent{ font-size:80% !important; padding:5px 0; }
+      table.wrapper-mobile{ width:100% !important; table-layout:fixed; }
+      img.max-width{ max-width:100% !important; height:auto !important; }
+      a.button-link, a.green-button{ display:inline-block !important; width:auto !important; font-size:80% !important; padding-left:16px !important; padding-right:16px !important; }
+      .columns, .column{ width:100% !important; display:block !important; padding-left:0 !important; padding-right:0 !important; margin-left:0 !important; margin-right:0 !important; }
+      .social-icon img{ width:16px !important; height:16px !important; }
+      .main-title{ font-size:32px !important; }
+      .app-icon{ width:80px !important; }
+
+      /* Two-column layout mobile collapse */
+      .mobile-stack-row{ display:block !important; }
+      .mobile-stack{ display:block !important; width:100% !important; box-sizing:border-box !important; }
+      .mobile-stack-img{ display:block !important; width:100% !important; padding:18px 20px 10px 20px !important; text-align:center !important; }
+      .mobile-stack-img img{ max-width:60% !important; margin:0 auto !important; }
+      .mobile-stack-text{ display:block !important; width:100% !important; padding:0 20px 18px 20px !important; }
     }
+    @media screen and (max-width:480px){ .two-col-override .column{ width:50% !important; display:inline-block !important; vertical-align:top; } }
+    @media screen and (max-width:320px){ .two-col-override .column{ width:100% !important; display:block !important; } }
+
+    /* Minor helper */
+    .divider-hr { line-height:1px; font-size:1px; }
   </style>
 </head>
 
 <body style="margin:0; padding:0; background:#1D1D1D; width:100% !important;">
   <!-- ===== OUTER WRAPPER ===== -->
-  <table align="center" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#000000;max-width:600px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Fira Sans','Droid Sans','Helvetica Neue',sans-serif;">
-    <tbody><tr>
+  <table align="center" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"
+         style="background:#000000; max-width:600px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Fira Sans','Droid Sans','Helvetica Neue',sans-serif;">
+    <tr>
       <td>
-        <center class="wrapper">
+        <center class="wrapper" data-link-color="#99FF01" data-body-style="font-size:16px; font-family:inherit; color:#ffffff; background-color:#1D1D1D;">
           <div class="webkit">
             <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#1D1D1D" style="table-layout:fixed;">
-              <tbody><tr>
+              <tr>
                 <td bgcolor="#000000" valign="top">
 
                   <!-- ===== Hidden pre-header ===== -->
                   <table width="100%" cellpadding="0" cellspacing="0" border="0" style="display:none!important;mso-hide:all;visibility:hidden;opacity:0;color:transparent;height:0;width:0;">
-                    <tbody><tr><td>Season 4 is live, Sogni Video is coming this month, and we break down the Nosana event.</td></tr>
-                  </tbody></table>
+                    <tr><td>Season 4 is live, Sogni Video is coming this month, and we break down the Nosana event.</td></tr>
+                  </table>
 
                   <!-- ===== Spacer ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td style="padding:0 0 15px;"></td></tr></tbody></table>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:0 0 15px;"></td></tr></table>
 
                   <!-- ===== Top row: logo + edition label ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tbody><tr>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
                       <td>
                         <div style="padding:10px 20px 20px;">
-                          <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                            <tbody><tr>
+                          <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                            <tr>
                               <td align="left" valign="middle">
-                                <table cellpadding="0" cellspacing="0" border="0"><tbody><tr>
-                                  <td valign="middle" style="padding-right:5px;">
-                                    <img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/d2884f6c-4924-48ca-a7e6-a0c6bba72f16/1657x636.png" alt="Sogni logo" style="height:calc(16px*1.2);width:auto;">
-                                  </td>
-                                  <td valign="middle" style="font-family:Inter,sans-serif;font-size:16px;color:#a6a6a6;white-space:nowrap;">/Sync</td>
-                                </tr></tbody></table>
+                                <table cellpadding="0" cellspacing="0" border="0" role="presentation">
+                                  <tr>
+                                    <td valign="middle" style="padding-right:5px;">
+                                      <img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/d2884f6c-4924-48ca-a7e6-a0c6bba72f16/1657x636.png" alt="Sogni logo" style="height:calc(16px * 1.2); width:auto;">
+                                    </td>
+                                    <td valign="middle" style="font-family:Inter,sans-serif; font-size:16px; color:#a6a6a6;">/Sync</td>
+                                  </tr>
+                                </table>
                               </td>
-                              <td align="right" valign="middle" style="font-family:Inter,sans-serif;font-size:16px;color:#a6a6a6;white-space:nowrap;">
-                                November ’25 | Volume 17
+                              <td align="right" valign="middle" style="font-family:Inter,sans-serif; font-size:16px; color:#a6a6a6; white-space:nowrap;">
+                                December '25 | Volume 17
                               </td>
                             </tr>
-                          </tbody></table>
+                          </table>
                         </div>
                       </td>
                     </tr>
-                  </tbody></table>
+                  </table>
 
                   <!-- ===== Main title ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tbody><tr><td>
-                      <div class="main-title-container">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td>
+                        <div class="main-title-container" style="padding-left:20px;">
                           <h1 class="main-title">Season 4, Viral Hits, and The Arrival of Video</h1>
-                      </div>
-                    </td></tr>
-                  </tbody></table>
-
-                  <!-- ===== Intro text ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tbody><tr>
-                        <td class="text-module">
-
-                        <p>Hi Sognians!</p>
-                        <p>November was a month of leveling up. We scrubbed the leaderboards to protect honest creators, launched Season 4 with a bang, and watched the community go absolutely viral on social media.</p>
-
-                        <p>From running out of photo paper in Dubai to hitting nearly half a million views on our latest campaign, the momentum has been undeniable.</p>
-
-                        <p>And now that we are in December? It’s time to make things move. <strong>Sogni Video is arriving this month.</strong></p>
-
-                        <p>Let’s look back at a wild month and ahead to a massive December.</p>
-
-                        <p>— The Sogni Team</p>
-
+                        </div>
                       </td>
                     </tr>
-                  </tbody></table>
+                  </table>
+
+                  <!-- ===== Hero image ===== -->
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:12px 0 20px;">
+                        <img width="600" class="max-width"
+                             style="display:block; max-width:100% !important; width:100%; height:auto !important;"
+                             src="assets/17/sogni_banner.jpg"
+                             alt="Sogni December Banner">
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- ===== Intro text ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td class="text-module">
+                        <p>Hi Sognians!</p>
+                        <p>November was a month of leveling up. We scrubbed the leaderboards to protect honest creators, launched Season 4 with a bang, and watched the community go absolutely viral on social media.</p>
+                        <p>From running out of photo paper in Dubai to hitting nearly half a million views on our latest campaign, the momentum has been undeniable.</p>
+                        <p>And now that we are in December? It's time to make things move. <strong>Sogni Video is arriving this month.</strong></p>
+                        <p>Let's look back at a wild month and ahead to a massive December.</p>
+                        <p>— The Sogni Team</p>
+                      </td>
+                    </tr>
+                  </table>
 
                   <!-- QUICK JUMP -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tbody><tr>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
                       <td>
                         <div class="section-name" style="padding-left:20px;">QUICK JUMP</div>
                       </td>
                     </tr>
-                  </tbody></table>
+                  </table>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="this-edition">
-                    <tbody><tr>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="this-edition">
+                    <tr>
                       <td>
                         <div class="section-title-container" style="padding-left:20px;">
                           <h2 class="section-title">In this edition:</h2>
                         </div>
                       </td>
                     </tr>
-                  </tbody></table>
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tbody><tr>
+                  </table>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
                       <td class="text-module" style="padding-top:0;">
                         <ul style="margin:0 0 0 20px; padding:0;">
                           <li><a href="#SEASON-4">Season 4: 10M Token Pool ⚖️</a></li>
@@ -733,36 +232,32 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
                         </ul>
                       </td>
                     </tr>
-                  </tbody></table>
+                  </table>
 
                   <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tbody><tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="divider-hr" bgcolor="#525155"></td></tr></tbody></table>
-                    </td></tr>
-                  </tbody></table>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:20px 0 10px;"><table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td class="divider-hr" bgcolor="#525155"></td></tr></table></td></tr></table>
 
                   <!-- ===== Season 4 & Fairness ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="SEASON-4">
-                    <tbody><tr><td>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="SEASON-4">
+                    <tr><td>
                       <div class="section-title-container" style="padding-left:20px;">
                         <h2 class="section-title">Season 4 is Live: 10M Tokens Up for Grabs ⚖️</h2>
                       </div>
                     </td></tr>
-                  </tbody></table>
+                  </table>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tbody><tr><td class="text-module" style="padding-top:0;">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr><td class="text-module" style="padding-top:0;">
                       <p>The race is on. We have <strong>10,000,000 SOGNI tokens</strong> in the prize pool for Season 4. This massive pool is available every single season, waiting to be claimed by creators, workers, and stakers.</p>
                       <p>To ensure a fair fight, we kicked off the season by removing over <strong>1,700 bot and spam accounts</strong>. We cleared out the bulk farmers so the rewards go to the real community.</p>
-                      
+
                       <p><strong>Season 4 Highlights (Active Now):</strong></p>
                       <ul style="margin:0 0 20px 20px; padding:0;">
                         <li><strong>Fixed Artist Rewards:</strong> See exactly what you earn per rank.</li>
                         <li><strong>Premium Spark:</strong> Now gets a <strong>10x multiplier</strong>.</li>
                         <li><strong>Real-Time Staking:</strong> Points accrue <em>every second</em>.</li>
                       </ul>
-                      
+
                       <p>The field is level and the prize pool is massive. Go claim your share.</p>
 
                       <div class="button-row">
@@ -770,81 +265,80 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
                         <a href="https://docs.sogni.ai/rewards/staking-sogni" target="_blank" class="green-button">👉 Read Staking Rules</a>
                       </div>
                     </td></tr>
-                  </tbody></table>
+                  </table>
 
                   <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tbody><tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="divider-hr" bgcolor="#525155"></td></tr></tbody></table>
-                    </td></tr>
-                  </tbody></table>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:20px 0 10px;"><table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td class="divider-hr" bgcolor="#525155"></td></tr></table></td></tr></table>
 
                   <!-- ===== 150 Million Creations ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="150M-CREATIONS">
-                    <tbody><tr><td>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="150M-CREATIONS">
+                    <tr><td>
                       <div class="section-title-container" style="padding-left:20px;">
                         <h2 class="section-title">150 Million Creations 🚀</h2>
                       </div>
                     </td></tr>
-                  </tbody></table>
+                  </table>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tbody><tr><td class="text-module" style="padding-top:0;">
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:0 0 20px;">
+                        <img width="600" class="max-width"
+                             style="display:block; max-width:100% !important; width:100%; height:auto !important;"
+                             src="assets/17/150m_creations.jpg"
+                             alt="150 Million Creations Milestone">
+                      </td>
+                    </tr>
+                  </table>
+
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr><td class="text-module" style="padding-top:0;">
                       <p>We hit a massive milestone this month. The Sogni Supernet has now powered over <strong>150,000,000 creations</strong>.</p>
                       <p>That is 150 million moments of inspiration, iteration, and artistic expression from this community. Thank you for building with us.</p>
                     </td></tr>
-                  </tbody></table>
+                  </table>
 
                   <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tbody><tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="divider-hr" bgcolor="#525155"></td></tr></tbody></table>
-                    </td></tr>
-                  </tbody></table>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:20px 0 10px;"><table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td class="divider-hr" bgcolor="#525155"></td></tr></table></td></tr></table>
 
                   <!-- ===== Viral Stats ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="VIRAL-STATS">
-                    <tbody><tr><td>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="VIRAL-STATS">
+                    <tr><td>
                       <div class="section-title-container" style="padding-left:20px;">
                         <h2 class="section-title">Photobooth: Viral Hits &amp; Winter Event ❄️</h2>
                       </div>
                     </td></tr>
-                  </tbody></table>
+                  </table>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tbody><tr><td class="text-module" style="padding-top:0;">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr><td class="text-module" style="padding-top:0;">
                       <p>We teamed up with <strong>Gimi.co</strong> last month to see what happens when we let you loose with the Photobooth. We saw massive spikes in brand awareness across Instagram, X, and TikTok with <strong>458,994 Total Views</strong> and over <strong>48k engagements</strong>.</p>
-                      
+
                       <p><strong>New: The Winter Event is Live</strong><br>
                       We are keeping the momentum going. The <strong>Sogni Winter Photobooth</strong> is now open.</p>
                       <p>We have integrated 30 "live photo" video styles to showcase the upcoming Wan 2.2 video capabilities. Dive in, transform your photos, and submit them to the Public Gallery.</p>
-                      
+
                       <div class="button-row">
                         <a href="https://photobooth.sogni.ai/event/winter" target="_blank" class="green-button">👉 Enter Winter Photobooth</a>
                       </div>
                     </td></tr>
-                  </tbody></table>
+                  </table>
 
                   <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tbody><tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="divider-hr" bgcolor="#525155"></td></tr></tbody></table>
-                    </td></tr>
-                  </tbody></table>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:20px 0 10px;"><table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td class="divider-hr" bgcolor="#525155"></td></tr></table></td></tr></table>
 
                   <!-- ===== App Updates ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="APP-UPDATES">
-                    <tbody><tr><td>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="APP-UPDATES">
+                    <tr><td>
                       <div class="section-title-container" style="padding-left:20px;">
                         <h2 class="section-title">App Updates: Speed &amp; Polish 📲</h2>
                       </div>
                     </td></tr>
-                  </tbody></table>
+                  </table>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tbody><tr><td class="text-module" style="padding-top:0;">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr><td class="text-module" style="padding-top:0;">
                       <p>While you were creating, the dev team was shipping. Sogni Web and our native apps got major upgrades in November.</p>
-                      
+
                       <p><strong>Sogni Web: Bandwidth Saver</strong><br>
                       Sogni Supernet now offers the option to receive high-quality JPGs. They are 5-10x smaller than PNGs, making batch renders feel instant. You can toggle between JPG and PNG formats in the <strong>Advanced</strong> menu.</p>
 
@@ -861,95 +355,127 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
                         <a href="https://www.sogni.ai/download" target="_blank" class="green-button">👉 See Our Apps</a>
                       </div>
                     </td></tr>
-                  </tbody></table>
+                  </table>
 
                   <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tbody><tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="divider-hr" bgcolor="#525155"></td></tr></tbody></table>
-                    </td></tr>
-                  </tbody></table>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:20px 0 10px;"><table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td class="divider-hr" bgcolor="#525155"></td></tr></table></td></tr></table>
 
                   <!-- ===== Events Recap ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="EVENTS-RECAP">
-                    <tbody><tr><td>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="EVENTS-RECAP">
+                    <tr><td>
                       <div class="section-title-container" style="padding-left:20px;">
                         <h2 class="section-title">Events: Dubai, Nosana &amp; TezTalks 🌍</h2>
                       </div>
                     </td></tr>
-                  </tbody></table>
+                  </table>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tbody><tr><td class="text-module" style="padding-top:0;">
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:0 0 20px;">
+                        <img width="600" class="max-width"
+                             style="display:block; max-width:100% !important; width:100%; height:auto !important;"
+                             src="assets/17/mauvis_at_function1.jpg"
+                             alt="Mauvis at Function1 Dubai">
+                      </td>
+                    </tr>
+                  </table>
+
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr><td class="text-module" style="padding-top:0;">
                       <h3 class="section-title-small" style="color:#ffffff;">Function1 Dubai</h3>
                       <p>Mauvis and the team took over Function1 in Dubai. Demand was so high we ran out of materials by noon. The mainstream is ready for Web3 ownership without the friction.</p>
-                      
+
                       <h3 class="section-title-small" style="color:#ffffff;">Sogni x Nosana Livestream</h3>
                       <p>Mauvis joined the Nosana team to discuss the "AI Renaissance." Key takeaway: Open-source models like DeepSeek R1 are removing the moat for proprietary giants, and utility is the only real defense against market bubbles.</p>
 
                       <h3 class="section-title-small" style="color:#ffffff;">TezTalks Live</h3>
-                      <p>Mauvis joined host Stu to explore Sogni’s roots in Fortify Labs and why Tezos/Etherlink became our home. A deep dive into the philosophy of AI in 2025.</p>
-                      
+                      <p>Mauvis joined host Stu to explore Sogni's roots in Fortify Labs and why Tezos/Etherlink became our home. A deep dive into the philosophy of AI in 2025.</p>
+
                       <div class="button-row">
                         <a href="https://x.com/nosana_ai/status/1993998284596421117" target="_blank" class="green-button">👉 Watch Nosana Replay</a>
                         <a href="https://www.youtube.com/watch?v=fEFPRNGQheA" target="_blank" class="green-button">👉 Watch TezTalks</a>
                       </div>
                     </td></tr>
-                  </tbody></table>
+                  </table>
 
                   <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tbody><tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="divider-hr" bgcolor="#525155"></td></tr></tbody></table>
-                    </td></tr>
-                  </tbody></table>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:20px 0 10px;"><table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td class="divider-hr" bgcolor="#525155"></td></tr></table></td></tr></table>
 
                   <!-- ===== Creator of the Month ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="CHALLENGES">
-                    <tbody><tr><td>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="CHALLENGES">
+                    <tr><td>
                       <div class="section-title-container" style="padding-left:20px;">
                         <h2 class="section-title">Creator of the Month: Nemo 🍁</h2>
                       </div>
                     </td></tr>
-                  </tbody></table>
+                  </table>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tbody><tr><td class="text-module" style="padding-top:0;">
-                      <p>November’s Creator Showcase was all about the "Fall Era." We are stoked to announce our inaugural Creator of the Month: prosto323 aka <strong>Nemo</strong>!</p>
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:0 0 20px;">
+                        <img width="600" class="max-width"
+                             style="display:block; max-width:100% !important; width:100%; height:auto !important;"
+                             src="assets/17/creator_of_the_month.avif"
+                             alt="Creator of the Month - Nemo">
+                      </td>
+                    </tr>
+                  </table>
+
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr><td class="text-module" style="padding-top:0;">
+                      <p>November's Creator Showcase was all about the "Fall Era." We are stoked to announce our inaugural Creator of the Month: prosto323 aka <strong>Nemo</strong>!</p>
                       <p>Nemo is an amazing community member who consistently helps others and pushes the boundaries of our tools. We are glad to have him with us.</p>
-                                         
+
                       <p><strong>How we judge:</strong><br>
                       To qualify for Creator of the Month, you must participate in all four weekly challenges—you don't need to win, but you need to show up. We judge based on creativity, technical skill, experimentation, and community involvement.</p>
-                                        
+
                       <p>Additionally, here are our first place winners from our 4 weekly challenges!</p>
 
                       <p>Join us in Discord to congratulate the winners and get ready for the December challenges.</p>
-                      
+
                       <div class="button-row">
                         <a href="https://discord.gg/2JjzA2zrrc" target="_blank" class="green-button">👉 Join Discord</a>
                       </div>
 
                     </td></tr>
-                  </tbody></table>
+                  </table>
+
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:0 0 20px;">
+                        <img width="600" class="max-width"
+                             style="display:block; max-width:100% !important; width:100%; height:auto !important;"
+                             src="assets/17/november_challenge_winners.avif"
+                             alt="November Challenge Winners">
+                      </td>
+                    </tr>
+                  </table>
 
                   <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tbody><tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="divider-hr" bgcolor="#525155"></td></tr></tbody></table>
-                    </td></tr>
-                  </tbody></table>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:20px 0 10px;"><table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td class="divider-hr" bgcolor="#525155"></td></tr></table></td></tr></table>
 
                   <!-- ===== Video Tease ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="VIDEO-TEASE">
-                    <tbody><tr><td>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="VIDEO-TEASE">
+                    <tr><td>
                       <div class="section-title-container" style="padding-left:20px;">
                         <h2 class="section-title">Sogni Video Arrives in December 🎬</h2>
                       </div>
                     </td></tr>
-                  </tbody></table>
+                  </table>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tbody><tr><td class="text-module" style="padding-top:0;">
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:0 0 20px;">
+                        <img width="600" class="max-width"
+                             style="display:block; max-width:100% !important; width:100%; height:auto !important;"
+                             src="assets/17/sogni_video.gif"
+                             alt="Sogni Video Preview">
+                      </td>
+                    </tr>
+                  </table>
+
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr><td class="text-module" style="padding-top:0;">
                       <p>We hinted that video was coming in the Season 4 announcement. Here are the specifics.</p>
                       <p>We are officially launching <strong>Sogni Video</strong> this month with a full suite of features powered by <strong>Wan 2.2</strong>:</p>
                       <ul style="margin:0 0 20px 20px; padding:0;">
@@ -959,7 +485,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
                         <li><strong>Animate-Replace</strong> (Video character replacement)</li>
                         <li><strong>Animate-Move</strong> (Video motion transfer)</li>
                       </ul>
-                      
+
                       <p><strong>How to get ready:</strong></p>
                       <ol style="margin:0 0 20px 20px; padding:0;">
                         <li><strong>Get your GPU ready:</strong> Grab a Sogni Fast Worker Prospect NFT to participate in the compute network. <a href="https://nft-signup.sogni.ai" style="color:#99FF01;">nft-signup.sogni.ai</a></li>
@@ -968,47 +494,40 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 
                       <p>Get your best generations ready. You are going to want them for this.</p>
                     </td></tr>
-                  </tbody></table>
+                  </table>
 
                   <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tbody><tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td class="divider-hr" bgcolor="#525155"></td></tr></tbody></table>
-                    </td></tr>
-                  </tbody></table>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:20px 0 10px;"><table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td class="divider-hr" bgcolor="#525155"></td></tr></table></td></tr></table>
 
                   <!-- ===== Final Wrap Up ===== -->
-                   <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tbody><tr><td class="text-module">
-                      <p>That’s a wrap for November. With Season 4 underway, video tools dropping this month, and the community growing faster than ever, there has never been a better time to be a Sognian.</p>
+                   <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr><td class="text-module">
+                      <p>That's a wrap for November. With Season 4 underway, video tools dropping this month, and the community growing faster than ever, there has never been a better time to be a Sognian.</p>
                       <p>We're stoked to have you with us.</p>
                       <p><strong>— The Sogni Team</strong></p>
                     </td></tr>
-                  </tbody></table>
+                  </table>
 
                   <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tbody><tr><td style="padding:35px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td bgcolor="#525155" class="divider-hr"></td></tr></tbody></table>
-                    </td></tr>
-                  </tbody></table>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:35px 0 10px;"><table width="100%" height="1" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table></td></tr></table>
 
                   <!-- ===== Past Newsletter Link ===== -->
                   <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                      <tbody><tr>
-                          <td>
-                              <div style="text-align:center; padding:0 20px 0">
-                                  <a style="background-color:#000; color:#99ff01; display:inline-flex; align-items:center; padding:12px; text-decoration:none; font-family:Inter,sans-serif;" href="https://news.sogni.ai/sogni-sync/">
-                                      <strong>Missed a newsletter? Access all the past ones here!</strong>
-                                  </a>
-                              </div>
-                          </td>
-                      </tr>
-                  </tbody></table>
+                    <tr>
+                      <td>
+                        <div style="text-align:center; padding:0 20px 0">
+                          <a style="background-color:#000; color:#99ff01; display:inline-flex; align-items:center; padding:12px; text-decoration:none; font-family:Inter,sans-serif;"
+                             href="https://news.sogni.ai/sogni-sync/">
+                            <strong>Missed a newsletter? Access all the past ones here!</strong>
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
 
                   <!-- ===== Social Icons ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tbody><tr><td align="center" style="padding:10px 0 20px;">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr><td align="center" style="padding:10px 0 20px;">
                       <a class="social-icon" href="https://discord.com/invite/2JjzA2zrrc"><img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/dde8c72d-0180-48ce-a884-0b5059c0bd6a/100x100.png" alt="Discord"></a>
                       <a class="social-icon" href="https://t.me/sogniai"><img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/f72a9b29-0ca6-4c8f-a043-28a16a5460e2/100x100.png" alt="Telegram"></a>
                       <a class="social-icon" href="https://www.youtube.com/@SogniAI?sub_confirmation=1"><img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/c4bdbd34-9ee0-4cf4-807e-9294065e2803/100x100.png" alt="YouTube"></a>
@@ -1017,7 +536,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
                       <a class="social-icon" href="https://www.linkedin.com/company/sogni-ai/"><img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/62cb84ce-25f7-4755-a1a2-c11449fc61b7/100x100.png" alt="LinkedIn"></a>
                       <a class="social-icon" href="https://medium.com/sogni"><img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/2c83cc3a-c96c-4c88-ac02-8e8b7abbe081/100x100.png" alt="Medium"></a>
                     </td></tr>
-                  </tbody></table>
+                  </table>
 
                   <!-- ===== Unsubscribe ===== -->
                   <div class="unsubscribe-css__unsubscribe___2CDlR" style="color:#fff; font-size:12px; line-height:22px; padding:16px; text-align:center;">
@@ -1028,26 +547,26 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
                   </div>
 
                   <!-- ===== Footer Legal ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tbody><tr><td style="padding:0 16px 16px; text-align:center;">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr><td style="padding:0 16px 16px; text-align:center;">
                       <p style="font:10px/14px 'Inter',sans-serif; color:#a6a6a6;">
                         WE&amp;ROBOT PTE. LTD. · #60 Paya Lebar Road #07-54 · Singapore 409051<br>
                         <a href="https://www.sogni.ai/privacy-policy" style="color:#ffffff; font-size:10px;">Privacy Policy &amp; Terms</a>
                       </p>
                     </td></tr>
-                  </tbody></table>
+                  </table>
 
                   <!-- ===== Spacer ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr><td style="padding:0 0 30px;"></td></tr></tbody></table>
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:0 0 30px;"></td></tr></table>
 
                 </td>
               </tr>
-            </tbody></table>
+            </table>
           </div>
         </center>
       </td>
     </tr>
-  </tbody></table>
+  </table>
   <!-- ===== END WRAPPER ===== -->
-
-</body></html>
+</body>
+</html>
