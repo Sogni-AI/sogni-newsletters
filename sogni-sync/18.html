@@ -1,0 +1,560 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" lang="en">
+<head>
+  <!-- ===== Meta & mobile-first ===== -->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="x-apple-disable-message-reformatting" />
+  <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="supported-color-schemes" content="light dark" />
+  <title>Sogni /Sync — January '26 | Volume 18</title>
+
+  <!-- ===== Google Fonts (Inter + Space Grotesk) ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+  <!-- ===== Core styles (merged + cleaned) ===== -->
+  <style type="text/css">
+    span.device { display:block; font-weight:normal; font-size:0.9em; }
+
+    /* Base typography & resets */
+    body, p, div {
+      margin:0; padding:0; font-family:inherit; font-size:16px; line-height:23px;
+      -webkit-font-smoothing:antialiased; -webkit-text-size-adjust:100%;
+      -ms-text-size-adjust:100%; -moz-text-size-adjust:100%;
+    }
+    body { background:#1D1D1D; color:#ffffff; width:100% !important; }
+    p { margin:0 0 20px; }
+    a { color:#99FF01; text-decoration:none; }
+    a img { vertical-align:middle; }
+    img { border:none; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; }
+    table.wrapper { width:100% !important; table-layout:fixed; }
+    .column.of-2{ width:50%; } .column.of-3{ width:33.333%; } .column.of-4{ width:25%; }
+
+    /* Lists – force styles inside email clients */
+    ul ul ul ul{ list-style-type:disc !important; }
+    ol ol{ list-style-type:lower-roman !important; }
+    ol ol ol{ list-style-type:lower-latin !important; }
+    ol ol ol ol{ list-style-type:decimal !important; }
+    center.small{font-size: 14px;}
+
+    /* Headings & text blocks */
+    .main-title-container { padding:20px; color:#a6a6a6; text-align:left; }
+    .main-title { margin:0; font:700 36px/1.2 'Space Grotesk',sans-serif; color:#ffffff; letter-spacing:-0.5px; }
+    .subtitle { font:500 20px/1.5 'Inter',sans-serif; color:#a6a6a6; margin:5px 0 0; }
+
+    .section-title-container { padding:20px 20px 16px 20px; color:#ffffff; text-align:left; }
+    .section-name { margin:0 0 8px; font:500 16px/1.1 'Inter',sans-serif; color:#a6a6a6; }
+    .section-title { margin:0 0 8px; font:600 28px/1.1 'Space Grotesk',sans-serif; }
+    .section-title-small{ margin:0 0 12px; font:600 17px/1.2 'Space Grotesk',sans-serif; }
+
+    .text-module { padding:18px 20px; font-size:16px; line-height:1.7; color:#a6a6a6; text-align:left; }
+    .text-module p{ margin:0 0 20px; }
+
+    /* Enhanced Buttons */
+    .green-button,
+    .button-link {
+      background: linear-gradient(135deg, #99ff01 0%, #7acc00 100%);
+      border:none;
+      border-radius:8px;
+      color:#000 !important;
+      font:600 14px/normal 'Inter', sans-serif;
+      padding:12px 20px;
+      text-decoration:none;
+      display:inline-block;
+      margin-top:15px;
+      transition: transform 0.2s ease;
+    }
+    .button-secondary {
+      background: transparent;
+      border: 2px solid #99ff01;
+      border-radius:8px;
+      color:#99ff01 !important;
+      font:500 14px/normal 'Inter', sans-serif;
+      padding:10px 18px;
+      text-decoration:none;
+      display:inline-block;
+      margin-top:15px;
+    }
+    .button-row a + a { margin-left:12px; }
+
+    /* Stats Grid */
+    .stat-box {
+      text-align:center;
+      padding:20px 10px;
+    }
+    .stat-number {
+      font:700 32px/1.1 'Space Grotesk',sans-serif;
+      color:#99FF01;
+      display:block;
+      margin-bottom:6px;
+    }
+    .stat-label {
+      font:500 13px/1.3 'Inter',sans-serif;
+      color:#a6a6a6;
+      text-transform:uppercase;
+      letter-spacing:0.5px;
+    }
+
+    /* Feature Cards */
+    .feature-card {
+      background: linear-gradient(135deg, #1a1a1a 0%, #252525 100%);
+      border:1px solid #333;
+      border-radius:12px;
+      padding:20px;
+      margin-bottom:16px;
+    }
+    .feature-icon {
+      width:40px;
+      height:40px;
+      background:#99ff01;
+      border-radius:8px;
+      display:inline-block;
+      text-align:center;
+      line-height:40px;
+      font-size:20px;
+      margin-bottom:12px;
+    }
+    .feature-title {
+      font:600 18px/1.3 'Space Grotesk',sans-serif;
+      color:#ffffff;
+      margin:0 0 8px;
+    }
+    .feature-desc {
+      font:400 14px/1.6 'Inter',sans-serif;
+      color:#a6a6a6;
+      margin:0;
+    }
+
+    /* Badge styling */
+    .section-badge {
+      display:inline-block;
+      background:#99ff01;
+      color:#000;
+      font:700 10px/1 'Inter',sans-serif;
+      padding:4px 8px;
+      border-radius:4px;
+      text-transform:uppercase;
+      letter-spacing:0.5px;
+      margin-bottom:8px;
+    }
+
+    /* Social icons */
+    .social-icon img{ width:28px; height:28px; }
+    .social-icon{ display:inline-block; margin:0 8px; }
+
+    /* App blocks */
+    .app-icon-wrapper { text-align:center; padding:0; }
+    .app-icon { width:128px; margin:0 auto; display:block; height:auto; }
+    .app-heading { text-align:center; color:#ffffff; margin:10px 0; font-family:Inter, sans-serif; }
+    .app-button-container { text-align:center; margin-bottom:30px; }
+    .app-download-button { background:#000; border:1px solid #99FF01; border-radius:8px; color:#fff !important; display:inline-block; font:14px 'Inter',sans-serif; padding:10px 20px; text-decoration:none; margin-top:10px; }
+
+    /* Unsubscribe color */
+    .unsubscribe-css__unsubscribe___2CDlR a.Unsubscribe--unsubscribeLink{ color:#bebdbd !important; text-decoration:none !important; }
+
+    /* Glow effects */
+    .glow-accent {
+      box-shadow: 0 0 30px rgba(153, 255, 1, 0.15);
+    }
+
+    /* Responsive */
+    @media screen and (max-width:480px){
+      .preheader .rightColumnContent,
+      .footer .rightColumnContent{ text-align:left !important; }
+      .preheader .rightColumnContent div,
+      .preheader .rightColumnContent span,
+      .footer .rightColumnContent div,
+      .footer .rightColumnContent span{ text-align:left !important; }
+      .preheader .rightColumnContent, .preheader .leftColumnContent{ font-size:80% !important; padding:5px 0; }
+      table.wrapper-mobile{ width:100% !important; table-layout:fixed; }
+      img.max-width{ max-width:100% !important; height:auto !important; }
+      a.button-link, a.green-button{ display:inline-block !important; width:auto !important; font-size:80% !important; padding-left:16px !important; padding-right:16px !important; }
+      .columns, .column{ width:100% !important; display:block !important; padding-left:0 !important; padding-right:0 !important; margin-left:0 !important; margin-right:0 !important; }
+      .social-icon img{ width:20px !important; height:20px !important; }
+      .main-title{ font-size:28px !important; }
+      .section-title{ font-size:24px !important; }
+      .app-icon{ width:80px !important; }
+      .stat-number{ font-size:26px !important; }
+      .stat-cell{ width:50% !important; display:inline-block !important; }
+
+      /* Two-column layout mobile collapse */
+      .mobile-stack-row{ display:block !important; }
+      .mobile-stack{ display:block !important; width:100% !important; box-sizing:border-box !important; }
+      .mobile-stack-img{ display:block !important; width:100% !important; padding:18px 20px 10px 20px !important; text-align:center !important; }
+      .mobile-stack-img img{ max-width:60% !important; margin:0 auto !important; }
+      .mobile-stack-text{ display:block !important; width:100% !important; padding:0 20px 18px 20px !important; }
+    }
+    @media screen and (max-width:480px){ .two-col-override .column{ width:50% !important; display:inline-block !important; vertical-align:top; } }
+    @media screen and (max-width:320px){ .two-col-override .column{ width:100% !important; display:block !important; } }
+
+    /* Minor helper */
+    .divider-hr { line-height:1px; font-size:1px; }
+    .gradient-divider { height:2px; background: linear-gradient(90deg, transparent 0%, #99ff01 50%, transparent 100%); }
+  </style>
+</head>
+
+<body style="margin:0; padding:0; background:#1D1D1D; width:100% !important;">
+  <!-- ===== OUTER WRAPPER ===== -->
+  <table align="center" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"
+         style="background:#000000; max-width:600px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Fira Sans','Droid Sans','Helvetica Neue',sans-serif;">
+    <tr>
+      <td>
+        <center class="wrapper" data-link-color="#99FF01" data-body-style="font-size:16px; font-family:inherit; color:#ffffff; background-color:#1D1D1D;">
+          <div class="webkit">
+            <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#1D1D1D" style="table-layout:fixed;">
+              <tr>
+                <td bgcolor="#000000" valign="top">
+
+                  <!-- ===== Hidden pre-header ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="display:none!important;mso-hide:all;visibility:hidden;opacity:0;color:transparent;height:0;width:0;">
+                    <tr><td>From 1M to 150M creations, $4M raised, and 1,000+ GPUs. 2025 was the year Sogni proved the Supernet works at scale. Here's what's next.</td></tr>
+                  </table>
+
+                  <!-- ===== Spacer ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:0 0 15px;"></td></tr></table>
+
+                  <!-- ===== Top row: logo + edition label ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td>
+                        <div style="padding:10px 20px 20px;">
+                          <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                            <tr>
+                              <td align="left" valign="middle">
+                                <table cellpadding="0" cellspacing="0" border="0" role="presentation">
+                                  <tr>
+                                    <td valign="middle" style="padding-right:5px;">
+                                      <img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/d2884f6c-4924-48ca-a7e6-a0c6bba72f16/1657x636.png" alt="Sogni logo" style="height:calc(16px * 1.2); width:auto;">
+                                    </td>
+                                    <td valign="middle" style="font-family:Inter,sans-serif; font-size:16px; color:#a6a6a6;">/Sync</td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <td align="right" valign="middle">
+                                <span style="font-family:Inter,sans-serif; font-size:12px; color:#000; background:#99ff01; padding:4px 10px; border-radius:4px; font-weight:600;">
+                                  VOLUME 18
+                                </span>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- ===== Main title with gradient accent ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td>
+                        <div class="main-title-container" style="padding:10px 20px 0;">
+                          <p style="font-family:Inter,sans-serif; font-size:14px; color:#99FF01; margin:0 0 8px; text-transform:uppercase; letter-spacing:1px; font-weight:500;">January 2026 Edition</p>
+                          <h1 class="main-title" style="margin:0; font:700 36px/1.15 'Space Grotesk',sans-serif; color:#ffffff;">2025: The Year<br>Sogni Came Alive</h1>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- ===== Hero image ===== -->
+                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:20px 0;">
+                        <img width="600" class="max-width"
+                             style="display:block; max-width:100% !important; width:100%; height:auto !important; border-radius:0;"
+                             src="https://news.sogni.ai/sogni-sync/assets/18/sogni-innovation-banner.jpg"
+                             alt="Sogni 2025 Year in Review Banner">
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- ===== Stats Grid - 2025 Highlights ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" style="background:linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%); border-top:1px solid #333; border-bottom:1px solid #333;">
+                    <tr>
+                      <td style="padding:25px 10px;">
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                          <tr>
+                            <td width="33.33%" class="stat-cell" style="text-align:center; padding:10px 5px; vertical-align:top;">
+                              <span style="font:700 32px/1.1 'Space Grotesk',sans-serif; color:#99FF01; display:block; margin-bottom:6px;">150M</span>
+                              <span style="font:500 11px/1.3 'Inter',sans-serif; color:#a6a6a6; text-transform:uppercase; letter-spacing:0.5px;">Creations</span>
+                            </td>
+                            <td width="33.33%" class="stat-cell" style="text-align:center; padding:10px 5px; vertical-align:top; border-left:1px solid #333; border-right:1px solid #333;">
+                              <span style="font:700 32px/1.1 'Space Grotesk',sans-serif; color:#99FF01; display:block; margin-bottom:6px;">85,000</span>
+                              <span style="font:500 11px/1.3 'Inter',sans-serif; color:#a6a6a6; text-transform:uppercase; letter-spacing:0.5px;">Artists</span>
+                            </td>
+                            <td width="33.33%" class="stat-cell" style="text-align:center; padding:10px 5px; vertical-align:top;">
+                              <span style="font:700 32px/1.1 'Space Grotesk',sans-serif; color:#99FF01; display:block; margin-bottom:6px;">1,000+</span>
+                              <span style="font:500 11px/1.3 'Inter',sans-serif; color:#a6a6a6; text-transform:uppercase; letter-spacing:0.5px;">GPUs Registered</span>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- ===== Intro text ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td class="text-module" style="padding:30px 20px 20px;">
+                        <p style="color:#ffffff; font-size:18px; line-height:1.6;">From 1 million to 150 million creations, $4M raised, and a community-owned AI toolkit now running on 1,000+ GPUs including H100s, B200s, and RTX 5090s, <strong style="color:#99FF01;">2025 was the year Sogni proved the Supernet works at scale.</strong></p>
+                        <p>If you want the full story of how we got here, you can explore the interactive 2025 wrap-up at <a href="https://2025.sogni.ai" style="color:#99FF01; font-weight:600; border-bottom:1px solid #99FF01;">2025.sogni.ai</a>.</p>
+                        <p>Here's where things go from here.</p>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- ===== Quick Jump Section ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" style="background:#111; border-radius:12px; margin:0 20px; width:calc(100% - 40px);">
+                    <tr>
+                      <td style="padding:20px;">
+                        <p style="font:600 12px/1 'Inter',sans-serif; color:#99FF01; margin:0 0 12px; text-transform:uppercase; letter-spacing:1px;">Quick Jump</p>
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td style="padding:8px 0;">
+                              <a href="#WHATS-NEXT" style="color:#ffffff; font:500 15px/1.4 'Inter',sans-serif; text-decoration:none;">2026: What's Next</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding:8px 0; border-top:1px solid #222;">
+                              <a href="#VIDEO" style="color:#ffffff; font:500 15px/1.4 'Inter',sans-serif; text-decoration:none;">Full Video, Everywhere</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding:8px 0; border-top:1px solid #222;">
+                              <a href="#SOCIAL" style="color:#ffffff; font:500 15px/1.4 'Inter',sans-serif; text-decoration:none;">Profiles & Discovery</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding:8px 0; border-top:1px solid #222;">
+                              <a href="#SDK" style="color:#ffffff; font:500 15px/1.4 'Inter',sans-serif; text-decoration:none;">SDK & Developer Tools</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding:8px 0; border-top:1px solid #222;">
+                              <a href="#MODELS" style="color:#ffffff; font:500 15px/1.4 'Inter',sans-serif; text-decoration:none;">New Models & LLM Integration</a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- ===== Gradient Divider ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td style="padding:35px 20px;">
+                        <div style="height:2px; background: linear-gradient(90deg, transparent 0%, #99ff01 50%, transparent 100%);"></div>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- ===== 2026: What's Next ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="WHATS-NEXT">
+                    <tr><td>
+                      <div style="padding:0 20px;">
+                        <span style="display:inline-block; background:#99ff01; color:#000; font:700 10px/1 'Inter',sans-serif; padding:5px 10px; border-radius:4px; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:12px;">The Road Ahead</span>
+                        <h2 style="margin:0 0 8px; font:600 32px/1.1 'Space Grotesk',sans-serif; color:#ffffff;">2026: What's Next</h2>
+                      </div>
+                    </td></tr>
+                  </table>
+
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr><td class="text-module" style="padding-top:15px;">
+                      <p style="color:#ffffff; font-size:17px;">Hey creator,</p>
+                      <p style="color:#ffffff; font-size:17px;">If 2025 was about proving the Supernet works, <strong style="color:#99FF01;">2026 is about seeing what you do with it.</strong></p>
+                    </td></tr>
+                  </table>
+
+                  <!-- ===== Feature Card: Video ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="VIDEO">
+                    <tr><td style="padding:10px 20px;">
+                      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); border:1px solid #2a2a2a; border-radius:12px; border-left:4px solid #99ff01;">
+                        <tr><td style="padding:24px;">
+                          <p style="font:700 11px/1 'Inter',sans-serif; color:#99FF01; margin:0 0 10px; text-transform:uppercase; letter-spacing:1px;">Coming Soon</p>
+                          <h3 style="font:600 22px/1.3 'Space Grotesk',sans-serif; color:#ffffff; margin:0 0 14px;">Full video, everywhere</h3>
+                          <ul style="margin:0 0 0 18px; padding:0; color:#a6a6a6; font:400 15px/1.7 'Inter',sans-serif;">
+                            <li style="margin-bottom:8px;">Video is rolling out across all Sogni apps so you can move between image, video, and audio without switching tools.</li>
+                            <li>Transition videos, music-synced edits, longer clips, and better controls are coming online as tools you'll love to use.</li>
+                          </ul>
+                        </td></tr>
+                      </table>
+                    </td></tr>
+                  </table>
+
+                  <!-- ===== Feature Card: Social ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="SOCIAL">
+                    <tr><td style="padding:10px 20px;">
+                      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); border:1px solid #2a2a2a; border-radius:12px; border-left:4px solid #99ff01;">
+                        <tr><td style="padding:24px;">
+                          <p style="font:700 11px/1 'Inter',sans-serif; color:#99FF01; margin:0 0 10px; text-transform:uppercase; letter-spacing:1px;">Community</p>
+                          <h3 style="font:600 22px/1.3 'Space Grotesk',sans-serif; color:#ffffff; margin:0 0 14px;">Profiles, social, and discovery</h3>
+                          <ul style="margin:0 0 0 18px; padding:0; color:#a6a6a6; font:400 15px/1.7 'Inter',sans-serif;">
+                            <li style="margin-bottom:8px;">Artist profiles will give you a home base in the network: your work, your style, your links, all in one place.</li>
+                            <li style="margin-bottom:8px;">You'll be able to follow creators, browse an Explore page, and see what the community is making in real time.</li>
+                            <li>Sharing prompts, settings, and workflows will get easier, so "How did you make that?" becomes "Here, remix this."</li>
+                          </ul>
+                        </td></tr>
+                      </table>
+                    </td></tr>
+                  </table>
+
+                  <!-- ===== Feature Card: SDK ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="SDK">
+                    <tr><td style="padding:10px 20px;">
+                      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); border:1px solid #2a2a2a; border-radius:12px; border-left:4px solid #99ff01;">
+                        <tr><td style="padding:24px;">
+                          <p style="font:700 11px/1 'Inter',sans-serif; color:#99FF01; margin:0 0 10px; text-transform:uppercase; letter-spacing:1px;">Developers</p>
+                          <h3 style="font:600 22px/1.3 'Space Grotesk',sans-serif; color:#ffffff; margin:0 0 14px;">Vibe coding upgrades</h3>
+                          <ul style="margin:0 0 0 18px; padding:0; color:#a6a6a6; font:400 15px/1.7 'Inter',sans-serif;">
+                            <li style="margin-bottom:8px;">The SDK is getting a proper vibe-coding starter app: auth, payments, and other boilerplate pre-wired so you can focus on the fun part.</li>
+                            <li>Better docs, more examples, and hackable templates so shipping a Sogni-powered app feels like a weekend project.</li>
+                          </ul>
+                        </td></tr>
+                      </table>
+                    </td></tr>
+                  </table>
+
+                  <!-- ===== Feature Card: Hackathons ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr><td style="padding:10px 20px;">
+                      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); border:1px solid #2a2a2a; border-radius:12px; border-left:4px solid #99ff01;">
+                        <tr><td style="padding:24px;">
+                          <p style="font:700 11px/1 'Inter',sans-serif; color:#99FF01; margin:0 0 10px; text-transform:uppercase; letter-spacing:1px;">Opportunities</p>
+                          <h3 style="font:600 22px/1.3 'Space Grotesk',sans-serif; color:#ffffff; margin:0 0 14px;">Hackathons, bounties, and Creator Program</h3>
+                          <ul style="margin:0 0 0 18px; padding:0; color:#a6a6a6; font:400 15px/1.7 'Inter',sans-serif;">
+                            <li style="margin-bottom:8px;">More structured ways to build with us: hackathons, bounties for apps the ecosystem needs, and clear paths from "experiment" to "featured."</li>
+                            <li>The Creator Program is getting better rewards, more spotlight, and long-term support for the people already pushing Sogni further.</li>
+                          </ul>
+                        </td></tr>
+                      </table>
+                    </td></tr>
+                  </table>
+
+                  <!-- ===== Feature Card: LLMs ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="MODELS">
+                    <tr><td style="padding:10px 20px;">
+                      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); border:1px solid #2a2a2a; border-radius:12px; border-left:4px solid #99ff01;">
+                        <tr><td style="padding:24px;">
+                          <p style="font:700 11px/1 'Inter',sans-serif; color:#99FF01; margin:0 0 10px; text-transform:uppercase; letter-spacing:1px;">AI Integration</p>
+                          <h3 style="font:600 22px/1.3 'Space Grotesk',sans-serif; color:#ffffff; margin:0 0 14px;">LLMs + Sogni + everything else</h3>
+                          <ul style="margin:0 0 0 18px; padding:0; color:#a6a6a6; font:400 15px/1.7 'Inter',sans-serif;">
+                            <li style="margin-bottom:8px;">LLM support is coming into the SDK and apps so you can chain language, image, and video in a single flow with agents that storyboard, generate, and iterate with you.</li>
+                            <li>Under the hood, more tools for custom pipelines, automations, and "I built this whole thing in an afternoon" style projects.</li>
+                          </ul>
+                        </td></tr>
+                      </table>
+                    </td></tr>
+                  </table>
+
+                  <!-- ===== Feature Card: Models ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr><td style="padding:10px 20px;">
+                      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); border:1px solid #2a2a2a; border-radius:12px; border-left:4px solid #99ff01;">
+                        <tr><td style="padding:24px;">
+                          <p style="font:700 11px/1 'Inter',sans-serif; color:#99FF01; margin:0 0 10px; text-transform:uppercase; letter-spacing:1px;">Expansion</p>
+                          <h3 style="font:600 22px/1.3 'Space Grotesk',sans-serif; color:#ffffff; margin:0 0 14px;">More models, more styles, more control</h3>
+                          <ul style="margin:0 0 0 18px; padding:0; color:#a6a6a6; font:400 15px/1.7 'Inter',sans-serif;">
+                            <li style="margin-bottom:8px;">New image and video models will keep landing like <strong style="color:#fff;">Flux.2, Kimi K2</strong>, and loads more. Plus more stylized options, and deeper control over consistency and characters.</li>
+                            <li>The goal is to give you the right levers when you need them and stay out of the way when you don't.</li>
+                          </ul>
+                        </td></tr>
+                      </table>
+                    </td></tr>
+                  </table>
+
+                  <!-- ===== CTA Button ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr><td style="text-align:center; padding:25px 20px;">
+                      <a href="https://2025.sogni.ai" style="background:#99ff01; border:none; border-radius:8px; color:#000 !important; font:600 15px/normal 'Inter', sans-serif; padding:14px 28px; text-decoration:none; display:inline-block;">Explore the Full 2025 Wrap-Up</a>
+                    </td></tr>
+                  </table>
+
+                  <!-- ===== Gradient Divider ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                      <td style="padding:15px 20px 35px;">
+                        <div style="height:2px; background: linear-gradient(90deg, transparent 0%, #99ff01 50%, transparent 100%);"></div>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- ===== Final Wrap Up ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr><td style="padding:0 20px;">
+                      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #0f1a0a 0%, #0a0a0a 100%); border:1px solid #2a3a1a; border-radius:12px;">
+                        <tr><td style="padding:30px;">
+                          <p style="font:400 16px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0 0 18px;">If 2025 felt big, it was still just foundation. <strong style="color:#ffffff;">The network is battle-tested. The tools work. The community is here.</strong></p>
+                          <p style="font:400 16px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0 0 18px;">2026 is where things get weird, fun, and genuinely new. What happens next is less about what Sogni can do and more about what <em>you</em> decide to build with it.</p>
+                          <p style="font:400 16px/1.7 'Inter',sans-serif; color:#ffffff; margin:0 0 18px;">Thanks for joining us on this wild journey and we hope you have a very <strong style="color:#99FF01;">Happy New Year!</strong></p>
+                          <p style="font:600 16px/1.5 'Inter',sans-serif; color:#ffffff; margin:0;">— Mauvis and the entire Sogni team <span style="color:#ff6b6b;">&#10084;</span></p>
+                          <p style="margin:20px 0 0;"><img src="https://news.sogni.ai/sogni-sync/assets/18/sogni_tzapac_overeasy_kontext.jpg" alt="The Sogni Team" style="display:block; max-width:100%; width:100%; height:auto; border-radius:8px;"></p>
+                        </td></tr>
+                      </table>
+                    </td></tr>
+                  </table>
+
+                  <!-- ===== Spacer ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:0 0 35px;"></td></tr></table>
+
+                  <!-- ===== Past Newsletter Link ===== -->
+                  <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                      <td>
+                        <div style="text-align:center; padding:0 20px 0">
+                          <a style="background:#111; border:1px solid #333; border-radius:8px; color:#99ff01; display:inline-block; padding:14px 24px; text-decoration:none; font:500 14px 'Inter',sans-serif;"
+                             href="https://news.sogni.ai/sogni-sync/">
+                            <strong>Missed a newsletter? Access all past editions here</strong>
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- ===== Social Icons ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr><td align="center" style="padding:25px 0 20px;">
+                      <a class="social-icon" href="https://discord.com/invite/2JjzA2zrrc" style="display:inline-block; margin:0 6px;"><img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/dde8c72d-0180-48ce-a884-0b5059c0bd6a/100x100.png" alt="Discord" style="width:28px; height:28px;"></a>
+                      <a class="social-icon" href="https://t.me/sogniai" style="display:inline-block; margin:0 6px;"><img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/f72a9b29-0ca6-4c8f-a043-28a16a5460e2/100x100.png" alt="Telegram" style="width:28px; height:28px;"></a>
+                      <a class="social-icon" href="https://www.youtube.com/@SogniAI?sub_confirmation=1" style="display:inline-block; margin:0 6px;"><img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/c4bdbd34-9ee0-4cf4-807e-9294065e2803/100x100.png" alt="YouTube" style="width:28px; height:28px;"></a>
+                      <a class="social-icon" href="https://www.instagram.com/sogni.ai/" style="display:inline-block; margin:0 6px;"><img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/316caddd-dba0-4f91-a92b-98a0e9c4bdfb/100x100.png" alt="Instagram" style="width:28px; height:28px;"></a>
+                      <a class="social-icon" href="https://x.com/sogni_protocol" style="display:inline-block; margin:0 6px;"><img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/efa17c04-3d0a-42c3-ad83-2fe8d5fead0b/100x100.png" alt="X / Twitter" style="width:28px; height:28px;"></a>
+                      <a class="social-icon" href="https://www.linkedin.com/company/sogni-ai/" style="display:inline-block; margin:0 6px;"><img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/62cb84ce-25f7-4755-a1a2-c11449fc61b7/100x100.png" alt="LinkedIn" style="width:28px; height:28px;"></a>
+                      <a class="social-icon" href="https://medium.com/sogni" style="display:inline-block; margin:0 6px;"><img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/2c83cc3a-c96c-4c88-ac02-8e8b7abbe081/100x100.png" alt="Medium" style="width:28px; height:28px;"></a>
+                    </td></tr>
+                  </table>
+
+                  <!-- ===== Unsubscribe ===== -->
+                  <div class="unsubscribe-css__unsubscribe___2CDlR" style="color:#fff; font-size:12px; line-height:22px; padding:16px; text-align:center;">
+                    <div class="Unsubscribe--addressLine"></div>
+                    <p style="font-family:Arial,Helvetica,sans-serif; font-size:12px; line-height:22px;">
+                      <a class="Unsubscribe--unsubscribeLink" href="{{{RESEND_UNSUBSCRIBE_URL}}}" style="color:#666; text-decoration:underline;">Unsubscribe</a>
+                    </p>
+                  </div>
+
+                  <!-- ===== Footer Legal ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr><td style="padding:0 16px 16px; text-align:center;">
+                      <p style="font:10px/14px 'Inter',sans-serif; color:#666;">
+                        WE&amp;ROBOT PTE. LTD. · #60 Paya Lebar Road #07-54 · Singapore 409051<br>
+                        <a href="https://www.sogni.ai/privacy-policy" style="color:#888; font-size:10px;">Privacy Policy &amp; Terms</a>
+                      </p>
+                    </td></tr>
+                  </table>
+
+                  <!-- ===== Spacer ===== -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:0 0 30px;"></td></tr></table>
+
+                </td>
+              </tr>
+            </table>
+          </div>
+        </center>
+      </td>
+    </tr>
+  </table>
+  <!-- ===== END WRAPPER ===== -->
+</body>
+</html>
