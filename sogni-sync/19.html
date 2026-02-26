@@ -229,7 +229,9 @@
             </tr>
             <tr>
               <td style="padding:0 20px 8px;">
-                <img src="https://news.sogni.ai/sogni-sync/assets/19/sogni-motion-transfer.jpg" alt="Motion Transfer video demo" width="560" style="display:block;width:100%;max-width:560px;height:auto;border:0;border-radius:10px;color:#a6a6a6;font-family:Inter,Helvetica,Arial,sans-serif;font-size:14px;" />
+                <a href="https://news.sogni.ai/sogni-sync/assets/19/sogni-motion-transfer.mp4" target="_blank" class="video-thumb" data-video="https://news.sogni.ai/sogni-sync/assets/19/sogni-motion-transfer.mp4" style="display:inline-block;width:100%;max-width:560px;text-decoration:none;cursor:pointer;">
+                  <img src="https://news.sogni.ai/sogni-sync/assets/19/sogni-motion-transfer.jpg" alt="Motion Transfer video demo – click to play" width="560" style="display:block;width:100%;max-width:560px;height:auto;border:0;border-radius:10px;color:#a6a6a6;font-family:Inter,Helvetica,Arial,sans-serif;font-size:14px;" />
+                </a>
               </td>
             </tr>
             <tr>
@@ -342,7 +344,9 @@
             </tr>
             <tr>
               <td style="padding:0 20px 8px;">
-                <img src="https://news.sogni.ai/sogni-sync/assets/19/sogni-photobooth-transition-2026-01-22-with-music.jpg" alt="Photobooth transition video demo" width="560" style="display:block;width:100%;max-width:560px;height:auto;border:0;border-radius:10px;color:#a6a6a6;font-family:Inter,Helvetica,Arial,sans-serif;font-size:14px;" />
+                <a href="https://news.sogni.ai/sogni-sync/assets/19/sogni-photobooth-transition-2026-01-22-with-music.mp4" target="_blank" class="video-thumb" data-video="https://news.sogni.ai/sogni-sync/assets/19/sogni-photobooth-transition-2026-01-22-with-music.mp4" style="display:inline-block;width:100%;max-width:560px;text-decoration:none;cursor:pointer;">
+                  <img src="https://news.sogni.ai/sogni-sync/assets/19/sogni-photobooth-transition-2026-01-22-with-music.jpg" alt="Photobooth transition video demo – click to play" width="560" style="display:block;width:100%;max-width:560px;height:auto;border:0;border-radius:10px;color:#a6a6a6;font-family:Inter,Helvetica,Arial,sans-serif;font-size:14px;" />
+                </a>
               </td>
             </tr>
             <tr>
@@ -372,7 +376,9 @@
             </tr>
             <tr>
               <td style="padding:0 20px 8px;">
-                <img src="https://news.sogni.ai/sogni-sync/assets/19/sogni-gatsby-orbit-silent.jpg" alt="Sogni 360 orbit video demo" width="560" style="display:block;width:100%;max-width:560px;height:auto;border:0;border-radius:10px;color:#a6a6a6;font-family:Inter,Helvetica,Arial,sans-serif;font-size:14px;" />
+                <a href="https://news.sogni.ai/sogni-sync/assets/19/sogni-gatsby-orbit-silent.mp4" target="_blank" class="video-thumb" data-video="https://news.sogni.ai/sogni-sync/assets/19/sogni-gatsby-orbit-silent.mp4" style="display:inline-block;width:100%;max-width:560px;text-decoration:none;cursor:pointer;">
+                  <img src="https://news.sogni.ai/sogni-sync/assets/19/sogni-gatsby-orbit-silent.jpg" alt="Sogni 360 orbit video demo – click to play" width="560" style="display:block;width:100%;max-width:560px;height:auto;border:0;border-radius:10px;color:#a6a6a6;font-family:Inter,Helvetica,Arial,sans-serif;font-size:14px;" />
+                </a>
               </td>
             </tr>
             <tr>
@@ -608,5 +614,21 @@
       </td>
     </tr>
   </table>
+  <!-- Click-to-play video thumbnails (web archive only; email clients strip scripts) -->
+  <script>
+    document.querySelectorAll('.video-thumb[data-video]').forEach(function(thumb) {
+      thumb.addEventListener('click', function(e) {
+        e.preventDefault();
+        var src = this.getAttribute('data-video');
+        var video = document.createElement('video');
+        video.src = src;
+        video.controls = true;
+        video.autoplay = true;
+        video.playsInline = true;
+        video.style.cssText = 'display:block;width:100%;max-width:560px;height:auto;border:0;border-radius:10px;background:#000;';
+        this.parentNode.replaceChild(video, this);
+      });
+    });
+  </script>
 </body>
 </html>
