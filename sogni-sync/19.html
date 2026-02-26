@@ -1,823 +1,612 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html dir="ltr" lang="en">
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
-  <!-- ===== Meta & mobile-first ===== -->
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width" />
   <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no" />
-  <meta name="color-scheme" content="light" />
+  <meta name="color-scheme" content="light dark" />
   <meta name="supported-color-schemes" content="light dark" />
+  <title>Sogni /Sync &mdash; February '26 | Volume 19</title>
 
-  <!-- ===== Google Fonts (Inter + Space Grotesk) ===== -->
+  <!--[if gte mso 9]><xml>
+  <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+  </xml><![endif]-->
+
+  <!-- Google Fonts: will render in Apple Mail, iOS Mail; falls back in Gmail/Outlook -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet" />
-
-  <title>Sogni /Sync — February ’26 | Volume 19</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet" />
 
   <style type="text/css">
-    .green-button,
-    .button-link {
-      background:#000;
-      border:1px solid #99ff01;
-      border-radius:9px;
-      color:#fff;
-      font:300 14px/normal 'Inter',sans-serif;
-      padding:10px 16px;
-      text-decoration:none;
-      display:inline-block;
-      margin-top:15px;
-    }
-    /* Social icons */
-    .social-icon img{width:24px;height:24px;}
-    .social-icon{display:inline-block;margin:0 10px;}
-
-    /* Unsubscribe */
-    .unsubscribe-css__unsubscribe___2CDlR a.Unsubscribe--unsubscribeLink{color:#bebdbd!important;text-decoration:none!important;}
-
-    /* Base typography & resets */
-    body,p,div{margin:0;padding:0;font-family:inherit;font-size:16px;line-height:23px;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
-    body{background:#1D1D1D;color:#ffffff;width:100%!important;}
-    p{margin-bottom:20px;}
+    /* === Resets === */
+    body,table,td,a{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+    table,td{mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;}
+    img{-ms-interpolation-mode:bicubic;border:0;height:auto;line-height:100%;outline:none;text-decoration:none;display:block;}
+    body{margin:0;padding:0;width:100%!important;background:#1D1D1D;color:#ffffff;}
     a{color:#99FF01;text-decoration:none;}
-    img{border:none;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;}
 
-    table.wrapper{width:100%!important;table-layout:fixed;}
-    .column.of-2{width:50%;}
-    .column.of-3{width:33.333%;}
-    .column.of-4{width:25%;}
+    /* === Unsubscribe === */
+    .unsub a{color:#bebdbd!important;text-decoration:none!important;}
 
-    /* Lists inside email clients often lose styles – force them */
-    ul ul ul ul{list-style-type:disc!important;}
-    ol ol{list-style-type:lower-roman!important;}
-    ol ol ol{list-style-type:lower-latin!important;}
-    ol ol ol ol{list-style-type:decimal!important;}
-
-    /* Headings & text blocks */
-    .main-title-container{padding:0 20px 16px 20px;color:#a6a6a6;text-align:left;}
-    .main-title{margin:0;font:700 32px/1.2 'Inter',sans-serif;color:#ffffff;}
-    .subtitle{font:500 20px/1.5 'Inter',sans-serif;color:#a6a6a6;margin:8px 0 0;}
-
-    .section-title-container{padding:0 20px 16px 20px;color:#ffffff;text-align:left;}
-    .section-name{margin:0 0 25px;font:500 16px/1.1 'Inter',sans-serif;color:#a6a6a6;}
-    .section-title{margin:0 0 8px;font:500 32px/1.1 'Space Grotesk',sans-serif;}
-    .section-title-small{margin:0 0 12px;font:500 16px/1.2 'Space Grotesk',sans-serif;color:#ffffff;}
-
-    .text-module{padding:18px 20px;font-size:16px;line-height:1.6;color:#a6a6a6;}
-    .text-module p{margin:0 0 20px;}
-
-    /* Responsive overrides */
-    @media screen and (max-width:480px){
-      table.wrapper-mobile{width:100%!important;table-layout:fixed;}
-      img.max-width{max-width:100%!important;height:auto!important;}
-      a.green-button,a.button-link{display:block!important;width:auto!important;font-size:80%!important;}
-      .columns,.column{width:100%!important;display:block!important;padding:0!important;margin:0!important;}
-      .social-icon img{width:16px!important;height:16px!important;}
-      .main-title{font-size:32px!important;}
+    /* === Mobile-first responsive (under 8KB for Gmail) === */
+    @media only screen and (max-width:480px){
+      .mobile-full{width:100%!important;max-width:100%!important;}
+      .mobile-pad{padding-left:16px!important;padding-right:16px!important;}
+      .mobile-stack{display:block!important;width:100%!important;max-width:100%!important;}
+      .mobile-center{text-align:center!important;}
+      .mobile-hide{display:none!important;max-height:0!important;overflow:hidden!important;}
+      .h1-mobile{font-size:28px!important;line-height:1.2!important;}
+      .h2-mobile{font-size:24px!important;line-height:1.2!important;}
+      .body-mobile{font-size:16px!important;line-height:1.6!important;}
+      .btn-mobile{display:block!important;width:100%!important;text-align:center!important;padding:16px 0!important;font-size:16px!important;}
+      .milestone-num{font-size:32px!important;}
+      .milestone-cell{display:block!important;width:100%!important;padding:12px 0!important;}
+      .social-img{width:32px!important;height:32px!important;}
+      .social-link{margin:0 8px!important;}
     }
-    /* Two‑column override (keep 2‑up on mid‑range phones) */
-    @media screen and (max-width:480px){.two-col-override .column{width:50%!important;display:inline-block!important;vertical-align:top;}}
-    @media screen and (max-width:320px){.two-col-override .column{width:100%!important;display:block!important;}}
   </style>
 </head>
 
-<body style="margin:0; padding:0; background:#1D1D1D; width:100% !important;">
-  <!-- ===== OUTER WRAPPER ===== -->
-  <table align="center" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#000000;max-width:600px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Fira Sans','Droid Sans','Helvetica Neue',sans-serif;">
+<body style="margin:0;padding:0;background:#1D1D1D;width:100%!important;">
+
+  <!-- === Preheader (hidden) === -->
+  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;font-size:1px;color:#1D1D1D;line-height:1px;opacity:0;">
+    Season 6 is live: new video superpowers, Photobooth multi-angle workflows, Sogni 360, new models, and milestones.
+  </div>
+  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;font-size:1px;color:#1D1D1D;line-height:1px;opacity:0;">
+    &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+  </div>
+
+  <!-- === Outer wrapper: full-width, centered === -->
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1D1D1D;">
     <tr>
-      <td>
-        <center class="wrapper">
-          <div class="webkit">
-            <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#1D1D1D" style="table-layout:fixed;">
-              <tr>
-                <td bgcolor="#000000" valign="top">
+      <td align="center" style="padding:0;">
 
-                  <!-- ===== Hidden pre-header ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="display:none!important;mso-hide:all;visibility:hidden;opacity:0;color:transparent;height:0;width:0;">
-                    <tr>
-                      <td>Season 6 is live: new video superpowers, Photobooth multi-angle workflows, Sogni 360, new models, SDK updates, and milestones.</td>
-                    </tr>
-                  </table>
+        <!--[if mso]>
+        <table role="presentation" align="center" cellpadding="0" cellspacing="0" border="0" width="600" style="width:600px;">
+        <tr><td style="background:#000000;">
+        <![endif]-->
 
-                  <!-- ===== Spacer ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:0 0 15px;"></td></tr></table>
+        <div style="max-width:600px;margin:0 auto;background:#000000;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#000000;">
 
-                  <!-- ===== Top row: logo + edition label ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                      <td>
-                        <div style="padding:10px 20px 20px;">
-                          <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                            <tr>
-                              <td align="left" valign="middle">
-                                <table cellpadding="0" cellspacing="0" border="0"><tr>
-                                  <td valign="middle" style="padding-right:5px;">
-                                    <!-- Logo placeholder -->
-                                    <img src="logo-sogni-sync.png" alt="Sogni logo" style="height:calc(16px*1.2);width:auto;" />
-                                  </td>
-                                  <td valign="middle" style="font-family:Inter,sans-serif;font-size:16px;color:#a6a6a6;white-space:nowrap;">/Sync</td>
-                                </tr></table>
-                              </td>
-                              <td align="right" valign="middle" style="font-family:Inter,sans-serif;font-size:16px;color:#a6a6a6;white-space:nowrap;">
-                                February ’26 | Volume 19
-                              </td>
-                            </tr>
-                          </table>
-                        </div>
-                      </td>
-                    </tr>
-                  </table>
+            <!-- ===== Spacer ===== -->
+            <tr><td style="padding:0 0 15px;font-size:1px;line-height:1px;">&nbsp;</td></tr>
 
-                  <!-- ===== Main title ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td>
-                      <div class="main-title-container">
-                        <h1 class="main-title">Season 6 is live</h1>
-                        <p class="subtitle">New video tools. New ways to move the camera. Let’s go.</p>
-                      </div>
-                    </td></tr>
-                  </table>
-
-                  <!-- ===== Hero image ===== -->
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                      <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:12px 0 20px;">
-                        <img width="600" class="max-width"
-                             style="display:block; max-width:100% !important; width:100%; height:auto !important;"
-                             src="hero-season-6.jpg"
-                             alt="Season 6 hero banner" />
-                      </td>
-                    </tr>
-                  </table>
-
-                  <!-- ===== Intro text ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                      <td class="text-module">
-                        <p><strong>Hey Sognians!</strong></p>
-                        <p>January was a monster month. We shipped so much that we’re still catching our breath. Season 6 kicked off with a 10 million SOGNI prize pool, the Supernet got a serious upgrade with Etherlink as the default layer, and we dropped a whole suite of video and image tools that change how you create.</p>
-                        <p>Let’s break it down.</p>
-                      </td>
-                    </tr>
-                  </table>
-
-                  <!-- QUICK JUMP -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                      <td>
-                        <div class="section-name" style="padding-left:20px;">QUICK JUMP</div>
-                      </td>
-                    </tr>
-                  </table>
-
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="this-edition">
-                    <tr>
-                      <td>
-                        <div class="section-title-container" style="padding-left:20px;">
-                          <h2 class="section-title">In this edition:</h2>
-                        </div>
-                      </td>
-                    </tr>
-                  </table>
-
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                      <td class="text-module" style="padding-top:0;">
-                        <ul style="margin:0 0 0 20px; padding:0;">
-                          <li><a href="#SEASON6-HEADING">Season 6: The Breakdown 🏆</a></li>
-                          <li><a href="#VIDEO-HEADING">Your New Video Superpowers 🎬</a></li>
-                          <li><a href="#CLIP-MIXER-HEADING">Clip Mixer Gets Pro Features ✂️</a></li>
-                          <li><a href="#PHOTOBOOTH-HEADING">Multi-Angle Magic in Photobooth 📸</a></li>
-                          <li><a href="#SOGNI360-HEADING">Sogni 360: Orbit Videos 🔄</a></li>
-                          <li><a href="#MODELS-HEADING">New Models: Faster, Sharper 🚀</a></li>
-                          <li><a href="#SPOTLIGHT-HEADING">Creator Spotlight ✨</a></li>
-                          <li><a href="#COMING-SOON-HEADING">Coming Soon 👀</a></li>
-                          <li><a href="#SDK-HEADING">SDK Update 🛠️</a></li>
-                          <li><a href="#MILESTONES-HEADING">Milestones 📈</a></li>
-                          <li><a href="#NEXT-STEPS-HEADING">Your Next Steps</a></li>
-                        </ul>
-                      </td>
-                    </tr>
-                  </table>
-
-                  <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tr><td class="divider-hr" bgcolor="#525155"></td></tr></table>
-                    </td></tr>
-                  </table>
-
-                  <!-- ===== Season 6: Breakdown ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="SEASON6-HEADING">
-                    <tr><td>
-                      <div class="section-title-container" style="padding-left:20px;">
-                        <h2 class="section-title">Season 6: The Breakdown 🏆</h2>
-                      </div>
-                    </td></tr>
-                  </table>
-
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td class="text-module" style="padding-top:0;">
-                      <p>We narrowed the field and increased the payout. Here’s how 10 million SOGNI breaks down:</p>
-
-                      <!-- Breakdown table -->
-                      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:10px 0 20px;">
+            <!-- ===== Top row: logo + edition label ===== -->
+            <tr>
+              <td style="padding:10px 20px 20px;">
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td align="left" valign="middle" style="font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;">
+                      <table role="presentation" cellpadding="0" cellspacing="0" border="0">
                         <tr>
-                          <td style="padding:12px 0;border-bottom:1px solid #2d2d2d;">
-                            <span style="font:700 24px/1 'Inter',sans-serif;color:#99FF01;">50%</span>
-                            <span style="font:500 16px/1.2 'Inter',sans-serif;color:#ffffff;">&nbsp;→ Stakers</span>
+                          <td valign="middle" style="padding-right:5px;">
+                            <img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/d2884f6c-4924-48ca-a7e6-a0c6bba72f16/1657x636.png" alt="Sogni" width="60" style="display:block;width:60px;height:auto;border:0;" />
                           </td>
-                        </tr>
-                        <tr>
-                          <td style="padding:12px 0;border-bottom:1px solid #2d2d2d;">
-                            <span style="font:700 24px/1 'Inter',sans-serif;color:#99FF01;">20%</span>
-                            <span style="font:500 16px/1.2 'Inter',sans-serif;color:#ffffff;">&nbsp;→ Top 200 Artists</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td style="padding:12px 0;border-bottom:1px solid #2d2d2d;">
-                            <span style="font:700 24px/1 'Inter',sans-serif;color:#99FF01;">20%</span>
-                            <span style="font:500 16px/1.2 'Inter',sans-serif;color:#ffffff;">&nbsp;→ Top 200 Fast Workers</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td style="padding:12px 0;">
-                            <span style="font:700 24px/1 'Inter',sans-serif;color:#99FF01;">10%</span>
-                            <span style="font:500 16px/1.2 'Inter',sans-serif;color:#ffffff;">&nbsp;→ Top 200 Relaxed Workers</span>
-                          </td>
+                          <td valign="middle" style="font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;color:#a6a6a6;white-space:nowrap;">/Sync</td>
                         </tr>
                       </table>
+                    </td>
+                    <td align="right" valign="middle" style="font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:14px;color:#a6a6a6;white-space:nowrap;">
+                      February '26 | Volume 19
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
 
-                      <p>The math is simple: fewer winners, bigger rewards. No guesswork—see your projected payout on the leaderboard from Day One.</p>
-                    </td></tr>
-                  </table>
+            <!-- ===== Main title ===== -->
+            <tr>
+              <td style="padding:0 20px 16px;">
+                <h1 class="h1-mobile" style="margin:0;font-family:'Space Grotesk',Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:700;font-size:36px;line-height:1.2;color:#ffffff;">Season 6 is live</h1>
+                <p class="body-mobile" style="margin:8px 0 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:18px;line-height:1.5;color:#a6a6a6;">New video tools. New ways to move the camera. Let's go.</p>
+              </td>
+            </tr>
 
-                  <!-- Season 6 image -->
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                      <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:12px 0 20px;">
-                        <img width="600" class="max-width"
-                             style="display:block; max-width:100% !important; width:100%; height:auto !important;"
-                             src="season-6-breakdown.jpg"
-                             alt="Season 6 breakdown visual" />
-                      </td>
-                    </tr>
-                  </table>
+            <!-- ===== Hero image ===== -->
+            <tr>
+              <td style="padding:0 0 20px;">
+                <img src="https://news.sogni.ai/sogni-sync/assets/19/sogni-time.jpg" alt="Season 6 leaderboard and timeline overview" width="600" style="display:block;width:100%;max-width:600px;height:auto;border:0;color:#a6a6a6;font-family:Inter,Helvetica,Arial,sans-serif;font-size:16px;" />
+              </td>
+            </tr>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td class="text-module" style="padding-top:0;">
-                      <h3 class="section-title-small" style="color:#ffffff;">The Etherlink Bonus</h3>
-                      <p>Stake on Etherlink to unlock an additional $24,000 prize pool. We’re using Etherlink as our default layer now for faster transactions and lower fees.</p>
-                      <a href="https://app.sogni.ai/leaderboard" class="green-button">👉 Check Your Rank</a>
-                    </td></tr>
-                  </table>
+            <!-- ===== Intro text ===== -->
+            <tr>
+              <td class="mobile-pad" style="padding:0 20px 20px;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">
+                <p style="margin:0 0 16px;"><strong style="color:#ffffff;">Hey Sognians!</strong></p>
+                <p style="margin:0 0 16px;">January was a monster month. We shipped so much that we're still catching our breath. Season 6 kicked off with a 10 million SOGNI prize pool, the Supernet got a serious upgrade with Etherlink as the default layer, and we dropped a whole suite of video and image tools that change how you create.</p>
+                <p style="margin:0;">Let's break it down.</p>
+              </td>
+            </tr>
 
-                  <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
-                    </td></tr>
-                  </table>
+            <!-- ===== Quick Jump ===== -->
+            <tr>
+              <td class="mobile-pad" style="padding:0 20px;">
+                <p style="margin:0 0 12px;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:13px;line-height:1.1;color:#a6a6a6;letter-spacing:0.05em;text-transform:uppercase;">Quick Jump</p>
+                <h2 class="h2-mobile" style="margin:0 0 12px;font-family:'Space Grotesk',Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:28px;line-height:1.1;color:#ffffff;">In this edition:</h2>
+              </td>
+            </tr>
+            <tr>
+              <td class="mobile-pad" style="padding:0 20px 10px;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:2;color:#a6a6a6;">
+                <a href="#SEASON6" style="color:#99FF01;text-decoration:none;">Season 6: The Breakdown &#127942;</a><br />
+                <a href="#VIDEO" style="color:#99FF01;text-decoration:none;">Your New Video Superpowers &#127916;</a><br />
+                <a href="#CLIPMIXER" style="color:#99FF01;text-decoration:none;">Clip Mixer Gets Pro Features &#9986;&#65039;</a><br />
+                <a href="#PHOTOBOOTH" style="color:#99FF01;text-decoration:none;">Multi-Angle Magic in Photobooth &#128248;</a><br />
+                <a href="#SOGNI360" style="color:#99FF01;text-decoration:none;">Sogni 360: Orbit Videos &#128260;</a><br />
+                <a href="#MODELS" style="color:#99FF01;text-decoration:none;">New Models: Faster, Sharper &#128640;</a><br />
+                <a href="#SPOTLIGHT" style="color:#99FF01;text-decoration:none;">Creator Spotlight &#10024;</a><br />
+                <a href="#COMINGSOON" style="color:#99FF01;text-decoration:none;">Now Live: LTX-2 Cinematic Video &#127916;</a><br />
+                <a href="#SDK" style="color:#99FF01;text-decoration:none;">SDK Update &#128736;&#65039;</a><br />
+                <a href="#MILESTONES" style="color:#99FF01;text-decoration:none;">Milestones &#128200;</a><br />
+                <a href="#NEXTSTEPS" style="color:#99FF01;text-decoration:none;">Your Next Steps</a>
+              </td>
+            </tr>
 
-                  <!-- ===== Video Superpowers ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="VIDEO-HEADING">
-                    <tr><td>
-                      <div class="section-title-container" style="padding-left:20px;">
-                        <h2 class="section-title">Your New Video Superpowers 🎬</h2>
+            <!-- ===== Divider ===== -->
+            <tr><td style="padding:20px 0 10px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top:1px solid #525155;font-size:1px;line-height:1px;">&nbsp;</td></tr></table></td></tr>
+
+            <!-- =========================================================
+                 SEASON 6: THE BREAKDOWN
+                 ========================================================= -->
+            <tr>
+              <td id="SEASON6" class="mobile-pad" style="padding:10px 20px 0;">
+                <h2 class="h2-mobile" style="margin:0 0 8px;font-family:'Space Grotesk',Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:28px;line-height:1.2;color:#ffffff;">Season 6: The Breakdown &#127942;</h2>
+              </td>
+            </tr>
+            <tr>
+              <td class="mobile-pad" style="padding:12px 20px 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">
+                <p style="margin:0 0 16px;">We narrowed the field and increased the payout. Here's how 10 million SOGNI breaks down:</p>
+              </td>
+            </tr>
+
+            <!-- Breakdown stats -->
+            <tr>
+              <td class="mobile-pad" style="padding:0 20px;">
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 16px;">
+                  <tr><td style="padding:14px 0;border-bottom:1px solid #2d2d2d;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;"><span style="font-weight:700;font-size:24px;line-height:1;color:#99FF01;">50%</span><span style="font-weight:500;font-size:16px;line-height:1.2;color:#ffffff;">&nbsp;&#8594; Stakers</span></td></tr>
+                  <tr><td style="padding:14px 0;border-bottom:1px solid #2d2d2d;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;"><span style="font-weight:700;font-size:24px;line-height:1;color:#99FF01;">20%</span><span style="font-weight:500;font-size:16px;line-height:1.2;color:#ffffff;">&nbsp;&#8594; Top 200 Artists</span></td></tr>
+                  <tr><td style="padding:14px 0;border-bottom:1px solid #2d2d2d;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;"><span style="font-weight:700;font-size:24px;line-height:1;color:#99FF01;">20%</span><span style="font-weight:500;font-size:16px;line-height:1.2;color:#ffffff;">&nbsp;&#8594; Top 200 Fast Workers</span></td></tr>
+                  <tr><td style="padding:14px 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;"><span style="font-weight:700;font-size:24px;line-height:1;color:#99FF01;">10%</span><span style="font-weight:500;font-size:16px;line-height:1.2;color:#ffffff;">&nbsp;&#8594; Top 200 Relaxed Workers</span></td></tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="mobile-pad" style="padding:0 20px;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">
+                <p style="margin:0 0 16px;">The math is simple: fewer winners, bigger rewards. No guesswork -- see your projected payout on the leaderboard from Day One.</p>
+              </td>
+            </tr>
+
+            <!-- Season 6 image -->
+            <tr>
+              <td style="padding:8px 20px 16px;">
+                <img src="https://news.sogni.ai/sogni-sync/assets/19/hero-season-6.jpg" alt="Season 6 hero banner featuring new video and creative tools" width="560" style="display:block;width:100%;max-width:560px;height:auto;border:0;border-radius:10px;color:#a6a6a6;font-family:Inter,Helvetica,Arial,sans-serif;font-size:14px;" />
+              </td>
+            </tr>
+
+            <!-- Etherlink Bonus -->
+            <tr>
+              <td class="mobile-pad" style="padding:0 20px 10px;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">
+                <h3 style="margin:0 0 8px;font-family:'Space Grotesk',Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:18px;line-height:1.2;color:#ffffff;">The Etherlink Bonus</h3>
+                <p style="margin:0 0 16px;">Stake on Etherlink to unlock an additional $24,000 prize pool. We're using Etherlink as our default layer now for faster transactions and lower fees.</p>
+                <!-- Bulletproof button -->
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                  <tr>
+                    <td align="center">
+                      <a href="https://app.sogni.ai/leaderboard" target="_blank" class="btn-mobile" style="background:#000000;border:1px solid #99FF01;border-radius:10px;color:#ffffff;display:inline-block;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;padding:12px 24px;text-decoration:none;mso-padding-alt:0;">&#128073; Check Your Rank</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- ===== Divider ===== -->
+            <tr><td style="padding:20px 0 10px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top:1px solid #525155;font-size:1px;line-height:1px;">&nbsp;</td></tr></table></td></tr>
+
+            <!-- =========================================================
+                 VIDEO SUPERPOWERS
+                 ========================================================= -->
+            <tr>
+              <td id="VIDEO" class="mobile-pad" style="padding:10px 20px 0;">
+                <h2 class="h2-mobile" style="margin:0 0 8px;font-family:'Space Grotesk',Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:28px;line-height:1.2;color:#ffffff;">Your New Video Superpowers &#127916;</h2>
+              </td>
+            </tr>
+            <tr>
+              <td class="mobile-pad" style="padding:12px 20px 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">
+                <p style="margin:0 0 16px;">Sogni Studio is upgraded with new ways to bring your images to life.</p>
+
+                <h3 style="margin:0 0 8px;font-family:'Space Grotesk',Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:18px;line-height:1.2;color:#ffffff;">Motion Transfer: Animate-Move &amp; Animate-Replace</h3>
+                <p style="margin:0 0 12px;">Use any video to drive motion in your creations. Two modes:</p>
+                <p style="margin:0 0 12px;"><strong style="color:#ffffff;">Animate-Move:</strong> Apply motion from a source video to your character. Your character keeps its look while inheriting the movement.</p>
+                <p style="margin:0 0 12px;"><strong style="color:#ffffff;">Animate-Replace:</strong> Keep the original video's motion and scene, swap out the subject for your character.</p>
+                <p style="margin:0 0 16px;">The wild part? You can record directly from your Mac's webcam. Capture your own movements and transfer them to any AI character in seconds.</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:0 20px 8px;">
+                <img src="https://news.sogni.ai/sogni-sync/assets/19/sogni-motion-transfer.jpg" alt="Motion Transfer video demo" width="560" style="display:block;width:100%;max-width:560px;height:auto;border:0;border-radius:10px;color:#a6a6a6;font-family:Inter,Helvetica,Arial,sans-serif;font-size:14px;" />
+              </td>
+            </tr>
+            <tr>
+              <td class="mobile-pad" style="padding:8px 20px 20px;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;"><tr><td align="center"><a href="https://docs.sogni.ai/features/motion-transfer" target="_blank" class="btn-mobile" style="background:#000000;border:1px solid #99FF01;border-radius:10px;color:#ffffff;display:inline-block;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;padding:12px 24px;text-decoration:none;mso-padding-alt:0;">&#128073; Motion Transfer Docs</a></td></tr></table>
+              </td>
+            </tr>
+
+            <!-- Sound to Video -->
+            <tr>
+              <td class="mobile-pad" style="padding:0 20px;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">
+                <h3 style="margin:0 0 8px;font-family:'Space Grotesk',Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:18px;line-height:1.2;color:#ffffff;">Sound to Video</h3>
+                <p style="margin:0 0 12px;">Drop an audio track. Watch your image dance to it.</p>
+                <p style="margin:0 0 12px;">Sound to Video analyzes your audio's rhythm and dynamics, then generates motion that matches. Works beautifully for music-driven visuals, ambient scenes, and lip-sync.</p>
+                <p style="margin:0 0 16px;"><strong style="color:#ffffff;">Pro tip:</strong> Use the mic button to record live audio directly in the app.</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:0 20px 8px;">
+                <img src="https://news.sogni.ai/sogni-sync/assets/19/sound-to-video-demo.jpg" alt="Sound to Video interface showing audio-driven animation" width="560" style="display:block;width:100%;max-width:560px;height:auto;border:0;border-radius:10px;color:#a6a6a6;font-family:Inter,Helvetica,Arial,sans-serif;font-size:14px;" />
+              </td>
+            </tr>
+            <tr>
+              <td class="mobile-pad" style="padding:8px 20px 20px;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;"><tr><td align="center"><a href="https://docs.sogni.ai/features/sound-to-video" target="_blank" class="btn-mobile" style="background:#000000;border:1px solid #99FF01;border-radius:10px;color:#ffffff;display:inline-block;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;padding:12px 24px;text-decoration:none;mso-padding-alt:0;">&#128073; Sound to Video Docs</a></td></tr></table>
+              </td>
+            </tr>
+
+            <!-- Change Perspective -->
+            <tr>
+              <td class="mobile-pad" style="padding:0 20px;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">
+                <h3 style="margin:0 0 8px;font-family:'Space Grotesk',Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:18px;line-height:1.2;color:#ffffff;">Change Perspective</h3>
+                <p style="margin:0 0 12px;">Re-render your image from any camera angle while keeping the subject and style consistent.</p>
+                <p style="margin:0 0 12px;">Choose your distance (closer or wider), orientation (front, left, right, back, diagonals), and elevation (low to high). Same subject, new viewpoint.</p>
+                <p style="margin:0 0 16px;">Available in Sogni Studio Pro and now in Sogni Pocket too.</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:0 20px 8px;">
+                <img src="https://news.sogni.ai/sogni-sync/assets/19/change-perspective-demo.jpg" alt="Change Perspective showing multiple camera angles of the same subject" width="560" style="display:block;width:100%;max-width:560px;height:auto;border:0;border-radius:10px;color:#a6a6a6;font-family:Inter,Helvetica,Arial,sans-serif;font-size:14px;" />
+              </td>
+            </tr>
+            <tr>
+              <td class="mobile-pad" style="padding:8px 20px 10px;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;"><tr><td align="center"><a href="https://docs.sogni.ai/features/change-perspective" target="_blank" class="btn-mobile" style="background:#000000;border:1px solid #99FF01;border-radius:10px;color:#ffffff;display:inline-block;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;padding:12px 24px;text-decoration:none;mso-padding-alt:0;">&#128073; Change Perspective Docs</a></td></tr></table>
+              </td>
+            </tr>
+
+            <!-- ===== Divider ===== -->
+            <tr><td style="padding:20px 0 10px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top:1px solid #525155;font-size:1px;line-height:1px;">&nbsp;</td></tr></table></td></tr>
+
+            <!-- =========================================================
+                 CLIP MIXER
+                 ========================================================= -->
+            <tr>
+              <td id="CLIPMIXER" class="mobile-pad" style="padding:10px 20px 0;">
+                <h2 class="h2-mobile" style="margin:0 0 8px;font-family:'Space Grotesk',Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:28px;line-height:1.2;color:#ffffff;">Clip Mixer Gets Pro Features &#9986;&#65039;</h2>
+              </td>
+            </tr>
+            <tr>
+              <td class="mobile-pad" style="padding:12px 20px 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">
+                <p style="margin:0 0 12px;">The Clip Mixer now handles professional video editing workflows:</p>
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 16px;">
+                  <tr><td style="padding:4px 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">&#8226;&nbsp;<strong style="color:#ffffff;">Trim/Keep Last Frame</strong> -- Prevent repeated frames at clip boundaries for seamless transitions.</td></tr>
+                  <tr><td style="padding:4px 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">&#8226;&nbsp;<strong style="color:#ffffff;">Mute/Unmute Clips</strong> -- Control audio on individual clips.</td></tr>
+                  <tr><td style="padding:4px 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">&#8226;&nbsp;<strong style="color:#ffffff;">Additional Audio Track</strong> -- Add music or voiceover that plays across all clips.</td></tr>
+                </table>
+                <p style="margin:0 0 8px;"><strong style="color:#ffffff;">Three Export Modes:</strong></p>
+                <p style="margin:0 0 4px;">&#8226;&nbsp;<strong style="color:#ffffff;">Fast Combine</strong> (no re-encode, instant)</p>
+                <p style="margin:0 0 4px;">&#8226;&nbsp;<strong style="color:#ffffff;">High Quality</strong> (one-pass, recommended)</p>
+                <p style="margin:0 0 16px;">&#8226;&nbsp;<strong style="color:#ffffff;">Share-safe</strong> (full re-encode for maximum compatibility)</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:0 20px 8px;">
+                <img src="https://news.sogni.ai/sogni-sync/assets/19/clip-mixer-demo.jpg" alt="Clip Mixer interface showing timeline editing with trim and audio controls" width="560" style="display:block;width:100%;max-width:560px;height:auto;border:0;border-radius:10px;color:#a6a6a6;font-family:Inter,Helvetica,Arial,sans-serif;font-size:14px;" />
+              </td>
+            </tr>
+            <tr>
+              <td class="mobile-pad" style="padding:8px 20px 10px;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;"><tr><td align="center"><a href="https://docs.sogni.ai/features/clip-mixer" target="_blank" class="btn-mobile" style="background:#000000;border:1px solid #99FF01;border-radius:10px;color:#ffffff;display:inline-block;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;padding:12px 24px;text-decoration:none;mso-padding-alt:0;">&#128073; Clip Mixer Docs</a></td></tr></table>
+              </td>
+            </tr>
+
+            <!-- ===== Divider ===== -->
+            <tr><td style="padding:20px 0 10px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top:1px solid #525155;font-size:1px;line-height:1px;">&nbsp;</td></tr></table></td></tr>
+
+            <!-- =========================================================
+                 PHOTOBOOTH
+                 ========================================================= -->
+            <tr>
+              <td id="PHOTOBOOTH" class="mobile-pad" style="padding:10px 20px 0;">
+                <h2 class="h2-mobile" style="margin:0 0 8px;font-family:'Space Grotesk',Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:28px;line-height:1.2;color:#ffffff;">Multi-Angle Magic in Photobooth &#128248;</h2>
+              </td>
+            </tr>
+            <tr>
+              <td class="mobile-pad" style="padding:12px 20px 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">
+                <p style="margin:0 0 12px;">Mark's been cooking. The new 3D Camera Angle feature in Photobooth gives you 96 different perspectives from a single image -- adjusting distance, height, and rotation.</p>
+                <p style="margin:0 0 12px;">But here's where it gets good: uncheck the single-image box to unlock multi-angle presets and video workflows.</p>
+                <p style="margin:0 0 8px;"><strong style="color:#ffffff;">The workflow:</strong></p>
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 16px;">
+                  <tr><td style="padding:3px 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">1. Generate your image with angle controls</td></tr>
+                  <tr><td style="padding:3px 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">2. Pick a multi-angle preset or build your own</td></tr>
+                  <tr><td style="padding:3px 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">3. Regenerate each angle until it's perfect</td></tr>
+                  <tr><td style="padding:3px 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">4. Save as a Local Project for reuse</td></tr>
+                  <tr><td style="padding:3px 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">5. Run Batch Transition to stitch into video</td></tr>
+                  <tr><td style="padding:3px 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">6. Get a seamlessly looping orbit video</td></tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:0 20px 8px;">
+                <img src="https://news.sogni.ai/sogni-sync/assets/19/sogni-photobooth-transition-2026-01-22-with-music.jpg" alt="Photobooth transition video demo" width="560" style="display:block;width:100%;max-width:560px;height:auto;border:0;border-radius:10px;color:#a6a6a6;font-family:Inter,Helvetica,Arial,sans-serif;font-size:14px;" />
+              </td>
+            </tr>
+            <tr>
+              <td class="mobile-pad" style="padding:8px 20px 10px;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;"><tr><td align="center"><a href="https://photobooth.sogni.ai" target="_blank" class="btn-mobile" style="background:#000000;border:1px solid #99FF01;border-radius:10px;color:#ffffff;display:inline-block;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;padding:12px 24px;text-decoration:none;mso-padding-alt:0;">&#128073; Try Photobooth</a></td></tr></table>
+              </td>
+            </tr>
+
+            <!-- ===== Divider ===== -->
+            <tr><td style="padding:20px 0 10px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top:1px solid #525155;font-size:1px;line-height:1px;">&nbsp;</td></tr></table></td></tr>
+
+            <!-- =========================================================
+                 SOGNI 360
+                 ========================================================= -->
+            <tr>
+              <td id="SOGNI360" class="mobile-pad" style="padding:10px 20px 0;">
+                <h2 class="h2-mobile" style="margin:0 0 8px;font-family:'Space Grotesk',Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:28px;line-height:1.2;color:#ffffff;">Sogni 360: Orbit Videos from a Single Shot &#128260;</h2>
+              </td>
+            </tr>
+            <tr>
+              <td class="mobile-pad" style="padding:12px 20px 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">
+                <p style="margin:0 0 12px;">Sogni 360 takes a single image and generates an orbit video. No tripod. No gimbal. No asking a stranger to walk around you while filming.</p>
+                <p style="margin:0 0 12px;">Upload a photo or take a selfie and the AI handles the camera movement. You get a smooth, looping video that shows you (or your subject) from every angle.</p>
+                <p style="margin:0 0 12px;">Works for travel shots, product showcases, or any moment that deserves more than one perspective.</p>
+                <p style="margin:0 0 16px;">Mark shipped a new mini-app. Stand still, get a video that moves around you.</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:0 20px 8px;">
+                <img src="https://news.sogni.ai/sogni-sync/assets/19/sogni-gatsby-orbit-silent.jpg" alt="Sogni 360 orbit video demo" width="560" style="display:block;width:100%;max-width:560px;height:auto;border:0;border-radius:10px;color:#a6a6a6;font-family:Inter,Helvetica,Arial,sans-serif;font-size:14px;" />
+              </td>
+            </tr>
+            <tr>
+              <td class="mobile-pad" style="padding:8px 20px 10px;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;"><tr><td align="center"><a href="https://360.sogni.ai" target="_blank" class="btn-mobile" style="background:#000000;border:1px solid #99FF01;border-radius:10px;color:#ffffff;display:inline-block;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;padding:12px 24px;text-decoration:none;mso-padding-alt:0;">&#128073; Try it at 360.sogni.ai</a></td></tr></table>
+              </td>
+            </tr>
+
+            <!-- ===== Divider ===== -->
+            <tr><td style="padding:20px 0 10px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top:1px solid #525155;font-size:1px;line-height:1px;">&nbsp;</td></tr></table></td></tr>
+
+            <!-- =========================================================
+                 NEW MODELS
+                 ========================================================= -->
+            <tr>
+              <td id="MODELS" class="mobile-pad" style="padding:10px 20px 0;">
+                <h2 class="h2-mobile" style="margin:0 0 8px;font-family:'Space Grotesk',Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:28px;line-height:1.2;color:#ffffff;">New Models: Faster, Sharper &#128640;</h2>
+              </td>
+            </tr>
+            <tr>
+              <td class="mobile-pad" style="padding:12px 20px 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">
+                <p style="margin:0 0 12px;">We added new models to the Supernet:</p>
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 20px;">
+                  <tr><td style="padding:4px 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">&#8226;&nbsp;<strong style="color:#ffffff;">Flux.2</strong> -- Superior prompt adherence for professional-grade photorealism.</td></tr>
+                  <tr><td style="padding:4px 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">&#8226;&nbsp;<strong style="color:#ffffff;">Qwen Image 2512</strong> -- Faster, sharper generations.</td></tr>
+                  <tr><td style="padding:4px 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">&#8226;&nbsp;<strong style="color:#ffffff;">Qwen Image Edit</strong> -- Precision editing using natural language.</td></tr>
+                  <tr><td style="padding:4px 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">&#8226;&nbsp;<strong style="color:#ffffff;">Z-Image Turbo</strong> -- Near-instant generation for rapid brainstorming.</td></tr>
+                  <tr><td style="padding:4px 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">&#8226;&nbsp;<strong style="color:#ffffff;">LTX-2 Video</strong> -- Blazing fast video up to 4K with audio.</td></tr>
+                </table>
+
+                <h3 style="margin:0 0 8px;font-family:'Space Grotesk',Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:18px;line-height:1.2;color:#ffffff;">The Enhancer: 26 New Presets &#127912;</h3>
+                <p style="margin:0 0 12px;">Stop fighting the tool. The new Enhancer filters let you refine your vision instantly:</p>
+                <p style="margin:0 0 8px;"><strong style="color:#ffffff;">Realism:</strong> Cinematic, Flash, or Smartphone camera styles.</p>
+                <p style="margin:0 0 8px;"><strong style="color:#ffffff;">Focus &amp; Tone:</strong> Motion blur, film grain, cinematic color grading.</p>
+                <p style="margin:0 0 8px;"><strong style="color:#ffffff;">Resolution:</strong> One-click restoration and Lo-Fi aesthetics.</p>
+                <p style="margin:0 0 16px;">Also now available in Sogni Create.</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:0 20px 16px;">
+                <img src="https://news.sogni.ai/sogni-sync/assets/19/enhancer-presets-demo.jpg" alt="Enhancer preset panel showing cinematic, realism, and Lo-Fi filter options" width="560" style="display:block;width:100%;max-width:560px;height:auto;border:0;border-radius:10px;color:#a6a6a6;font-family:Inter,Helvetica,Arial,sans-serif;font-size:14px;" />
+              </td>
+            </tr>
+
+            <!-- ===== Divider ===== -->
+            <tr><td style="padding:20px 0 10px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top:1px solid #525155;font-size:1px;line-height:1px;">&nbsp;</td></tr></table></td></tr>
+
+            <!-- =========================================================
+                 CREATOR SPOTLIGHT
+                 ========================================================= -->
+            <tr>
+              <td id="SPOTLIGHT" class="mobile-pad" style="padding:10px 20px 0;">
+                <h2 class="h2-mobile" style="margin:0 0 8px;font-family:'Space Grotesk',Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:28px;line-height:1.2;color:#ffffff;">Creator Spotlight &#10024;</h2>
+              </td>
+            </tr>
+            <tr>
+              <td class="mobile-pad" style="padding:12px 20px 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">
+                <p style="margin:0 0 12px;"><strong style="color:#ffffff;">Creator of the Month: @karinaparamitha</strong></p>
+                <p style="margin:0 0 16px;">Karina has been one of the most consistent voices in the Sogni community. Week after week, she shows up with work that's thoughtful, polished, and unmistakably hers. That kind of dedication doesn't go unnoticed. &#10084;&#65039;</p>
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;"><tr><td align="center"><a href="https://x.com/karinparamitha/status/2015120838153076837" target="_blank" class="btn-mobile" style="background:#000000;border:1px solid #99FF01;border-radius:10px;color:#ffffff;display:inline-block;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;padding:12px 24px;text-decoration:none;mso-padding-alt:0;">&#128073; See Karina's work on X</a></td></tr></table>
+                <p style="margin:20px 0 16px;">Every month, we see creators push Sogni tools in directions we didn't expect. Here are a few that caught our eye this round:</p>
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;"><tr><td align="center"><a href="https://x.com/Sogni_Protocol/status/2019339778051735927" target="_blank" class="btn-mobile" style="background:#000000;border:1px solid #99FF01;border-radius:10px;color:#ffffff;display:inline-block;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;padding:12px 24px;text-decoration:none;mso-padding-alt:0;">&#128073; Community highlights on X</a></td></tr></table>
+              </td>
+            </tr>
+
+            <!-- ===== Divider ===== -->
+            <tr><td style="padding:20px 0 10px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top:1px solid #525155;font-size:1px;line-height:1px;">&nbsp;</td></tr></table></td></tr>
+
+            <!-- =========================================================
+                 COMING SOON
+                 ========================================================= -->
+            <tr>
+              <td id="COMINGSOON" class="mobile-pad" style="padding:10px 20px 0;">
+                <h2 class="h2-mobile" style="margin:0 0 8px;font-family:'Space Grotesk',Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:28px;line-height:1.2;color:#ffffff;">Now Live: LTX-2 Cinematic Video &#127916;</h2>
+              </td>
+            </tr>
+            <tr>
+              <td class="mobile-pad" style="padding:12px 20px 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">
+                <p style="margin:0 0 12px;">LTX-2 is live across the Sogni ecosystem: in the SDK, in Sogni Create via our Chrome web app, and in Sogni Photobooth.</p>
+                <p style="margin:0 0 8px;"><strong style="color:#ffffff;">4K Resolution</strong> -- Up to 2160p, 9x the pixel density of standard models.</p>
+                <p style="margin:0 0 8px;"><strong style="color:#ffffff;">Unified Audio</strong> -- Generate synchronized dialogue, sound effects, and music in a single pass.</p>
+                <p style="margin:0 0 8px;"><strong style="color:#ffffff;">5x Faster</strong> -- Approximately 5x faster and 5x more cost-effective per frame than Wan 2.2.</p>
+                <p style="margin:0 0 12px;"><strong style="color:#ffffff;">IC-LoRA Controls</strong> -- Depth, Canny, and Pose controls for precise character motion and architectural structure.</p>
+                <p style="margin:0 0 16px;"><strong style="color:#ffffff;">For Developers:</strong> LTX-2 is available via the Sogni Client SDK for building with 4K video infrastructure.</p>
+              </td>
+            </tr>
+
+            <!-- ===== Divider ===== -->
+            <tr><td style="padding:20px 0 10px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top:1px solid #525155;font-size:1px;line-height:1px;">&nbsp;</td></tr></table></td></tr>
+
+            <!-- =========================================================
+                 SDK UPDATE
+                 ========================================================= -->
+            <tr>
+              <td id="SDK" class="mobile-pad" style="padding:10px 20px 0;">
+                <h2 class="h2-mobile" style="margin:0 0 8px;font-family:'Space Grotesk',Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:28px;line-height:1.2;color:#ffffff;">SDK Update &#128736;&#65039;</h2>
+              </td>
+            </tr>
+            <tr>
+              <td class="mobile-pad" style="padding:12px 20px 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">
+                <p style="margin:0 0 16px;">The Sogni Client SDK (v4.0.0-alpha.52) is live with native video support for Wan 2.2 and LTX-2 models, optimized WebSocket communication for faster job processing, and stable TypeScript definitions.</p>
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;"><tr>
+                  <td style="padding:0;margin:0 8px 0 0;" align="center"><a href="https://www.npmjs.com/package/@sogni-ai/sogni-client" target="_blank" class="btn-mobile" style="background:#000000;border:1px solid #99FF01;border-radius:10px;color:#ffffff;display:inline-block;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;padding:12px 24px;text-decoration:none;mso-padding-alt:0;">&#128073; View on NPM</a></td>
+                </tr></table>
+                <div style="height:8px;font-size:1px;line-height:1px;">&nbsp;</div>
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;"><tr>
+                  <td align="center"><a href="https://docs.sogni.ai/sdk" target="_blank" class="btn-mobile" style="background:#000000;border:1px solid #99FF01;border-radius:10px;color:#ffffff;display:inline-block;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;padding:12px 24px;text-decoration:none;mso-padding-alt:0;">&#128073; Technical Documentation</a></td>
+                </tr></table>
+              </td>
+            </tr>
+
+            <!-- ===== Divider ===== -->
+            <tr><td style="padding:20px 0 10px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top:1px solid #525155;font-size:1px;line-height:1px;">&nbsp;</td></tr></table></td></tr>
+
+            <!-- =========================================================
+                 MILESTONES
+                 ========================================================= -->
+            <tr>
+              <td id="MILESTONES" class="mobile-pad" style="padding:10px 20px 0;">
+                <h2 class="h2-mobile" style="margin:0 0 16px;font-family:'Space Grotesk',Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:28px;line-height:1.2;color:#ffffff;">Milestones &#128200;</h2>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:0 20px 20px;">
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#0a0a0a" style="border-radius:10px;">
+                  <tr>
+                    <td style="padding:24px 16px;">
+
+                      <!--[if mso]>
+                      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"><tr>
+                      <td width="33%" valign="top">
+                      <![endif]-->
+                      <div class="milestone-cell" style="display:inline-block;width:100%;max-width:170px;vertical-align:top;text-align:center;padding:8px 0;">
+                        <div class="milestone-num" style="font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:700;font-size:42px;line-height:1;color:#99FF01;">87,516</div>
+                        <div style="font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:14px;line-height:1.4;color:#a6a6a6;margin-top:6px;">Users</div>
                       </div>
-                    </td></tr>
-                  </table>
-
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td class="text-module" style="padding-top:0;">
-                      <p>Sogni Studio is upgraded with new ways to bring your images to life.</p>
-
-                      <h3 class="section-title-small" style="color:#ffffff;">Motion Transfer: Animate-Move &amp; Animate-Replace</h3>
-                      <p>Use any video to drive motion in your creations. Two modes:</p>
-                      <p><strong>Animate-Move:</strong> Apply motion from a source video to your character. Your character keeps its look while inheriting the movement.</p>
-                      <p><strong>Animate-Replace:</strong> Keep the original video’s motion and scene, swap out the subject for your character.</p>
-                      <p>The wild part? You can record directly from your Mac’s webcam. Capture your own movements and transfer them to any AI character in seconds.</p>
-                    </td></tr>
-                  </table>
-
-                  <!-- Motion Transfer image -->
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                      <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:12px 0 20px;">
-                        <img width="600" class="max-width"
-                             style="display:block; max-width:100% !important; width:100%; height:auto !important;"
-                             src="motion-transfer-demo.jpg"
-                             alt="Motion Transfer demo" />
-                      </td>
-                    </tr>
-                  </table>
-
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td class="text-module" style="padding-top:0;">
-                      <a href="https://docs.sogni.ai/features/motion-transfer" class="green-button">👉 Motion Transfer Docs</a>
-                    </td></tr>
-                  </table>
-
-                  <!-- Sound to Video -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td class="text-module" style="padding-top:0;">
-                      <h3 class="section-title-small" style="color:#ffffff;">Sound to Video</h3>
-                      <p>Drop an audio track. Watch your image dance to it.</p>
-                      <p>Sound to Video analyzes your audio’s rhythm and dynamics, then generates motion that matches. Works beautifully for music-driven visuals, ambient scenes, and lip-sync.</p>
-                      <p><strong>Pro tip:</strong> Use the mic button to record live audio directly in the app.</p>
-                    </td></tr>
-                  </table>
-
-                  <!-- Sound to Video image -->
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                      <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:12px 0 20px;">
-                        <img width="600" class="max-width"
-                             style="display:block; max-width:100% !important; width:100%; height:auto !important;"
-                             src="sound-to-video-demo.jpg"
-                             alt="Sound to Video demo" />
-                      </td>
-                    </tr>
-                  </table>
-
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td class="text-module" style="padding-top:0;">
-                      <a href="https://docs.sogni.ai/features/sound-to-video" class="green-button">👉 Sound to Video Docs</a>
-                    </td></tr>
-                  </table>
-
-                  <!-- Change Perspective -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td class="text-module" style="padding-top:0;">
-                      <h3 class="section-title-small" style="color:#ffffff;">Change Perspective</h3>
-                      <p>Re-render your image from any camera angle while keeping the subject and style consistent.</p>
-                      <p>Choose your distance (closer or wider), orientation (front, left, right, back, diagonals), and elevation (low to high). Same subject, new viewpoint.</p>
-                      <p>Available in Sogni Studio Pro and now in Sogni Pocket too.</p>
-                    </td></tr>
-                  </table>
-
-                  <!-- Change Perspective image -->
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                      <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:12px 0 20px;">
-                        <img width="600" class="max-width"
-                             style="display:block; max-width:100% !important; width:100%; height:auto !important;"
-                             src="change-perspective-demo.jpg"
-                             alt="Change Perspective demo" />
-                      </td>
-                    </tr>
-                  </table>
-
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td class="text-module" style="padding-top:0;">
-                      <a href="https://docs.sogni.ai/features/change-perspective" class="green-button">👉 Change Perspective Docs</a>
-                    </td></tr>
-                  </table>
-
-                  <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
-                    </td></tr>
-                  </table>
-
-                  <!-- ===== Clip Mixer ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="CLIP-MIXER-HEADING">
-                    <tr><td>
-                      <div class="section-title-container" style="padding-left:20px;">
-                        <h2 class="section-title">Clip Mixer Gets Pro Features ✂️</h2>
+                      <!--[if mso]>
+                      </td><td width="33%" valign="top">
+                      <![endif]-->
+                      <div class="milestone-cell" style="display:inline-block;width:100%;max-width:170px;vertical-align:top;text-align:center;padding:8px 0;">
+                        <div class="milestone-num" style="font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:700;font-size:42px;line-height:1;color:#99FF01;">1,051</div>
+                        <div style="font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:14px;line-height:1.4;color:#a6a6a6;margin-top:6px;">GPUs</div>
                       </div>
-                    </td></tr>
-                  </table>
-
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td class="text-module" style="padding-top:0;">
-                      <p>The Clip Mixer now handles professional video editing workflows:</p>
-                      <ul style="margin:0 0 20px 20px; padding:0;">
-                        <li><strong>Trim/Keep Last Frame</strong> — Prevent repeated frames at clip boundaries for seamless transitions.</li>
-                        <li><strong>Mute/Unmute Clips</strong> — Control audio on individual clips.</li>
-                        <li><strong>Additional Audio Track</strong> — Add music or voiceover that plays across all clips.</li>
-                      </ul>
-
-                      <p style="margin-bottom:8px;"><strong>Three Export Modes:</strong></p>
-                      <p>• <strong>Fast Combine</strong> (no re-encode, instant)<br />
-                         • <strong>High Quality</strong> (one-pass, recommended)<br />
-                         • <strong>Share-safe</strong> (full re-encode for maximum compatibility)</p>
-                    </td></tr>
-                  </table>
-
-                  <!-- Clip Mixer image -->
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                      <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:12px 0 20px;">
-                        <img width="600" class="max-width"
-                             style="display:block; max-width:100% !important; width:100%; height:auto !important;"
-                             src="clip-mixer-demo.jpg"
-                             alt="Clip Mixer demo" />
-                      </td>
-                    </tr>
-                  </table>
-
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td class="text-module" style="padding-top:0;">
-                      <a href="https://docs.sogni.ai/features/clip-mixer" class="green-button">👉 Clip Mixer Docs</a>
-                    </td></tr>
-                  </table>
-
-                  <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
-                    </td></tr>
-                  </table>
-
-                  <!-- ===== Photobooth ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="PHOTOBOOTH-HEADING">
-                    <tr><td>
-                      <div class="section-title-container" style="padding-left:20px;">
-                        <h2 class="section-title">Multi-Angle Magic in Photobooth 📸</h2>
+                      <!--[if mso]>
+                      </td><td width="33%" valign="top">
+                      <![endif]-->
+                      <div class="milestone-cell" style="display:inline-block;width:100%;max-width:170px;vertical-align:top;text-align:center;padding:8px 0;">
+                        <div class="milestone-num" style="font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:700;font-size:42px;line-height:1;color:#99FF01;">156M+</div>
+                        <div style="font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:14px;line-height:1.4;color:#a6a6a6;margin-top:6px;">Creations Powered</div>
                       </div>
-                    </td></tr>
-                  </table>
+                      <!--[if mso]>
+                      </td></tr></table>
+                      <![endif]-->
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td class="text-module" style="padding-top:0;">
-                      <p>Mark’s been cooking. The new 3D Camera Angle feature in Photobooth gives you 96 different perspectives from a single image—adjusting distance, height, and rotation.</p>
-                      <p>But here’s where it gets good: uncheck the single-image box to unlock multi-angle presets and video workflows.</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
 
-                      <p style="margin-bottom:8px;"><strong>The workflow:</strong></p>
-                      <ol style="margin:0 0 20px 20px; padding:0;">
-                        <li>Generate your image with angle controls</li>
-                        <li>Pick a multi-angle preset or build your own</li>
-                        <li>Regenerate each angle until it’s perfect</li>
-                        <li>Save as a Local Project for reuse</li>
-                        <li>Run Batch Transition to stitch into video</li>
-                        <li>Get a seamlessly looping orbit video</li>
-                      </ol>
-                    </td></tr>
-                  </table>
+            <!-- ===== Divider ===== -->
+            <tr><td style="padding:10px 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top:1px solid #525155;font-size:1px;line-height:1px;">&nbsp;</td></tr></table></td></tr>
 
-                  <!-- Photobooth image -->
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                      <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:12px 0 20px;">
-                        <img width="600" class="max-width"
-                             style="display:block; max-width:100% !important; width:100%; height:auto !important;"
-                             src="photobooth-multi-angle-demo.jpg"
-                             alt="Photobooth multi-angle demo" />
-                      </td>
-                    </tr>
-                  </table>
+            <!-- =========================================================
+                 YOUR NEXT STEPS
+                 ========================================================= -->
+            <tr>
+              <td id="NEXTSTEPS" class="mobile-pad" style="padding:10px 20px 0;">
+                <h2 class="h2-mobile" style="margin:0 0 8px;font-family:'Space Grotesk',Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:28px;line-height:1.2;color:#ffffff;">Your Next Steps</h2>
+              </td>
+            </tr>
+            <tr>
+              <td class="mobile-pad" style="padding:12px 20px 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">
+                <p style="margin:0 0 12px;"><strong style="color:#ffffff;">Create</strong> -- Jump into Sogni 360 or Sogni Create to try the new features!</p>
+                <p style="margin:0 0 20px;"><strong style="color:#ffffff;">Compete</strong> -- Check your Season 6 leaderboard position</p>
+                <p style="margin:0 0 8px;">Keep creating. Keep amplifying what makes you human.</p>
+                <p style="margin:0;font-size:14px;color:#a6a6a6;">-- The entire Sogni team</p>
+              </td>
+            </tr>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td class="text-module" style="padding-top:0;">
-                      <a href="https://photobooth.sogni.ai" class="green-button">👉 Try Photobooth</a>
-                    </td></tr>
-                  </table>
+            <!-- Past Newsletter Link -->
+            <tr>
+              <td align="center" style="padding:24px 20px 10px;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;"><tr><td align="center"><a href="https://news.sogni.ai/sogni-sync/" target="_blank" class="btn-mobile" style="background:#000000;border:1px solid #99FF01;border-radius:10px;color:#99FF01;display:inline-block;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:14px;font-weight:700;padding:14px 28px;text-decoration:none;mso-padding-alt:0;">Missed a newsletter? All past editions here!</a></td></tr></table>
+              </td>
+            </tr>
 
-                  <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
-                    </td></tr>
-                  </table>
+            <!-- ===== Divider ===== -->
+            <tr><td style="padding:25px 0 10px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top:1px solid #525155;font-size:1px;line-height:1px;">&nbsp;</td></tr></table></td></tr>
 
-                  <!-- ===== Sogni 360 ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="SOGNI360-HEADING">
-                    <tr><td>
-                      <div class="section-title-container" style="padding-left:20px;">
-                        <h2 class="section-title">Sogni 360: Orbit Videos from a Single Shot 🔄</h2>
-                      </div>
-                    </td></tr>
-                  </table>
+            <!-- ===== Social Icons ===== -->
+            <tr>
+              <td align="center" style="padding:10px 0 20px;">
+                <a class="social-link" href="https://discord.com/invite/2JjzA2zrrc" style="display:inline-block;margin:0 6px;"><img class="social-img" src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/dde8c72d-0180-48ce-a884-0b5059c0bd6a/100x100.png" alt="Discord" width="28" style="display:block;width:28px;height:28px;border:0;" /></a>
+                <a class="social-link" href="https://t.me/sogniai" style="display:inline-block;margin:0 6px;"><img class="social-img" src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/f72a9b29-0ca6-4c8f-a043-28a16a5460e2/100x100.png" alt="Telegram" width="28" style="display:block;width:28px;height:28px;border:0;" /></a>
+                <a class="social-link" href="https://www.youtube.com/@SogniAI?sub_confirmation=1" style="display:inline-block;margin:0 6px;"><img class="social-img" src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/c4bdbd34-9ee0-4cf4-807e-9294065e2803/100x100.png" alt="YouTube" width="28" style="display:block;width:28px;height:28px;border:0;" /></a>
+                <a class="social-link" href="https://www.instagram.com/sogni.ai/" style="display:inline-block;margin:0 6px;"><img class="social-img" src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/316caddd-dba0-4f91-a92b-98a0e9c4bdfb/100x100.png" alt="Instagram" width="28" style="display:block;width:28px;height:28px;border:0;" /></a>
+                <a class="social-link" href="https://x.com/sogni_protocol" style="display:inline-block;margin:0 6px;"><img class="social-img" src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/efa17c04-3d0a-42c3-ad83-2fe8d5fead0b/100x100.png" alt="X" width="28" style="display:block;width:28px;height:28px;border:0;" /></a>
+                <a class="social-link" href="https://www.linkedin.com/company/sogni-ai/" style="display:inline-block;margin:0 6px;"><img class="social-img" src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/62cb84ce-25f7-4755-a1a2-c11449fc61b7/100x100.png" alt="LinkedIn" width="28" style="display:block;width:28px;height:28px;border:0;" /></a>
+                <a class="social-link" href="https://medium.com/sogni" style="display:inline-block;margin:0 6px;"><img class="social-img" src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/2c83cc3a-c96c-4c88-ac02-8e8b7abbe081/100x100.png" alt="Medium" width="28" style="display:block;width:28px;height:28px;border:0;" /></a>
+              </td>
+            </tr>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td class="text-module" style="padding-top:0;">
-                      <p>Sogni 360 takes a single image and generates an orbit video. No tripod. No gimbal. No asking a stranger to walk around you while filming.</p>
-                      <p>Upload a photo or take a selfie and the AI handles the camera movement. You get a smooth, looping video that shows you (or your subject) from every angle.</p>
-                      <p>Works for travel shots, product showcases, or any moment that deserves more than one perspective.</p>
-                      <p>Mark shipped a new mini-app. Stand still, get a video that moves around you.</p>
-                    </td></tr>
-                  </table>
+            <!-- ===== Unsubscribe ===== -->
+            <tr>
+              <td class="unsub" align="center" style="padding:8px 16px;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:22px;color:#bebdbd;">
+                <a href="{{{RESEND_UNSUBSCRIBE_URL}}}" style="color:#bebdbd;text-decoration:none;">Unsubscribe</a>
+              </td>
+            </tr>
 
-                  <!-- Sogni 360 image -->
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                      <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:12px 0 20px;">
-                        <img width="600" class="max-width"
-                             style="display:block; max-width:100% !important; width:100%; height:auto !important;"
-                             src="sogni-360-demo.jpg"
-                             alt="Sogni 360 orbit video demo" />
-                      </td>
-                    </tr>
-                  </table>
+            <!-- ===== Footer Legal ===== -->
+            <tr>
+              <td align="center" style="padding:8px 16px 16px;">
+                <p style="margin:0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#a6a6a6;">
+                  WE&amp;ROBOT PTE. LTD. &middot; Singapore<br />
+                  <a href="https://sogni.ai/privacy" style="color:#ffffff;font-size:11px;text-decoration:none;">Privacy Policy</a>
+                  <span style="color:#a6a6a6;">&nbsp;&middot;&nbsp;</span>
+                  <a href="https://sogni.ai/terms" style="color:#ffffff;font-size:11px;text-decoration:none;">Terms</a>
+                </p>
+              </td>
+            </tr>
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td class="text-module" style="padding-top:0;">
-                      <a href="https://360.sogni.ai" class="green-button">👉 Try it at 360.sogni.ai</a>
-                    </td></tr>
-                  </table>
+            <!-- ===== Bottom spacer ===== -->
+            <tr><td style="padding:0 0 30px;font-size:1px;line-height:1px;">&nbsp;</td></tr>
 
-                  <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
-                    </td></tr>
-                  </table>
+          </table>
+        </div>
 
-                  <!-- ===== New Models ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="MODELS-HEADING">
-                    <tr><td>
-                      <div class="section-title-container" style="padding-left:20px;">
-                        <h2 class="section-title">New Models: Faster, Sharper 🚀</h2>
-                      </div>
-                    </td></tr>
-                  </table>
+        <!--[if mso]>
+        </td></tr></table>
+        <![endif]-->
 
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td class="text-module" style="padding-top:0;">
-                      <p>We added new models to the Supernet:</p>
-                      <ul style="margin:0 0 20px 20px; padding:0;">
-                        <li><strong>Flux.2</strong> — Superior prompt adherence for professional-grade photorealism.</li>
-                        <li><strong>Qwen Image 2512</strong> — Faster, sharper generations.</li>
-                        <li><strong>Qwen Image Edit</strong> — Precision editing using natural language.</li>
-                        <li><strong>Z-Image Turbo</strong> — Near-instant generation for rapid brainstorming.</li>
-                        <li><strong>LTX-2 Video</strong> — Blazing fast video up to 4k with audio.</li>
-                      </ul>
-
-                      <h3 class="section-title-small" style="color:#ffffff;">The Enhancer: 26 New Presets 🎨</h3>
-                      <p>Stop fighting the tool. The new Enhancer filters let you refine your vision instantly:</p>
-                      <p><strong>Realism:</strong> Cinematic, Flash, or Smartphone camera styles.</p>
-                      <p><strong>Focus &amp; Tone:</strong> Motion blur, film grain, cinematic color grading.</p>
-                      <p><strong>Resolution:</strong> One-click restoration and Lo-Fi aesthetics.</p>
-                      <p>Also now available in Sogni Create.</p>
-                    </td></tr>
-                  </table>
-
-                  <!-- Enhancer image -->
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                      <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:12px 0 20px;">
-                        <img width="600" class="max-width"
-                             style="display:block; max-width:100% !important; width:100%; height:auto !important;"
-                             src="enhancer-presets-demo.jpg"
-                             alt="Enhancer presets demo" />
-                      </td>
-                    </tr>
-                  </table>
-
-                  <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
-                    </td></tr>
-                  </table>
-
-                  <!-- ===== Creator Spotlight ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="SPOTLIGHT-HEADING">
-                    <tr><td>
-                      <div class="section-title-container" style="padding-left:20px;">
-                        <h2 class="section-title">Creator Spotlight ✨</h2>
-                      </div>
-                    </td></tr>
-                  </table>
-
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td class="text-module" style="padding-top:0;">
-                      <p><strong>Creator of the Month: @karinaparamitha</strong></p>
-                      <p>Karina has been one of the most consistent voices in the Sogni community. Week after week, she shows up with work that’s thoughtful, polished, and unmistakably hers. That kind of dedication doesn’t go unnoticed. ❤️</p>
-                    </td></tr>
-                  </table>
-
-                  <!-- Spotlight image -->
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                      <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:12px 0 20px;">
-                        <img width="600" class="max-width"
-                             style="display:block; max-width:100% !important; width:100%; height:auto !important;"
-                             src="creator-spotlight-karina.jpg"
-                             alt="Creator spotlight image" />
-                      </td>
-                    </tr>
-                  </table>
-
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td class="text-module" style="padding-top:0;">
-                      <a href="https://sogni.ai/creators/karinaparamitha" class="green-button">👉 See Karina’s amazing work!</a>
-                    </td></tr>
-                  </table>
-
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td class="text-module" style="padding-top:0;">
-                      <p style="margin-top:10px;">Every month, we see creators push Sogni tools in directions we didn’t expect. Here are a few that caught our eye this round:</p>
-                    </td></tr>
-                  </table>
-
-                  <!-- Gallery image -->
-                  <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                      <td align="center" valign="top" style="font-size:6px; line-height:10px; padding:12px 0 20px;">
-                        <img width="600" class="max-width"
-                             style="display:block; max-width:100% !important; width:100%; height:auto !important;"
-                             src="creator-gallery-grid.jpg"
-                             alt="Creator gallery highlights" />
-                      </td>
-                    </tr>
-                  </table>
-
-                  <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
-                    </td></tr>
-                  </table>
-
-                  <!-- ===== Coming Soon ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="COMING-SOON-HEADING">
-                    <tr><td>
-                      <div class="section-title-container" style="padding-left:20px;">
-                        <h2 class="section-title">Coming Soon 👀</h2>
-                      </div>
-                    </td></tr>
-                  </table>
-
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td class="text-module" style="padding-top:0;">
-                      <h3 class="section-title-small" style="color:#ffffff;">LTX-2 Cinematic Video</h3>
-                      <p>We’re integrating LTX-2 into Sogni Apps for professional video workflows.</p>
-                      <p><strong>4K Resolution</strong> — Up to 2160p, 9x the pixel density of standard models.</p>
-                      <p><strong>Unified Audio</strong> — Generate synchronized dialogue, sound effects, and music in a single pass.</p>
-                      <p><strong>5x Faster</strong> — Approximately 5x faster and 5x more cost-effective per frame than Wan 2.2.</p>
-                      <p><strong>IC-LoRA Controls</strong> — Depth, Canny, and Pose controls for precise character motion and architectural structure.</p>
-                      <p style="margin-top:20px;"><strong>Note for Developers:</strong> LTX-2 is available now via the Sogni Client SDK for those ready to build with 4K video infrastructure.</p>
-                    </td></tr>
-                  </table>
-
-                  <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
-                    </td></tr>
-                  </table>
-
-                  <!-- ===== SDK Update ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="SDK-HEADING">
-                    <tr><td>
-                      <div class="section-title-container" style="padding-left:20px;">
-                        <h2 class="section-title">SDK Update 🛠️</h2>
-                      </div>
-                    </td></tr>
-                  </table>
-
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td class="text-module" style="padding-top:0;">
-                      <p>The Sogni Client SDK (v4.0.0-alpha.52) is live with native video support for Wan 2.2 and LTX-2 models, optimized WebSocket communication for faster job processing, and stable TypeScript definitions.</p>
-                      <div class="button-row">
-                        <a href="https://www.npmjs.com/package/@sogni-ai/sogni-client" class="green-button">👉 View on NPM</a>
-                        <a href="https://docs.sogni.ai/sdk" class="green-button">👉 Technical Documentation</a>
-                      </div>
-                    </td></tr>
-                  </table>
-
-                  <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
-                    </td></tr>
-                  </table>
-
-                  <!-- ===== Milestones ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="MILESTONES-HEADING">
-                    <tr><td>
-                      <div class="section-title-container" style="padding-left:20px;">
-                        <h2 class="section-title">Milestones 📈</h2>
-                      </div>
-                    </td></tr>
-                  </table>
-
-                  <!-- Milestones block -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                      <td style="padding:0 20px 20px;">
-                        <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#0a0a0a" style="border-radius:8px;">
-                          <tr>
-                            <td style="padding:20px;">
-                              <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                                <tr class="columns">
-                                  <td class="column of-3" valign="top" style="text-align:center;padding:10px 0;">
-                                    <div style="font:700 48px/1 'Inter',sans-serif;color:#99FF01;">86,606</div>
-                                    <div style="font:500 14px/1.4 'Inter',sans-serif;color:#a6a6a6;margin-top:6px;">Users</div>
-                                  </td>
-                                  <td class="column of-3" valign="top" style="text-align:center;padding:10px 0;">
-                                    <div style="font:700 48px/1 'Inter',sans-serif;color:#99FF01;">1,045</div>
-                                    <div style="font:500 14px/1.4 'Inter',sans-serif;color:#a6a6a6;margin-top:6px;">GPUs</div>
-                                  </td>
-                                  <td class="column of-3" valign="top" style="text-align:center;padding:10px 0;">
-                                    <div style="font:700 48px/1 'Inter',sans-serif;color:#99FF01;">155M+</div>
-                                    <div style="font:500 14px/1.4 'Inter',sans-serif;color:#a6a6a6;margin-top:6px;">Creations Powered</div>
-                                  </td>
-                                </tr>
-                              </table>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-
-                  <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td style="padding:20px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
-                    </td></tr>
-                  </table>
-
-                  <!-- ===== Next Steps / Closing ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0" id="NEXT-STEPS-HEADING">
-                    <tr><td>
-                      <div class="section-title-container" style="padding-left:20px;">
-                        <h2 class="section-title">Your Next Steps</h2>
-                      </div>
-                    </td></tr>
-                  </table>
-
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td class="text-module" style="padding-top:0;">
-                      <p><strong>Create</strong> — Jump into Sogni 360 or Sogni Create to try the new features!</p>
-                      <p><strong>Compete</strong> — Check your Season 6 leaderboard position</p>
-
-                      <p style="margin-top:25px;">Keep creating. Keep amplifying what makes you human.</p>
-                      <p style="margin-bottom:0;"><span style="font-size:14px;color:#a6a6a6;">— The entire Sogni team</span></p>
-                    </td></tr>
-                  </table>
-
-                  <!-- Past Newsletter Link (old style) -->
-                  <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                    <tr>
-                      <td>
-                        <div style="text-align:center; padding:10px 20px 0;">
-                          <a style="background-color:#000; color:#99ff01; display:inline-flex; align-items:center; padding:12px; text-decoration:none; font-family:Inter,sans-serif;"
-                             href="https://news.sogni.ai/sogni-sync/">
-                            <strong>Missed a newsletter? Access all past editions here!</strong>
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
-                  </table>
-
-                  <!-- ===== Divider ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td style="padding:35px 0 10px;">
-                      <table width="100%" height="1" cellpadding="0" cellspacing="0" border="0"><tr><td bgcolor="#525155" class="divider-hr"></td></tr></table>
-                    </td></tr>
-                  </table>
-
-                  <!-- ===== Social Icons ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td align="center" style="padding:10px 0 20px;">
-                      <a class="social-icon" href="https://discord.gg/sogni"><img src="icon-discord.png" alt="Discord" /></a>
-                      <a class="social-icon" href="https://t.me/sogni"><img src="icon-telegram.png" alt="Telegram" /></a>
-                      <a class="social-icon" href="https://youtube.com/sogni"><img src="icon-youtube.png" alt="YouTube" /></a>
-                      <a class="social-icon" href="https://instagram.com/sogni"><img src="icon-instagram.png" alt="Instagram" /></a>
-                      <a class="social-icon" href="https://x.com/sogni"><img src="icon-x.png" alt="X" /></a>
-                      <a class="social-icon" href="https://linkedin.com/company/sogni"><img src="icon-linkedin.png" alt="LinkedIn" /></a>
-                      <a class="social-icon" href="https://medium.com/sogni"><img src="icon-medium.png" alt="Medium" /></a>
-                    </td></tr>
-                  </table>
-
-                  <!-- ===== Unsubscribe ===== -->
-                  <div class="unsubscribe-css__unsubscribe___2CDlR" style="color:#fff; font-size:12px; line-height:22px; padding:16px; text-align:center;">
-                    <div class="Unsubscribe--addressLine"></div>
-                    <p style="font-family:Arial,Helvetica,sans-serif; font-size:12px; line-height:22px;">
-                      <a class="Unsubscribe--unsubscribeLink" href="{{{RESEND_UNSUBSCRIBE_URL}}}">Unsubscribe</a>
-                    </p>
-                  </div>
-
-                  <!-- ===== Footer Legal ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr><td style="padding:0 16px 16px; text-align:center;">
-                      <p style="font:10px/14px 'Inter',sans-serif; color:#a6a6a6;">
-                        WE&amp;ROBOT PTE. LTD. · Singapore<br />
-                        <a href="https://sogni.ai/privacy" style="color:#ffffff; font-size:10px;">Privacy Policy</a>
-                        <span style="color:#a6a6a6;">&nbsp;·&nbsp;</span>
-                        <a href="https://sogni.ai/terms" style="color:#ffffff; font-size:10px;">Terms</a>
-                      </p>
-                    </td></tr>
-                  </table>
-
-                  <!-- ===== Spacer ===== -->
-                  <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:0 0 30px;"></td></tr></table>
-
-                </td>
-              </tr>
-            </table>
-          </div>
-        </center>
       </td>
     </tr>
   </table>
-  <!-- ===== END WRAPPER ===== -->
 </body>
 </html>
