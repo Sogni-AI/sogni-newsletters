@@ -32,6 +32,26 @@
     /* === Unsubscribe === */
     .unsub a{color:#bebdbd!important;text-decoration:none!important;}
 
+    /* === CTA buttons (newsletter 18 style, simplified markup) === */
+    .cta-wrap{text-align:left;}
+    .button-link{
+      background:#000000;
+      border:1px solid #99FF01;
+      border-radius:10px;
+      color:#ffffff!important;
+      display:inline-block;
+      font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;
+      font-size:14px;
+      font-weight:500;
+      padding:12px 24px;
+      text-decoration:none;
+    }
+    .button-link-accent{
+      color:#99FF01!important;
+      font-weight:700;
+      padding:14px 28px;
+    }
+
     /* === Mobile-first responsive (under 8KB for Gmail) === */
     @media only screen and (max-width:480px){
       .mobile-full{width:100%!important;max-width:100%!important;}
@@ -42,9 +62,9 @@
       .h1-mobile{font-size:28px!important;line-height:1.2!important;}
       .h2-mobile{font-size:24px!important;line-height:1.2!important;}
       .body-mobile{font-size:16px!important;line-height:1.6!important;}
-      .btn-mobile{display:block!important;width:100%!important;text-align:center!important;padding:16px 0!important;font-size:16px!important;}
+      .btn-mobile{display:inline-block!important;width:auto!important;text-align:left!important;padding-left:16px!important;padding-right:16px!important;font-size:16px!important;}
       .milestone-num{font-size:32px!important;}
-      .milestone-cell{display:block!important;width:100%!important;padding:12px 0!important;}
+      .milestone-cell{display:block!important;width:100%!important;max-width:100%!important;padding:12px 0!important;margin:0 auto!important;text-align:center!important;}
       .social-img{width:32px!important;height:32px!important;}
       .social-link{margin:0 8px!important;}
     }
@@ -126,24 +146,28 @@
 
             <!-- ===== Quick Jump ===== -->
             <tr>
-              <td class="mobile-pad" style="padding:0 20px;">
-                <p style="margin:0 0 12px;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:13px;line-height:1.1;color:#a6a6a6;letter-spacing:0.05em;text-transform:uppercase;">Quick Jump</p>
-                <h2 class="h2-mobile" style="margin:0 0 12px;font-family:'Space Grotesk',Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:28px;line-height:1.1;color:#ffffff;">In this edition:</h2>
-              </td>
-            </tr>
-            <tr>
-              <td class="mobile-pad" style="padding:0 20px 10px;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:2;color:#a6a6a6;">
-                <a href="#SEASON6" style="color:#99FF01;text-decoration:none;">Season 6: The Breakdown &#127942;</a><br />
-                <a href="#VIDEO" style="color:#99FF01;text-decoration:none;">Your New Video Superpowers &#127916;</a><br />
-                <a href="#CLIPMIXER" style="color:#99FF01;text-decoration:none;">Clip Mixer Gets Pro Features &#9986;&#65039;</a><br />
-                <a href="#PHOTOBOOTH" style="color:#99FF01;text-decoration:none;">Multi-Angle Magic in Photobooth &#128248;</a><br />
-                <a href="#SOGNI360" style="color:#99FF01;text-decoration:none;">Sogni 360: Orbit Videos &#128260;</a><br />
-                <a href="#MODELS" style="color:#99FF01;text-decoration:none;">New Models: Faster, Sharper &#128640;</a><br />
-                <a href="#SPOTLIGHT" style="color:#99FF01;text-decoration:none;">Creator Spotlight &#10024;</a><br />
-                <a href="#COMINGSOON" style="color:#99FF01;text-decoration:none;">Now Live: LTX-2 Cinematic Video &#127916;</a><br />
-                <a href="#SDK" style="color:#99FF01;text-decoration:none;">SDK Update &#128736;&#65039;</a><br />
-                <a href="#MILESTONES" style="color:#99FF01;text-decoration:none;">Milestones &#128200;</a><br />
-                <a href="#NEXTSTEPS" style="color:#99FF01;text-decoration:none;">Your Next Steps</a>
+              <td class="mobile-pad" style="padding:0 20px 10px;">
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#111111;border-radius:12px;">
+                  <tr>
+                    <td style="padding:20px;">
+                      <p style="margin:0 0 12px;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:600;font-size:12px;line-height:1;color:#99FF01;letter-spacing:1px;text-transform:uppercase;">Quick Jump</p>
+                      <h2 class="h2-mobile" style="margin:0 0 12px;font-family:'Space Grotesk',Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:28px;line-height:1.1;color:#ffffff;">In this edition:</h2>
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr><td style="padding:8px 0;"><a href="#SEASON6" style="color:#ffffff;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:15px;line-height:1.4;text-decoration:none;">Season 6: The Breakdown &#127942;</a></td></tr>
+                        <tr><td style="padding:8px 0;border-top:1px solid #222222;"><a href="#VIDEO" style="color:#ffffff;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:15px;line-height:1.4;text-decoration:none;">Your New Video Superpowers &#127916;</a></td></tr>
+                        <tr><td style="padding:8px 0;border-top:1px solid #222222;"><a href="#CLIPMIXER" style="color:#ffffff;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:15px;line-height:1.4;text-decoration:none;">Clip Mixer Gets Pro Features &#9986;&#65039;</a></td></tr>
+                        <tr><td style="padding:8px 0;border-top:1px solid #222222;"><a href="#PHOTOBOOTH" style="color:#ffffff;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:15px;line-height:1.4;text-decoration:none;">Multi-Angle Magic in Photobooth &#128248;</a></td></tr>
+                        <tr><td style="padding:8px 0;border-top:1px solid #222222;"><a href="#SOGNI360" style="color:#ffffff;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:15px;line-height:1.4;text-decoration:none;">Sogni 360: Orbit Videos &#128260;</a></td></tr>
+                        <tr><td style="padding:8px 0;border-top:1px solid #222222;"><a href="#MODELS" style="color:#ffffff;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:15px;line-height:1.4;text-decoration:none;">New Models: Faster, Sharper &#128640;</a></td></tr>
+                        <tr><td style="padding:8px 0;border-top:1px solid #222222;"><a href="#SPOTLIGHT" style="color:#ffffff;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:15px;line-height:1.4;text-decoration:none;">Creator Spotlight &#10024;</a></td></tr>
+                        <tr><td style="padding:8px 0;border-top:1px solid #222222;"><a href="#COMINGSOON" style="color:#ffffff;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:15px;line-height:1.4;text-decoration:none;">Now Live: LTX-2 Cinematic Video &#127916;</a></td></tr>
+                        <tr><td style="padding:8px 0;border-top:1px solid #222222;"><a href="#SDK" style="color:#ffffff;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:15px;line-height:1.4;text-decoration:none;">SDK Update &#128736;&#65039;</a></td></tr>
+                        <tr><td style="padding:8px 0;border-top:1px solid #222222;"><a href="#MILESTONES" style="color:#ffffff;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:15px;line-height:1.4;text-decoration:none;">Milestones &#128200;</a></td></tr>
+                        <tr><td style="padding:8px 0;border-top:1px solid #222222;"><a href="#NEXTSTEPS" style="color:#ffffff;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:15px;line-height:1.4;text-decoration:none;">Your Next Steps</a></td></tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
 
@@ -194,14 +218,9 @@
               <td class="mobile-pad" style="padding:0 20px 10px;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">
                 <h3 style="margin:0 0 8px;font-family:'Space Grotesk',Inter,-apple-system,Helvetica,Arial,sans-serif;font-weight:500;font-size:18px;line-height:1.2;color:#ffffff;">The Etherlink Bonus</h3>
                 <p style="margin:0 0 16px;">Stake on Etherlink to unlock an additional $24,000 prize pool. We're using Etherlink as our default layer now for faster transactions and lower fees.</p>
-                <!-- Bulletproof button -->
-                <table role="presentation" cellspacing="0" cellpadding="0" border="0">
-                  <tr>
-                    <td align="center">
-                      <a href="https://app.sogni.ai/leaderboard" target="_blank" class="btn-mobile" style="background:#000000;border:1px solid #99FF01;border-radius:10px;color:#ffffff;display:inline-block;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;padding:12px 24px;text-decoration:none;mso-padding-alt:0;">&#128073; Check Your Rank</a>
-                    </td>
-                  </tr>
-                </table>
+                <p class="cta-wrap" style="margin:0;">
+                  <a href="https://app.sogni.ai/leaderboard" target="_blank" class="button-link btn-mobile">&#128073; Check Your Rank</a>
+                </p>
               </td>
             </tr>
 
@@ -236,7 +255,9 @@
             </tr>
             <tr>
               <td class="mobile-pad" style="padding:8px 20px 20px;">
-                <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;"><tr><td align="center"><a href="https://docs.sogni.ai/features/motion-transfer" target="_blank" class="btn-mobile" style="background:#000000;border:1px solid #99FF01;border-radius:10px;color:#ffffff;display:inline-block;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;padding:12px 24px;text-decoration:none;mso-padding-alt:0;">&#128073; Motion Transfer Docs</a></td></tr></table>
+                <p class="cta-wrap" style="margin:0;">
+                  <a href="https://docs.sogni.ai/features/motion-transfer" target="_blank" class="button-link btn-mobile">&#128073; Motion Transfer Docs</a>
+                </p>
               </td>
             </tr>
 
@@ -256,7 +277,9 @@
             </tr>
             <tr>
               <td class="mobile-pad" style="padding:8px 20px 20px;">
-                <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;"><tr><td align="center"><a href="https://docs.sogni.ai/features/sound-to-video" target="_blank" class="btn-mobile" style="background:#000000;border:1px solid #99FF01;border-radius:10px;color:#ffffff;display:inline-block;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;padding:12px 24px;text-decoration:none;mso-padding-alt:0;">&#128073; Sound to Video Docs</a></td></tr></table>
+                <p class="cta-wrap" style="margin:0;">
+                  <a href="https://docs.sogni.ai/features/sound-to-video" target="_blank" class="button-link btn-mobile">&#128073; Sound to Video Docs</a>
+                </p>
               </td>
             </tr>
 
@@ -276,7 +299,9 @@
             </tr>
             <tr>
               <td class="mobile-pad" style="padding:8px 20px 10px;">
-                <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;"><tr><td align="center"><a href="https://docs.sogni.ai/features/change-perspective" target="_blank" class="btn-mobile" style="background:#000000;border:1px solid #99FF01;border-radius:10px;color:#ffffff;display:inline-block;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;padding:12px 24px;text-decoration:none;mso-padding-alt:0;">&#128073; Change Perspective Docs</a></td></tr></table>
+                <p class="cta-wrap" style="margin:0;">
+                  <a href="https://docs.sogni.ai/features/change-perspective" target="_blank" class="button-link btn-mobile">&#128073; Change Perspective Docs</a>
+                </p>
               </td>
             </tr>
 
@@ -312,7 +337,9 @@
             </tr>
             <tr>
               <td class="mobile-pad" style="padding:8px 20px 10px;">
-                <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;"><tr><td align="center"><a href="https://docs.sogni.ai/features/clip-mixer" target="_blank" class="btn-mobile" style="background:#000000;border:1px solid #99FF01;border-radius:10px;color:#ffffff;display:inline-block;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;padding:12px 24px;text-decoration:none;mso-padding-alt:0;">&#128073; Clip Mixer Docs</a></td></tr></table>
+                <p class="cta-wrap" style="margin:0;">
+                  <a href="https://docs.sogni.ai/features/clip-mixer" target="_blank" class="button-link btn-mobile">&#128073; Clip Mixer Docs</a>
+                </p>
               </td>
             </tr>
 
@@ -351,7 +378,9 @@
             </tr>
             <tr>
               <td class="mobile-pad" style="padding:8px 20px 10px;">
-                <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;"><tr><td align="center"><a href="https://photobooth.sogni.ai" target="_blank" class="btn-mobile" style="background:#000000;border:1px solid #99FF01;border-radius:10px;color:#ffffff;display:inline-block;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;padding:12px 24px;text-decoration:none;mso-padding-alt:0;">&#128073; Try Photobooth</a></td></tr></table>
+                <p class="cta-wrap" style="margin:0;">
+                  <a href="https://photobooth.sogni.ai" target="_blank" class="button-link btn-mobile">&#128073; Try Photobooth</a>
+                </p>
               </td>
             </tr>
 
@@ -383,7 +412,9 @@
             </tr>
             <tr>
               <td class="mobile-pad" style="padding:8px 20px 10px;">
-                <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;"><tr><td align="center"><a href="https://360.sogni.ai" target="_blank" class="btn-mobile" style="background:#000000;border:1px solid #99FF01;border-radius:10px;color:#ffffff;display:inline-block;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;padding:12px 24px;text-decoration:none;mso-padding-alt:0;">&#128073; Try it at 360.sogni.ai</a></td></tr></table>
+                <p class="cta-wrap" style="margin:0;">
+                  <a href="https://360.sogni.ai" target="_blank" class="button-link btn-mobile">&#128073; Try it at 360.sogni.ai</a>
+                </p>
               </td>
             </tr>
 
@@ -438,9 +469,13 @@
               <td class="mobile-pad" style="padding:12px 20px 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">
                 <p style="margin:0 0 12px;"><strong style="color:#ffffff;">Creator of the Month: @karinaparamitha</strong></p>
                 <p style="margin:0 0 16px;">Karina has been one of the most consistent voices in the Sogni community. Week after week, she shows up with work that's thoughtful, polished, and unmistakably hers. That kind of dedication doesn't go unnoticed. &#10084;&#65039;</p>
-                <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;"><tr><td align="center"><a href="https://x.com/karinparamitha/status/2015120838153076837" target="_blank" class="btn-mobile" style="background:#000000;border:1px solid #99FF01;border-radius:10px;color:#ffffff;display:inline-block;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;padding:12px 24px;text-decoration:none;mso-padding-alt:0;">&#128073; See Karina's work on X</a></td></tr></table>
+                <p class="cta-wrap" style="margin:0;">
+                  <a href="https://x.com/karinparamitha/status/2015120838153076837" target="_blank" class="button-link btn-mobile">&#128073; See Karina's work on X</a>
+                </p>
                 <p style="margin:20px 0 16px;">Every month, we see creators push Sogni tools in directions we didn't expect. Here are a few that caught our eye this round:</p>
-                <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;"><tr><td align="center"><a href="https://x.com/Sogni_Protocol/status/2019339778051735927" target="_blank" class="btn-mobile" style="background:#000000;border:1px solid #99FF01;border-radius:10px;color:#ffffff;display:inline-block;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;padding:12px 24px;text-decoration:none;mso-padding-alt:0;">&#128073; Community highlights on X</a></td></tr></table>
+                <p class="cta-wrap" style="margin:0;">
+                  <a href="https://x.com/Sogni_Protocol/status/2019339778051735927" target="_blank" class="button-link btn-mobile">&#128073; Community highlights on X</a>
+                </p>
               </td>
             </tr>
 
@@ -480,13 +515,12 @@
             <tr>
               <td class="mobile-pad" style="padding:12px 20px 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">
                 <p style="margin:0 0 16px;">The Sogni Client SDK (v4.0.0-alpha.52) is live with native video support for Wan 2.2 and LTX-2 models, optimized WebSocket communication for faster job processing, and stable TypeScript definitions.</p>
-                <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;"><tr>
-                  <td style="padding:0;margin:0 8px 0 0;" align="center"><a href="https://www.npmjs.com/package/@sogni-ai/sogni-client" target="_blank" class="btn-mobile" style="background:#000000;border:1px solid #99FF01;border-radius:10px;color:#ffffff;display:inline-block;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;padding:12px 24px;text-decoration:none;mso-padding-alt:0;">&#128073; View on NPM</a></td>
-                </tr></table>
-                <div style="height:8px;font-size:1px;line-height:1px;">&nbsp;</div>
-                <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;"><tr>
-                  <td align="center"><a href="https://docs.sogni.ai/sdk" target="_blank" class="btn-mobile" style="background:#000000;border:1px solid #99FF01;border-radius:10px;color:#ffffff;display:inline-block;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;padding:12px 24px;text-decoration:none;mso-padding-alt:0;">&#128073; Technical Documentation</a></td>
-                </tr></table>
+                <p class="cta-wrap" style="margin:0 0 8px;">
+                  <a href="https://www.npmjs.com/package/@sogni-ai/sogni-client" target="_blank" class="button-link btn-mobile">&#128073; View on NPM</a>
+                </p>
+                <p class="cta-wrap" style="margin:0;">
+                  <a href="https://docs.sogni.ai/sdk" target="_blank" class="button-link btn-mobile">&#128073; Technical Documentation</a>
+                </p>
               </td>
             </tr>
 
@@ -552,17 +586,27 @@
             </tr>
             <tr>
               <td class="mobile-pad" style="padding:12px 20px 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">
-                <p style="margin:0 0 12px;"><strong style="color:#ffffff;">Create</strong> -- Jump into Sogni 360 or Sogni Create to try the new features!</p>
-                <p style="margin:0 0 20px;"><strong style="color:#ffffff;">Compete</strong> -- Check your Season 6 leaderboard position</p>
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 20px;">
+                  <tr>
+                    <td style="padding:3px 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">
+                      &#8226;&nbsp;<a href="https://app.sogni.ai" target="_blank" style="color:#99FF01;text-decoration:none;font-weight:600;">Create</a>: Jump into Sogni 360 or Sogni Create to try the new features.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding:3px 0;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#a6a6a6;">
+                      &#8226;&nbsp;<a href="https://app.sogni.ai/leaderboard" target="_blank" style="color:#99FF01;text-decoration:none;font-weight:600;">Compete</a>: Check your Season 6 leaderboard position.
+                    </td>
+                  </tr>
+                </table>
                 <p style="margin:0 0 8px;">Keep creating. Keep amplifying what makes you human.</p>
-                <p style="margin:0;font-size:14px;color:#a6a6a6;">-- The entire Sogni team</p>
+                <p style="margin:0;font-size:14px;color:#a6a6a6;">Team Sogni</p>
               </td>
             </tr>
 
             <!-- Past Newsletter Link -->
             <tr>
-              <td align="center" style="padding:24px 20px 10px;">
-                <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse;"><tr><td align="center"><a href="https://news.sogni.ai/sogni-sync/" target="_blank" class="btn-mobile" style="background:#000000;border:1px solid #99FF01;border-radius:10px;color:#99FF01;display:inline-block;font-family:Inter,-apple-system,Helvetica,Arial,sans-serif;font-size:14px;font-weight:700;padding:14px 28px;text-decoration:none;mso-padding-alt:0;">Missed a newsletter? All past editions here!</a></td></tr></table>
+              <td align="left" style="padding:24px 20px 10px;">
+                <a href="https://news.sogni.ai/sogni-sync/" target="_blank" class="button-link button-link-accent btn-mobile">Missed a newsletter? All past editions here!</a>
               </td>
             </tr>
 
