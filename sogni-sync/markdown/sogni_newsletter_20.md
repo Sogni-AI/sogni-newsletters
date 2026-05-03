@@ -1,14 +1,46 @@
-# Restore. Create.Earn more.
+# Creativity enters the agentic era with Sogni Creative Agent + more apps
 
 ---
 
 March / April 2026 Edition
 
-March and April were months of **apps shipping, intelligence going live, and Season 8 kicking off.**
+## Meet the new Creative Assistant
 
-A new iOS app for restoring old photos. The Creative Assistant going live in Studio and Pocket. Sogni Intelligence with a 264k context window. Personas you can name and reuse. And a fresh leaderboard structure to start the season right.
+Agentic AI-assisted creation is now live in Sogni Studio, Sogni Pocket, and Sogni Creative Agent.
 
-Here's everything that just shipped.
+The Creative Assistant is where **Sogni Intelligence** starts changing the feel of the product: less hunting through settings, more telling Sogni what you want to make and letting the assistant assemble the right workflow.
+
+Choose the creation style that fits the moment:
+
+- **Agent mode** — chat-first creation. Tell it what you want and it picks models, writes prompts, and runs multi-step workflows for you.
+- **Guided mode** — chat with controls. The assistant helps, you decide.
+- **Manual mode** — the classic Sogni workflow, untouched.
+
+It handles image generation, editing, video and music creation, prompt writing, model selection, settings, media analysis, and multi-step flows — and understands the Sogni UI, Supernet, assets, and system logic, while respecting your safety filter settings. You bring the idea; it helps with the rest.
+
+## Sogni Intelligence & chat.sogni.ai
+
+The AI layer behind Sogni Creative Agent, SuperApps, SDKs, and APIs.
+
+**Sogni Creative Agent** is live at [chat.sogni.ai](https://chat.sogni.ai): a familiar chat interface where replies can call Sogni tools to create and edit images, video, audio, and beyond.
+
+Introduced in March, **Sogni Intelligence** is already moving fast. The new **Qwen3.6-35B-A3B** model (**qwen3.6-35b-a3b-gguf-iq4xs** for API users) brings stronger reasoning, tool calling, and a roughly **264k-token context window** — enough working memory for long creative briefs, multi-step plans, and rich media analysis.
+
+In practice, Sogni apps get smarter, easier to use, more personalized, and more interoperable. In **Sogni Photobooth**, you can describe the booth you want instead of browsing dozens of preset categories — try ideas like “put me on famous magazine covers” or “turn me into famous paintings.” In **Sogni 360**, the assistant can analyze your trip photos and choose smoother object-to-object transitions across a sequence.
+
+Developers can plug in through OpenAI Chat Completions-compatible tools including **Open WebUI**, **OpenClaw**, **Hermes Agent**, the OpenAI SDK, and agentic coding clients that support custom OpenAI-compatible endpoints — all powered by Sogni's decentralized compute network.
+
+[Read the docs →](https://docs.sogni.ai/sogni-intelligence/introduction)
+
+Photobooth in action — one prompt, eight magazine-cover styles.
+
+## Introducing Personas
+
+Save the people in your life. Use them forever.
+
+Personas lets you set an image and profile for yourself, your partner, your kids, your friends, your pets — once they're in, you can mention them by name and they show up. In the photo. In the video. In the right voice.
+
+Define how they should sound in **LTX-2.3 audio**, add backstory the assistant uses when it builds scripts. It's the difference between generating *a person* and generating **Mark**.
 
 ## Sogni Restore
 
@@ -22,59 +54,25 @@ Sogni Restore is a new iOS app for AI-powered photo restoration and enhancement,
 - **Guided by an AI Assistant.** The built-in assistant helps you choose the right tools and make edits intuitively.
 - **Project-friendly.** Edit history, before-and-after comparison, organized projects, and export of images or videos.
 
-## Meet the new Creative Assistant
+## Leaderboards & Season 8
 
-Available now in Sogni Studio and Sogni Pocket.
-
-Three ways to create, depending on how much help you want:
-
-- **Agent mode** — chat-first creation. Tell it what you want and it picks models, writes prompts, and runs multi-step workflows for you.
-- **Guided mode** — chat with controls. The assistant helps, you decide.
-- **Manual mode** — the classic Sogni workflow, untouched.
-
-It handles image generation, editing, video and music creation, prompt writing, model selection, settings, media analysis, and multi-step flows — and understands the Sogni UI, Supernet, assets, and system logic, while respecting your safety filter settings. You handle the imagination.
-
-## Sogni Intelligence & chat.sogni.ai
-
-A new chat app, a smarter AI layer, and OpenAI-compatible APIs.
-
-We launched **Sogni Creative Agent** — a new standalone chat-based app at [chat.sogni.ai](https://chat.sogni.ai). Familiar ChatGPT-style interface, but every reply can call Sogni tools to generate across image, video, audio, and beyond.
-
-Under the hood, **Sogni Intelligence** just got a major upgrade: the new **Qwen3.6-35B-A3B** model lands with up to 40% better benchmarks and a **4× expanded 264k context window** — enough chat memory to fit 2–3 entire novels.
-
-Developers can plug in directly through OpenAI-compatible tools and APIs, all powered by Sogni's decentralized compute network.
-
-[Read the docs →](https://docs.sogni.ai/sogni-intelligence/introduction)
-
-## Introducing Personas
-
-Save the people in your life. Use them forever.
-
-Personas lets you set an image and profile for yourself, your partner, your kids, your friends, your pets — once they're in, you can mention them by name and they show up. In the photo. In the video. In the right voice.
-
-Define how they should sound in **LTX-2.3 audio**, add backstory the assistant uses when it builds scripts. It's the difference between generating *a person* and generating **Mark**.
-
-**Bonus updates:** in **Sogni Photobooth**, you can describe the style you want instead of browsing preset categories. In **Sogni 360**, the assistant analyzes photos and creates smoother AI-powered transitions.
-
-Photobooth in action — one prompt, eight magazine-cover styles.
-
-## Season 8 is live
-
-Season 7 wrapped. Season 8 launched March / April 2026 — six weeks to play.
+Season 7 wrapped and Season 8 is underway for its six-week run.
 
 **Refreshed airdrop distribution:**
 
-Updated leaderboard structure across the board. Pick your lane and go.
+The Ambassador leaderboard was new in Season 7, continues in Season 8, and now carries one of the biggest slices of each six-week community rewards pool.
 
-Ambassador Rewards
+Sogni Ambassador Leaderboard
 
-### Bring a friend. You both earn.
+### Share Sogni. Earn from the season.
 
-The Sogni Ambassador Leaderboard rewards users who help grow the community. Share your referral link from any Sogni SuperApp — when a friend signs up and makes their first credit card purchase, **you both get 25 render credits**.
+The Ambassador Leaderboard allocates **25% of each six-week community rewards pool** to users who are promoting Sogni and helping credit card purchases grow.
 
-Ambassadors also earn from a share of the leaderboard reward pool based on purchases by them, their referrals, and second-level referrals.
+Share your referral link from any of our **10+ Sogni SuperApps**. Friends who sign up with your link get **25 bonus render credits**, and after their first purchase, you earn **25 render credits** too.
 
-[How the program works →](https://docs.sogni.ai/rewards/referral-program-sogni-ambassador-rewards)
+Your leaderboard share is based on purchases made by you, your referrals, and the people they refer. It becomes especially powerful with upcoming monthly subscription plans, where renewals can continue crediting the user and referrers.
+
+[How the program works →](https://docs.sogni.ai/run-a-worker/rewards/referral-program-sogni-ambassador-rewards/)
 
 ## From Cannes with creativity
 
@@ -152,6 +150,14 @@ Not every great product speaks for itself visually — and that's normal. Someti
 
 [Start creating →](https://app.sogni.ai/create)
 
-Sogni Restore brings back what was almost lost. The Creative Assistant gives you three new ways to make. Sogni Intelligence is now powering chat, apps, and APIs. Personas remember the people you love. Season 8 is live for the next six weeks.
+157M+ Creations · 89,564 Users · 1,087 GPUs
 
-**Lots shipped. More on the way.** Thanks for building, restoring, and creating with us.
+## Your Next Steps
+
+- **Chat:** Try the new brain at [chat.sogni.ai](https://chat.sogni.ai).
+- **Create:** Open [Sogni Pocket](https://www.sogni.ai/pocket) and let the Agent do the heavy lifting.
+- **Build:** Plug Qwen3.6 into your own apps via the [Sogni Intelligence API](https://docs.sogni.ai/sogni-intelligence/introduction).
+
+Keep creating. Keep amplifying what makes you human.
+
+Team Sogni
