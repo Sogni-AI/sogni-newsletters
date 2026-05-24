@@ -1,4 +1,4 @@
-# Creativity enters the agentic era with Sogni Creative Agent + more apps
+# Creativity enters the agentic era
 
 ---
 
@@ -26,7 +26,7 @@ The AI layer behind Sogni Creative Agent, SuperApps, SDKs, and APIs.
 
 Introduced in March, **Sogni Intelligence** is already moving fast. The new **Qwen3.6-35B-A3B** model (**qwen3.6-35b-a3b-gguf-iq4xs** for API users) brings stronger reasoning, tool calling, and a roughly **264k-token context window** — enough working memory for long creative briefs, multi-step plans, and rich media analysis.
 
-In practice, Sogni apps get smarter, easier to use, more personalized, and more interoperable. In **Sogni Photobooth**, you can describe the booth you want instead of browsing dozens of preset categories — try ideas like “put me on famous magazine covers” or “turn me into famous paintings.” In **Sogni 360**, the assistant can analyze your trip photos and choose smoother object-to-object transitions across a sequence.
+In practice, Sogni apps get smarter, easier to use, more personalized, more powerful, and easier to connect with other tools. In **Sogni Photobooth**, you can describe the booth you want instead of browsing dozens of preset categories — try ideas like “put me on famous magazine covers” or “turn me into famous paintings.” In **Sogni 360**, the assistant can analyze your trip photos and choose smoother object-to-object transitions across a sequence.
 
 Developers can plug in through OpenAI Chat Completions-compatible tools including **Open WebUI**, **OpenClaw**, **Hermes Agent**, the OpenAI SDK, and agentic coding clients that support custom OpenAI-compatible endpoints — all powered by Sogni's decentralized compute network.
 
@@ -68,7 +68,7 @@ Sogni Ambassador Leaderboard
 
 The Ambassador Leaderboard allocates **25% of each six-week community rewards pool** to users who are promoting Sogni and helping credit card purchases grow.
 
-Share your referral link from any of our **10+ Sogni SuperApps**. Friends who sign up with your link get **25 bonus render credits**, and after their first purchase, you earn **25 render credits** too.
+Share your referral link from any of our **10+ Sogni SuperApps**. Friends who sign up with your link get **25 bonus credits**, and after their first purchase, you earn **25 credits** too.
 
 Your leaderboard share is based on purchases made by you, your referrals, and the people they refer. It becomes especially powerful with upcoming monthly subscription plans, where renewals can continue crediting the user and referrers.
 
@@ -100,7 +100,7 @@ This month we're spotlighting **Hadiprasetyo** for bringing a distinct style, st
 
 Run a node, power Sogni Intelligence, earn.
 
-Powering all the new agentic LLM features in Sogni Intelligence is the new **Sogni LLM Worker** — and you (yes, you) can operate a node and earn. **Requires 24GB VRAM or more.**
+Powering all the new agentic LLM features in Sogni Intelligence is the new **Sogni LLM Worker** — and anyone with 24GB VRAM or more can operate a node and earn.
 
 Earnings are based on input/output tokens generated, with pricing around **~$0.30 per 1M input tokens** and **~$0.90 per 1M output tokens**.
 
@@ -116,7 +116,7 @@ Six weeks of expansion — across product, personalization, and AI-powered exper
 
 - **Unlimited Plan Subscriptions** rolling out
 - **Sogni Photobooth** for Android and iOS — native apps continuing the rollout
-- **Agentic AI** getting a stronger product + marketing push
+- **Agentic AI** getting dedicated product focus and paid marketing support
 - **Sogni LoRA training** — train your own personalization
 - **Seedance 2.0** on the way
 
@@ -146,7 +146,7 @@ SuperApps · Tutorial
 
 ### Give your product a new dimension
 
-Not every great product speaks for itself visually — and that's normal. Sometimes the difference comes down to format, motion, and atmosphere. In Sogni Super Apps, we turn simple images into polished visuals designed to stand out — including animating your products with gentle motion that makes them pop.
+Turn simple product images into polished motion visuals built to stand out. In Sogni SuperApps, format, motion, and atmosphere can turn a static image into something people notice — including gentle animation that makes products pop.
 
 [Start creating →](https://app.sogni.ai/create)
 
@@ -155,7 +155,7 @@ Not every great product speaks for itself visually — and that's normal. Someti
 ## Your Next Steps
 
 - **Chat:** Try the new brain at [chat.sogni.ai](https://chat.sogni.ai).
-- **Create:** Open [Sogni Pocket](https://www.sogni.ai/pocket) and let the Agent do the heavy lifting.
+- **Create:** Open [Sogni Pocket](https://www.sogni.ai/pocket) and let the Creative Assistant do the heavy lifting.
 - **Build:** Plug Qwen3.6 into your own apps via the [Sogni Intelligence API](https://docs.sogni.ai/sogni-intelligence/introduction).
 
 Keep creating. Keep amplifying what makes you human.
