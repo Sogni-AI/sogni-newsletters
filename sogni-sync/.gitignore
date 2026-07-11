@@ -1,1 +1,5 @@
 .DS_Store
+
+# Vol 21 raw source is a 38MB base64-inlined backup; media is fully localized
+# under assets/21/, so keep the backup on disk but out of git.
+21.orig.html
