@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width" />
   <meta name="x-apple-disable-message-reformatting" />
   <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no" />
-  <meta name="color-scheme" content="light dark" />
-  <meta name="supported-color-schemes" content="light dark" />
+  <meta name="color-scheme" content="dark only" />
+  <meta name="supported-color-schemes" content="dark" />
   <title>Sogni /Sync — May / June '26 | Volume 21</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +20,18 @@
     body, p, div { margin:0; padding:0; font-family:inherit; font-size:16px; line-height:23px;
       -webkit-font-smoothing:antialiased; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; -moz-text-size-adjust:100%; }
     body { background:#1D1D1D; color:#ffffff; width:100% !important; }
+
+    /* Dark theme is the only design. Re-assert it for clients that honor
+       prefers-color-scheme so they don't synthesize a light (white) version. */
+    :root { color-scheme: dark; supported-color-schemes: dark; }
+    @media (prefers-color-scheme: light) {
+      body, .body-bg { background:#1D1D1D !important; }
+      .content-bg { background:#000000 !important; }
+    }
+    @media (prefers-color-scheme: dark) {
+      body, .body-bg { background:#1D1D1D !important; }
+      .content-bg { background:#000000 !important; }
+    }
     p { margin:0 0 20px; }
     a { color:#00FF9D; text-decoration:none; }
     a img { vertical-align:middle; }
@@ -91,16 +103,16 @@
 
 </head>
 
-<body style="margin:0; padding:0; background:#1D1D1D; width:100% !important;">
+<body class="body-bg" data-ogsb="#1D1D1D" style="margin:0; padding:0; background:#1D1D1D; width:100% !important;">
 
-  <table align="center" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"
+  <table align="center" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" bgcolor="#000000" data-ogsb="#000000" class="content-bg"
          style="background:#000000; max-width:600px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Fira Sans','Droid Sans','Helvetica Neue',sans-serif;">
     <tr>
       <td>
         <center class="wrapper" data-link-color="#00FF9D" data-body-style="font-size:16px; font-family:inherit; color:#ffffff; background-color:#1D1D1D;">
           <div class="webkit">
-            <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#1D1D1D" style="table-layout:fixed;">
-              <tr><td bgcolor="#000000" valign="top">
+            <table class="wrapper body-bg" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#1D1D1D" data-ogsb="#1D1D1D" style="table-layout:fixed;">
+              <tr><td class="content-bg" bgcolor="#000000" data-ogsb="#000000" valign="top">
 
                 <!-- Pre-header -->
                 <table width="100%" cellpadding="0" cellspacing="0" border="0" style="display:none!important;mso-hide:all;visibility:hidden;opacity:0;color:transparent;height:0;width:0;">
@@ -153,10 +165,7 @@
 
                 <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
                   <tr><td align="center" valign="top" style="padding:14px 20px 0;">
-                    <video width="560" class="max-width" autoplay loop muted playsinline webkit-playsinline controls preload="metadata" poster="https://news.sogni.ai/sogni-sync/assets/21/hero.jpg?v=20260711"
-                      style="display:block; max-width:100% !important; width:100%; height:auto !important; border-radius:8px; border:1px solid #2a2a2a;">
-                      <source src="https://news.sogni.ai/sogni-sync/assets/21/hero.mp4?v=20260711" type="video/mp4">
-                    </video>
+                    <a href="https://news.sogni.ai/sogni-sync/assets/21/hero.mp4?v=20260711" target="_blank" rel="noopener" style="display:block; text-decoration:none;"><img src="https://news.sogni.ai/sogni-sync/assets/21/hero-play.jpg?v=20260711" width="560" alt="Unlimited Rendering Is Here — watch the video" style="display:block; max-width:100% !important; width:100%; height:auto !important; border-radius:8px; border:1px solid #2a2a2a; cursor:pointer;"></a>
                   </td></tr>
                 </table>
 
@@ -222,7 +231,7 @@
                           <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0;"><a href="https://www.sogni.ai/models/seedance-2-0" style="color:#ffffff; font-weight:700; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px;">Seedance 2.0 &mdash; 4K + Mini</a> &mdash; new Mini &ldquo;fast&rdquo; tier is 50% cheaper &amp; faster at 720p, and you can now render production-ready 4K in 10-bit HEVC H.265.<br><a href="https://www.sogni.ai/models/seedance-2-0" style="display:inline-block; margin-top:10px; color:#00FF9D; font-weight:600; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px; white-space:nowrap;">Model page &rarr;</a></p>
                         </td>
                         <td class="column" width="200" align="center" valign="top" style="padding:20px 22px 20px 0;">
-                          <video width="200" autoplay loop muted playsinline webkit-playsinline controls preload="metadata" poster="https://news.sogni.ai/sogni-sync/assets/21/seedance-2-0.jpg?v=20260711" style="display:block; width:200px; max-width:100% !important; height:auto !important; border-radius:8px;"><source src="https://news.sogni.ai/sogni-sync/assets/21/seedance-2-0.mp4?v=20260711" type="video/mp4"></video>
+                          <a href="https://news.sogni.ai/sogni-sync/assets/21/seedance-2-0.mp4?v=20260711" target="_blank" rel="noopener" style="display:block; text-decoration:none;"><img src="https://news.sogni.ai/sogni-sync/assets/21/seedance-2-0-play.jpg?v=20260711" width="200" alt="Seedance 2.0 sample — watch the video" style="display:block; width:200px; max-width:100% !important; height:auto !important; border-radius:8px; cursor:pointer;"></a>
                         </td>
                       </tr>
                     </table>
@@ -236,7 +245,7 @@
                           <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0;"><a href="https://www.sogni.ai/models/happyhorse-1-1" style="color:#ffffff; font-weight:700; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px;">HappyHorse 1.1</a> &mdash; our 2nd partner video model, ranking #1&ndash;2 worldwide for text- and image-to-video, beating Kling 3.0 and Veo 3.1. Seedance-2.0-level quality with no strict human-likeness limits &mdash; and ~50% cheaper at 1080p.<br><a href="https://www.sogni.ai/models/happyhorse-1-1" style="display:inline-block; margin-top:10px; color:#00FF9D; font-weight:600; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px; white-space:nowrap;">Model page &rarr;</a></p>
                         </td>
                         <td class="column" width="200" align="center" valign="top" style="padding:20px 22px 20px 0;">
-                          <video width="200" autoplay loop muted playsinline webkit-playsinline controls preload="metadata" poster="https://news.sogni.ai/sogni-sync/assets/21/happyhorse-1-1.jpg?v=20260711" style="display:block; width:200px; max-width:100% !important; height:auto !important; border-radius:8px;"><source src="https://news.sogni.ai/sogni-sync/assets/21/happyhorse-1-1.mp4?v=20260711" type="video/mp4"></video>
+                          <a href="https://news.sogni.ai/sogni-sync/assets/21/happyhorse-1-1.mp4?v=20260711" target="_blank" rel="noopener" style="display:block; text-decoration:none;"><img src="https://news.sogni.ai/sogni-sync/assets/21/happyhorse-1-1-play.jpg?v=20260711" width="200" alt="HappyHorse 1.1 sample — watch the video" style="display:block; width:200px; max-width:100% !important; height:auto !important; border-radius:8px; cursor:pointer;"></a>
                         </td>
                       </tr>
                     </table>
@@ -250,7 +259,7 @@
                           <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0;"><a href="https://www.sogni.ai/models/ltx-2-3-22b" style="color:#ffffff; font-weight:700; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px;">LTX2.3 + 3 new LoRAs</a> &mdash; outpaint to reframe any video, inpaint to mask &amp; change content, and a transition LoRA for reliable first/last-frame morphs &mdash; all at 5&times; Wan2.2 render speed.<br><a href="https://www.sogni.ai/models/ltx-2-3-22b" style="display:inline-block; margin-top:10px; color:#00FF9D; font-weight:600; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px; white-space:nowrap;">Model page &rarr;</a></p>
                         </td>
                         <td class="column" width="200" align="center" valign="top" style="padding:20px 22px 20px 0;">
-                          <video width="200" autoplay loop muted playsinline webkit-playsinline controls preload="metadata" poster="https://news.sogni.ai/sogni-sync/assets/21/ltx-2-3.jpg?v=20260711" style="display:block; width:200px; max-width:100% !important; height:auto !important; border-radius:8px;"><source src="https://news.sogni.ai/sogni-sync/assets/21/ltx-2-3.mp4?v=20260711" type="video/mp4"></video>
+                          <a href="https://news.sogni.ai/sogni-sync/assets/21/ltx-2-3.mp4?v=20260711" target="_blank" rel="noopener" style="display:block; text-decoration:none;"><img src="https://news.sogni.ai/sogni-sync/assets/21/ltx-2-3-play.jpg?v=20260711" width="200" alt="LTX 2.3 sample — watch the video" style="display:block; width:200px; max-width:100% !important; height:auto !important; border-radius:8px; cursor:pointer;"></a>
                         </td>
                       </tr>
                     </table>
@@ -278,7 +287,7 @@
                           <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0;"><a href="https://www.sogni.ai/models/ace-step-1-5" style="color:#ffffff; font-weight:700; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px;">Ace-Step 1.5 XL</a> &mdash; our open-source music model doubled its diffusion parameters for richer production, cleaner timbre and more convincing vocals, with lyric generation in 50 languages.<br><a href="https://www.sogni.ai/models/ace-step-1-5" style="display:inline-block; margin-top:10px; color:#00FF9D; font-weight:600; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px; white-space:nowrap;">Model page &rarr;</a></p>
                         </td>
                         <td class="column" width="200" align="center" valign="top" style="padding:20px 22px 20px 0;">
-                          <img width="200" src="https://news.sogni.ai/sogni-sync/assets/21/ace-step-1-5.jpg?v=20260711" alt="Ace-Step 1.5 XL sample" style="display:block; width:200px; max-width:100% !important; height:auto !important; border-radius:8px;"><audio controls preload="none" style="width:200px; max-width:100%; display:block; margin-top:10px;"><source src="https://news.sogni.ai/sogni-sync/assets/21/ace-step-1-5.mp3?v=20260711" type="audio/mpeg"></audio>
+                          <a href="https://news.sogni.ai/sogni-sync/assets/21/ace-step-1-5.mp3?v=20260711" target="_blank" rel="noopener" style="display:block; text-decoration:none;"><img width="200" src="https://news.sogni.ai/sogni-sync/assets/21/ace-step-1-5.jpg?v=20260711" alt="Ace-Step 1.5 XL sample" style="display:block; width:200px; max-width:100% !important; height:auto !important; border-radius:8px;"></a><a href="https://news.sogni.ai/sogni-sync/assets/21/ace-step-1-5.mp3?v=20260711" target="_blank" rel="noopener" style="display:inline-block; margin-top:10px; color:#00FF9D; font:600 13px/1 'Inter',sans-serif; text-decoration:none; border:1px solid #00FF9D; border-radius:6px; padding:8px 12px;">&#9654;&nbsp; Play music sample</a>
                         </td>
                       </tr>
                     </table>
@@ -300,11 +309,7 @@
                 <!-- Hero video -->
                 <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
                   <tr><td align="center" valign="top" style="padding:14px 20px 0;">
-                    <video width="600" autoplay loop muted playsinline webkit-playsinline controls preload="metadata" poster="https://news.sogni.ai/sogni-sync/assets/21/storyboard-workflow.jpg?v=20260711"
-                      style="display:block; max-width:100% !important; width:100%; height:auto !important; border-radius:12px; border:1px solid #2a2a2a;">
-                      <source src="https://news.sogni.ai/sogni-sync/assets/21/storyboard-workflow.mp4?v=20260711" type="video/mp4">
-                      <img src="https://news.sogni.ai/sogni-sync/assets/21/storyboard-workflow.jpg?v=20260711" alt="Storyboards that move — prompt, panels, video" style="display:block; width:100%; height:auto;">
-                    </video>
+                    <a href="https://news.sogni.ai/sogni-sync/assets/21/storyboard-workflow.mp4?v=20260711" target="_blank" rel="noopener" style="display:block; text-decoration:none;"><img src="https://news.sogni.ai/sogni-sync/assets/21/storyboard-workflow-play.jpg?v=20260711" width="600" alt="Storyboards that move — watch the video" style="display:block; max-width:100% !important; width:100%; height:auto !important; border-radius:12px; border:1px solid #2a2a2a; cursor:pointer;"></a>
                   </td></tr>
                 </table>
 
@@ -386,10 +391,7 @@
                   <tr><td align="center" valign="top" style="padding:14px 20px 0;">
                     <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#0f0f0f; border:1px solid #2a2a2a; border-radius:12px; overflow:hidden;">
                       <tr><td>
-                        <video width="600" autoplay loop muted playsinline controls poster="https://news.sogni.ai/sogni-sync/assets/21/cloudstep-ad.jpg?v=20260711" style="display:block; max-width:100% !important; width:100%; height:auto;">
-                          <source src="https://news.sogni.ai/sogni-sync/assets/21/cloudstep-ad.mp4?v=20260711" type="video/mp4">
-                          <img src="https://news.sogni.ai/sogni-sync/assets/21/cloudstep-ad.jpg?v=20260711" alt="The CloudStep commercial — one product photo to a finished ad" style="display:block; width:100%; height:auto;">
-                        </video>
+                        <a href="https://news.sogni.ai/sogni-sync/assets/21/cloudstep-ad.mp4?v=20260711" target="_blank" rel="noopener" style="display:block; text-decoration:none;"><img src="https://news.sogni.ai/sogni-sync/assets/21/cloudstep-ad-play.jpg?v=20260711" width="600" alt="The CloudStep commercial — watch the video" style="display:block; max-width:100% !important; width:100%; height:auto; cursor:pointer;"></a>
                       </td></tr>
                     </table>
                     <p style="font:400 12px/1.5 'Inter',sans-serif; color:#666; margin:8px 0 0; text-align:center;">The CloudStep spot — made end-to-end from one sneaker photo in chat.sogni.ai. Unmute for sound.</p>
@@ -525,9 +527,7 @@
 
                 <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
                   <tr><td align="center" valign="top" style="padding:14px 20px 0;">
-                    <video width="392" autoplay loop muted playsinline webkit-playsinline preload="metadata" style="display:block; width:70%; max-width:70%; height:auto; margin:0 auto; border:1px solid #2a2a2a; border-radius:10px;" poster="https://news.sogni.ai/sogni-sync/assets/21/aws-summit-singapore.jpg?v=20260711" style="display:block; width:100%; max-width:600px; height:auto; border-radius:12px; border:1px solid #2a2a2a;">
-                      <source src="https://news.sogni.ai/sogni-sync/assets/21/aws-summit-singapore.mp4?v=20260711" type="video/mp4">
-                    </video>
+                    <a href="https://news.sogni.ai/sogni-sync/assets/21/aws-summit-singapore.mp4?v=20260711" target="_blank" rel="noopener" style="display:block; text-decoration:none;"><img src="https://news.sogni.ai/sogni-sync/assets/21/aws-summit-singapore-play.jpg?v=20260711" width="392" alt="Sogni at AWS Summit Singapore — watch the video" style="display:block; width:70%; max-width:70%; height:auto; margin:0 auto; border:1px solid #2a2a2a; border-radius:10px; cursor:pointer;"></a>
                     <p style="font:400 12px/1.5 'Inter',sans-serif; color:#666; margin:8px 0 0; text-align:center;">Two live AI photobooths, one very busy booth — AWS Summit Singapore.</p>
                   </td></tr>
                 </table>
@@ -694,10 +694,7 @@
                   <tr><td align="center" valign="top" style="padding:14px 20px 0;">
                     <table width="70%" cellpadding="0" cellspacing="0" border="0" style="background:#0f0f0f; border:1px solid #2a2a2a; border-radius:10px; overflow:hidden; max-width:70%;">
                       <tr><td>
-                        <video width="392" autoplay loop muted playsinline controls poster="https://news.sogni.ai/sogni-sync/assets/21/4kofff-showcase.jpg?v=20260711" style="display:block; width:100%; height:auto;">
-                          <source src="https://news.sogni.ai/sogni-sync/assets/21/4kofff-showcase.mp4?v=20260711" type="video/mp4">
-                          <img src="https://news.sogni.ai/sogni-sync/assets/21/4kofff-showcase.jpg?v=20260711" alt="4kofff's Sogni showcase video" style="display:block; width:100%; height:auto;">
-                        </video>
+                        <a href="https://news.sogni.ai/sogni-sync/assets/21/4kofff-showcase.mp4?v=20260711" target="_blank" rel="noopener" style="display:block; text-decoration:none;"><img src="https://news.sogni.ai/sogni-sync/assets/21/4kofff-showcase-play.jpg?v=20260711" width="392" alt="4kofff's Sogni showcase — watch the video" style="display:block; width:100%; height:auto; cursor:pointer;"></a>
                       </td></tr>
                     </table>
                   </td></tr>
