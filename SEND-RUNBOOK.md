@@ -84,3 +84,35 @@ The pipeline sends immediately on `start` — there's no built-in scheduler. Opt
 - **Body limit:** API accepts up to 20mb JSON, so large HTML is fine.
 - **Test sends:** send to specific addresses with a high `priority` + `limit` so only the test address is claimed; delete any address that wasn't already a real subscriber afterward (consent).
 - **Staging mirror:** `sogni-staging` runs the same pipeline (`sogni-consumer-staging`, DB `sogni-staging`, ~65,705 subs) for isolated tests; unsubscribe links point at `api-staging.sogni.ai`.
+
+---
+
+## Engaged-cohort warm-up playbook (the important part — read this before a big send)
+
+**The list reality (2026-07):** ~65.7k subscribers, but engagement is *concentrated*. They're real, consented (airdrop/testnet-era signups), but mostly low-intent farmers. Last Resend newsletter (NL20) opened at **17.65% for the 142 organic "Website Subscribers"** and **0.8–3.2% for the seven ~10k `clean_emails` batches** (~1.4% aggregate). **Gmail/Yahoo grade on engagement, not consent** — so mailing the whole list from a fresh domain gets you spam-foldered and drags down deliverability for your *good* subscribers.
+
+**The rule: never mail the whole list. Mail people who’ve proven they engage.**
+
+### Warming a cold sending domain (what we did 2026-07-12)
+`news.sogni.ai` was brand-new (zero reputation). We warmed it on engagement only:
+1. **Seed:** 141 organic Website Subscribers → 1 complaint (Outlook), 0 bounce.
+2. **Wave 2:** everyone who **opened or clicked NL20** (extracted, cross-checked to live+subscribed+not-already-sent) = **953** → **0 complaints, 1 bounce (0.1%)**.
+- Result: ~1,094 engaged reached, ~0.09% complaint / ~0.09% bounce — clean. The engaged cohort behaved far better than the mixed seed, which is the whole point.
+- The ~64k unengaged backlog was left **parked** (priorities reset to 0; never enqueued).
+
+### Building the engaged cohort (repeatable)
+1. Pull openers/clickers of the last newsletter from Resend:
+   `node extract-openers.mjs "<that newsletter's subject line>" engaged.txt clickers.txt` (in `sogni-resend/`)
+2. Cross-check against the live list — keep only `status:'subscribed'`, not already sent this campaign (script pattern in the assistant's scratchpad / ask it to redo). NL20 example: 1019 extracted → 973 subscribed → 953 mailable.
+3. Re-prioritize in Mongo so the ramp sends best-first: organic seed highest, engaged-openers next, everyone else 0. Then `start {limit}` per wave.
+
+### The rolling-cohort strategy (going forward)
+- Each issue, **re-pull the *latest* newsletter's openers.** Engaged people stay in; people who stop opening age out. The active list self-cleans — no old-opener mining.
+- **Grow via new organic signups** (e.g. the Chainwire PR), not the airdrop backlog. Fresh engaged subs compound; lapsed ones depreciate.
+- **Opens vs clicks:** opens can be inflated by Apple/Gmail image-prefetch bots; **clicks are real human intent**. For the first/riskiest wave from a cold domain, lead with clickers.
+
+### The airdrop backlog (the ~64k) — re-permission, isolated
+If you ever want to reclaim the unengaged backlog, do NOT send it from `news.sogni.ai` (it would undo the reputation you built for engaged subs). Instead:
+- **Re-permission campaign:** one email asking "still want these? click to stay subscribed" — keep only those who click, drop the rest. Expect low recovery (~1–5%).
+- **Send it from a SEPARATE sending subdomain** (e.g. `reengage.sogni.ai`), fully DNS-isolated (its own DKIM/SPF/DMARC/MAIL FROM — same setup as `news.sogni.ai`). If that risky send tanks, it burns the throwaway subdomain's reputation, not your primary. This is "subdomain isolation."
+- Honestly: often not worth it vs. just growing fresh. Optional, later, never during warm-up.
