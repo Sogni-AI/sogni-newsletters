@@ -99,6 +99,8 @@
     }
     @media screen and (max-width:480px){ .two-col-override .column{ width:50% !important; display:inline-block !important; vertical-align:top; } }
     @media screen and (max-width:320px){ .two-col-override .column{ width:100% !important; display:block !important; } }
+    /* New Models cards: keep text | media side-by-side on phones (mcard-* are excluded from the .column stacking above); shrink media so the copy keeps the majority width */
+    @media screen and (max-width:480px){ .mcard-media{ width:130px !important; padding-right:14px !important; } .mcard-text{ padding-right:10px !important; } }
   </style>
 
 </head>
@@ -233,10 +235,10 @@
                   <tr><td style="padding:14px 20px 0;">
                     <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); border:1px solid #2a2a2a; border-radius:12px;">
                       <tr>
-                        <td class="column" valign="top" style="padding:20px 16px 20px 22px;">
+                        <td class="mcard-text" valign="top" style="padding:20px 16px 20px 22px;">
                           <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0;"><a href="https://www.sogni.ai/models/krea-2-turbo" style="color:#ffffff; font-weight:700; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px;">Krea 2 Turbo</a> &mdash; the latest open-weight turbo image model: as fast as Z-Image Turbo (8 steps) but with far wider style range, great text handling and 2048&times;2048 output.<br><a href="https://www.sogni.ai/models/krea-2-turbo" style="display:inline-block; margin-top:10px; color:#00FF9D; font-weight:600; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px; white-space:nowrap;">Model page &rarr;</a></p>
                         </td>
-                        <td class="column" width="200" align="center" valign="top" style="padding:20px 22px 20px 0;">
+                        <td class="mcard-media" width="200" align="center" valign="top" style="padding:20px 22px 20px 0;">
                           <img width="200" src="https://news.sogni.ai/sogni-sync/assets/21/krea-2-turbo.jpg?v=20260711" alt="Krea 2 Turbo example" style="display:block; width:200px; max-width:100% !important; height:auto !important; border-radius:8px;">
                         </td>
                       </tr>
@@ -247,10 +249,10 @@
                   <tr><td style="padding:14px 20px 0;">
                     <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); border:1px solid #2a2a2a; border-radius:12px;">
                       <tr>
-                        <td class="column" valign="top" style="padding:20px 16px 20px 22px;">
+                        <td class="mcard-text" valign="top" style="padding:20px 16px 20px 22px;">
                           <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0;"><a href="https://www.sogni.ai/models/seedance-2-0" style="color:#ffffff; font-weight:700; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px;">Seedance 2.0 &mdash; 4K + Mini</a> &mdash; new Mini &ldquo;fast&rdquo; tier is 50% cheaper &amp; faster at 720p, and you can now render production-ready 4K in 10-bit HEVC H.265.<br><a href="https://www.sogni.ai/models/seedance-2-0" style="display:inline-block; margin-top:10px; color:#00FF9D; font-weight:600; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px; white-space:nowrap;">Model page &rarr;</a></p>
                         </td>
-                        <td class="column" width="200" align="center" valign="top" style="padding:20px 22px 20px 0;">
+                        <td class="mcard-media" width="200" align="center" valign="top" style="padding:20px 22px 20px 0;">
                           <div style="position:relative; display:inline-block; width:200px; max-width:100%; line-height:0;">
                             <a href="https://news.sogni.ai/sogni-sync/assets/21/seedance-2-0.mp4?v=20260711" target="_blank" rel="noopener" style="display:block; text-decoration:none;"><img src="https://news.sogni.ai/sogni-sync/assets/21/seedance-2-0-play.jpg?v=20260711b" width="200" alt="Seedance 2.0 sample — watch the video" style="display:block; width:100% !important; max-width:100% !important; height:auto !important; border-radius:8px; cursor:pointer;"></a>
                             <!--[if !mso]><!-->
@@ -268,10 +270,10 @@
                   <tr><td style="padding:14px 20px 0;">
                     <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); border:1px solid #2a2a2a; border-radius:12px;">
                       <tr>
-                        <td class="column" valign="top" style="padding:20px 16px 20px 22px;">
+                        <td class="mcard-text" valign="top" style="padding:20px 16px 20px 22px;">
                           <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0;"><a href="https://www.sogni.ai/models/happyhorse-1-1" style="color:#ffffff; font-weight:700; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px;">HappyHorse 1.1</a> &mdash; our 2nd partner video model, ranking #1&ndash;2 worldwide for text- and image-to-video, beating Kling 3.0 and Veo 3.1. Seedance-2.0-level quality with no strict human-likeness limits &mdash; and ~50% cheaper at 1080p.<br><a href="https://www.sogni.ai/models/happyhorse-1-1" style="display:inline-block; margin-top:10px; color:#00FF9D; font-weight:600; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px; white-space:nowrap;">Model page &rarr;</a></p>
                         </td>
-                        <td class="column" width="200" align="center" valign="top" style="padding:20px 22px 20px 0;">
+                        <td class="mcard-media" width="200" align="center" valign="top" style="padding:20px 22px 20px 0;">
                           <div style="position:relative; display:inline-block; width:200px; max-width:100%; line-height:0;">
                             <a href="https://news.sogni.ai/sogni-sync/assets/21/happyhorse-1-1.mp4?v=20260711" target="_blank" rel="noopener" style="display:block; text-decoration:none;"><img src="https://news.sogni.ai/sogni-sync/assets/21/happyhorse-1-1-play.jpg?v=20260711b" width="200" alt="HappyHorse 1.1 sample — watch the video" style="display:block; width:100% !important; max-width:100% !important; height:auto !important; border-radius:8px; cursor:pointer;"></a>
                             <!--[if !mso]><!-->
@@ -289,10 +291,10 @@
                   <tr><td style="padding:14px 20px 0;">
                     <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); border:1px solid #2a2a2a; border-radius:12px;">
                       <tr>
-                        <td class="column" valign="top" style="padding:20px 16px 20px 22px;">
+                        <td class="mcard-text" valign="top" style="padding:20px 16px 20px 22px;">
                           <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0;"><a href="https://www.sogni.ai/models/ltx-2-3-22b" style="color:#ffffff; font-weight:700; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px;">3 new video LoRAs on LTX2.3</a> &mdash; outpaint to reframe any video, inpaint to mask &amp; change content, and a transition LoRA for reliable first/last-frame morphs &mdash; all at 5&times; Wan2.2 render speed.<br><a href="https://www.sogni.ai/models/ltx-2-3-22b" style="display:inline-block; margin-top:10px; color:#00FF9D; font-weight:600; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px; white-space:nowrap;">Model page &rarr;</a></p>
                         </td>
-                        <td class="column" width="200" align="center" valign="top" style="padding:20px 22px 20px 0;">
+                        <td class="mcard-media" width="200" align="center" valign="top" style="padding:20px 22px 20px 0;">
                           <div style="position:relative; display:inline-block; width:200px; max-width:100%; line-height:0;">
                             <a href="https://news.sogni.ai/sogni-sync/assets/21/ltx-2-3.mp4?v=20260711" target="_blank" rel="noopener" style="display:block; text-decoration:none;"><img src="https://news.sogni.ai/sogni-sync/assets/21/ltx-2-3-play.jpg?v=20260711b" width="200" alt="LTX 2.3 sample — watch the video" style="display:block; width:100% !important; max-width:100% !important; height:auto !important; border-radius:8px; cursor:pointer;"></a>
                             <!--[if !mso]><!-->
@@ -310,10 +312,10 @@
                   <tr><td style="padding:14px 20px 0;">
                     <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); border:1px solid #2a2a2a; border-radius:12px;">
                       <tr>
-                        <td class="column" valign="top" style="padding:20px 16px 20px 22px;">
+                        <td class="mcard-text" valign="top" style="padding:20px 16px 20px 22px;">
                           <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0;"><a href="https://www.sogni.ai/models/ace-step-1-5" style="color:#ffffff; font-weight:700; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px;">Ace-Step 1.5 XL</a> &mdash; our open-source music model doubled its diffusion parameters for richer production, cleaner timbre and more convincing vocals, with lyric generation in 50 languages.<br><a href="https://www.sogni.ai/models/ace-step-1-5" style="display:inline-block; margin-top:10px; color:#00FF9D; font-weight:600; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px; white-space:nowrap;">Model page &rarr;</a></p>
                         </td>
-                        <td class="column" width="200" align="center" valign="top" style="padding:20px 22px 20px 0;">
+                        <td class="mcard-media" width="200" align="center" valign="top" style="padding:20px 22px 20px 0;">
                           <a href="https://news.sogni.ai/sogni-sync/assets/21/ace-step-1-5.mp3?v=20260711" target="_blank" rel="noopener" style="display:block; text-decoration:none;"><img width="200" src="https://news.sogni.ai/sogni-sync/assets/21/ace-step-1-5.jpg?v=20260711" alt="Ace-Step 1.5 XL sample" style="display:block; width:200px; max-width:100% !important; height:auto !important; border-radius:8px;"></a><a href="https://news.sogni.ai/sogni-sync/assets/21/ace-step-1-5.mp3?v=20260711" target="_blank" rel="noopener" style="display:inline-block; margin-top:10px; color:#00FF9D; font:600 13px/1 'Inter',sans-serif; text-decoration:none; border:1px solid #00FF9D; border-radius:6px; padding:8px 12px;">&#9654;&nbsp; Play music sample</a>
                         </td>
                       </tr>
