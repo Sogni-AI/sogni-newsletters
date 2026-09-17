@@ -63,9 +63,23 @@ html = html.replace(/href="([^"]+)"/g, (m, raw) => {
   return `href="${url.toString()}"`;
 });
 
+// 3) slim the payload: Gmail clips messages past ~102KB, hiding the footer and
+// unsubscribe link behind "View entire message". Drop plain HTML comments
+// (conditional <!--[if ...]> / <![endif]--> ones must survive — the hybrid video
+// blocks depend on them), indentation, and blank lines.
+const GMAIL_CLIP_BYTES = 102 * 1024;
+const bytesBefore = Buffer.byteLength(html);
+html = html
+  .replace(/<!--[\s\S]*?-->/g, (c) => (/\[if |\[endif\]/.test(c) ? c : ''))
+  .replace(/^[ \t]+/gm, '')
+  .replace(/[ \t]+$/gm, '')
+  .replace(/\n{2,}/g, '\n');
+const bytesAfter = Buffer.byteLength(html);
+
 fs.writeFileSync(outPath, html);
 
 console.log(`Wrote ${outPath}`);
+console.log(`  size: ${bytesBefore} -> ${bytesAfter} bytes${bytesAfter > GMAIL_CLIP_BYTES ? `  WARNING: over Gmail's ~${GMAIL_CLIP_BYTES} byte clip limit — footer/unsubscribe will be hidden` : ' (under Gmail clip limit)'}`);
 console.log(`  unsubscribe placeholders swapped: ${unsubBefore} (remaining RESEND: ${(html.match(/RESEND_UNSUBSCRIBE_URL/g) || []).length})`);
 console.log(`  links tagged: ${tagged.length} across ${new Set(tagged).size} utm_content values`);
 console.log(`  hosts skipped: ${[...skipped].sort().join(', ')}`);
