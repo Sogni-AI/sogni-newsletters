@@ -1,0 +1,1130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://blog.sogni.ai/assets/sogni-favicon-32.png?v=sogni1">
+  <link rel="shortcut icon" type="image/png" href="https://blog.sogni.ai/assets/sogni-favicon-32.png?v=sogni1">
+  <link rel="apple-touch-icon" sizes="256x256" href="https://blog.sogni.ai/assets/sogni-apple-touch.png?v=sogni1">
+  <meta name="x-apple-disable-message-reformatting" />
+  <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no" />
+  <meta name="color-scheme" content="dark only" />
+  <meta name="supported-color-schemes" content="dark" />
+  <title>Sogni /Sync - July / August '26 | Volume 22</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+  <style type="text/css">
+    span.device { display:block; font-weight:normal; font-size:0.9em; }
+    body, p, div { margin:0; padding:0; font-family:inherit; font-size:16px; line-height:23px;
+      -webkit-font-smoothing:antialiased; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; -moz-text-size-adjust:100%; }
+    body { background:#1D1D1D; color:#ffffff; width:100% !important; }
+
+    /* Dark theme is the only design. Re-assert it for clients that honor
+       prefers-color-scheme so they don't synthesize a light (white) version. */
+    :root { color-scheme: dark; supported-color-schemes: dark; }
+    @media (prefers-color-scheme: light) {
+      body, .body-bg { background:#1D1D1D !important; }
+      .content-bg { background:#000000 !important; }
+    }
+    @media (prefers-color-scheme: dark) {
+      body, .body-bg { background:#1D1D1D !important; }
+      .content-bg { background:#000000 !important; }
+    }
+    p { margin:0 0 20px; }
+    a { color:#00FF9D; text-decoration:none; }
+    a img { vertical-align:middle; }
+    img { border:none; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; }
+    table.wrapper { width:100% !important; table-layout:fixed; }
+    .column.of-2{ width:50%; } .column.of-3{ width:33.333%; } .column.of-4{ width:25%; }
+
+    .main-title-container { padding:20px; color:#a6a6a6; text-align:left; }
+    .main-title { margin:0; font:700 36px/1.2 'Space Grotesk',sans-serif; color:#ffffff; letter-spacing:-0.5px; }
+    .subtitle { font:500 20px/1.5 'Inter',sans-serif; color:#a6a6a6; margin:5px 0 0; }
+    .section-title-container { padding:20px 20px 16px 20px; color:#ffffff; text-align:left; }
+    .section-name { margin:0 0 8px; font:500 16px/1.1 'Inter',sans-serif; color:#a6a6a6; }
+    .section-title { margin:0 0 8px; font:600 28px/1.1 'Space Grotesk',sans-serif; }
+    .text-module { padding:18px 20px; font-size:16px; line-height:1.7; color:#a6a6a6; text-align:left; }
+    .text-module p{ margin:0 0 20px; }
+
+    .green-button, .button-link {
+      background:#00FF9D;
+      border:none; border-radius:8px; color:#001b00 !important;
+      font:600 14px/normal 'Inter', sans-serif; padding:12px 20px;
+      text-decoration:none; display:inline-block; margin-top:15px;
+      transition: transform 0.2s ease;
+    }
+    .button-secondary {
+      background: transparent; border: 2px solid #00FF9D; border-radius:8px;
+      color:#00FF9D !important; font:500 14px/normal 'Inter', sans-serif;
+      padding:10px 18px; text-decoration:none; display:inline-block; margin-top:15px;
+    }
+
+    .stat-box { text-align:center; padding:20px 10px; }
+    .stat-number { font:700 32px/1.1 'Space Grotesk',sans-serif; color:#00FF9D; display:block; margin-bottom:6px; }
+    .stat-label { font:500 13px/1.3 'Inter',sans-serif; color:#a6a6a6; text-transform:uppercase; letter-spacing:0.5px; }
+
+    .feature-card {
+      background: linear-gradient(135deg, #1a1a1a 0%, #252525 100%);
+      border:1px solid #333; border-radius:12px; padding:20px; margin-bottom:16px;
+    }
+
+    .section-badge {
+      display:inline-block; background:#00FF9D; color:#001b00;
+      font:700 10px/1 'Inter',sans-serif; padding:4px 8px; border-radius:4px;
+      text-transform:uppercase; letter-spacing:0.5px; margin-bottom:8px;
+    }
+
+    .social-icon img{ width:28px; height:28px; }
+    .social-icon{ display:inline-block; margin:0 8px; }
+
+    .unsubscribe-css__unsubscribe___2CDlR a.Unsubscribe--unsubscribeLink{ color:#bebdbd !important; text-decoration:none !important; }
+
+    .gradient-divider { height:2px; background: linear-gradient(90deg, transparent 0%, #00FF9D 50%, transparent 100%); }
+    #UNLIMITED, #MODELS, #H3, #KREAEDIT, #DARKBEAST, #LORAS, #AGENT, #SEASON11, #EVENTS, #COMMUNITY { scroll-margin-top:84px; }
+
+    @media screen and (max-width:480px){
+      .preheader .rightColumnContent, .footer .rightColumnContent{ text-align:left !important; }
+      table.wrapper-mobile{ width:100% !important; table-layout:fixed; }
+      img.max-width{ max-width:100% !important; height:auto !important; }
+      a.button-link, a.green-button{ display:inline-block !important; width:auto !important; font-size:80% !important; padding-left:16px !important; padding-right:16px !important; }
+      .columns, .column{ width:100% !important; display:block !important; padding-left:0 !important; padding-right:0 !important; margin-left:0 !important; margin-right:0 !important; }
+      .social-icon img{ width:20px !important; height:20px !important; }
+      .main-title{ font-size:28px !important; }
+      .section-title{ font-size:24px !important; }
+      .stat-number{ font-size:22px !important; }
+      .stat-cell{ width:33.33% !important; padding:8px 3px !important; }
+      .stat-label{ font-size:9px !important; letter-spacing:0 !important; }
+    }
+    @media screen and (max-width:480px){ .two-col-override .column{ width:50% !important; display:inline-block !important; vertical-align:top; } }
+    @media screen and (max-width:320px){ .two-col-override .column{ width:100% !important; display:block !important; } }
+    /* New Models cards: keep text | media side-by-side on phones (mcard-* are excluded from the .column stacking above); shrink media so the copy keeps the majority width */
+    @media screen and (max-width:480px){ .mcard-media{ width:130px !important; padding-right:14px !important; } .mcard-text{ padding-right:10px !important; } }
+  </style>
+
+  <link rel="stylesheet" href="https://blog.sogni.ai/assets/persistent-nav.css?v=navunify4">
+  <script src="https://blog.sogni.ai/assets/persistent-nav.js?v=thumbs2039" defer></script>
+  <script src="https://blog.sogni.ai/assets/persistent-footer.js?v=foot2" defer></script>
+</head>
+
+<body class="body-bg" data-ogsb="#1D1D1D" style="margin:0; padding:0; background:#1D1D1D; width:100% !important;" data-bn-current="newsletter-22">
+
+<div class="bn-header">
+  <div class="bn-header-inner">
+    <a class="bn-brand" href="https://blog.sogni.ai/">
+      <svg class="bn-brand-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 387 160" aria-hidden="true"><path fill="currentColor" d="M17.2,106.99c5.33,2.29,11.3,3.41,17.95,3.41,7.03,0,13.11-1.33,18.23-3.98,5.23-2.75,9.17-6.34,11.82-10.81,2.76-4.44,4.12-9.19,4.12-14.2,0-6.24-1.47-11.22-4.43-14.92-2.86-3.8-6.36-6.57-10.53-8.37-4.09-1.8-9.4-3.59-15.96-5.39-4.94-1.34-8.83-2.57-11.69-3.7-2.86-1.13-5.23-2.64-7.13-4.54-1.8-1.98-2.7-4.49-2.7-7.52,0-4.44,1.47-7.86,4.4-10.22,2.94-2.36,6.75-3.54,11.41-3.54,5.12,0,9.27,1.28,12.39,3.83,3.14,2.57,4.84,5.62,5.12,9.24h17.95c-.67-8.34-4.09-14.87-10.25-19.62-6.08-4.83-13.9-7.24-23.51-7.24-6.75,0-12.67,1.13-17.82,3.41-5.12,2.29-9.11,5.55-11.97,9.81C1.73,26.91.31,31.89.31,37.56c0,6.16,1.42,11.09,4.27,14.76,2.86,3.7,6.28,6.44,10.25,8.24,4.09,1.69,9.35,3.42,15.81,5.11,5.12,1.34,9.11,2.57,11.97,3.7,2.94,1.13,5.36,2.75,7.26,4.83,1.98,2.08,2.99,4.78,2.99,8.09,0,4.26-1.57,7.75-4.71,10.5-3.14,2.64-7.49,3.98-13.11,3.98s-9.63-1.36-12.67-4.11c-2.94-2.75-4.61-6.24-5-10.5H0c0,5.67,1.52,10.66,4.56,14.92,3.04,4.26,7.21,7.57,12.54,9.94l.1-.03ZM102.48,105.71c5.97,3.31,12.67,4.98,20.08,4.98s14.34-1.67,20.52-4.98c6.28-3.42,11.2-8.19,14.83-14.35,3.6-6.16,5.41-13.22,5.41-21.16s-1.75-15.02-5.28-21.16c-3.53-6.14-8.32-10.89-14.39-14.2-6.08-3.31-12.87-4.98-20.37-4.98s-14.29,1.67-20.37,4.98c-6.08,3.31-10.87,8.06-14.39,14.2-3.53,6.16-5.28,13.22-5.28,21.16s1.7,15.15,5.12,21.31c3.42,6.06,8.11,10.81,14.11,14.2ZM134.25,93.64c-3.61,1.98-7.49,2.98-11.69,2.98-6.54,0-12.03-2.29-16.38-6.83-4.27-4.65-6.41-11.17-6.41-19.62,0-5.67,1.06-10.48,3.14-14.35,2.08-3.98,4.89-6.96,8.39-8.96,3.61-1.98,7.49-2.98,11.69-2.98s8.08,1,11.69,2.98c3.6,1.98,6.51,4.98,8.7,8.96,2.19,3.88,3.27,8.68,3.27,14.35s-1.13,10.5-3.42,14.48c-2.29,3.98-5.28,6.96-8.99,8.96v.03ZM227.1,33.53c-4.66-2.46-10.02-3.7-16.09-3.7-6.85,0-13.11,1.69-18.8,5.11-5.61,3.31-10.07,8.01-13.39,14.07-3.22,6.06-4.84,13.02-4.84,20.88s1.62,14.92,4.84,21.16c3.32,6.16,7.78,10.99,13.39,14.48,5.69,3.42,11.97,5.11,18.8,5.11,5.97,0,11.3-1.23,15.96-3.7,4.74-2.57,8.5-5.67,11.25-9.37v13.07c0,7.57-2.03,13.35-6.13,17.33-3.99,3.98-9.27,5.96-15.81,5.96-5.61,0-10.45-1.28-14.52-3.83-3.99-2.46-6.59-5.72-7.83-9.81h-16.09c.95,8.53,4.94,15.25,11.97,20.18,7.03,5.03,15.86,7.52,26.5,7.52,7.98,0,14.81-1.62,20.52-4.83,5.79-3.21,10.22-7.68,13.26-13.35,3.04-5.6,4.56-11.99,4.56-19.18V31.07h-16.38v11.37c-2.65-3.59-6.36-6.57-11.12-8.96l-.05.05ZM234.8,56.13c2.29,3.98,3.42,8.68,3.42,14.07s-1.13,10.14-3.42,14.2c-2.19,3.98-5.07,7.01-8.7,9.09-3.61,2.08-7.49,3.13-11.69,3.13s-7.98-1.05-11.69-3.13c-3.6-2.18-6.57-5.32-8.83-9.37-2.19-4.08-3.27-8.81-3.27-14.2s1.08-10.04,3.27-13.92c2.29-3.98,5.23-6.96,8.83-8.96,3.6-2.08,7.49-3.13,11.69-3.13s8.08,1.05,11.69,3.13c3.6,2.08,6.51,5.11,8.7,9.09ZM332.08,33.69c-4.84-2.57-10.35-3.83-16.53-3.83-4.66,0-9.06.9-13.26,2.7-4.09,1.8-7.47,4.31-10.12,7.52v-8.96h-16.25v78.29h16.25v-43.75c0-7.01,1.75-12.35,5.28-16.05,3.61-3.8,8.45-5.67,14.52-5.67s10.87,1.9,14.39,5.67c3.5,3.7,5.28,9.04,5.28,16.05v43.75h16.09v-46.17c0-7.11-1.37-13.17-4.12-18.18-2.76-5.03-6.59-8.81-11.54-11.37ZM369.34,17.77c1.98,1.98,4.45,2.98,7.42,2.98s5.28-1,7.26-2.98c1.98-1.98,2.99-4.44,2.99-7.39s-1-5.39-2.99-7.39c-1.98-1.98-4.43-2.98-7.26-2.98s-5.41,1-7.42,2.98c-1.98,1.98-2.99,4.44-2.99,7.39s1,5.39,2.99,7.39ZM384.71,109.41V31.12h-16.25v78.29h16.25Z"/></svg>
+      <span class="bn-brand-divider">/</span>
+      <span class="bn-brand-sub">Blogs &amp; Newsletters</span>
+    </a>
+    <nav class="bn-nav" aria-label="Blogs and newsletters">
+      <div class="bn-menu" data-bn-menu>
+        <button class="bn-trigger" type="button" aria-expanded="false">
+          <span>Blogs</span>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polyline points="6 9 12 15 18 9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></polyline></svg>
+        </button>
+        <div class="bn-dropdown">
+          <a class="bn-drop-link" data-bn-page="blog-sogni-create-step-by-step" href="https://blog.sogni.ai/blogs/sogni-create-step-by-step/">
+            <span class="bn-drop-title">Your first steps with Sogni</span>
+            <span class="bn-drop-meta">Guide &middot; Getting Started</span>
+          </a>
+          <a class="bn-drop-link" data-bn-page="blog-krea-2-identity-edit" href="https://blog.sogni.ai/blogs/krea-2-identity-edit/">
+            <span class="bn-drop-title">Edit the Photo, Not the Person</span>
+            <span class="bn-drop-meta">Tutorial &middot; Identity Editing</span>
+          </a>
+          <a class="bn-drop-link" data-bn-page="blog-unlimited-compute-model" href="https://blog.sogni.ai/blogs/unlimited-compute-model/">
+            <span class="bn-drop-title">Why Unlimited AI Needs a Different Compute Model</span>
+            <span class="bn-drop-meta">Essay &middot; Unlimited</span>
+          </a>
+          <a class="bn-drop-link" data-bn-page="blog-ugc-without-creators" href="https://blog.sogni.ai/blogs/ugc-without-creators/">
+            <span class="bn-drop-title">UGC Without the Creators</span>
+            <span class="bn-drop-meta">Blog &middot; UGC Ads</span>
+          </a>
+          <a class="bn-drop-link" data-bn-page="blog-storyboards-to-ad" href="https://blog.sogni.ai/blogs/storyboards-to-ad/">
+            <span class="bn-drop-title">How to Turn a Product Photo into a Video Ad with AI</span>
+            <span class="bn-drop-meta">Blog &middot; Video Ads</span>
+          </a>
+          <a class="bn-drop-link" data-bn-page="blog-storyboards-that-move" href="https://blog.sogni.ai/blogs/storyboards-that-move/">
+            <span class="bn-drop-title">Storyboards that move: from one prompt to a finished video</span>
+            <span class="bn-drop-meta">Blog · Storyboards</span>
+          </a>
+          <a class="bn-drop-link" data-bn-page="blog-personas" href="https://blog.sogni.ai/blogs/personas/">
+            <span class="bn-drop-title">Meet your Personas: your face in every render</span>
+            <span class="bn-drop-meta">Blog · Personas</span>
+          </a>
+          <a class="bn-drop-link" data-bn-page="blog-architectural-renders" href="https://blog.sogni.ai/blogs/architectural-renders/">
+            <span class="bn-drop-title">Why You No Longer Need to Outsource Your Architectural Renders</span>
+            <span class="bn-drop-meta">Blog · Architecture</span>
+          </a>
+          <a class="bn-drop-link" data-bn-page="blog-creative-assistant" href="https://blog.sogni.ai/blogs/creative-assistant/">
+            <span class="bn-drop-title">Meet the New Creative Assistant in Sogni Studio / Pro</span>
+            <span class="bn-drop-meta">Blog · AI Workflows</span>
+          </a>
+          <a class="bn-drop-link" data-bn-page="blog-starting-ending-frames" href="https://blog.sogni.ai/blogs/starting-ending-frames/">
+            <span class="bn-drop-title">Starting &amp; Ending Frames</span>
+            <span class="bn-drop-meta">Blog · Video &amp; Motion</span>
+          </a>
+        </div>
+      </div>
+      <div class="bn-menu" data-bn-menu>
+        <button class="bn-trigger" type="button" aria-expanded="false">
+          <span>Newsletters</span>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><polyline points="6 9 12 15 18 9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></polyline></svg>
+        </button>
+        <div class="bn-dropdown">
+          <a class="bn-drop-link" data-bn-page="newsletter-22" href="https://blog.sogni.ai/newsletters/22/">
+            <span class="bn-drop-title">MiniMax H3 is unlimited on Sogni</span>
+            <span class="bn-drop-meta">Newsletter &middot; Volume 22</span>
+          </a>
+          <a class="bn-drop-link" data-bn-page="newsletter-21" href="https://blog.sogni.ai/newsletters/21/">
+            <span class="bn-drop-title">Your ideas are unlimited</span>
+            <span class="bn-drop-meta">Newsletter · Volume 21</span>
+          </a>
+          <a class="bn-drop-link" data-bn-page="newsletter-20" href="https://blog.sogni.ai/newsletters/20/">
+            <span class="bn-drop-title">Creativity enters the agentic era</span>
+            <span class="bn-drop-meta">Newsletter · Volume 20</span>
+          </a>
+          <a class="bn-drop-link" data-bn-page="newsletter-19" href="https://blog.sogni.ai/newsletters/19/">
+            <span class="bn-drop-title">Season 6 is live</span>
+            <span class="bn-drop-meta">Newsletter · Volume 19</span>
+          </a>
+          <a class="bn-drop-link" data-bn-page="newsletter-18" href="https://blog.sogni.ai/newsletters/18/">
+            <span class="bn-drop-title">2025: The Year Sogni Came Alive</span>
+            <span class="bn-drop-meta">Newsletter · Volume 18</span>
+          </a>
+        </div>
+      </div>
+      <a class="bn-home" href="https://blog.sogni.ai/">Back to main page</a>
+      <a class="bn-subscribe" href="https://www.sogni.ai/#wf-form-Marketing-Email-Signup" target="_blank" rel="noopener">Subscribe</a>
+    </nav>
+  </div>
+</div>
+  <div class="bn-news-shell">
+    <div class="bn-news-panel">
+
+  <table align="center" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" bgcolor="#000000" data-ogsb="#000000" class="content-bg"
+         style="background:#000000; max-width:600px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Fira Sans','Droid Sans','Helvetica Neue',sans-serif;">
+    <tr>
+      <td>
+        <center class="wrapper" data-link-color="#00FF9D" data-body-style="font-size:16px; font-family:inherit; color:#ffffff; background-color:#1D1D1D;">
+          <div class="webkit">
+            <table class="wrapper body-bg" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#1D1D1D" data-ogsb="#1D1D1D" style="table-layout:fixed;">
+              <tr><td class="content-bg" bgcolor="#000000" data-ogsb="#000000" valign="top">
+
+                <!-- Pre-header -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" style="display:none!important;mso-hide:all;visibility:hidden;opacity:0;color:transparent;height:0;width:0;">
+                  <tr><td>MiniMax H3 and LTX 2.5 are unlimited on Sogni, Krea 2 learns to edit, the Dark Beasts arrive, and Season 11 opens with 8M SOGNI.</td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:0 0 15px;"></td></tr></table>
+
+                <!-- Logo + edition label -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td>
+                    <div style="padding:10px 20px 20px;">
+                      <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                        <tr>
+                          <td align="left" valign="middle">
+                            <table cellpadding="0" cellspacing="0" border="0" role="presentation">
+                              <tr>
+                                <td valign="middle" style="padding-right:5px;">
+                                  <img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/d2884f6c-4924-48ca-a7e6-a0c6bba72f16/1657x636.png" alt="Sogni logo" style="height:calc(16px * 1.2); width:auto;">
+                                </td>
+                                <td valign="middle" style="font-family:Inter,sans-serif; font-size:16px; color:#a6a6a6;">/Sync</td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td align="right" valign="middle">
+                            <span style="font-family:Inter,sans-serif; font-size:12px; color:#001b00; background:#00FF9D; padding:4px 10px; border-radius:4px; font-weight:600;">VOLUME 22</span>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </td></tr>
+                </table>
+
+
+                <!-- Edition eyebrow -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td style="padding:4px 20px 0;">
+                    <p style="font-family:Inter,sans-serif; font-size:14px; color:#00FF9D; margin:0; text-transform:uppercase; letter-spacing:1px; font-weight:500;">July / August 2026 Edition</p>
+                  </td></tr>
+                </table>
+
+                <!-- =================== GO UNLIMITED =================== -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="UNLIMITED">
+                  <tr><td style="padding:30px 20px 0;">
+                    <h1 style="margin:0 0 10px; font:700 36px/1.15 'Space Grotesk',sans-serif; color:#ffffff; letter-spacing:-0.5px;">MiniMax H3 Is Unlimited on Sogni</h1>
+                    <p style="font:500 18px/1.5 'Inter',sans-serif; color:#a6a6a6; margin:0;">The strongest open-weight video model on the network, included in your plan. No credit counter.</p>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td align="center" valign="top" style="padding:14px 20px 0;">
+                    <!-- Hybrid video: Apple Mail plays the <video> inline (it overlays the poster); Gmail/Outlook strip <video> and show the linked poster underneath. -->
+                    <div style="position:relative; width:100%; max-width:560px; margin:0 auto; line-height:0;">
+                      <a href="https://www.sogni.ai/unlimited" target="_blank" rel="noopener" style="display:block; text-decoration:none;"><img src="assets/hero-play.jpg?v=20260824" width="560" alt="Sogni Unlimited, private and unrestricted AI image and video. Watch the video." style="display:block; max-width:100% !important; width:100%; height:auto !important; border-radius:8px; border:1px solid #2a2a2a; cursor:pointer;"></a>
+                      <!--[if !mso]><!-->
+                      <video playsinline webkit-playsinline muted autoplay loop controls preload="metadata" poster="assets/hero.jpg?v=20260824" style="position:absolute; top:0; left:0; width:100%; height:100%; border-radius:8px; border:1px solid #2a2a2a; object-fit:cover; display:block;">
+                        <source src="assets/hero.mp4?v=20260824" type="video/mp4">
+                      </video>
+                      <!--<![endif]-->
+                    </div>
+                    <p style="font:400 12px/1.5 'Inter',sans-serif; color:#666; margin:8px 0 0; text-align:center;">Unmute for sound.</p>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td style="padding:16px 20px 6px;">
+                    <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0 0 14px;">This is the single biggest thing we can offer you right now. <strong style="color:#fff;">MiniMax H3</strong>, in both its standard and Turbo builds, runs on <a href="https://www.sogni.ai/unlimited" style="color:#00FF9D; font-weight:600;">Sogni Unlimited</a> fair use. So does <strong style="color:#fff;">LTX 2.5</strong>. Two frontier video engines, native audio, no per render math.</p>
+                    <ul style="margin:0 0 4px 18px; padding:0; color:#a6a6a6; font:400 15px/1.7 'Inter',sans-serif;">
+                      <li style="margin-bottom:8px;">Unlimited fair use access to <strong style="color:#fff;">200+ open-weight models</strong> for image, video and music, including H3, LTX 2.5, Krea 2, Z-Image, Flux, Qwen and WAN.</li>
+                      <li style="margin-bottom:8px;">Every plan starts with a <strong style="color:#fff;">3-day free trial</strong>, from $20 a month, across web, iOS&nbsp;/&nbsp;macOS and Android.</li>
+                      <li style="margin-bottom:8px;">Queue up to <strong style="color:#fff;">128 media at a time</strong>, or 512 on Unlimited Pro. Built for batch work, not single renders.</li>
+                    </ul>
+                  </td></tr>
+                </table>
+
+                <!-- Fair use transparency -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td style="padding:20px 20px 0;">
+                    <p style="font:700 11px/1 'Inter',sans-serif; color:#00FF9D; margin:0 0 10px; text-transform:uppercase; letter-spacing:1px;">Fair Use, In The Open</p>
+                    <h3 style="margin:0 0 8px; font:600 24px/1.2 'Space Grotesk',sans-serif; color:#ffffff;">You can now see exactly where you stand</h3>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td align="center" valign="top" style="padding:14px 20px 0;">
+                    <img width="560" class="max-width"
+                      style="display:block; max-width:100% !important; width:100%; height:auto !important; border-radius:8px; border:1px solid #2a2a2a;"
+                      src="assets/usage-page.jpg?v=20260824" alt="The Sogni Usage page showing daily and monthly fair-use capacity, reset times, and what the plan has delivered">
+                    <p style="font:400 12px/1.5 'Inter',sans-serif; color:#666; margin:8px 0 0; text-align:center;">Daily and monthly capacity, reset times, and the retail value your plan has already covered.</p>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td style="padding:18px 20px 10px;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); border:1px solid #2a2a2a; border-radius:12px; border-left:4px solid #00FF9D;">
+                      <tr><td style="padding:24px;">
+                        <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0 0 14px;">Fair use limits for <strong style="color:#fff;">Unlimited</strong> and <strong style="color:#fff;">Unlimited Pro</strong> are no longer a black box. The new <a href="https://app.sogni.ai/usage" style="color:#00FF9D; font-weight:600;">Usage page</a> shows your daily and monthly usage, your remaining capacity, and when everything resets.</p>
+                        <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0 0 10px;">If you ever reach a limit:</p>
+                        <ul style="margin:0 0 14px 18px; padding:0; color:#a6a6a6; font:400 15px/1.7 'Inter',sans-serif;">
+                          <li style="margin-bottom:6px;">Fast rendering pauses until your limit resets</li>
+                          <li style="margin-bottom:6px;">Relaxed rendering stays <strong style="color:#fff;">unlimited</strong></li>
+                          <li style="margin-bottom:6px;">Premium Spark and SOGNI are unaffected</li>
+                        </ul>
+                        <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0;">These limits currently touch only the <strong style="color:#00FF9D; font-weight:600;">top 10% of subscribers</strong>, and they exist to keep rendering fast for everyone else. Nothing about your plan changes, and there is nothing you need to do.</p>
+                        <p style="text-align:center; margin:18px 0 0;"><a href="https://app.sogni.ai/usage" style="display:inline-block; background:#00FF9D; color:#001b00; border:1px solid #00FF9D; padding:11px 19px; border-radius:8px; font:600 14px 'Inter',sans-serif; text-decoration:none; white-space:nowrap;">Check your usage &rarr;</a></p>
+                      </td></tr>
+                    </table>
+                  </td></tr>
+                </table>
+
+                <!-- Read more -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td align="center" style="padding:12px 20px 4px;">
+                    <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0;">Subscription revenue counts toward the <a href="https://www.sogni.ai/leaderboard#ambassador" style="color:#00FF9D; font-weight:600;">ambassador leaderboard</a>, including monthly recurring subscriptions, so spread the word and earn.</p>
+                    <a href="https://www.sogni.ai/unlimited" style="display:inline-block; background:#00FF9D; color:#001b00; border:1px solid #00FF9D; padding:11px 19px; border-radius:8px; font:600 14px 'Inter',sans-serif; text-decoration:none; white-space:nowrap; margin-top:15px;">Start Unlimited Creating Free for 3 Days &rarr;</a>
+                    <p style="font:400 13px/1.6 'Inter',sans-serif; color:#7a7a7a; margin:12px 0 0;">Unlimited plans from $20 a month. Start free, cancel anytime before your trial ends.</p>
+                                      </td></tr>
+                </table>
+
+                <!-- Quick Jump -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" style="background:#111; border-radius:12px; margin:24px 20px 0; width:calc(100% - 40px);">
+                  <tr><td style="padding:20px;">
+                    <p style="font:600 12px/1 'Inter',sans-serif; color:#00FF9D; margin:0 0 12px; text-transform:uppercase; letter-spacing:1px;">Quick Jump</p>
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr><td style="padding:8px 0;"><a href="#MODELS" style="color:#ffffff; font:500 15px/1.4 'Inter',sans-serif; text-decoration:none;">The new models have rolled in</a></td></tr>
+                      <tr><td style="padding:8px 0; border-top:1px solid #222;"><a href="#H3" style="color:#ffffff; font:500 15px/1.4 'Inter',sans-serif; text-decoration:none;">MiniMax H3 R2V Turbo in the wild</a></td></tr>
+                      <tr><td style="padding:8px 0; border-top:1px solid #222;"><a href="#KREAEDIT" style="color:#ffffff; font:500 15px/1.4 'Inter',sans-serif; text-decoration:none;">Krea 2 Identity Edit is live</a></td></tr>
+                      <tr><td style="padding:8px 0; border-top:1px solid #222;"><a href="#DARKBEAST" style="color:#ffffff; font:500 15px/1.4 'Inter',sans-serif; text-decoration:none;">The Dark Beast editions</a></td></tr>
+                      <tr><td style="padding:8px 0; border-top:1px solid #222;"><a href="#LORAS" style="color:#ffffff; font:500 15px/1.4 'Inter',sans-serif; text-decoration:none;">New LoRAs: Realism, community picks, FilterBypass</a></td></tr>
+                      <tr><td style="padding:8px 0; border-top:1px solid #222;"><a href="#AGENT" style="color:#ffffff; font:500 15px/1.4 'Inter',sans-serif; text-decoration:none;">Generate in series with Sogni Creative Agent</a></td></tr>
+                      <tr><td style="padding:8px 0; border-top:1px solid #222;"><a href="#SCROLL" style="color:#ffffff; font:500 15px/1.4 'Inter',sans-serif; text-decoration:none;">Scrollytelling: an agent-built 3D website</a></td></tr>
+                      <tr><td style="padding:8px 0; border-top:1px solid #222;"><a href="#SEASON11" style="color:#ffffff; font:500 15px/1.4 'Inter',sans-serif; text-decoration:none;">Season 10 closes, Season 11 opens</a></td></tr>
+                      <tr><td style="padding:8px 0; border-top:1px solid #222;"><a href="#EVENTS" style="color:#ffffff; font:500 15px/1.4 'Inter',sans-serif; text-decoration:none;">Sogni on stage at Mandala Club Singapore</a></td></tr>
+                      <tr><td style="padding:8px 0; border-top:1px solid #222;"><a href="#COMMUNITY" style="color:#ffffff; font:500 15px/1.4 'Inter',sans-serif; text-decoration:none;">Community: maciasux and Sogni Infinity</a></td></tr>
+                    </table>
+                  </td></tr>
+                </table>
+
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:35px 20px;"><div style="height:2px; background: linear-gradient(90deg, transparent 0%, #00FF9D 50%, transparent 100%);"></div></td></tr></table>
+
+                <!-- =================== NEW MODELS =================== -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="MODELS">
+                  <tr><td style="padding:30px 20px 0;">
+                    <span style="display:inline-block; background:#00FF9D; color:#001b00; font:700 10px/1 'Inter',sans-serif; padding:5px 10px; border-radius:4px; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:12px;">New Models</span>
+                    <h2 style="margin:0 0 8px; font:600 28px/1.1 'Space Grotesk',sans-serif; color:#ffffff;">The new models have rolled in</h2>
+                    <p style="font:500 15px/1.5 'Inter',sans-serif; color:#a6a6a6; margin:0;">The open-weight world moved faster than our announcements did. Every model below is live on <a href="https://app.sogni.ai" style="color:#00FF9D; font-weight:600;">app.sogni.ai</a> and the API right now, with the plan it runs on marked on each card.</p>
+                  </td></tr>
+                </table>
+
+                <!-- 1. MiniMax H3 + H3 Turbo -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td style="padding:14px 20px 0;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); border:1px solid #2a2a2a; border-radius:12px;">
+                      <tr>
+                        <td valign="top" style="padding:22px 22px 4px;">
+                          <p style="font:700 11px/1 'Inter',sans-serif; color:#00FF9D; margin:0 0 10px; text-transform:uppercase; letter-spacing:1px;">Included in Unlimited</p>
+                          <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0 0 14px; text-align:justify;"><a href="https://blog.sogni.ai/blogs/minimax-h3/" style="color:#ffffff; font-weight:700; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px;">MiniMax H3 and MiniMax H3 Turbo</a>, our smartest video engine, now complete in both builds. Standard H3 gives you the highest quality and the best prompt understanding, while H3 Turbo trades a little of that for speed you can actually iterate on. Turbo now covers text to video, image to video and reference to video, all with native audio. Both builds are covered by your Unlimited plan.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" valign="top" style="padding:6px 22px 0;">
+                          <div style="position:relative; width:100%; margin:0 auto; line-height:0;">
+                            <a href="assets/minimax-h3-neon.mp4?v=20260824" target="_blank" rel="noopener" style="display:block; text-decoration:none;"><img src="assets/minimax-h3-neon-play.jpg?v=20260824" alt="A MiniMax H3 render with native audio. Watch the video." style="display:block; width:100% !important; max-width:100% !important; height:auto !important; border-radius:8px; cursor:pointer;"></a>
+                            <!--[if !mso]><!-->
+                            <video playsinline webkit-playsinline muted autoplay loop controls preload="metadata" poster="assets/minimax-h3-neon.jpg?v=20260824" style="position:absolute; top:0; left:0; width:100%; height:100%; border-radius:8px; object-fit:cover; display:block;">
+                              <source src="assets/minimax-h3-neon.mp4?v=20260824" type="video/mp4">
+                            </video>
+                            <!--<![endif]-->
+                          </div>
+                          <p style="font:400 12px/1.5 'Inter',sans-serif; color:#666; margin:8px 0 0; text-align:center;">Text to video with native audio, straight out of MiniMax H3. Unmute for sound.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" style="padding:16px 22px 22px;">
+                          <p style="margin:0; text-align:center;"><a href="https://blog.sogni.ai/blogs/minimax-h3/" style="color:#00FF9D; font-weight:600; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px; font:600 14px 'Inter',sans-serif;">Read the H3 write-up &rarr;</a></p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td></tr>
+                </table>
+
+                <!-- 2. Wan 3 + Wan 3 Enhanced -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td style="padding:14px 20px 0;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #161616 0%, #0d0d0d 100%); border:1px solid #333; border-radius:12px;">
+                      <tr>
+                        <td valign="top" style="padding:22px 22px 4px;">
+                          <p style="font:700 11px/1 'Inter',sans-serif; color:#00FF9D; margin:0 0 10px; text-transform:uppercase; letter-spacing:1px;">Pay as you go &middot; Not in Unlimited</p>
+                          <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0 0 14px; text-align:justify;"><a href="https://www.sogni.ai/models/wan-3" style="color:#ffffff; font-weight:700; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px;">Wan 3</a> and <a href="https://www.sogni.ai/models/wan-3-uncensored" style="color:#ffffff; font-weight:700; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px;">Wan 3 Enhanced</a>, Alibaba's newest video line, now live on Sogni. Both render <strong style="color:#fff;">2 to 30 seconds at a fixed 30 fps</strong>, up to 1080p, in any aspect ratio from 16:9 to 9:16, with native audio on by default. Both cover text to video, first-frame and first-and-last-frame animation, loose multimodal references and audio-driven generation, taking up to 10 images, 5 videos and 5 audio clips as conditioning.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" valign="top" style="padding:6px 22px 0;">
+                          <img class="max-width" style="display:block; width:100% !important; max-width:100% !important; height:auto !important; border-radius:8px; border:1px solid #2a2a2a;" src="assets/wan3-enhanced.jpg?v=20260824" alt="The Wan 3 Enhanced model page on Sogni, showing text to video, image to video and reference to video">
+                          <p style="font:400 12px/1.5 'Inter',sans-serif; color:#666; margin:8px 0 0; text-align:center;">Three modes on Wan 3 Enhanced: text to video, image to video, reference to video.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" style="padding:16px 22px 22px;">
+                          <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0 0 14px; text-align:justify;"><strong style="color:#fff;">The difference is the content policy.</strong> Wan 3 Enhanced is the mature-theme build, made by the Wan 3 Enhanced Team for adult creators working on lawful material that standard Wan 3 turns down. It is our premiere mature-theme video model, it needs the Sensitive Content Filter switched off, and it is not restriction-free: everyone depicted must be 18 or over and our Terms of Use still apply.</p>
+                          <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0; text-align:justify;">Both are Premium Spark vendor models, so they run pay as you go rather than on your subscription. Unlimited still helps: <strong style="color:#fff;">5% off</strong> on Unlimited and <strong style="color:#fff;">10% off</strong> on Unlimited Pro, plus a launch credit of $10 for Unlimited and $25 for Unlimited Pro.</p>
+                          <p style="margin:16px 0 0; text-align:center;"><a href="https://www.sogni.ai/models/wan-3-uncensored" style="color:#00FF9D; font-weight:600; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px; font:600 14px 'Inter',sans-serif;">See the Wan 3 Enhanced model page &rarr;</a></p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td></tr>
+                </table>
+
+                <!-- 3. LTX 2.5 -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td style="padding:14px 20px 0;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); border:1px solid #2a2a2a; border-radius:12px;">
+                      <tr>
+                        <td valign="top" style="padding:22px 22px 4px;">
+                          <p style="font:700 11px/1 'Inter',sans-serif; color:#00FF9D; margin:0 0 10px; text-transform:uppercase; letter-spacing:1px;">Included in Unlimited</p>
+                          <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0 0 12px; text-align:justify;"><a href="https://blog.sogni.ai/blogs/ltx-2-5/" style="color:#ffffff; font-weight:700; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px;">LTX 2.5</a>. The standout is <strong style="color:#fff;">multi-shot prompting</strong>, which lets you render several hard-cut scenes with continuity from a single prompt.</p>
+                          <ul style="margin:0 0 12px 18px; padding:0; color:#a6a6a6; font:400 15px/1.7 'Inter',sans-serif;">
+                            <li style="margin-bottom:6px;">Substantially sharper, less melty output with better motion</li>
+                            <li style="margin-bottom:6px;">Much better handling of complex prompts</li>
+                            <li style="margin-bottom:6px;">Better quality per compute, plus auto-duration</li>
+                            <li style="margin-bottom:6px;">Full workflow support: t2v, i2v, a2v, v2v, pose and canny controlnet, inpaint, outpaint, LoRAs and more</li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" valign="top" style="padding:6px 22px 0;">
+                          <div style="position:relative; width:100%; margin:0 auto; line-height:0;">
+                            <a href="assets/ltx-2-5-multishot.mp4?v=20260824" target="_blank" rel="noopener" style="display:block; text-decoration:none;"><img src="assets/ltx-2-5-multishot-play.jpg?v=20260824" alt="An LTX 2.5 multi-shot render, several hard-cut scenes from a single prompt. Watch the video." style="display:block; width:100% !important; max-width:100% !important; height:auto !important; border-radius:8px; cursor:pointer;"></a>
+                            <!--[if !mso]><!-->
+                            <video playsinline webkit-playsinline muted autoplay loop controls preload="metadata" poster="assets/ltx-2-5-multishot.jpg?v=20260824" style="position:absolute; top:0; left:0; width:100%; height:100%; border-radius:8px; object-fit:cover; display:block;">
+                              <source src="assets/ltx-2-5-multishot.mp4?v=20260824" type="video/mp4">
+                            </video>
+                            <!--<![endif]-->
+                          </div>
+                          <p style="font:400 12px/1.5 'Inter',sans-serif; color:#666; margin:8px 0 0; text-align:center;">Multi-shot prompting: several hard-cut scenes with continuity, from one prompt. Unmute for sound.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" style="padding:16px 22px 22px;">
+                          <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0; text-align:justify;"><strong style="color:#fff;">Next to MiniMax H3:</strong> H3 is the smarter, more powerful engine. When LTX 2.5 lands, though, it lands cleaner, with more natural nuance, and it is a lot faster, still at 4K and 60fps. Pricing sits about 20% above LTX 2.3.</p>
+                          <p style="margin:16px 0 0; text-align:center;"><a href="https://blog.sogni.ai/blogs/ltx-2-5/" style="color:#00FF9D; font-weight:600; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px; font:600 14px 'Inter',sans-serif;">Read the LTX 2.5 deep-dive &rarr;</a></p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td></tr>
+                </table>
+
+                <!-- 4. RTX VSR -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td style="padding:14px 20px 0;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); border:1px solid #2a2a2a; border-radius:12px;">
+                      <tr>
+                        <td valign="top" style="padding:22px 22px 0;">
+                          <p style="font:700 11px/1 'Inter',sans-serif; color:#00FF9D; margin:0 0 10px; text-transform:uppercase; letter-spacing:1px;">Included in Unlimited</p>
+                          <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0 0 14px; text-align:justify;"><a href="https://blog.sogni.ai/blogs/rtx-vsr-upscaling/" style="color:#ffffff; font-weight:700; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px;">NVIDIA RTX VSR Upscaling</a>, our first true pixel upscaler. No reimagining and no invented detail, just clean natural recovery of what is already there. It is roughly <strong style="color:#00FF9D; font-weight:600;">20 times faster</strong> than our other upscalers and now goes up to <strong style="color:#fff;">16K</strong>, or 236 MP, which is larger than a 4 by 4 foot print at 300dpi.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" valign="top" style="padding:0 22px 8px;">
+                          <img width="512" class="max-width" style="display:block; max-width:100% !important; width:100%; height:auto !important; border-radius:8px; border:1px solid #2a2a2a;" src="assets/rtx-vsr.jpg?v=20260824" alt="A 832 by 1216 portrait upscaled to 3328 by 4864 with RTX VSR in ten seconds">
+                          <p style="font:400 12px/1.5 'Inter',sans-serif; color:#666; margin:8px 0 0; text-align:center;">832 by 1216 up to 3328 by 4864, nearly 5K on the long edge, in ten seconds of work.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding:6px 22px 22px;">
+                          <p style="margin:0; text-align:center;"><a href="https://blog.sogni.ai/blogs/rtx-vsr-upscaling/" style="color:#00FF9D; font-weight:600; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px; font:600 14px 'Inter',sans-serif;">See the full comparison &rarr;</a></p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td></tr>
+                </table>
+
+                <!-- 5. MiniMax Music 3 -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td style="padding:14px 20px 0;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); border:1px solid #2a2a2a; border-radius:12px;">
+                      <tr>
+                        <td valign="top" style="padding:22px;">
+                          <p style="font:700 11px/1 'Inter',sans-serif; color:#00FF9D; margin:0 0 10px; text-transform:uppercase; letter-spacing:1px;">Included in Unlimited</p>
+                          <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0 0 16px; text-align:justify;"><a href="https://blog.sogni.ai/blogs/minimax-music3-vs-ace-step-15-xl/" style="color:#ffffff; font-weight:700; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px;">MiniMax Music 3</a>, the new crowned king of open-weight music generation and probably the most production-ready open model right now, at roughly <strong style="color:#fff;">twice the parameters of Ace-Step XL</strong>. It sits somewhere between Ace-Step XL 1.5 and Suno. Vocals and production values in open music generation have never sounded this good.</p>
+                          <p style="font:700 11px/1 'Inter',sans-serif; color:#a6a6a6; margin:0 0 8px; text-transform:uppercase; letter-spacing:1px;">Track: anthemic pop-rock, female lead</p>
+                          <!--[if !mso]><!-->
+                          <audio controls preload="none" style="width:100%; display:block; margin:0 0 12px;">
+                            <source src="https://blog.sogni.ai/blogs/minimax-music3-vs-ace-step-15-xl/assets/music3_s1_pop_rock_vocal.mp3" type="audio/mpeg">
+                          </audio>
+                          <!--<![endif]-->
+                          <p style="margin:0; text-align:center;"><a href="https://blog.sogni.ai/blogs/minimax-music3-vs-ace-step-15-xl/" style="color:#00FF9D; font-weight:600; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px; font:600 14px 'Inter',sans-serif;">Hear all 24 tracks in the head-to-head &rarr;</a></p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td></tr>
+                </table>
+
+                <!-- 6. One Obsession v22 -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td style="padding:14px 20px 0;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); border:1px solid #2a2a2a; border-radius:12px;">
+                      <tr>
+                        <td valign="top" style="padding:20px 22px 14px;">
+                          <p style="font:700 11px/1 'Inter',sans-serif; color:#00FF9D; margin:0 0 10px; text-transform:uppercase; letter-spacing:1px;">Included in Unlimited</p>
+                          <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0; text-align:justify;"><strong style="color:#ffffff; font-weight:700;">One Obsession v22</strong>, a stunning illustration model released only a month ago. It has an obsessive mastery of the 2.5D semi-realistic 3D anime render style, with sublime use of color, contrast, volumetric shading and glossy specular highlights, especially on skin, eyes and hair.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" style="padding:0 12px 20px;">
+                          <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" class="two-col-override">
+                            <tr>
+                              <td class="column" width="50%" valign="top" style="padding:0 5px 0 10px;">
+                                <img src="assets/one-obsession-v22.jpg?v=20260824" alt="One Obsession v22 sample render of a 2.5D anime idol on stage" style="display:block; width:100% !important; max-width:100% !important; height:auto !important; border-radius:8px;">
+                              </td>
+                              <td class="column" width="50%" valign="top" style="padding:0 10px 0 5px;">
+                                <img src="assets/one-obsession-v22-orchid-captain.png?v=20260824c" alt="One Obsession orchid captain artwork" style="display:block; width:100% !important; max-width:100% !important; height:auto !important; border-radius:8px;">
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td></tr>
+                </table>
+
+                <!-- 7. Seedance 2.5 (pay as you go) -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td style="padding:14px 20px 0;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #161616 0%, #0d0d0d 100%); border:1px solid #333; border-radius:12px;">
+                      <tr>
+                        <td valign="top" style="padding:22px 22px 4px;">
+                          <p style="font:700 11px/1 'Inter',sans-serif; color:#00FF9D; margin:0 0 10px; text-transform:uppercase; letter-spacing:1px;">Pay as you go &middot; Not in Unlimited</p>
+                          <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0 0 14px; text-align:justify;"><strong style="color:#ffffff; font-weight:700;">Seedance 2.5</strong>, ByteDance's latest, and a beast for storytelling. One-take creation up to <strong style="color:#fff;">30 seconds</strong> in a single pass with real narrative structure, extendable to multi-minute content. Reference up to 30 images, 10 video clips and 10 audio clips at once, keeping looks and voices consistent, plus timestamp-level editing, green-screen replacement and camera perspective adjustments. As a frontier partner model it runs on Spark Packs rather than your subscription, and Unlimited plans get a significant discount on it.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" style="padding:0 12px 0;">
+                          <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" class="two-col-override">
+                            <tr>
+                              <td class="column" width="50%" valign="top" style="padding:0 5px 0 10px;">
+                                <div style="position:relative; width:100%; line-height:0;">
+                                  <a href="assets/seedance-glow-serum.mp4?v=20260824" target="_blank" rel="noopener" style="display:block; text-decoration:none;"><img src="assets/seedance-glow-serum-play.jpg?v=20260824" alt="A Seedance 2.5 skincare spot rendered in one take. Watch the video." style="display:block; width:100% !important; max-width:100% !important; height:auto !important; border-radius:8px; cursor:pointer;"></a>
+                                  <!--[if !mso]><!-->
+                                  <video playsinline webkit-playsinline muted autoplay loop controls preload="metadata" poster="assets/seedance-glow-serum.jpg?v=20260824" style="position:absolute; top:0; left:0; width:100%; height:100%; border-radius:8px; object-fit:cover; display:block;">
+                                    <source src="assets/seedance-glow-serum.mp4?v=20260824" type="video/mp4">
+                                  </video>
+                                  <!--<![endif]-->
+                                </div>
+                                <p style="font:400 12px/1.5 'Inter',sans-serif; color:#666; margin:8px 0 0; text-align:center;">A skincare spot, one take.</p>
+                              </td>
+                              <td class="column" width="50%" valign="top" style="padding:0 10px 0 5px;">
+                                <div style="position:relative; width:100%; line-height:0;">
+                                  <a href="assets/seedance-beach-arcade.mp4?v=20260824" target="_blank" rel="noopener" style="display:block; text-decoration:none;"><img src="assets/seedance-beach-arcade-play.jpg?v=20260824" alt="A Seedance 2.5 UGC style night arcade scene. Watch the video." style="display:block; width:100% !important; max-width:100% !important; height:auto !important; border-radius:8px; cursor:pointer;"></a>
+                                  <!--[if !mso]><!-->
+                                  <video playsinline webkit-playsinline muted autoplay loop controls preload="metadata" poster="assets/seedance-beach-arcade.jpg?v=20260824" style="position:absolute; top:0; left:0; width:100%; height:100%; border-radius:8px; object-fit:cover; display:block;">
+                                    <source src="assets/seedance-beach-arcade.mp4?v=20260824" type="video/mp4">
+                                  </video>
+                                  <!--<![endif]-->
+                                </div>
+                                <p style="font:400 12px/1.5 'Inter',sans-serif; color:#666; margin:8px 0 0; text-align:center;">UGC at night, one take.</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr><td style="padding:18px 22px 22px;"></td></tr>
+                    </table>
+                  </td></tr>
+                </table>
+
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:35px 20px;"><div style="height:2px; background: linear-gradient(90deg, transparent 0%, #00FF9D 50%, transparent 100%);"></div></td></tr></table>
+
+                <!-- =================== MINIMAX H3 IN THE WILD =================== -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="H3">
+                  <tr><td style="padding:30px 20px 0;">
+                    <span style="display:inline-block; background:#00FF9D; color:#001b00; font:700 10px/1 'Inter',sans-serif; padding:5px 10px; border-radius:4px; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:12px;">Workflow Spotlight</span>
+                    <h2 style="margin:0 0 8px; font:600 28px/1.1 'Space Grotesk',sans-serif; color:#ffffff;">MiniMax H3 R2V Turbo: hand it a reference, watch it recast the shot</h2>
+                    <p style="font:500 15px/1.5 'Inter',sans-serif; color:#a6a6a6; margin:0;">Reference to video, in two takes, and every run is covered by Unlimited.</p>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" class="two-col-override">
+                  <tr>
+                    <td class="column" width="50%" valign="top" style="padding:14px 8px 0 20px;">
+                      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#0f0f0f; border:1px solid #2a2a2a; border-radius:12px; overflow:hidden;">
+                        <tr><td>
+                          <div style="position:relative; width:100%; line-height:0;">
+                            <a href="assets/h3-r2v-real-video.mp4?v=20260824" target="_blank" rel="noopener" style="display:block; text-decoration:none;"><img src="assets/h3-r2v-real-video-play.jpg?v=20260824" alt="Real footage recast with a reference character using MiniMax H3 R2V Turbo. Watch the video." style="display:block; width:100%; height:auto; cursor:pointer;"></a>
+                            <!--[if !mso]><!-->
+                            <video playsinline webkit-playsinline muted autoplay loop controls preload="metadata" poster="assets/h3-r2v-real-video.jpg?v=20260824" style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; display:block;">
+                              <source src="assets/h3-r2v-real-video.mp4?v=20260824" type="video/mp4">
+                            </video>
+                            <!--<![endif]-->
+                          </div>
+                        </td></tr>
+                        <tr><td height="60" valign="top" style="height:60px; padding:10px 12px 14px; font:400 12px/1.5 'Inter',sans-serif; color:#666;">MiniMax H3 R2V Turbo, real phone footage plus one reference image, motion untouched.</td></tr>
+                      </table>
+                    </td>
+                    <td class="column" width="50%" valign="top" style="padding:14px 20px 0 8px;">
+                      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#0f0f0f; border:1px solid #2a2a2a; border-radius:12px; overflow:hidden;">
+                        <tr><td>
+                          <div style="position:relative; width:100%; line-height:0;">
+                            <a href="assets/h3-faceswap.mp4?v=20260824" target="_blank" rel="noopener" style="display:block; text-decoration:none;"><img src="assets/h3-faceswap-play.jpg?v=20260824" alt="A MiniMax H3 image to video clip with a reference face applied in a second pass. Watch the video." style="display:block; width:100%; height:auto; cursor:pointer;"></a>
+                            <!--[if !mso]><!-->
+                            <video playsinline webkit-playsinline muted autoplay loop controls preload="metadata" poster="assets/h3-faceswap.jpg?v=20260824" style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; display:block;">
+                              <source src="assets/h3-faceswap.mp4?v=20260824" type="video/mp4">
+                            </video>
+                            <!--<![endif]-->
+                          </div>
+                        </td></tr>
+                        <tr><td height="60" valign="top" style="height:60px; padding:10px 12px 14px; font:400 12px/1.5 'Inter',sans-serif; color:#666;">MiniMax H3 R2V Turbo, a Krea 2 still animated, then recast with a new face on top.</td></tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td style="padding:18px 20px 10px;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); border:1px solid #2a2a2a; border-radius:12px; border-left:4px solid #00FF9D;">
+                      <tr><td style="padding:24px;">
+                        <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0 0 14px;">Reference to video is the piece most models still get wrong. Hand <strong style="color:#fff;">MiniMax H3 R2V Turbo</strong> a clip and a reference image and it keeps the original performance, the walk, the gesture, the beat, while replacing who is in the frame. The same trick works on generated footage: render with image to video, then recast the character in a second pass.</p>
+                        <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0;">With the Turbo build live, that loop is finally fast enough to iterate on. And because H3 is an open-weight model on the Supernet, every one of these runs is <strong style="color:#00FF9D; font-weight:600;">covered by Sogni Unlimited</strong>. That combination is the best reason to be on a plan right now.</p>
+                      </td></tr>
+                    </table>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:35px 20px;"><div style="height:2px; background: linear-gradient(90deg, transparent 0%, #00FF9D 50%, transparent 100%);"></div></td></tr></table>
+
+                <!-- =================== KREA 2 IDENTITY EDIT =================== -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="KREAEDIT">
+                  <tr><td style="padding:30px 20px 0;">
+                    <span style="display:inline-block; background:#00FF9D; color:#001b00; font:700 10px/1 'Inter',sans-serif; padding:5px 10px; border-radius:4px; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:12px;">Image Editing</span><span style="display:inline-block; background:transparent; color:#00FF9D; border:1px solid #00FF9D; font:700 10px/1 'Inter',sans-serif; padding:4px 9px; border-radius:4px; text-transform:uppercase; letter-spacing:0.5px; margin:0 0 12px 8px;">Included in Unlimited</span>
+                    <h2 style="margin:0 0 8px; font:600 28px/1.1 'Space Grotesk',sans-serif; color:#ffffff;">Krea 2 learned to edit, and it kept the face</h2>
+                    <p style="font:500 15px/1.5 'Inter',sans-serif; color:#a6a6a6; margin:0;">Krea 2 Identity Edit v1.2, live on Sogni less than 24 hours after it was published.</p>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td align="center" valign="top" style="padding:14px 20px 0;">
+                    <img width="560" class="max-width"
+                      style="display:block; max-width:100% !important; width:100%; height:auto !important; border-radius:8px; border:1px solid #2a2a2a;"
+                      src="assets/krea-2-identity-edit.jpg?v=20260824" alt="Krea 2 Identity Edit LoRA v1.2 full workflow: one input photo, two context images, three edit steps">
+                    <p style="font:400 12px/1.5 'Inter',sans-serif; color:#666; margin:8px 0 0; text-align:center;">One input, two context images, three prompts. Outfit swapped, coat layered back on, pose matched to a drawing.</p>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td style="padding:18px 20px 10px;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); border:1px solid #2a2a2a; border-radius:12px; border-left:4px solid #00FF9D;">
+                      <tr><td style="padding:24px;">
+                        <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0 0 14px;">There is an exciting community project turning the fast, powerful <strong style="color:#fff;">Krea 2 Turbo</strong> image model into a proper image edit model. Early releases were promising, and <strong style="color:#fff;">v1.2</strong> is the one that delivers. The reviews say so too.</p>
+                        <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0 0 14px;">The hardest part of using it is normally getting it running in ComfyUI with new custom nodes. Sogni has your back, and we are live with it in two flavors:</p>
+                        <ul style="margin:0 0 16px 18px; padding:0; color:#a6a6a6; font:400 15px/1.7 'Inter',sans-serif;">
+                          <li style="margin-bottom:8px;"><strong style="color:#fff;">Regular Krea 2</strong> for cleaner, more predictable likeness preservation: product edits, try-on, clothes swap, face swap, scene swap, character sheets.</li>
+                          <li style="margin-bottom:8px;"><strong style="color:#fff;">Dark Beast Krea 2</strong> for the uncensored base: edgier, horror, surreal, adult-oriented or less constrained edits. More stylized, less predictable.</li>
+                        </ul>
+                        <p style="margin:0; text-align:center;"><a href="https://blog.sogni.ai/blogs/krea-2-identity-edit/" style="display:inline-block; background:#00FF9D; color:#001b00; border:1px solid #00FF9D; padding:11px 19px; border-radius:8px; font:600 14px 'Inter',sans-serif; text-decoration:none; white-space:nowrap;">Read the full tutorial &rarr;</a></p>
+                      </td></tr>
+                    </table>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:35px 20px;"><div style="height:2px; background: linear-gradient(90deg, transparent 0%, #00FF9D 50%, transparent 100%);"></div></td></tr></table>
+
+                <!-- =================== DARK BEAST =================== -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="DARKBEAST">
+                  <tr><td style="padding:30px 20px 0;">
+                    <span style="display:inline-block; background:#00FF9D; color:#001b00; font:700 10px/1 'Inter',sans-serif; padding:5px 10px; border-radius:4px; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:12px;">Uncensored</span><span style="display:inline-block; background:transparent; color:#00FF9D; border:1px solid #00FF9D; font:700 10px/1 'Inter',sans-serif; padding:4px 9px; border-radius:4px; text-transform:uppercase; letter-spacing:0.5px; margin:0 0 12px 8px;">Included in Unlimited</span>
+                    <h2 style="margin:0 0 8px; font:600 28px/1.1 'Space Grotesk',sans-serif; color:#ffffff;">Meet the Dark Beasts, every pixel, no hedging</h2>
+                    <p style="font:500 15px/1.5 'Inter',sans-serif; color:#a6a6a6; margin:0;">Two uncensored fine-tunes trained by CivitAI creator AiMetatron.</p>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td style="padding:18px 20px 4px;">
+                    <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0;">As the creator puts it, these are made &ldquo;for those who won&rsquo;t settle for anything less than complete, uncensored reality. Every pixel, every shadow, every nuance is rendered with obsessive precision, creating a world that feels alive, tangible, and dangerously real.&rdquo;</p>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" class="two-col-override">
+                  <tr>
+                    <td class="column" width="50%" valign="top" style="padding:14px 8px 0 20px;">
+                      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#0f0f0f; border:1px solid #2a2a2a; border-radius:12px; overflow:hidden;">
+                        <tr><td><img src="assets/dark-beast-krea-2.png?v=20260824b" alt="Dark Beast Krea 2 monochrome lace portrait sample render" style="display:block; width:100%; height:auto;"></td></tr>
+                        <tr><td height="176" valign="top" style="height:176px; padding:12px 14px 0;">
+                          <p style="font:600 15px/1.3 'Space Grotesk',sans-serif; color:#fff; margin:0 0 8px;">Dark Beast Krea 2</p>
+                          <p style="font:400 13px/1.6 'Inter',sans-serif; color:#a6a6a6; margin:0; text-align:justify;">A 10 to 20 step fine-tune of Krea 2, itself only a month old. It calls itself uncensored, unfiltered and unapologetically hardcore, but it is also a seriously good creative model, making more complex and dynamic art than Krea 2 Turbo itself.</p>
+                        </td></tr>
+                        <tr><td valign="bottom" style="padding:12px 14px 16px; text-align:center;">
+                          <a href="https://www.sogni.ai/models/dark-beast-krea-2" style="color:#00FF9D; font:600 13px 'Inter',sans-serif; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px;">Model page &rarr;</a>
+                        </td></tr>
+                      </table>
+                    </td>
+                    <td class="column" width="50%" valign="top" style="padding:14px 20px 0 8px;">
+                      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#0f0f0f; border:1px solid #2a2a2a; border-radius:12px; overflow:hidden;">
+                        <tr><td><img src="assets/dark-beast-z-image.png?v=20260824b" alt="Dark Beast Z-Image Turbo v9 noodle shop sample render" style="display:block; width:100%; height:auto;"></td></tr>
+                        <tr><td height="176" valign="top" style="height:176px; padding:12px 14px 0;">
+                          <p style="font:600 15px/1.3 'Space Grotesk',sans-serif; color:#fff; margin:0 0 8px;">Dark Beast Z-Image Turbo v9</p>
+                          <p style="font:400 13px/1.6 'Inter',sans-serif; color:#a6a6a6; margin:0; text-align:justify;">A fine-tune of the very powerful Z-Image Turbo base, adding room for the weird and wonderful to an already diverse model. Its text handling and prompt understanding are next level, and it holds a long prompt better than almost anything else we host.</p>
+                        </td></tr>
+                        <tr><td valign="bottom" style="padding:12px 14px 16px; text-align:center;">
+                          <a href="https://www.sogni.ai/models/dark-beast-z-image-turbo" style="color:#00FF9D; font:600 13px 'Inter',sans-serif; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px;">Model page &rarr;</a>
+                        </td></tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td style="padding:18px 20px 10px;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); border:1px solid #2a2a2a; border-radius:12px; border-left:4px solid #00FF9D;">
+                      <tr><td style="padding:24px;">
+                        <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0;">These two are aggressively uncensored, so unchecking the <strong style="color:#fff;">Mature Content</strong> filter is required to use them. Both Krea 2 Identity Edit flavors are uncensored as well, so user discretion is advised.</p>
+                      </td></tr>
+                    </table>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:35px 20px;"><div style="height:2px; background: linear-gradient(90deg, transparent 0%, #00FF9D 50%, transparent 100%);"></div></td></tr></table>
+
+                <!-- =================== LORAS =================== -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="LORAS">
+                  <tr><td style="padding:30px 20px 0;">
+                    <span style="display:inline-block; background:#00FF9D; color:#001b00; font:700 10px/1 'Inter',sans-serif; padding:5px 10px; border-radius:4px; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:12px;">New LoRAs</span><span style="display:inline-block; background:transparent; color:#00FF9D; border:1px solid #00FF9D; font:700 10px/1 'Inter',sans-serif; padding:4px 9px; border-radius:4px; text-transform:uppercase; letter-spacing:0.5px; margin:0 0 12px 8px;">Included in Unlimited</span>
+                    <h2 style="margin:0 0 8px; font:600 28px/1.1 'Space Grotesk',sans-serif; color:#ffffff;">The Krea 2 LoRA library is now 25 strong</h2>
+                    <p style="font:500 15px/1.5 'Inter',sans-serif; color:#a6a6a6; margin:0;">Two new community styles, a slider that controls how far the model will go, and our first video LoRA for MiniMax.</p>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td style="padding:18px 20px 0;">
+                    <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0; text-align:justify;">Krea 2 is the model our community keeps building on, and the LoRA shelf on Sogni has grown to <strong style="color:#fff;">25 community fine-tunes</strong>. Two of them are brand new this month, and one of them is not a style at all but a control.</p>
+                  </td></tr>
+                </table>
+
+                <!-- 1. Two new styles -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td style="padding:20px 20px 0;">
+                    <p style="font:700 11px/1 'Inter',sans-serif; color:#00FF9D; margin:0 0 10px; text-transform:uppercase; letter-spacing:1px;">New this month</p>
+                    <h3 style="margin:0 0 8px; font:600 24px/1.2 'Space Grotesk',sans-serif; color:#ffffff;">BloomGirls UltraRealism and Purple Grainy Photography</h3>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td align="center" valign="top" style="padding:14px 20px 0;">
+                    <img width="560" class="max-width"
+                      style="display:block; max-width:100% !important; width:100%; height:auto !important; border-radius:8px; border:1px solid #2a2a2a;"
+                      src="assets/krea2-community-loras.jpg?v=20260824" alt="The same portrait rendered with no LoRA, BloomGirls, Purple Grainy, and both stacked together">
+                    <p style="font:400 12px/1.5 'Inter',sans-serif; color:#666; margin:8px 0 0; text-align:center;">Same portrait, four passes: no LoRA, BloomGirls, Purple Grainy, then both stacked together.</p>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td style="padding:18px 20px 10px;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); border:1px solid #2a2a2a; border-radius:12px; border-left:4px solid #00FF9D;">
+                      <tr><td style="padding:24px;">
+                        <ul style="margin:0 0 14px 18px; padding:0; color:#a6a6a6; font:400 15px/1.7 'Inter',sans-serif;">
+                          <li style="margin-bottom:8px;"><strong style="color:#fff;">BloomGirls UltraRealism</strong> brings smoother skin, brighter bloom, and a polished, aspirational aesthetic.</li>
+                          <li style="margin-bottom:8px;"><strong style="color:#fff;">Purple Grainy Photography</strong> adds visible film grain, cooler tones, and a more editorial, analog feel.</li>
+                        </ul>
+                        <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0; text-align:justify;">Use them individually or stack them together for AI influencer, fashion, beauty and lifestyle content that reads as both realistic and aspirational. They join 23 community LoRAs already on the shelf, all of which run on Krea 2 Turbo.</p>
+                        <p style="margin:18px 0 0; text-align:center;"><a href="https://blog.sogni.ai/blogs/krea2-community-loras/" style="display:inline-block; background:#00FF9D; color:#001b00; border:1px solid #00FF9D; padding:11px 19px; border-radius:8px; font:600 14px 'Inter',sans-serif; text-decoration:none; white-space:nowrap;">See all 25 compared &rarr;</a></p>
+                      </td></tr>
+                    </table>
+                  </td></tr>
+                </table>
+
+                <!-- 2. FilterBypass -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td style="padding:20px 20px 0;">
+                    <p style="font:700 11px/1 'Inter',sans-serif; color:#00FF9D; margin:0 0 10px; text-transform:uppercase; letter-spacing:1px;">Also on the shelf</p>
+                    <h3 style="margin:0 0 8px; font:600 24px/1.2 'Space Grotesk',sans-serif; color:#ffffff;">FilterBypass: turn the safety hedging down like a volume knob</h3>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td align="center" valign="top" style="padding:14px 20px 0;">
+                    <img width="560" class="max-width"
+                      style="display:block; max-width:100% !important; width:100%; height:auto !important; border-radius:8px; border:1px solid #2a2a2a;"
+                      src="assets/krea-2-loras.jpg?v=20260824" alt="The Krea 2 LoRAs panel in Sogni, showing FilterBypass 2vector and 3vector strength comparisons">
+                    <p style="font:400 12px/1.5 'Inter',sans-serif; color:#666; margin:8px 0 0; text-align:center;">Identical prompt, identical seed. Only the strength value moves: Off, +0.5, +1, +2, +100.</p>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td style="padding:18px 20px 10px;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); border:1px solid #2a2a2a; border-radius:12px; border-left:4px solid #00FF9D;">
+                      <tr><td style="padding:24px;">
+                        <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0 0 14px; text-align:justify;">Ask most image models for something and you get a polite version of it. The <strong style="color:#fff;">FilterBypass</strong> LoRAs for Krea 2, 2vector and 3vector, make that politeness a value you set. <strong style="color:#fff;">Off</strong> is the stock model, <strong style="color:#fff;">+1</strong> commits, <strong style="color:#fff;">+100</strong> holds nothing back.</p>
+                        <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0; text-align:justify;">Not a shock-value gimmick, just a model that renders what you asked for. Horror that lands, emotion that reads, edge that stays sharp.</p>
+                        <p style="margin:18px 0 0; text-align:center;"><a href="https://www.sogni.ai/unlimited" style="display:inline-block; background:#00FF9D; color:#001b00; border:1px solid #00FF9D; padding:11px 19px; border-radius:8px; font:600 14px 'Inter',sans-serif; text-decoration:none; white-space:nowrap;">Try Sogni Unlimited free for 3 days &rarr;</a></p>
+                        <p style="font:400 13px/1.6 'Inter',sans-serif; color:#7a7a7a; margin:12px 0 0; text-align:center;">Uncensored models, unlimited generations, no credit counter watching you work.</p>
+                      </td></tr>
+                    </table>
+                  </td></tr>
+                </table>
+
+                <!-- 3. Realism for MiniMax -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td style="padding:10px 20px;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); border:1px solid #2a2a2a; border-radius:12px; border-left:4px solid #00FF9D;">
+                      <tr><td style="padding:24px;">
+                        <p style="font:700 11px/1 'Inter',sans-serif; color:#00FF9D; margin:0 0 10px; text-transform:uppercase; letter-spacing:1px;">First video LoRA</p>
+                        <h3 style="font:600 20px/1.3 'Space Grotesk',sans-serif; color:#ffffff; margin:0 0 12px;">Realism People, for MiniMax video</h3>
+                        <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0 0 16px; text-align:justify;">LoRAs are not just an image thing anymore. Right now there is exactly one video LoRA for MiniMax on Sogni, <strong style="color:#fff;">Realism People</strong>, and it pushes toward a more natural, cinematic look: realistic textures, lighting, skin detail and movement. Same prompt, same seed, just less synthetic. More MiniMax video LoRAs land in the next few days.</p>
+                        <img width="512" class="max-width" style="display:block; max-width:100% !important; width:100%; height:auto !important; border-radius:8px; border:1px solid #2a2a2a;" src="assets/minimax-realism-lora.jpg?v=20260824" alt="The Realism People LoRA strength slider on Sogni with a before and after comparison on MiniMax H3">
+                        <p style="font:400 12px/1.5 'Inter',sans-serif; color:#666; margin:8px 0 0; text-align:center;">Set the strength, hit add. Recommended range is +0.6 to +1.</p>
+                      </td></tr>
+                    </table>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:35px 20px;"><div style="height:2px; background: linear-gradient(90deg, transparent 0%, #00FF9D 50%, transparent 100%);"></div></td></tr></table>
+
+                <!-- =================== SERIES GENERATION =================== -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="AGENT">
+                  <tr><td style="padding:30px 20px 0;">
+                    <span style="display:inline-block; background:#00FF9D; color:#001b00; font:700 10px/1 'Inter',sans-serif; padding:5px 10px; border-radius:4px; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:12px;">Creative Agent</span>
+                    <h2 style="margin:0 0 8px; font:600 28px/1.1 'Space Grotesk',sans-serif; color:#ffffff;">Stop prompting one image at a time</h2>
+                    <p style="font:500 15px/1.5 'Inter',sans-serif; color:#a6a6a6; margin:0;">One brief to Sogni Creative Agent, a whole series on disk, same style in every frame.</p>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td align="center" valign="top" style="padding:14px 20px 0;">
+                    <img width="560" class="max-width"
+                      style="display:block; max-width:100% !important; width:100%; height:auto !important; border-radius:8px; border:1px solid #2a2a2a;"
+                      src="assets/agent-series-folder.jpg?v=20260824" alt="The Sogni Generations folder: a full campaign of consistently styled images, each saved as a named file">
+                    <p style="font:400 12px/1.5 'Inter',sans-serif; color:#666; margin:8px 0 0; text-align:center;">The actual output folder: campaign subjects, typographic spots and first frames, all named and numbered.</p>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td style="padding:18px 20px 10px;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); border:1px solid #2a2a2a; border-radius:12px; border-left:4px solid #00FF9D;">
+                      <tr><td style="padding:24px;">
+                        <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0 0 14px;">The <a href="https://www.sogni.ai/agent" style="color:#00FF9D; font-weight:600;">Sogni Creative Agent</a> is an installable skill that gives any AI agent production-grade image, video and music generation on the Supernet. You describe the batch in plain English. It plans the run, estimates the cost up front, generates everything, and saves each result as a real named file on your disk, not a preview trapped in a chat window.</p>
+                        <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0 0 10px;">One command installs it:</p>
+                        <p style="font:500 14px/1.6 'Courier New',monospace; color:#00FF9D; margin:0 0 16px; padding:14px 18px; background:#0a0a0a; border-radius:8px; border:1px solid #222;">Setup and install sogni.ai/skill</p>
+                        <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0;">It runs in Claude Code, Claude Desktop and Cowork, Codex CLI, OpenClaw and any SKILL.md aware runtime, with personas and memories that follow you between them. Not a terminal person? In Cowork it shows up as the <strong style="color:#fff;">sogni-creative-agent</strong> connector, one toggle away.</p>
+                      </td></tr>
+                    </table>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td align="center" valign="top" style="padding:14px 20px 0;">
+                    <img width="560" class="max-width"
+                      style="display:block; max-width:100% !important; width:100%; height:auto !important; border-radius:8px; border:1px solid #2a2a2a;"
+                      src="assets/agent-series-prompt.jpg?v=20260824" alt="A four-sentence brief asking Sogni Creative Agent for a 30 image series in one style">
+                    <p style="font:400 12px/1.5 'Inter',sans-serif; color:#666; margin:8px 0 0; text-align:center;">The whole brief: count, one shared style, a reference image, a destination folder, aspect ratio, model.</p>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td style="padding:18px 20px 10px;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); border:1px solid #2a2a2a; border-radius:12px; border-left:4px solid #00FF9D;">
+                      <tr><td style="padding:24px;">
+                        <h3 style="font:600 20px/1.3 'Space Grotesk',sans-serif; color:#ffffff; margin:0 0 12px;">How to prompt for a series</h3>
+                        <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0 0 14px; text-align:justify;">Tell it how many images, that they share one style, and where to save them. Attach a reference image to lock the look. It plans the batch, renders it, and leaves named files on your disk.</p>
+                        <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0; text-align:justify;">One more prompt animates the whole folder. Working at this volume is exactly what <strong style="color:#fff;">Sogni Unlimited</strong> is built for.</p>
+                        <p style="text-align:center; margin:20px 0 0; font-size:0;"><a href="https://www.sogni.ai/agent" style="display:inline-block; margin:0 10px 10px 0; background:#00FF9D; color:#001b00; border:1px solid #00FF9D; padding:11px 19px; border-radius:8px; font:600 14px 'Inter',sans-serif; text-decoration:none; white-space:nowrap;">Get Sogni Creative Agent &rarr;</a><a href="https://blog.sogni.ai/blogs/creative-agent-remotion/" style="display:inline-block; margin:0 10px 10px 0; background:transparent; color:#00FF9D; border:1px solid #00FF9D; padding:11px 19px; border-radius:8px; font:600 14px 'Inter',sans-serif; text-decoration:none; white-space:nowrap;">Read the full walkthrough</a></p>
+                      </td></tr>
+                    </table>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:35px 20px;"><div style="height:2px; background: linear-gradient(90deg, transparent 0%, #00FF9D 50%, transparent 100%);"></div></td></tr></table>
+
+<!-- =================== SCROLLYTELLING =================== -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="SCROLL">
+                  <tr><td style="padding:30px 20px 0;">
+                    <span style="display:inline-block; background:#00FF9D; color:#001b00; font:700 10px/1 'Inter',sans-serif; padding:5px 10px; border-radius:4px; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:12px;">Scrollytelling</span>
+                    <h2 style="margin:0 0 8px; font:600 28px/1.1 'Space Grotesk',sans-serif; color:#ffffff;">This is not a 3D video. It is a website reacting to your scroll.</h2>
+                    <p style="font:500 15px/1.5 'Inter',sans-serif; color:#a6a6a6; margin:0;">A GPU through a psychedelic tunnel, built by a Sogni Agent, wrapped around our economics essay.</p>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td align="center" valign="top" style="padding:14px 20px 0;">
+                    <div style="position:relative; width:100%; max-width:560px; margin:0 auto; line-height:0;">
+                      <a href="https://blog.sogni.ai/blogs/unlimited-compute-model/" target="_blank" rel="noopener" style="display:block; text-decoration:none;"><img src="assets/scrollytelling-play.jpg?v=20260824" width="560" alt="A GPU accelerating through a psychedelic tunnel as the page scrolls. Watch the video." style="display:block; max-width:100% !important; width:100%; height:auto !important; border-radius:8px; border:1px solid #2a2a2a; cursor:pointer;"></a>
+                      <!--[if !mso]><!-->
+                      <video playsinline webkit-playsinline muted autoplay loop controls preload="metadata" poster="assets/scrollytelling.jpg?v=20260824" style="position:absolute; top:0; left:0; width:100%; height:100%; border-radius:8px; border:1px solid #2a2a2a; object-fit:cover; display:block;">
+                        <source src="assets/scrollytelling.mp4?v=20260824" type="video/mp4">
+                      </video>
+                      <!--<![endif]-->
+                    </div>
+                    <p style="font:400 12px/1.5 'Inter',sans-serif; color:#666; margin:8px 0 0; text-align:center;">The camera accelerates with the scroll, then hands off to the article. Sped up for this clip.</p>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td style="padding:18px 20px 10px;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); border:1px solid #2a2a2a; border-radius:12px; border-left:4px solid #00FF9D;">
+                      <tr><td style="padding:24px;">
+                        <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0 0 14px; text-align:justify;">Most unlimited AI plans quietly disappear, and the reason is structural. On centralized GPU infrastructure every generation costs the provider more, so the math eventually breaks. <a href="https://blog.sogni.ai/blogs/unlimited-compute-model/" style="color:#00FF9D; font-weight:600;">Powering an Unlimited AI Economy That Works</a> is our case for why the Sogni Supernet is different: independent GPU operators running open models, earning up to <strong style="color:#00FF9D; font-weight:600;">51% of network revenue</strong>, on a network that cleared <strong style="color:#00FF9D; font-weight:600;">158 million renders</strong> in its first public year. That structure is what makes unlimited hold up instead of quietly getting withdrawn.</p>
+                        <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0 0 14px; text-align:justify;">The presentation makes the point too. That GPU tunnel is not a video, it is the page reacting to your scroll, and the whole effect was built by your own AI agent working with the <a href="https://www.sogni.ai/agent" style="color:#00FF9D; font-weight:600;">Sogni Creative Agent</a>. Give it a link or a brief and it comes back with the scroll-driven page and an MP4 demo.</p>
+                        <p style="margin:18px 0 0; text-align:center;"><a href="https://blog.sogni.ai/blogs/unlimited-compute-model/" style="display:inline-block; background:#00FF9D; color:#001b00; border:1px solid #00FF9D; padding:11px 19px; border-radius:8px; font:600 14px 'Inter',sans-serif; text-decoration:none; white-space:nowrap;">Read the full article &rarr;</a></p>
+                      </td></tr>
+                    </table>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:35px 20px;"><div style="height:2px; background: linear-gradient(90deg, transparent 0%, #00FF9D 50%, transparent 100%);"></div></td></tr></table>
+
+                <!-- =================== SEASON 11 =================== -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="SEASON11">
+                  <tr><td style="padding:0 20px;">
+                    <span style="display:inline-block; background:#00FF9D; color:#001b00; font:700 10px/1 'Inter',sans-serif; padding:5px 10px; border-radius:4px; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:12px;">New Season</span>
+                    <h2 style="margin:0 0 8px; font:600 32px/1.1 'Space Grotesk',sans-serif; color:#ffffff;">Season 11 is live, with 8,000,000 SOGNI to share</h2>
+                    <p style="font:500 15px/1.5 'Inter',sans-serif; color:#a6a6a6; margin:0;">Season 10 has closed, its airdrop lands September 7, and workers take a bigger cut this time.</p>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td style="padding:18px 20px 10px;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); border:1px solid #2a2a2a; border-radius:12px; border-left:4px solid #00FF9D;">
+                      <tr><td style="padding:24px;">
+                        <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0 0 14px; text-align:justify;">Congratulations to everyone who ranked in <strong style="color:#fff;">Season 10</strong>. Its airdrop lands at <a href="https://dashboard.sogni.ai" style="color:#00FF9D; font-weight:600;">dashboard.sogni.ai</a> on <strong style="color:#fff;">Monday, September 7</strong>. Worker revenue share follows the usual 6-week schedule, while unlimited sub earnings pay out on fiscal month close plus 45 days.</p>
+                        <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0; text-align:justify;"><strong style="color:#fff;">Season 11 is now live</strong> with the same terms and one change: worker revenue share is up <strong style="color:#00FF9D; font-weight:600;">10%</strong>, ambassador share down 10%. August was a breakout month for adoption, driven by Unlimited, and that momentum carries straight in.</p>
+                      </td></tr>
+                    </table>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td style="padding:10px 20px;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); border:1px solid #2a2a2a; border-radius:12px; border-left:4px solid #00FF9D;">
+                      <tr><td style="padding:24px;">
+                        <p style="font:400 15px/1.7 'Inter',sans-serif; color:#fff; margin:0 0 14px;"><strong>Season 11 breakdown, 8,000,000 SOGNI:</strong></p>
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" style="font:400 14px/1.6 'Inter',sans-serif; color:#a6a6a6;">
+                          <tr><td style="padding:6px 0; border-bottom:1px solid #222;"><span style="color:#00FF9D; font-weight:700; display:inline-block; width:50px;">40%</span> All Stakers</td></tr>
+                          <tr><td style="padding:6px 0; border-bottom:1px solid #222;"><span style="color:#00FF9D; font-weight:700; display:inline-block; width:50px;">25%</span> Worker Subscription seasonal token bonus</td></tr>
+                          <tr><td style="padding:6px 0; border-bottom:1px solid #222;"><span style="color:#00FF9D; font-weight:700; display:inline-block; width:50px;">20%</span> Top 200 Artists</td></tr>
+                          <tr><td style="padding:6px 0;"><span style="color:#00FF9D; font-weight:700; display:inline-block; width:50px;">15%</span> Ambassador Leaderboard</td></tr>
+                        </table>
+                        <p style="margin:18px 0 0; text-align:center;"><a href="https://www.sogni.ai/leaderboard" style="display:inline-block; background:#00FF9D; color:#001b00; border:1px solid #00FF9D; padding:11px 19px; border-radius:8px; font:600 14px 'Inter',sans-serif; text-decoration:none; white-space:nowrap;">See the leaderboard &rarr;</a></p>
+                        <p style="margin:14px 0 0; text-align:center;"><a href="https://docs.sogni.ai/rewards/leaderboards/" style="color:#00FF9D; font-weight:600; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px;">How the leaderboards work &rarr;</a>&nbsp;&nbsp;<a href="https://docs.sogni.ai/pricing/unlimited-plan-details/#9-worker-revenue-share" style="color:#00FF9D; font-weight:600; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px;">Worker revenue share details &rarr;</a></p>
+                      </td></tr>
+                    </table>
+                  </td></tr>
+                </table>
+
+                <!-- Season stats -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:20px 0 0;"></td></tr></table>
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" style="background:linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%); border-top:1px solid #333; border-bottom:1px solid #333;">
+                  <tr><td style="padding:25px 10px;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                      <tr>
+                        <td width="33.33%" class="stat-cell" style="text-align:center; padding:10px 5px; vertical-align:top;">
+                          <span class="stat-number" style="font:700 32px/1.1 'Space Grotesk',sans-serif; color:#00FF9D; display:block; margin-bottom:6px;">8,000,000</span>
+                          <span class="stat-label" style="font:500 11px/1.3 'Inter',sans-serif; color:#a6a6a6; text-transform:uppercase; letter-spacing:0.5px;">SOGNI in Season 11</span>
+                        </td>
+                        <td width="33.33%" class="stat-cell" style="text-align:center; padding:10px 5px; vertical-align:top; border-left:1px solid #333; border-right:1px solid #333;">
+                          <span class="stat-number" style="font:700 32px/1.1 'Space Grotesk',sans-serif; color:#00FF9D; display:block; margin-bottom:6px;">+10%</span>
+                          <span class="stat-label" style="font:500 11px/1.3 'Inter',sans-serif; color:#a6a6a6; text-transform:uppercase; letter-spacing:0.5px;">Worker Rev Share</span>
+                        </td>
+                        <td width="33.33%" class="stat-cell" style="text-align:center; padding:10px 5px; vertical-align:top;">
+                          <span class="stat-number" style="font:700 32px/1.1 'Space Grotesk',sans-serif; color:#00FF9D; display:block; margin-bottom:6px;">Sept 7</span>
+                          <span class="stat-label" style="font:500 11px/1.3 'Inter',sans-serif; color:#a6a6a6; text-transform:uppercase; letter-spacing:0.5px;">Season 10 Airdrop</span>
+                        </td>
+                      </tr>
+                    </table>
+                  </td></tr>
+                </table>
+
+                <!-- Divider -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:35px 20px;"><div style="height:2px; background: linear-gradient(90deg, transparent 0%, #00FF9D 50%, transparent 100%);"></div></td></tr></table>
+
+                <!-- =================== EVENTS =================== -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="EVENTS">
+                  <tr><td style="padding:20px 20px 0;">
+                    <p style="font:700 11px/1 'Inter',sans-serif; color:#00FF9D; margin:0 0 10px; text-transform:uppercase; letter-spacing:1px;">Mandala Club Singapore</p>
+                    <h2 style="margin:0 0 8px; font:600 28px/1.1 'Space Grotesk',sans-serif; color:#ffffff;">The agent revolution is here, and you are its creative director</h2>
+                    <p style="font:500 15px/1.5 'Inter',sans-serif; color:#a6a6a6; margin:0;">A packed house, four speakers, and one very persuasive demo.</p>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" class="two-col-override">
+                  <tr>
+                    <td class="column" width="50%" valign="top" style="padding:14px 8px 0 20px;">
+                      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#0f0f0f; border:1px solid #2a2a2a; border-radius:12px; overflow:hidden;">
+                        <tr><td><img src="assets/event-mandala-talk.jpg?v=20260824" alt="Mauvis Ledford presenting Give Your AI Agent a Creative Department at Mandala Club Singapore" style="display:block; width:100%; height:auto;"></td></tr>
+                        <tr><td height="60" valign="top" style="height:60px; padding:10px 12px 14px; font:400 12px/1.5 'Inter',sans-serif; color:#666;">Mandala Club Singapore: a brief goes in, images, video and finished creative come out.</td></tr>
+                      </table>
+                    </td>
+                    <td class="column" width="50%" valign="top" style="padding:14px 20px 0 8px;">
+                      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#0f0f0f; border:1px solid #2a2a2a; border-radius:12px; overflow:hidden;">
+                        <tr><td><img src="assets/event-mandala-stage.jpg?v=20260824" alt="The SOGNI wordmark on the big screen at Mandala Club Singapore" style="display:block; width:100%; height:auto;"></td></tr>
+                        <tr><td height="60" valign="top" style="height:60px; padding:10px 12px 14px; font:400 12px/1.5 'Inter',sans-serif; color:#666;">Mandala Club Singapore: speakers on, wordmark up, and the room got the whole show.</td></tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td style="padding:18px 20px 10px;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); border:1px solid #2a2a2a; border-radius:12px; border-left:4px solid #00FF9D;">
+                      <tr><td style="padding:24px;">
+                        <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0 0 14px;">Everyone asks what AI agents can actually do. On Tuesday at <strong style="color:#fff;">Mandala Club Singapore</strong>, we showed them.</p>
+                        <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0 0 14px;">It was a packed house, with Sogni CEO <strong style="color:#fff;">Mauvis Ledford</strong> presenting alongside three other phenomenal speakers. His talk, <strong style="color:#fff;">Give Your AI Agent a Creative Department</strong>, walked the room through an agent that runs exactly that. Brief in, storyboard approved, finished video out.</p>
+                        <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0;">The feedback was great, and the best part was watching people leave with new ideas about what agents can do beyond writing and coding. If you want to build the same thing yourself, it starts with the Creative Agent skill.</p>
+                        <p style="margin:18px 0 0; text-align:center;"><a href="https://www.sogni.ai/agent" style="display:inline-block; background:#00FF9D; color:#001b00; border:1px solid #00FF9D; padding:11px 19px; border-radius:8px; font:600 14px 'Inter',sans-serif; text-decoration:none; white-space:nowrap;">Give your agent a creative department &rarr;</a></p>
+                      </td></tr>
+                    </table>
+                  </td></tr>
+                </table>
+
+                <!-- Divider -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:35px 20px;"><div style="height:2px; background: linear-gradient(90deg, transparent 0%, #00FF9D 50%, transparent 100%);"></div></td></tr></table>
+
+                <!-- =================== COMMUNITY =================== -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" id="COMMUNITY">
+                  <tr><td style="padding:0 20px;">
+                    <span style="display:inline-block; background:#00FF9D; color:#001b00; font:700 10px/1 'Inter',sans-serif; padding:5px 10px; border-radius:4px; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:12px;">Community &amp; Creators</span>
+                    <h2 style="margin:0 0 8px; font:600 28px/1.1 'Space Grotesk',sans-serif; color:#ffffff;">Made by the community</h2>
+                    <p style="font:500 15px/1.5 'Inter',sans-serif; color:#a6a6a6; margin:0;">There is a lot more where this came from on our <a href="https://discord.com/invite/2JjzA2zrrc" style="color:#00FF9D; font-weight:600;">Discord</a>.</p>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" class="two-col-override">
+                  <tr>
+                    <td class="column" width="50%" valign="top" style="padding:16px 8px 0 20px;">
+                      <img src="assets/maciasux-tessellation-1.jpg?v=20260824" alt="A tessellated pattern of mosaic hawks by maciasux" style="display:block; width:100%; height:auto; border-radius:10px; border:1px solid #2a2a2a;">
+                    </td>
+                    <td class="column" width="50%" valign="top" style="padding:16px 20px 0 8px;">
+                      <img src="assets/maciasux-tessellation-2.jpg?v=20260824" alt="A second tessellated pattern by maciasux" style="display:block; width:100%; height:auto; border-radius:10px; border:1px solid #2a2a2a;">
+                    </td>
+                  </tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td style="padding:18px 20px 10px;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%); border:1px solid #2a2a2a; border-radius:12px; border-left:4px solid #00FF9D;">
+                      <tr><td style="padding:24px;">
+                        <p style="font:700 11px/1 'Inter',sans-serif; color:#00FF9D; margin:0 0 10px; text-transform:uppercase; letter-spacing:1px;">Creator Spotlight</p>
+                        <h3 style="font:600 22px/1.3 'Space Grotesk',sans-serif; color:#ffffff; margin:0 0 14px;">maciasux</h3>
+                        <p style="font:400 15px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0; text-align:justify;"><strong style="color:#fff;">maciasux</strong> gave us the idea for tessellations, endlessly repeating patterns that tile without a seam. We liked it enough to build a generator around it.</p>
+                        <p style="margin:18px 0 0; text-align:center;"><a href="https://infinity.sogni.ai/" target="_blank" rel="noopener" style="display:inline-block; background:#00FF9D; color:#001b00; border:1px solid #00FF9D; padding:11px 19px; border-radius:8px; font:600 14px 'Inter',sans-serif; text-decoration:none; white-space:nowrap;">Make your own at Sogni Infinity &rarr;</a></p>
+                        <p style="margin:14px 0 0; text-align:center;"><a href="https://x.com/Sogni_Protocol/status/2079825038463668662?s=20" target="_blank" rel="noopener" style="color:#00FF9D; font-weight:600; text-decoration:none; border-bottom:1px solid #00FF9D; padding-bottom:1px; font:600 14px 'Inter',sans-serif;">See the post on X &rarr;</a></p>
+                      </td></tr>
+                    </table>
+                  </td></tr>
+                </table>
+
+                <!-- Next steps signoff -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td style="padding:32px 20px 8px;">
+                    <h2 style="margin:0 0 12px; font:700 34px/1.1 'Space Grotesk',sans-serif; color:#ffffff;">MiniMax H3, Unlimited. That Is the Headline.</h2>
+                    <p style="font:400 16px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0 0 20px;">Start your 3-day free trial, then work through the rest of the drops at your own pace.</p>
+                    <p style="font:400 16px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0 0 8px;">&bull; <strong style="color:#fff;">Create:</strong> Put H3 and LTX 2.5 to work at <a href="https://app.sogni.ai" style="color:#00FF9D; font-weight:600;">app.sogni.ai</a>.</p>
+                    <p style="font:400 16px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0 0 8px;">&bull; <strong style="color:#fff;">Batch:</strong> Generate whole series with the <a href="https://www.sogni.ai/agent" style="color:#00FF9D; font-weight:600;">Sogni Creative Agent</a>.</p>
+                    <p style="font:400 16px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0 0 14px;">&bull; <strong style="color:#fff;">Track:</strong> Check your fair use headroom on the new <a href="https://app.sogni.ai/usage" style="color:#00FF9D; font-weight:600;">Usage page</a>.</p>
+                    <p style="margin:0 0 26px; text-align:center;"><a href="https://www.sogni.ai/unlimited" style="display:inline-block; background:#00FF9D; color:#001b00; border:1px solid #00FF9D; padding:11px 19px; border-radius:8px; font:600 14px 'Inter',sans-serif; text-decoration:none; white-space:nowrap;">Start your 3-day free trial &rarr;</a></p>
+                    <p style="font:600 16px/1.7 'Inter',sans-serif; color:#a6a6a6; margin:0 0 12px;">Keep creating. Your next big idea is just one prompt away.</p>
+                    <p style="font:600 15px/1.5 'Inter',sans-serif; color:#a6a6a6; margin:0;">Team Sogni</p>
+                  </td></tr>
+                </table>
+
+                <!-- Spacer -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:0 0 35px;"></td></tr></table>
+
+                <!-- Past newsletter -->
+                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tr><td>
+                    <div style="text-align:center; padding:0 20px 0">
+                      <a style="background:#111; border:1px solid #333; border-radius:8px; color:#00FF9D; display:inline-block; padding:14px 24px; text-decoration:none; font:500 14px 'Inter',sans-serif;"
+                         href="https://news.sogni.ai/sogni-sync/">
+                        <strong>Missed a newsletter? Access all past editions here</strong>
+                      </a>
+                    </div>
+                  </td></tr>
+                </table>
+
+                <!-- Social -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td align="center" style="padding:25px 0 20px;">
+                    <a class="social-icon" href="https://discord.com/invite/2JjzA2zrrc" style="display:inline-block; margin:0 6px;"><img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/dde8c72d-0180-48ce-a884-0b5059c0bd6a/100x100.png" alt="Discord" style="width:28px; height:28px;"></a>
+                    <a class="social-icon" href="https://t.me/sogniai" style="display:inline-block; margin:0 6px;"><img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/f72a9b29-0ca6-4c8f-a043-28a16a5460e2/100x100.png" alt="Telegram" style="width:28px; height:28px;"></a>
+                    <a class="social-icon" href="https://www.youtube.com/@SogniAI?sub_confirmation=1" style="display:inline-block; margin:0 6px;"><img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/c4bdbd34-9ee0-4cf4-807e-9294065e2803/100x100.png" alt="YouTube" style="width:28px; height:28px;"></a>
+                    <a class="social-icon" href="https://www.instagram.com/sogni.ai/" style="display:inline-block; margin:0 6px;"><img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/316caddd-dba0-4f91-a92b-98a0e9c4bdfb/100x100.png" alt="Instagram" style="width:28px; height:28px;"></a>
+                    <a class="social-icon" href="https://x.com/sogni_protocol" style="display:inline-block; margin:0 6px;"><img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/efa17c04-3d0a-42c3-ad83-2fe8d5fead0b/100x100.png" alt="X / Twitter" style="width:28px; height:28px;"></a>
+                    <a class="social-icon" href="https://www.linkedin.com/company/sogni-ai/" style="display:inline-block; margin:0 6px;"><img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/62cb84ce-25f7-4755-a1a2-c11449fc61b7/100x100.png" alt="LinkedIn" style="width:28px; height:28px;"></a>
+                    <a class="social-icon" href="https://medium.com/sogni" style="display:inline-block; margin:0 6px;"><img src="https://news.sogni.ai/sogni-sync/assets/fd6a16d91e2adfdf/2c83cc3a-c96c-4c88-ac02-8e8b7abbe081/100x100.png" alt="Medium" style="width:28px; height:28px;"></a>
+                  </td></tr>
+                </table>
+
+                <!-- Unsubscribe -->
+                <div class="unsubscribe-css__unsubscribe___2CDlR" style="color:#fff; font-size:12px; line-height:22px; padding:16px; text-align:center;">
+                  <a href="{{{RESEND_UNSUBSCRIBE_URL}}}" style="color:#bebdbd; text-decoration:none;">Unsubscribe</a>
+                </div>
+
+                <!-- Footer -->
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr><td style="padding:0 16px 16px; text-align:center;">
+                    <p style="font:10px/14px 'Inter',sans-serif; color:#666;">
+                      WE&amp;ROBOT PTE. LTD. · #60 Paya Lebar Road #07-54 · Singapore 409051<br>
+                      <a href="https://www.sogni.ai/privacy-policy" style="color:#888; font-size:10px;">Privacy Policy &amp; Terms</a>
+                    </p>
+                  </td></tr>
+                </table>
+
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation"><tr><td style="padding:0 0 30px;"></td></tr></table>
+
+              </td></tr>
+            </table>
+          </div>
+        </center>
+      </td>
+    </tr>
+  </table>
+    </div>
+  </div>
+</body>
+</html>
