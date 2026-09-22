@@ -9,10 +9,11 @@
  * unsubscribe placeholder renders literally in the browser. Run this at send
  * time to produce a throwaway N.send.html instead.
  *
- * It does two things:
- *   1) swaps Resend's {{{RESEND_UNSUBSCRIBE_URL}}} -> the pipeline's
- *      {{UNSUBSCRIBE_URL}} (substituted per-recipient at send time)
- *   2) adds UTM params to Sogni-owned PAGE links only, with utm_content per
+ * It prepares the delivery copy:
+ *   1) inserts the email-only unsubscribe footer (or converts the legacy
+ *      Resend placeholder) to {{UNSUBSCRIBE_URL}}, substituted per recipient
+ *   2) resolves archive-relative assets to their public URLs
+ *   3) adds UTM params to Sogni-owned PAGE links only, with utm_content per
  *      destination. Skips news.sogni.ai media assets, all non-sogni hosts
  *      (social, fonts, stores), mailto/tel, and the unsubscribe link.
  *
@@ -31,11 +32,18 @@ if (!inPath || !outPath || !campaign) {
 
 let html = fs.readFileSync(inPath, 'utf-8');
 
-// 1) unsubscribe placeholder: Resend -> Sogni pipeline
+// 1) Keep the web archive free of recipient-specific unsubscribe links.
+const unsubSlots = (html.match(/<!-- EMAIL_UNSUBSCRIBE -->/g) || []).length;
+html = html.replace(/<!-- EMAIL_UNSUBSCRIBE -->/g,
+  '<p style="margin:16px 0;color:#a6a6a6;font:12px/20px Arial,sans-serif;text-align:center;"><a href="{{UNSUBSCRIBE_URL}}" style="color:#a6a6a6;text-decoration:underline;">Unsubscribe from Sogni /Sync</a></p>');
 const unsubBefore = (html.match(/\{\{\{RESEND_UNSUBSCRIBE_URL\}\}\}/g) || []).length;
 html = html.split('{{{RESEND_UNSUBSCRIBE_URL}}}').join('{{UNSUBSCRIBE_URL}}');
 
-// 2) UTM tagging on Sogni-owned page links
+// 2) Archive assets work locally and on the web; email needs absolute URLs.
+html = html.replace(/\b(src|href|poster)="(assets\/[^\"]+)"/g,
+  (_, attribute, relative) => `${attribute}="https://news.sogni.ai/sogni-sync/${relative}"`);
+
+// 3) UTM tagging on Sogni-owned page links
 const qualifies = (host) => (host === 'sogni.ai' || host.endsWith('.sogni.ai')) && host !== 'news.sogni.ai';
 const contentTag = (url) => {
   const sub = url.hostname.replace(/^www\./, '') === 'sogni.ai'
@@ -54,6 +62,7 @@ html = html.replace(/href="([^"]+)"/g, (m, raw) => {
   try { url = new URL(raw); } catch { return m; } // relative / template / mailto -> leave alone
   if (url.protocol !== 'https:' && url.protocol !== 'http:') return m;
   if (!qualifies(url.hostname)) { skipped.add(url.hostname); return m; }
+  if (/\.(?:avif|gif|jpe?g|png|svg|webp|mp3|mp4|m4a|wav|flac|webm|glb|pdf)$/i.test(url.pathname)) return m;
   const content = contentTag(url);
   url.searchParams.set('utm_source', 'newsletter');
   url.searchParams.set('utm_medium', 'email');
@@ -63,7 +72,7 @@ html = html.replace(/href="([^"]+)"/g, (m, raw) => {
   return `href="${url.toString()}"`;
 });
 
-// 3) slim the payload: Gmail clips messages past ~102KB, hiding the footer and
+// 4) slim the payload: Gmail clips messages past ~102KB, hiding the footer and
 // unsubscribe link behind "View entire message". Drop plain HTML comments
 // (conditional <!--[if ...]> / <![endif]--> ones must survive — the hybrid video
 // blocks depend on them), indentation, and blank lines.
@@ -81,5 +90,6 @@ fs.writeFileSync(outPath, html);
 console.log(`Wrote ${outPath}`);
 console.log(`  size: ${bytesBefore} -> ${bytesAfter} bytes${bytesAfter > GMAIL_CLIP_BYTES ? `  WARNING: over Gmail's ~${GMAIL_CLIP_BYTES} byte clip limit — footer/unsubscribe will be hidden` : ' (under Gmail clip limit)'}`);
 console.log(`  unsubscribe placeholders swapped: ${unsubBefore} (remaining RESEND: ${(html.match(/RESEND_UNSUBSCRIBE_URL/g) || []).length})`);
+console.log(`  email-only unsubscribe footers inserted: ${unsubSlots}`);
 console.log(`  links tagged: ${tagged.length} across ${new Set(tagged).size} utm_content values`);
 console.log(`  hosts skipped: ${[...skipped].sort().join(', ')}`);
